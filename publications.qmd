@@ -1,0 +1,51 @@
+---
+title: "Publications"
+toc: true
+---
+
+For a complete and updated list, see my [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) or [ORCID](https://orcid.org/0000-0003-1579-9444).
+
+---
+
+## Selected Papers
+
+### Dispersal & Movement
+
+**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [New]
+
+**Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). **Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds.** *Journal of Animal Ecology*, 92(1), 158-170. [DOI](https://doi.org/10.1111/1365-2656.13838)
+
+**Fandos, G.**, Rotics, S., Sapir, N., Fiedler, W., Kaatz, M., Wikelski, M., Nathan, R., & Zurell, D. (2020). **Seasonal niche tracking of climate emerges at the population level in a migratory bird.** *Proceedings of the Royal Society B*, 287(1935), 20201799. [DOI](https://doi.org/10.1098/rspb.2020.1799)
+
+**Fandos, G.**, & Tellería, J. L. (2020). **Seasonal niche‐tracking behaviour of two partially migratory passerines.** *Ibis*, 162(2), 307-317. [DOI](https://doi.org/10.1111/ibi.12721)
+
+---
+
+### Biodiversity Modelling & Methods
+
+Zurell, D., König, C., Malchow, A. K., Kapitza, S., Bocedi, G., Travis, J., & **Fandos, G.** (2022). **Spatially explicit models for decision‐making in animal conservation and restoration.** *Ecography*. [DOI](https://doi.org/10.1111/ecog.05787)
+
+Briscoe, N., Zurell, D., Elith, J., König, C., **Fandos, G.**, et al. (2021). **Can dynamic occupancy models improve predictions of species' range dynamics?** *Global Change Biology*, 27, 4269–4282. [DOI](https://doi.org/10.1111/gcb.15723)
+
+**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). **Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.** *Ecosphere*, 12(4), e03469. [DOI](https://doi.org/10.1002/ecs2.3469)
+
+Zurell, D., Franklin, J., König, C., ..., **Fandos, G.**, ..., & Merow, C. (2020). **A standard protocol for reporting species distribution models.** *Ecography*, 43(9), 1261-1277. [DOI](https://doi.org/10.1111/ecog.04960)
+
+---
+
+### Conservation & Global Change
+
+Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** (2023). **Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.** *Diversity and Distributions*, 29(1), 75-88. [DOI](https://doi.org/10.1111/ddi.13644)
+
+Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. (2021). **Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.** *Global Change Biology*, 27(4), 755-767. [DOI](https://doi.org/10.1111/gcb.15424)
+
+**Fandos, G.**, & Tellería, J. L. (2018). **Range compression of migratory passerines in wintering grounds of the Western Mediterranean: conservation prospects.** *Bird Conservation International*, 28(3), 462-474. [DOI](https://doi.org/10.1017/S0959270917000491)
+
+---
+
+## Code & Data
+
+I share code and data for my papers whenever possible:
+
+- [GitHub](https://github.com/guifandos): Analysis workflows and R scripts
+- [Zenodo](https://zenodo.org/search?q=fandos): Archived datasets and code

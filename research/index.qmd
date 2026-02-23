@@ -1,0 +1,70 @@
+---
+title: "Research"
+subtitle: "Understanding animal movement to predict biodiversity futures"
+toc: true
+---
+
+I'm fascinated by a deceptively simple question: **why are species where they are, and where will they be tomorrow?**
+
+Answering this requires understanding how animals move, not just migration, but the everyday movements that connect populations and allow species to track suitable conditions across changing landscapes. My research sits at this intersection of movement ecology, species distribution modelling, and conservation biology.
+
+---
+
+## Current Focus
+
+Right now, I'm particularly interested in **dispersal**: those movements that take individuals away from their birthplace to breed elsewhere. Dispersal is fundamental to ecology and evolution, yet we still know surprisingly little about it for most species. How far do individuals actually move? Why do some disperse farther than others? And how does this variation affect our predictions of range shifts?
+
+I tackle these questions using large-scale datasets, particularly bird ringing records from across Europe, combined with Bayesian statistical methods that can extract ecological signals from noisy, biased data.
+
+---
+
+## Research Lines
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### [Dispersal & Movement](dispersal.qmd)
+
+Developing methods to estimate dispersal from mark-recapture data. First standardised dispersal estimates for over 200 European bird species.
+
+<!-- Imagen: images/research/dispersal.jpg -->
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### [Biodiversity Forecasting](forecasting.qmd)
+
+Improving species distribution models by incorporating ecological processes: dispersal, population dynamics, species interactions.
+
+<!-- Imagen: images/research/forecasting.jpg -->
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### [Conservation Applications](conservation.qmd)
+
+Translating models into management tools: large carnivore expansion, threatened species assessments, connectivity analysis.
+
+<!-- Imagen: images/research/conservation.jpg -->
+:::
+
+:::
+
+---
+
+## Approach
+
+I consider myself a **field biologist who learned to code out of necessity**. I still believe there's no substitute for time in the field, it gives you intuition about your study system that no dataset can provide. But I've also come to appreciate the power of large-scale data synthesis and modern statistical tools.
+
+My work typically combines:
+
+- **Ring-recovery data** from EURING and national schemes
+- **Citizen science observations** (especially eBird)
+- **Bayesian hierarchical models** implemented in R
+- Occasional fieldwork, when I can escape the office
+
+I'm committed to open science. Code and data for my papers are available on [GitHub](https://github.com/guifandos), because reproducibility matters and because I've learned a lot from other people's shared code.
+
+---
+
+## Collaborators
+
+Science is collaborative. I work regularly with researchers at Potsdam University (Germany), the British Trust for Ornithology (UK), the Swiss Ornithological Institute, and several other institutions. These aren't just co-authorships; they're ongoing conversations that shape how I think about ecology.

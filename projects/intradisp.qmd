@@ -1,0 +1,33 @@
+---
+title: "INTRADISP"
+subtitle: "Intraspecific dispersal variation in European birds"
+toc: true
+---
+
+## The Question
+
+When we talk about "how far species X disperses," we're glossing over enormous variation. Within any species, some individuals stay close to home while others travel hundreds of kilometres. This isn't random noise; it reflects individual condition, local density, habitat quality, and other factors we're only beginning to understand.
+
+This variation matters. If we want to predict how species will respond to climate change, we can't just use average dispersal distances. A population might expand rapidly or barely move at all, depending on which individuals are dispersing and under what conditions.
+
+## What We're Doing
+
+INTRADISP uses the EURING ring-recovery database to quantify intraspecific dispersal variation across European bird species. We're asking:
+
+- How much does dispersal vary within species compared to between species?
+- What environmental and individual factors predict this variation?
+- Can we build dispersal models that account for context-dependence?
+
+## Team
+
+- **Guillermo Fandos** (PI)
+- **David Notario Rincón** (MSc student & researcher)
+- Collaborators: Damaris Zurell (Potsdam), Rob Robinson (BTO)
+
+## Funding
+
+UCM Doctores Emergentes (PR17/24), 2024-2026.
+
+## Related Work
+
+This project builds directly on our [2023 paper in Journal of Animal Ecology](../research/dispersal.qmd) that established standardised dispersal kernels for 234 European bird species.

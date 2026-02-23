@@ -1,0 +1,84 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Guillermo Fandos"
+  description: "Spatial ecologist & conservation scientist | Assistant Professor at Universidad Complutense de Madrid"
+  site-url: https://www.gfandos.com
+  favicon: images/favicon.png
+  
+  # SEO
+  open-graph: true
+  twitter-card:
+    creator: "@g_fandos"
+    site: "@g_fandos"
+  
+  # Navegación
+  navbar:
+    background: light
+    logo: images/logo.png
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        menu:
+          - text: "Overview"
+            href: research/index.qmd
+          - text: "---"
+          - text: "Dispersal & Movement"
+            href: research/dispersal.qmd
+          - text: "Biodiversity Forecasting"
+            href: research/forecasting.qmd
+          - text: "Conservation"
+            href: research/conservation.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "People"
+        href: people.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Outreach"
+        href: outreach.qmd
+    right:
+      - icon: github
+        href: https://github.com/guifandos
+      - icon: twitter
+        href: https://twitter.com/g_fandos
+      - icon: mortarboard-fill
+        href: https://scholar.google.es/citations?user=8zRbuNgAAAAJ
+        aria-label: Google Scholar
+      - icon: envelope
+        href: mailto:gfandos@ucm.es
+  
+  # Footer
+  page-footer:
+    left: |
+      © 2026 Guillermo Fandos
+    center: |
+      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444)
+    right: |
+      Made with [Quarto](https://quarto.org/)
+
+  sidebar: false
+
+format:
+  html:
+    theme: 
+      light: [flatly, styles/custom.scss]
+    css: styles/custom.css
+    toc: true
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true
+
+lang: en
+
+author:
+  name: Guillermo Fandos
+  email: gfandos@ucm.es
+  url: https://www.gfandos.com
+  orcid: 0000-0003-1579-9444
+  affiliation: Universidad Complutense de Madrid

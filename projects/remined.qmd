@@ -1,0 +1,33 @@
+---
+title: "REMINED"
+subtitle: "Wildlife in Mediterranean river ecosystems"
+toc: true
+---
+
+## The Context
+
+Mediterranean rivers are defined by extremes. Winter floods reshape channels; summer droughts leave only disconnected pools, or nothing at all. This hydrological variability creates unique challenges for wildlife, and climate change is making these extremes more intense.
+
+## The Project
+
+REMINED (part of the broader RIMED-FAUNA initiative) investigates how terrestrial vertebrates (mammals, birds, reptiles, amphibians) adapt to the temporal dynamics of Mediterranean river systems. We're working in Spanish National Parks to understand:
+
+- Which species depend on river corridors and how?
+- Where are critical refugia during drought?
+- How will predicted changes in river flow affect wildlife communities?
+
+## My Role
+
+I contribute species distribution modelling expertise and supervise Claudia Mediavilla's MSc research within the project. We're building models that integrate hydrological variability with wildlife occurrence data, a methodological challenge because most SDM approaches assume static environments.
+
+We're also deploying camera traps to monitor wildlife use of riparian habitats across seasons.
+
+## Team
+
+- **PI**: María del Mar Sánchez-Montoya (University of Murcia)
+- **Claudia Mediavilla** (MSc student & researcher)
+- Multi-institutional team across Spanish universities
+
+## Funding
+
+Red de Parques Nacionales, 2024-2027.

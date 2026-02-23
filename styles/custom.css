@@ -1,0 +1,177 @@
+/* Custom styles for gfandos.com */
+
+/* ===== Typography ===== */
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  padding: 2rem 0;
+}
+
+#hero img {
+  border: 4px solid #2c5aa0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Callouts ===== */
+.callout-note {
+  border-left-color: #2c5aa0 !important;
+}
+
+.callout-tip {
+  border-left-color: #28a745 !important;
+}
+
+.callout-important {
+  border-left-color: #dc3545 !important;
+}
+
+/* ===== Cards / Grid Items ===== */
+.g-col-12.g-col-md-4,
+.g-col-12.g-col-md-6 {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.g-col-12.g-col-md-4:hover,
+.g-col-12.g-col-md-6:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a3a6e;
+  text-decoration: underline;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* ===== Footer ===== */
+.nav-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem 0;
+}
+
+/* ===== Research Line Cards ===== */
+.research-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.research-card h3 {
+  color: #2c5aa0;
+  margin-top: 0;
+}
+
+/* ===== Project Badges ===== */
+.badge-pi {
+  background-color: #28a745;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-team {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ===== Publication List ===== */
+.pub-item {
+  border-left: 3px solid #2c5aa0;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pub-item.highly-cited {
+  border-left-color: #ffc107;
+  background-color: #fffdf0;
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ===== Metrics ===== */
+.metric-box {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.metric-box .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c5aa0;
+}
+
+.metric-box .label {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+/* ===== Icons ===== */
+.bi {
+  vertical-align: -0.125em;
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .g-col-12.g-col-md-4,
+  .g-col-12.g-col-md-6 {
+    margin-bottom: 1rem;
+  }
+  
+  #hero img {
+    max-width: 200px;
+  }
+}
+
+/* ===== Print styles ===== */
+@media print {
+  .navbar, .nav-footer {
+    display: none;
+  }
+}

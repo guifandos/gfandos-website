@@ -1,0 +1,31 @@
+---
+title: "Conservation Applications"
+subtitle: "From models to management"
+toc: true
+---
+
+I try to make my research useful beyond academia. This means working on questions that matter for conservation practice and collaborating with people who can actually implement the results.
+
+## Large Carnivore Expansion
+
+One line of work I'm proud of focuses on large carnivores in Iberia. Wolves, bears, and lynx are expanding their ranges across Spain and Portugal, which is good news for conservation, but also a management challenge. Where will they go next? Which areas are critical for connectivity? Where are conflicts with humans most likely?
+
+I supervised students who tackled these questions using species distribution models and landscape connectivity analysis. The results identify priority areas for proactive conservation: places where action *now* could facilitate successful recolonisation rather than scrambling to respond after conflicts emerge.
+
+## Threatened Species Assessment
+
+I've also worked on improving population assessments for data-deficient species. Traditional monitoring often suffers from "preferential sampling", meaning we collect data where it's convenient, not necessarily where it's representative. I developed occupancy models that correct for this bias, applied to 22 years of Black Stork monitoring data in Spain.
+
+The resulting population estimates were more robust than previous assessments and contributed to the species' evaluation in the Spanish Red List.
+
+## Current Applied Work
+
+Currently, I'm involved in projects on Mediterranean river ecosystems (REMINED) and bat habitat modelling. These applied contracts keep me grounded in real conservation problems and remind me why the methodological work matters.
+
+## Selected Publications
+
+Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** (2023). **Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.** *Diversity and Distributions*, 29(1), 75-88.
+
+**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). **Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.** *Ecosphere*, 12(4), e03469.
+
+Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. (2021). **Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.** *Global Change Biology*, 27(4), 755-767.

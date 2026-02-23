@@ -1,0 +1,62 @@
+---
+title: "People"
+toc: true
+---
+
+## Current Members
+
+### David Notario Rincón
+**MSc Student & Researcher** · INTRADISP project
+
+David is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
+
+<!-- Foto: Añade images/people/david.jpg cuando la tengas -->
+
+---
+
+### Claudia Mediavilla
+**MSc Student & Researcher** · REMINED project
+
+Claudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.
+
+Co-supervised with María del Mar Sánchez-Montoya.
+
+<!-- Foto: Añade images/people/claudia.jpg cuando la tengas -->
+
+---
+
+### Hugo Díaz Santaolalla
+**PhD Student** · CE3C (Portugal)
+
+Hugo works on carnivore dynamics and biotic interactions, exploring how species interactions shape distribution patterns.
+
+Co-supervised with Alejandra Zarzo.
+
+<!-- Foto: Añade images/people/hugo.jpg cuando la tengas -->
+
+---
+
+## Past Members
+
+I've supervised 11 MSc and 5 BSc thesis students. Some highlights:
+
+- **Maria Pratzer** (MSc, Humboldt University): Large carnivore range expansion. Published in *Diversity and Distributions* (2023).
+- **Leon Nill** (MSc, Humboldt University): Landscape permeability for carnivores. Published in *Diversity and Distributions* (2023).
+
+---
+
+## Collaborators
+
+I work regularly with:
+
+- [Damaris Zurell](https://damariszurell.github.io/) (Potsdam University): Dispersal, dynamic SDMs
+- [Rob Robinson](https://www.bto.org/about-bto/our-staff/rob-robinson) (BTO, UK): Ring-recovery analysis
+- [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM): Bioacoustics
+- [Marc Kéry](https://www.vogelwarte.ch/en/about-us/team/kery-marc) (Swiss Ornithological Institute): Occupancy modelling
+- [Tobias Kuemmerle](https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias) (Humboldt University): Land-use change
+
+---
+
+## Join Us
+
+I'm always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you're considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es)

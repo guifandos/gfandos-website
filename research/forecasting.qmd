@@ -1,0 +1,29 @@
+---
+title: "Biodiversity Forecasting"
+subtitle: "Better models for better predictions"
+toc: true
+---
+
+Climate change is reshuffling species distributions worldwide. To respond effectively, we need to anticipate these changes, but our predictions are only as good as our models. I work on making species distribution models more reliable by building in ecological realism.
+
+## The Limitation of Correlative Models
+
+Most species distribution models work by correlating where species occur with environmental conditions, then projecting to future climates. This works reasonably well for some purposes, but it misses crucial dynamics: Can the species actually disperse to newly suitable areas? Will populations persist through bad years? How do interactions with other species constrain distributions?
+
+## Process-Based Approaches
+
+I'm interested in models that incorporate these processes explicitly. This means combining species distribution models with population dynamics, dispersal kernels, and mechanistic constraints. The models become more complex, but also more honest about what drives species distributions.
+
+A concrete example: standard models might predict that a species "should" occur in northern Europe by 2050. But if that species only disperses 10 km per generation and there's 500 km of unsuitable habitat in between, it's not getting there. Process-based models can capture this.
+
+## Data Integration
+
+Good models need good data. I work on integrating different data sources (standardised monitoring surveys, citizen science observations, ringing recoveries) to improve both the spatial coverage and the temporal dynamics we can capture. Each data type has biases, but combining them thoughtfully can give us a more complete picture.
+
+## Selected Publications
+
+Zurell, D., König, C., Malchow, A. K., et al. & **Fandos, G.** (2022). **Spatially explicit models for decision‐making in animal conservation and restoration.** *Ecography*. [DOI](https://doi.org/10.1111/ecog.05787)
+
+Briscoe, N., Zurell, D., Elith, J., König, C., **Fandos, G.**, et al. (2021). **Can dynamic occupancy models improve predictions of species' range dynamics?** *Global Change Biology*, 27, 4269–4282.
+
+Zurell, D., Franklin, J., König, C., ..., **Fandos, G.**, ..., & Merow, C. (2020). **A standard protocol for reporting species distribution models.** *Ecography*, 43(9), 1261-1277.

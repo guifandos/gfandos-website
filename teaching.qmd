@@ -1,0 +1,74 @@
+---
+title: "Teaching"
+toc: true
+---
+
+Teaching is one of the most rewarding parts of my job. There's something deeply satisfying about watching a student go from "I don't understand R" to confidently analysing their own data, or seeing a field course spark someone's passion for ecology.
+
+I believe in learning by doing, whether that means getting your hands dirty in the field or wrestling with real datasets in R. Theory matters, but it sticks better when you've experienced the messiness of actual ecological data.
+
+![Field course at the Strait of Gibraltar](images/teaching-group.jpg){width=100% fig-alt="Field course with students"}
+
+---
+
+## Current Courses (UCM)
+
+### Graduate
+
+**Master in Conservation Biology**
+
+- Caracterización y seguimiento de poblaciones animales amenazadas
+- Evaluación Ambiental Aplicada a la Fauna
+
+**Master in Zoology**
+
+- Zoología de Vertebrados
+
+### Undergraduate
+
+**Biology Degree**
+
+- Zoología
+- Análisis de la Biodiversidad Animal
+
+### Continuing Education
+
+**[Bioinformatics in Biodiversity, Ecology and Evolution](https://www.ucm.es/bioinformatica-biodiversidad)**: I coordinate this expert-level course (150h) that introduces biologists to computational tools for ecological and evolutionary analysis.
+
+---
+
+## Student Supervision
+
+### Current PhD Students
+
+**Hugo Díaz Santaolalla** (CE3C, Portugal): Carnivore dynamics and biotic interactions. Co-supervised with Alejandra Zarzo.
+
+### Current MSc Students
+
+**David Notario Rincón**: Bird range dynamics under climate change. Part of the INTRADISP project.
+
+**Claudia Mediavilla**: Wildlife in Mediterranean river ecosystems. Part of REMINED. Co-supervised with M. del Mar Sánchez-Montoya.
+
+### Past Students
+
+I've served as scientific mentor for three completed PhD theses and supervised 11 MSc and 5 BSc projects. Some of these have led to publications, always a nice outcome, but not the main goal. The main goal is helping students develop into independent researchers.
+
+---
+
+## Teaching Materials
+
+I try to make my course materials openly available:
+
+- [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course at Potsdam (co-developed)
+- [Macroecology and Global Change](https://damariszurell.github.io/EEC-MGC/): MSc course at Potsdam (co-developed)
+
+---
+
+## Workshops
+
+I've organised or co-organised several workshops on ecological modelling:
+
+- RangeShiftR Workshop (Berlin, 2019)
+- Mechanistic Distribution Models (Würzburg, 2019)
+- Renewable Energies and Animal Movement (Elche, 2022)
+- Jornadas de Ecoinformática AEET (Alcalá de Henares, 2024)

@@ -1,0 +1,65 @@
+---
+title: "Projects"
+subtitle: "Current and past research projects"
+toc: true
+---
+
+## Active Projects
+
+### [INTRADISP](intradisp.qmd) (2024-2026)
+**Principal Investigator** · UCM
+
+Why do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.
+
+**Team**: David Notario (MSc student & researcher), collaborators at Potsdam University and BTO.
+
+---
+
+### [REMINED](remined.qmd) (2024-2027)
+**Team member** · Red de Parques Nacionales
+
+Mediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?
+
+**PI**: María del Mar Sánchez-Montoya. **Team**: Claudia Mediavilla (MSc student & researcher) and others.
+
+---
+
+### SHAREPOINT (2025-2027)
+**Team member** · CEBA
+
+Social organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.
+
+**PI**: Javier Pérez-Tris.
+
+---
+
+## Past Projects
+
+### INCISE (2022-2023)
+**Principal Investigator** · H2020-MSCA-COFUND UNA4CAREER
+
+Integration of citizen science and standardised survey data to study biodiversity dynamics. *Resigned after one year upon obtaining the UCM position.*
+
+### BIOPIC (2018-2023)
+**Work package leader** · German Research Foundation (DFG)
+
+Disentangling the effects of demography, dispersal and biotic interactions on population and community response to global change. Led the dispersal work package within this large project.
+
+**PI**: Damaris Zurell.
+
+### RangeDyn (2019-2021)
+**Core team** · DAAD
+
+Moving from pattern towards process for improved forecasts of species range dynamics.
+
+**PI**: Damaris Zurell.
+
+---
+
+## Applied Contracts
+
+I also take on applied contracts that address real conservation problems:
+
+- **Bat habitat modelling** (2024-2025): Spatial distribution models for the Spanish Bat Atlas. Client: TRAGSA.
+
+- **Black Stork demography** (2017-2018): Population dynamics modelling that informed the Spanish Red List assessment. Client: Junta de Castilla y León.

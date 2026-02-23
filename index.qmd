@@ -1,0 +1,106 @@
+---
+title: "Guillermo Fandos"
+subtitle: "Spatial Ecologist & Conservation Scientist"
+image: images/avatar.jpg
+toc: false
+about:
+  id: hero
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:gfandos@ucm.es
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.es/citations?user=8zRbuNgAAAAJ
+    - icon: building
+      text: UCM Profile
+      href: https://produccioncientifica.ucm.es/investigadores/446092/detalle
+    - icon: github
+      text: GitHub
+      href: https://github.com/guifandos
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/g_fandos
+page-layout: full
+---
+
+:::{#hero}
+
+I'm a field biologist turned data enthusiast, and a bit of a gadget geek. What started with binoculars and muddy boots now includes camera traps, AudioMoths, GPS tags, and whatever new sensor catches my attention. I love finding ways to combine field technology with quantitative methods to answer ecological questions.
+
+I work as **Assistant Professor** at [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786), where I combine research with teaching. I find great satisfaction in training the next generation of ecologists, helping students bridge the gap between fieldwork and data analysis.
+
+My current research focuses on **animal movement and dispersal**, trying to understand how these processes shape species distributions and how we can use this knowledge to **improve biodiversity predictions** under global change.
+
+:::
+
+---
+
+## What I Do
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### Movement & Dispersal
+Understanding how animals move across landscapes, from daily foraging to lifetime dispersal events, and what this means for population connectivity and range dynamics.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Field Technology
+Deploying camera traps, bioacoustic recorders (AudioMoth), and other sensors to monitor wildlife. Currently running projects on Mediterranean fauna and acoustic monitoring with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ).
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Teaching & Mentoring
+Training students in quantitative ecology, from R programming basics to advanced species distribution modelling. I believe good science needs good teaching.
+:::
+
+:::
+
+[More about my research →](research/index.qmd)
+
+---
+
+## News
+
+- 🎉 **Feb 2026**: New paper out in *Communications Biology*: [Dispersal syndromes across the tree of life](publications.qmd) (Fandos et al. 2026)
+- 🌍 **Feb 2026**: In Vienna for the [EUFLYNET](https://www.cost.eu/actions/CA22117/) COST Action meeting on bird migration research
+- 👥 **2025**: Welcome to **David Notario** and **Claudia Mediavilla** joining as researchers in our projects
+
+---
+
+## Current Projects
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### [INTRADISP](projects/intradisp.qmd) 
+**Principal Investigator**  
+Why do individuals of the same species disperse so differently? We're using European bird ringing data to find out.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [REMINED](projects/remined.qmd)
+**Team member**  
+How does wildlife adapt to the extreme seasonality of Mediterranean rivers? Camera trapping and SDMs in National Parks.
+:::
+
+:::
+
+[All projects →](projects/index.qmd)
+
+---
+
+## Contact
+
+**Guillermo Fandos**  
+Dept. Biodiversidad, Ecología y Evolución  
+Universidad Complutense de Madrid  
+C/ José Antonio Novais 12, 28040 Madrid
+
+![](images/logos/ucm.svg){width=120}
+
+📧 [gfandos@ucm.es](mailto:gfandos@ucm.es)
