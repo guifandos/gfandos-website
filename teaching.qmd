@@ -1,5 +1,7 @@
 ---
 title: "Teaching"
+subtitle: "Courses and open materials"
+description: "Teaching at Universidad Complutense de Madrid: courses in ecology, zoology, bioinformatics, and quantitative conservation biogeography."
 toc: true
 ---
 
@@ -37,38 +39,6 @@ I believe in learning by doing, whether that means getting your hands dirty in t
 
 ---
 
-## Student Supervision
-
-### Current PhD Students
-
-**Hugo Díaz Santaolalla** (CE3C, Portugal): Carnivore dynamics and biotic interactions. Co-supervised with Alejandra Zarzo.
-
-### Current MSc Students
-
-**David Notario Rincón**: Bird range dynamics under climate change. Part of the INTRADISP project.
-
-**Claudia Mediavilla**: Wildlife in Mediterranean river ecosystems. Part of REMINED. Co-supervised with M. del Mar Sánchez-Montoya.
-
-### Past Students
-
-I've served as scientific mentor for three completed PhD theses and supervised 11 MSc and 5 BSc projects. Some of these have led to publications, always a nice outcome, but not the main goal. The main goal is helping students develop into independent researchers.
-
----
-
 ## Teaching Materials
 
-I try to make my course materials openly available:
-
-- [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course at Potsdam (co-developed)
-- [Macroecology and Global Change](https://damariszurell.github.io/EEC-MGC/): MSc course at Potsdam (co-developed)
-
----
-
-## Workshops
-
-I've organised or co-organised several workshops on ecological modelling:
-
-- RangeShiftR Workshop (Berlin, 2019)
-- Mechanistic Distribution Models (Würzburg, 2019)
-- Renewable Energies and Animal Movement (Elche, 2022)
-- Jornadas de Ecoinformática AEET (Alcalá de Henares, 2024)
+- [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course co-developed with [Damaris Zurell](https://damariszurell.github.io/) at Potsdam University

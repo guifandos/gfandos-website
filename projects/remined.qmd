@@ -1,7 +1,9 @@
 ---
-title: "REMINED"
+title: "RIMed-Fauna"
 subtitle: "Wildlife in Mediterranean river ecosystems"
-toc: true
+description: "RIMed-Fauna project: investigating how terrestrial wildlife adapts to Mediterranean river dynamics using camera trapping and species distribution modelling in Spanish National Parks."
+toc: false
+page-layout: article
 ---
 
 ## The Context
@@ -10,7 +12,7 @@ Mediterranean rivers are defined by extremes. Winter floods reshape channels; su
 
 ## The Project
 
-REMINED (part of the broader RIMED-FAUNA initiative) investigates how terrestrial vertebrates (mammals, birds, reptiles, amphibians) adapt to the temporal dynamics of Mediterranean river systems. We're working in Spanish National Parks to understand:
+[RIMed-Fauna](https://www.um.es/web/rimed-fauna/) investigates how terrestrial vertebrates (mammals, birds, reptiles, amphibians) adapt to the temporal dynamics of Mediterranean river systems. We're working in Spanish National Parks to understand:
 
 - Which species depend on river corridors and how?
 - Where are critical refugia during drought?
@@ -26,6 +28,7 @@ We're also deploying camera traps to monitor wildlife use of riparian habitats a
 
 - **PI**: María del Mar Sánchez-Montoya (University of Murcia)
 - **Claudia Mediavilla** (MSc student & researcher)
+- **Rafael Barrientos** (co-supervisor)
 - Multi-institutional team across Spanish universities
 
 ## Funding

@@ -1,0 +1,401 @@
+[
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Teaching is one of the most rewarding parts of my job. There’s something deeply satisfying about watching a student go from “I don’t understand R” to confidently analysing their own data, or seeing a field course spark someone’s passion for ecology.\nI believe in learning by doing, whether that means getting your hands dirty in the field or wrestling with real datasets in R. Theory matters, but it sticks better when you’ve experienced the messiness of actual ecological data."
+  },
+  {
+    "objectID": "teaching.html#current-courses-ucm",
+    "href": "teaching.html#current-courses-ucm",
+    "title": "Teaching",
+    "section": "Current Courses (UCM)",
+    "text": "Current Courses (UCM)\n\nGraduate\nMaster in Conservation Biology\n\nCaracterización y seguimiento de poblaciones animales amenazadas\nEvaluación Ambiental Aplicada a la Fauna\n\nMaster in Zoology\n\nZoología de Vertebrados\n\n\n\nUndergraduate\nBiology Degree\n\nZoología\nAnálisis de la Biodiversidad Animal\n\n\n\nContinuing Education\nBioinformatics in Biodiversity, Ecology and Evolution: I coordinate this expert-level course (150h) that introduces biologists to computational tools for ecological and evolutionary analysis."
+  },
+  {
+    "objectID": "teaching.html#teaching-materials",
+    "href": "teaching.html#teaching-materials",
+    "title": "Teaching",
+    "section": "Teaching Materials",
+    "text": "Teaching Materials\n\nQuantitative Conservation Biogeography: MSc course co-developed with Damaris Zurell at Potsdam University"
+  },
+  {
+    "objectID": "research/forecasting.html",
+    "href": "research/forecasting.html",
+    "title": "Biodiversity Forecasting",
+    "section": "",
+    "text": "Climate change is reshuffling species distributions worldwide. To respond effectively, we need to anticipate these changes, but our predictions are only as good as our models. I work on making species distribution models more reliable by building in ecological realism."
+  },
+  {
+    "objectID": "research/forecasting.html#the-limitation-of-correlative-models",
+    "href": "research/forecasting.html#the-limitation-of-correlative-models",
+    "title": "Biodiversity Forecasting",
+    "section": "The Limitation of Correlative Models",
+    "text": "The Limitation of Correlative Models\nMost species distribution models work by correlating where species occur with environmental conditions, then projecting to future climates. This works reasonably well for some purposes, but it misses crucial dynamics: Can the species actually disperse to newly suitable areas? Will populations persist through bad years? How do interactions with other species constrain distributions?"
+  },
+  {
+    "objectID": "research/forecasting.html#process-based-approaches",
+    "href": "research/forecasting.html#process-based-approaches",
+    "title": "Biodiversity Forecasting",
+    "section": "Process-Based Approaches",
+    "text": "Process-Based Approaches\nI’m interested in models that incorporate these processes explicitly. This means combining species distribution models with population dynamics, dispersal kernels, and mechanistic constraints. The models become more complex, but also more honest about what drives species distributions.\nA concrete example: standard models might predict that a species “should” occur in northern Europe by 2050. But if that species only disperses 10 km per generation and there’s 500 km of unsuitable habitat in between, it’s not getting there. Process-based models can capture this."
+  },
+  {
+    "objectID": "research/forecasting.html#data-integration",
+    "href": "research/forecasting.html#data-integration",
+    "title": "Biodiversity Forecasting",
+    "section": "Data Integration",
+    "text": "Data Integration\nGood models need good data. I work on integrating different data sources (standardised monitoring surveys, citizen science observations, ringing recoveries) to improve both the spatial coverage and the temporal dynamics we can capture. Each data type has biases, but combining them thoughtfully can give us a more complete picture."
+  },
+  {
+    "objectID": "research/forecasting.html#selected-publications",
+    "href": "research/forecasting.html#selected-publications",
+    "title": "Biodiversity Forecasting",
+    "section": "Selected Publications",
+    "text": "Selected Publications\nZurell, D., König, C., Malchow, A. K., et al. & Fandos, G. (2022). Spatially explicit models for decision‐making in animal conservation and restoration. Ecography. DOI\nBriscoe, N., Zurell, D., Elith, J., König, C., Fandos, G., et al. (2021). Can dynamic occupancy models improve predictions of species’ range dynamics? Global Change Biology, 27, 4269–4282.\nZurell, D., Franklin, J., König, C., …, Fandos, G., …, & Merow, C. (2020). A standard protocol for reporting species distribution models. Ecography, 43(9), 1261-1277."
+  },
+  {
+    "objectID": "research/conservation.html",
+    "href": "research/conservation.html",
+    "title": "Conservation Applications",
+    "section": "",
+    "text": "I try to make my research useful beyond academia. This means working on questions that matter for conservation practice and collaborating with people who can actually implement the results."
+  },
+  {
+    "objectID": "research/conservation.html#large-carnivore-expansion",
+    "href": "research/conservation.html#large-carnivore-expansion",
+    "title": "Conservation Applications",
+    "section": "Large Carnivore Expansion",
+    "text": "Large Carnivore Expansion\nOne line of work I’m proud of focuses on large carnivores in Iberia. Wolves, bears, and lynx are expanding their ranges across Spain and Portugal, which is good news for conservation, but also a management challenge. Where will they go next? Which areas are critical for connectivity? Where are conflicts with humans most likely?\nI supervised students who tackled these questions using species distribution models and landscape connectivity analysis. The results identify priority areas for proactive conservation: places where action now could facilitate successful recolonisation rather than scrambling to respond after conflicts emerge."
+  },
+  {
+    "objectID": "research/conservation.html#threatened-species-assessment",
+    "href": "research/conservation.html#threatened-species-assessment",
+    "title": "Conservation Applications",
+    "section": "Threatened Species Assessment",
+    "text": "Threatened Species Assessment\nI’ve also worked on improving population assessments for data-deficient species. Traditional monitoring often suffers from “preferential sampling”, meaning we collect data where it’s convenient, not necessarily where it’s representative. I developed occupancy models that correct for this bias, applied to 22 years of Black Stork monitoring data in Spain.\nThe resulting population estimates were more robust than previous assessments and contributed to the species’ evaluation in the Spanish Red List."
+  },
+  {
+    "objectID": "research/conservation.html#current-applied-work",
+    "href": "research/conservation.html#current-applied-work",
+    "title": "Conservation Applications",
+    "section": "Current Applied Work",
+    "text": "Current Applied Work\nCurrently, I’m involved in projects on Mediterranean river ecosystems (RIMed-Fauna) and bat habitat modelling. These applied contracts keep me grounded in real conservation problems and remind me why the methodological work matters."
+  },
+  {
+    "objectID": "research/conservation.html#selected-publications",
+    "href": "research/conservation.html#selected-publications",
+    "title": "Conservation Applications",
+    "section": "Selected Publications",
+    "text": "Selected Publications\nPratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & Fandos, G. (2023). Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes. Diversity and Distributions, 29(1), 75-88.\nFandos, G., Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling. Ecosphere, 12(4), e03469.\nRomero‐Muñoz, A., Fandos, G., Benítez‐López, A., & Kuemmerle, T. (2021). Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco. Global Change Biology, 27(4), 755-767."
+  },
+  {
+    "objectID": "projects/remined.html",
+    "href": "projects/remined.html",
+    "title": "RIMed-Fauna",
+    "section": "",
+    "text": "Mediterranean rivers are defined by extremes. Winter floods reshape channels; summer droughts leave only disconnected pools, or nothing at all. This hydrological variability creates unique challenges for wildlife, and climate change is making these extremes more intense."
+  },
+  {
+    "objectID": "projects/remined.html#the-context",
+    "href": "projects/remined.html#the-context",
+    "title": "RIMed-Fauna",
+    "section": "",
+    "text": "Mediterranean rivers are defined by extremes. Winter floods reshape channels; summer droughts leave only disconnected pools, or nothing at all. This hydrological variability creates unique challenges for wildlife, and climate change is making these extremes more intense."
+  },
+  {
+    "objectID": "projects/remined.html#the-project",
+    "href": "projects/remined.html#the-project",
+    "title": "RIMed-Fauna",
+    "section": "The Project",
+    "text": "The Project\nRIMed-Fauna investigates how terrestrial vertebrates (mammals, birds, reptiles, amphibians) adapt to the temporal dynamics of Mediterranean river systems. We’re working in Spanish National Parks to understand:\n\nWhich species depend on river corridors and how?\nWhere are critical refugia during drought?\nHow will predicted changes in river flow affect wildlife communities?"
+  },
+  {
+    "objectID": "projects/remined.html#my-role",
+    "href": "projects/remined.html#my-role",
+    "title": "RIMed-Fauna",
+    "section": "My Role",
+    "text": "My Role\nI contribute species distribution modelling expertise and supervise Claudia Mediavilla’s MSc research within the project. We’re building models that integrate hydrological variability with wildlife occurrence data, a methodological challenge because most SDM approaches assume static environments.\nWe’re also deploying camera traps to monitor wildlife use of riparian habitats across seasons."
+  },
+  {
+    "objectID": "projects/remined.html#team",
+    "href": "projects/remined.html#team",
+    "title": "RIMed-Fauna",
+    "section": "Team",
+    "text": "Team\n\nPI: María del Mar Sánchez-Montoya (University of Murcia)\nClaudia Mediavilla (MSc student & researcher)\nRafael Barrientos (co-supervisor)\nMulti-institutional team across Spanish universities"
+  },
+  {
+    "objectID": "projects/remined.html#funding",
+    "href": "projects/remined.html#funding",
+    "title": "RIMed-Fauna",
+    "section": "Funding",
+    "text": "Funding\nRed de Parques Nacionales, 2024-2027."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Principal Investigator · UCM\nWhy do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.\nTeam: David Notario (MSc student & researcher), collaborators at Potsdam University and BTO.\n\n\n\n\nTeam member · Red de Parques Nacionales\nMediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?\nPI: María del Mar Sánchez-Montoya. Team: Claudia Mediavilla (MSc student & researcher) and others.\n\n\n\n\nTeam member · CEBA\nSocial organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.\nPI: Javier Pérez-Tris."
+  },
+  {
+    "objectID": "projects/index.html#active-projects",
+    "href": "projects/index.html#active-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Principal Investigator · UCM\nWhy do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.\nTeam: David Notario (MSc student & researcher), collaborators at Potsdam University and BTO.\n\n\n\n\nTeam member · Red de Parques Nacionales\nMediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?\nPI: María del Mar Sánchez-Montoya. Team: Claudia Mediavilla (MSc student & researcher) and others.\n\n\n\n\nTeam member · CEBA\nSocial organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.\nPI: Javier Pérez-Tris."
+  },
+  {
+    "objectID": "projects/index.html#past-projects",
+    "href": "projects/index.html#past-projects",
+    "title": "Projects",
+    "section": "Past Projects",
+    "text": "Past Projects\n\nINCISE (2022-2023)\nPrincipal Investigator · H2020-MSCA-COFUND UNA4CAREER\nIntegration of citizen science and standardised survey data to study biodiversity dynamics. Resigned after one year upon obtaining the UCM position.\n\n\nBIOPIC (2018-2023)\nWork package leader · German Research Foundation (DFG)\nDisentangling the effects of demography, dispersal and biotic interactions on population and community response to global change. Led the dispersal work package within this large project.\nPI: Damaris Zurell.\n\n\nRangeDyn (2019-2021)\nCore team · DAAD\nMoving from pattern towards process for improved forecasts of species range dynamics.\nPI: Damaris Zurell."
+  },
+  {
+    "objectID": "projects/index.html#applied-contracts",
+    "href": "projects/index.html#applied-contracts",
+    "title": "Projects",
+    "section": "Applied Contracts",
+    "text": "Applied Contracts\nI also take on applied contracts that address real conservation problems:\n\nBat habitat modelling (2024-2025): Spatial distribution models for the Spanish Bat Atlas. Client: TRAGSA.\nBlack Stork demography (2017-2018): Population dynamics modelling that informed the Spanish Red List assessment. Client: Junta de Castilla y León."
+  },
+  {
+    "objectID": "outreach.html",
+    "href": "outreach.html",
+    "title": "Outreach & Field Technology",
+    "section": "",
+    "text": "I’m fascinated by how new technology can transform ecological research. Currently I’m working with:\nCamera trapping: Deploying camera trap networks in Mediterranean ecosystems as part of the RIMed-Fauna project. There’s something exciting about checking SD cards and discovering what walked past while you weren’t there.\nBioacoustics: Collaborating with Raúl Bonal on AudioMoth deployments for acoustic wildlife monitoring. Passive acoustic monitoring opens up possibilities for studying species that are hard to detect visually."
+  },
+  {
+    "objectID": "outreach.html#field-technology",
+    "href": "outreach.html#field-technology",
+    "title": "Outreach & Field Technology",
+    "section": "",
+    "text": "I’m fascinated by how new technology can transform ecological research. Currently I’m working with:\nCamera trapping: Deploying camera trap networks in Mediterranean ecosystems as part of the RIMed-Fauna project. There’s something exciting about checking SD cards and discovering what walked past while you weren’t there.\nBioacoustics: Collaborating with Raúl Bonal on AudioMoth deployments for acoustic wildlife monitoring. Passive acoustic monitoring opens up possibilities for studying species that are hard to detect visually."
+  },
+  {
+    "objectID": "outreach.html#science-communication",
+    "href": "outreach.html#science-communication",
+    "title": "Outreach & Field Technology",
+    "section": "Science Communication",
+    "text": "Science Communication\nI enjoy sharing science beyond academic circles. I’ve participated in public engagement events like Pint of Science (as speaker in Berlin and co-coordinator in Potsdam) and La Noche de los Investigadores, where I’ve run workshops on bat ecology and camera trapping.\n\n\n\nBirdwatching session during a field course\n\n\nI’m also an active contributor and reviewer for eBird, helping maintain data quality for one of the largest citizen science projects in the world."
+  },
+  {
+    "objectID": "outreach.html#editorial-work",
+    "href": "outreach.html#editorial-work",
+    "title": "Outreach & Field Technology",
+    "section": "Editorial Work",
+    "text": "Editorial Work\nI serve as Editor for Ardeola, the scientific journal of the Spanish Ornithological Society (SEO/BirdLife). I also regularly review manuscripts for journals across ecology and conservation."
+  },
+  {
+    "objectID": "outreach.html#field-experience",
+    "href": "outreach.html#field-experience",
+    "title": "Outreach & Field Technology",
+    "section": "Field Experience",
+    "text": "Field Experience\nBeyond current projects, I’ve participated in expeditions in:\n\nFrench Guiana: Rainforest bird communities (CEBA projects)\nHonduras: Small mammal research with Operation Wallacea\nCosta Rica: Mammal ecology at La Selva Biological Station\nSpain & Morocco: Various bird monitoring projects"
+  },
+  {
+    "objectID": "outreach.html#open-science",
+    "href": "outreach.html#open-science",
+    "title": "Outreach & Field Technology",
+    "section": "Open Science",
+    "text": "Open Science\nI’m committed to making research reproducible. Code and data for my papers are available on GitHub and archived on Zenodo."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Guillermo Fandos",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     Google Scholar\n  \n  \n    \n     UCM Profile\n  \n  \n    \n     GitHub\n  \n  \n    \n     ORCID\n  \n  \n    \n     Twitter\n  \n\n  \n  \nI am a spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. My work combines fieldwork, large-scale data synthesis, and quantitative modelling to tackle questions in conservation biology, biogeography, and movement ecology.\nI work as Assistant Professor at Universidad Complutense de Madrid, where I combine research with teaching.\n\n\n\nConservation biology\nBiogeography\nBiodiversity modelling\nCitizen science\nMovement ecology\n\n\n\n\n\nPhD in Ecology, 2017 – Universidad Complutense de Madrid\nMSc Conservation Biology, 2012 – Universidad Complutense de Madrid\nBSc Biology, 2011 – Universidad Complutense de Madrid"
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Guillermo Fandos",
+    "section": "What I Do",
+    "text": "What I Do\n\n\nMovement & Dispersal\nUnderstanding how animals move across landscapes, from daily foraging to lifetime dispersal events, and what this means for population connectivity and range dynamics.\n\n\nConservation & Global Change\nTranslating ecological models into conservation tools for threatened species, large carnivore management, and habitat connectivity under climate change.\n\n\nTeaching & Mentoring\nTraining students in quantitative ecology, from R programming basics to advanced species distribution modelling.\n\n\nMore about my research"
+  },
+  {
+    "objectID": "index.html#current-projects",
+    "href": "index.html#current-projects",
+    "title": "Guillermo Fandos",
+    "section": "Current Projects",
+    "text": "Current Projects\n\n\nINTRADISP\nPrincipal Investigator Why do individuals of the same species disperse so differently? We’re using European bird ringing data to find out.\n\n\nRIMed-Fauna\nTeam member How does wildlife adapt to the extreme seasonality of Mediterranean rivers? Camera trapping and SDMs in National Parks.\n\n\nAll projects"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Guillermo Fandos",
+    "section": "News",
+    "text": "News\n\nFeb 2026: New paper in Communications Biology: Dispersal syndromes across the tree of life (Fandos et al. 2026)\nFeb 2026: In Vienna for the EUFLYNET COST Action meeting on bird migration research\n2025: Welcome to David Notario and Claudia Mediavilla joining as researchers in our projects"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Guillermo Fandos",
+    "section": "Contact",
+    "text": "Contact\nGuillermo Fandos Dept. Biodiversidad, Ecologia y Evolucion Universidad Complutense de Madrid C/ Jose Antonio Novais 12, 28040 Madrid\n\n\n\nUniversidad Complutense de Madrid\n\n\ngfandos@ucm.es"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "MSc Student & Researcher · INTRADISP project\nDavid is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.\nCo-supervised with Rafael Barrientos.\n\n\n\n\n\nMSc Student & Researcher · RIMed-Fauna project\nClaudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.\nCo-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.\n\n\n\n\n\nPhD Student · CE3C (Portugal)\nHugo works on carnivore dynamics and biotic interactions, exploring how species interactions shape distribution patterns.\nCo-supervised with Alejandra Zarzo."
+  },
+  {
+    "objectID": "people.html#current-members",
+    "href": "people.html#current-members",
+    "title": "People",
+    "section": "",
+    "text": "MSc Student & Researcher · INTRADISP project\nDavid is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.\nCo-supervised with Rafael Barrientos.\n\n\n\n\n\nMSc Student & Researcher · RIMed-Fauna project\nClaudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.\nCo-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.\n\n\n\n\n\nPhD Student · CE3C (Portugal)\nHugo works on carnivore dynamics and biotic interactions, exploring how species interactions shape distribution patterns.\nCo-supervised with Alejandra Zarzo."
+  },
+  {
+    "objectID": "people.html#past-members",
+    "href": "people.html#past-members",
+    "title": "People",
+    "section": "Past Members",
+    "text": "Past Members\nI’ve supervised 11 MSc and 5 BSc thesis students. Some highlights:\n\nMaria Pratzer (MSc, Humboldt University): Large carnivore range expansion. Published in Diversity and Distributions (2023).\nLeon Nill (MSc, Humboldt University): Landscape permeability for carnivores. Published in Diversity and Distributions (2023)."
+  },
+  {
+    "objectID": "people.html#collaborators",
+    "href": "people.html#collaborators",
+    "title": "People",
+    "section": "Collaborators",
+    "text": "Collaborators\nI work regularly with:\n\nDamaris Zurell (Potsdam University): Dispersal, dynamic SDMs\nRob Robinson (BTO, UK): Ring-recovery analysis\nRafael Barrientos (UCM): Road ecology, conservation\nÁlvaro Luna (UCM): Urban ecology, invasion biology\nRaúl Bonal (UCM): Bioacoustics\nMarc Kéry (Swiss Ornithological Institute): Occupancy modelling\nTobias Kuemmerle (Humboldt University): Land-use change"
+  },
+  {
+    "objectID": "people.html#join-us",
+    "href": "people.html#join-us",
+    "title": "People",
+    "section": "Join Us",
+    "text": "Join Us\nI’m always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you’re considering a TFM or PhD and our research aligns with your interests, get in touch: gfandos@ucm.es"
+  },
+  {
+    "objectID": "projects/intradisp.html",
+    "href": "projects/intradisp.html",
+    "title": "INTRADISP",
+    "section": "",
+    "text": "When we talk about “how far species X disperses,” we’re glossing over enormous variation. Within any species, some individuals stay close to home while others travel hundreds of kilometres. This isn’t random noise; it reflects individual condition, local density, habitat quality, and other factors we’re only beginning to understand.\nThis variation matters. If we want to predict how species will respond to climate change, we can’t just use average dispersal distances. A population might expand rapidly or barely move at all, depending on which individuals are dispersing and under what conditions."
+  },
+  {
+    "objectID": "projects/intradisp.html#the-question",
+    "href": "projects/intradisp.html#the-question",
+    "title": "INTRADISP",
+    "section": "",
+    "text": "When we talk about “how far species X disperses,” we’re glossing over enormous variation. Within any species, some individuals stay close to home while others travel hundreds of kilometres. This isn’t random noise; it reflects individual condition, local density, habitat quality, and other factors we’re only beginning to understand.\nThis variation matters. If we want to predict how species will respond to climate change, we can’t just use average dispersal distances. A population might expand rapidly or barely move at all, depending on which individuals are dispersing and under what conditions."
+  },
+  {
+    "objectID": "projects/intradisp.html#what-were-doing",
+    "href": "projects/intradisp.html#what-were-doing",
+    "title": "INTRADISP",
+    "section": "What We’re Doing",
+    "text": "What We’re Doing\nINTRADISP uses the EURING ring-recovery database to quantify intraspecific dispersal variation across European bird species. We’re asking:\n\nHow much does dispersal vary within species compared to between species?\nWhat environmental and individual factors predict this variation?\nCan we build dispersal models that account for context-dependence?"
+  },
+  {
+    "objectID": "projects/intradisp.html#team",
+    "href": "projects/intradisp.html#team",
+    "title": "INTRADISP",
+    "section": "Team",
+    "text": "Team\n\nGuillermo Fandos (PI)\nDavid Notario Rincón (MSc student & researcher)\nRafael Barrientos (co-supervisor)\nCollaborators: Damaris Zurell (Potsdam), Rob Robinson (BTO)"
+  },
+  {
+    "objectID": "projects/intradisp.html#funding",
+    "href": "projects/intradisp.html#funding",
+    "title": "INTRADISP",
+    "section": "Funding",
+    "text": "Funding\nUCM Doctores Emergentes (PR17/24), 2024-2026."
+  },
+  {
+    "objectID": "projects/intradisp.html#related-work",
+    "href": "projects/intradisp.html#related-work",
+    "title": "INTRADISP",
+    "section": "Related Work",
+    "text": "Related Work\nThis project builds directly on our 2023 paper in Journal of Animal Ecology that established standardised dispersal kernels for 234 European bird species."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "For a complete and updated list, see my Google Scholar or ORCID."
+  },
+  {
+    "objectID": "publications.html#selected-papers",
+    "href": "publications.html#selected-papers",
+    "title": "Publications",
+    "section": "Selected Papers",
+    "text": "Selected Papers\n\nDispersal & Movement\nFandos, G., Robinson, R. A., & Zurell, D. (2026). Dispersal syndromes across the tree of life. Communications Biology. DOI\nFandos, G., Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds. Journal of Animal Ecology, 92(1), 158-170. DOI\nFandos, G., Rotics, S., Sapir, N., Fiedler, W., Kaatz, M., Wikelski, M., Nathan, R., & Zurell, D. (2020). Seasonal niche tracking of climate emerges at the population level in a migratory bird. Proceedings of the Royal Society B, 287(1935), 20201799. DOI\nFandos, G., & Tellería, J. L. (2020). Seasonal niche‐tracking behaviour of two partially migratory passerines. Ibis, 162(2), 307-317. DOI\n\n\n\nBiodiversity Modelling & Methods\nZurell, D., König, C., Malchow, A. K., Kapitza, S., Bocedi, G., Travis, J., & Fandos, G. (2022). Spatially explicit models for decision‐making in animal conservation and restoration. Ecography. DOI\nBriscoe, N., Zurell, D., Elith, J., König, C., Fandos, G., et al. (2021). Can dynamic occupancy models improve predictions of species’ range dynamics? Global Change Biology, 27, 4269–4282. DOI\nFandos, G., Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling. Ecosphere, 12(4), e03469. DOI\nZurell, D., Franklin, J., König, C., …, Fandos, G., …, & Merow, C. (2020). A standard protocol for reporting species distribution models. Ecography, 43(9), 1261-1277. DOI\n\n\n\nConservation & Global Change\nPratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & Fandos, G. (2023). Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes. Diversity and Distributions, 29(1), 75-88. DOI\nRomero‐Muñoz, A., Fandos, G., Benítez‐López, A., & Kuemmerle, T. (2021). Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco. Global Change Biology, 27(4), 755-767. DOI\nFandos, G., & Tellería, J. L. (2018). Range compression of migratory passerines in wintering grounds of the Western Mediterranean: conservation prospects. Bird Conservation International, 28(3), 462-474. DOI"
+  },
+  {
+    "objectID": "publications.html#code-data",
+    "href": "publications.html#code-data",
+    "title": "Publications",
+    "section": "Code & Data",
+    "text": "Code & Data\nI share code and data for my papers whenever possible:\n\nGitHub: Analysis workflows and R scripts\nZenodo: Archived datasets and code"
+  },
+  {
+    "objectID": "research/dispersal.html",
+    "href": "research/dispersal.html",
+    "title": "Animal movement and dispersal",
+    "section": "",
+    "text": "Animal movement connects individuals to their environment across scales: from daily foraging decisions to seasonal migrations across continents. Understanding these movements is central to ecology and conservation, because they determine how populations are connected, how species track changing environments, and how individuals find resources and mates."
+  },
+  {
+    "objectID": "research/dispersal.html#dispersal-the-missing-piece",
+    "href": "research/dispersal.html#dispersal-the-missing-piece",
+    "title": "Animal movement and dispersal",
+    "section": "Dispersal: the missing piece",
+    "text": "Dispersal: the missing piece\nDispersal (the movement of individuals from their birthplace to where they breed) drives almost everything in ecology. It determines gene flow, shapes range boundaries, allows colonisation of new areas, and rescues declining populations. Yet for most species, we simply don’t know how far individuals disperse.\nTraditional approaches to studying dispersal face a fundamental challenge: you need to track individuals from birth to breeding, which is logistically impossible at large scales. Radio-tracking gives detailed data but for tiny sample sizes. Genetic methods tell you about long-term patterns but miss the ecological timescales we care about."
+  },
+  {
+    "objectID": "research/dispersal.html#estimating-dispersal-from-bird-ringing-data",
+    "href": "research/dispersal.html#estimating-dispersal-from-bird-ringing-data",
+    "title": "Animal movement and dispersal",
+    "section": "Estimating dispersal from bird ringing data",
+    "text": "Estimating dispersal from bird ringing data\nI’ve been working with bird ringing data: millions of records from decades of systematic marking across Europe. The challenge is that these data weren’t designed to study dispersal; they’re full of biases (ringers cluster near cities, recoveries depend on human density, etc.).\nTogether with collaborators, I developed Bayesian methods that account for these biases and extract reliable dispersal estimates. This produced the first standardised dispersal kernels for over 200 European bird species (Fandos et al. 2023, JAE)."
+  },
+  {
+    "objectID": "research/dispersal.html#what-we-have-found",
+    "href": "research/dispersal.html#what-we-have-found",
+    "title": "Animal movement and dispersal",
+    "section": "What we have found",
+    "text": "What we have found\nThe big surprise from this work? Long-distance dispersal is far more common than we thought. Even “sedentary” species occasionally move hundreds of kilometres. This matters because these rare long-distance events are exactly what drive range expansions and maintain connectivity between distant populations.\nI’m now exploring why dispersal varies so much within species. The same species can show very different dispersal patterns depending on population density, habitat quality, or individual condition. Understanding this context-dependence is crucial for predicting how species will respond to environmental change."
+  },
+  {
+    "objectID": "research/dispersal.html#selected-publications",
+    "href": "research/dispersal.html#selected-publications",
+    "title": "Animal movement and dispersal",
+    "section": "Selected Publications",
+    "text": "Selected Publications\nFandos, G., Robinson, R. A., & Zurell, D. (2026). Dispersal syndromes across the tree of life. Communications Biology. DOI\nFandos, G., Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds. Journal of Animal Ecology, 92(1), 158-170. DOI\nFandos, G., Rotics, S., Sapir, N., et al. (2020). Seasonal niche tracking of climate emerges at the population level in a migratory bird. Proceedings of the Royal Society B, 287(1935), 20201799."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research focuses on the ecological processes that drive the distribution and abundance of animal populations. I combine fieldwork, large-scale data synthesis (bird ringing, citizen science), and quantitative modelling to tackle questions across spatial and temporal scales."
+  },
+  {
+    "objectID": "research/index.html#research-lines",
+    "href": "research/index.html#research-lines",
+    "title": "Research",
+    "section": "Research Lines",
+    "text": "Research Lines\n\n\nBiodiversity Conservation and Global Change\nHabitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge.\n\n\n\nAnimal Movement in Dynamic Landscapes\nLinking the process of animal movement to ecology and evolution. How do daily movements, seasonal migration, and lifetime dispersal events shape population connectivity, range boundaries, and species responses to environmental change?\n\n\n\nImproving Biodiversity Monitoring and Modelling\nEffective conservation requires well-designed monitoring and the capacity to anticipate future changes. I develop species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate multiple data sources.\n\n\n\nField Technology\nCamera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with Raul Bonal on bioacoustics."
+  },
+  {
+    "objectID": "research/index.html#approach",
+    "href": "research/index.html#approach",
+    "title": "Research",
+    "section": "Approach",
+    "text": "Approach\nMy work typically combines big datasets and quantitative methods:\n\nRing-recovery data from EURING and national schemes, one of the largest individual-level animal movement datasets in the world\nCitizen science observations (especially eBird)\nBayesian hierarchical models implemented in R\nCamera trapping and bioacoustic monitoring in the field\n\nI am committed to open science. Code and data for my papers are available on GitHub and archived on Zenodo."
+  },
+  {
+    "objectID": "research/index.html#collaborators",
+    "href": "research/index.html#collaborators",
+    "title": "Research",
+    "section": "Collaborators",
+    "text": "Collaborators\nI work regularly with researchers at Potsdam University (Germany), the British Trust for Ornithology (UK), the Swiss Ornithological Institute, and several other institutions. See the People page for the full list."
+  }
+]

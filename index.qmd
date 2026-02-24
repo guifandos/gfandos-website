@@ -1,7 +1,9 @@
 ---
 title: "Guillermo Fandos"
 subtitle: "Spatial Ecologist & Conservation Scientist"
+description: "Guillermo Fandos - spatial ecologist and Assistant Professor at Universidad Complutense de Madrid. Research on animal dispersal, species distribution modelling, and biodiversity forecasting."
 image: images/avatar.jpg
+image-alt: "Guillermo Fandos, spatial ecologist"
 toc: false
 about:
   id: hero
@@ -21,6 +23,9 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/guifandos
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0000-0003-1579-9444
     - icon: twitter
       text: Twitter
       href: https://twitter.com/g_fandos
@@ -29,11 +34,23 @@ page-layout: full
 
 :::{#hero}
 
-I'm a field biologist turned data enthusiast, and a bit of a gadget geek. What started with binoculars and muddy boots now includes camera traps, AudioMoths, GPS tags, and whatever new sensor catches my attention. I love finding ways to combine field technology with quantitative methods to answer ecological questions.
+I am a spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. My work combines fieldwork, large-scale data synthesis, and quantitative modelling to tackle questions in conservation biology, biogeography, and movement ecology.
 
-I work as **Assistant Professor** at [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786), where I combine research with teaching. I find great satisfaction in training the next generation of ecologists, helping students bridge the gap between fieldwork and data analysis.
+I work as **Assistant Professor** at [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786), where I combine research with teaching.
 
-My current research focuses on **animal movement and dispersal**, trying to understand how these processes shape species distributions and how we can use this knowledge to **improve biodiversity predictions** under global change.
+### Interests
+
+- Conservation biology
+- Biogeography
+- Biodiversity modelling
+- Citizen science
+- Movement ecology
+
+### Education
+
+- **PhD in Ecology**, 2017 -- Universidad Complutense de Madrid
+- **MSc Conservation Biology**, 2012 -- Universidad Complutense de Madrid
+- **BSc Biology**, 2011 -- Universidad Complutense de Madrid
 
 :::
 
@@ -49,26 +66,18 @@ Understanding how animals move across landscapes, from daily foraging to lifetim
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-### Field Technology
-Deploying camera traps, bioacoustic recorders (AudioMoth), and other sensors to monitor wildlife. Currently running projects on Mediterranean fauna and acoustic monitoring with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ).
+### Conservation & Global Change
+Translating ecological models into conservation tools for threatened species, large carnivore management, and habitat connectivity under climate change.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
 ### Teaching & Mentoring
-Training students in quantitative ecology, from R programming basics to advanced species distribution modelling. I believe good science needs good teaching.
+Training students in quantitative ecology, from R programming basics to advanced species distribution modelling.
 :::
 
 :::
 
-[More about my research →](research/index.qmd)
-
----
-
-## News
-
-- 🎉 **Feb 2026**: New paper out in *Communications Biology*: [Dispersal syndromes across the tree of life](publications.qmd) (Fandos et al. 2026)
-- 🌍 **Feb 2026**: In Vienna for the [EUFLYNET](https://www.cost.eu/actions/CA22117/) COST Action meeting on bird migration research
-- 👥 **2025**: Welcome to **David Notario** and **Claudia Mediavilla** joining as researchers in our projects
+[More about my research](research/index.qmd)
 
 ---
 
@@ -77,30 +86,38 @@ Training students in quantitative ecology, from R programming basics to advanced
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-### [INTRADISP](projects/intradisp.qmd) 
-**Principal Investigator**  
+### [INTRADISP](projects/intradisp.qmd)
+**Principal Investigator**
 Why do individuals of the same species disperse so differently? We're using European bird ringing data to find out.
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-### [REMINED](projects/remined.qmd)
-**Team member**  
+### [RIMed-Fauna](projects/remined.qmd)
+**Team member**
 How does wildlife adapt to the extreme seasonality of Mediterranean rivers? Camera trapping and SDMs in National Parks.
 :::
 
 :::
 
-[All projects →](projects/index.qmd)
+[All projects](projects/index.qmd)
+
+---
+
+## News
+
+- **Feb 2026**: New paper in *Communications Biology*: [Dispersal syndromes across the tree of life](https://www.nature.com/articles/s42003-026-09676-x) (Fandos et al. 2026)
+- **Feb 2026**: In Vienna for the [EUFLYNET](https://www.cost.eu/actions/CA22117/) COST Action meeting on bird migration research
+- **2025**: Welcome to **David Notario** and **Claudia Mediavilla** joining as researchers in our projects
 
 ---
 
 ## Contact
 
-**Guillermo Fandos**  
-Dept. Biodiversidad, Ecología y Evolución  
-Universidad Complutense de Madrid  
-C/ José Antonio Novais 12, 28040 Madrid
+**Guillermo Fandos**
+Dept. Biodiversidad, Ecologia y Evolucion
+Universidad Complutense de Madrid
+C/ Jose Antonio Novais 12, 28040 Madrid
 
-![](images/logos/ucm.svg){width=120}
+![Universidad Complutense de Madrid](images/logos/ucm.svg){width=120 fig-alt="UCM logo"}
 
-📧 [gfandos@ucm.es](mailto:gfandos@ucm.es)
+[gfandos@ucm.es](mailto:gfandos@ucm.es)

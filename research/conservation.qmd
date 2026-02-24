@@ -1,6 +1,7 @@
 ---
 title: "Conservation Applications"
 subtitle: "From models to management"
+description: "Applied conservation research: large carnivore range expansion in Iberia, threatened species assessment, Mediterranean river ecosystems, and landscape connectivity analysis."
 toc: true
 ---
 
@@ -20,7 +21,7 @@ The resulting population estimates were more robust than previous assessments an
 
 ## Current Applied Work
 
-Currently, I'm involved in projects on Mediterranean river ecosystems (REMINED) and bat habitat modelling. These applied contracts keep me grounded in real conservation problems and remind me why the methodological work matters.
+Currently, I'm involved in projects on Mediterranean river ecosystems ([RIMed-Fauna](../projects/remined.qmd)) and bat habitat modelling. These applied contracts keep me grounded in real conservation problems and remind me why the methodological work matters.
 
 ## Selected Publications
 

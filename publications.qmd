@@ -1,5 +1,7 @@
 ---
 title: "Publications"
+subtitle: "Selected papers and open data"
+description: "Selected publications on dispersal ecology, species distribution modelling, biodiversity forecasting, and conservation. Open code and data on GitHub and Zenodo."
 toc: true
 ---
 
@@ -11,7 +13,7 @@ For a complete and updated list, see my [Google Scholar](https://scholar.google.
 
 ### Dispersal & Movement
 
-**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [New]
+**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [DOI](https://www.nature.com/articles/s42003-026-09676-x)
 
 **Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). **Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds.** *Journal of Animal Ecology*, 92(1), 158-170. [DOI](https://doi.org/10.1111/1365-2656.13838)
 

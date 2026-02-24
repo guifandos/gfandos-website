@@ -1,5 +1,7 @@
 ---
 title: "People"
+subtitle: "Team members and collaborators"
+description: "Current and past team members, PhD and MSc students, and key collaborators in spatial ecology and movement research."
 toc: true
 ---
 
@@ -10,16 +12,18 @@ toc: true
 
 David is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
 
+Co-supervised with Rafael Barrientos.
+
 <!-- Foto: Añade images/people/david.jpg cuando la tengas -->
 
 ---
 
 ### Claudia Mediavilla
-**MSc Student & Researcher** · REMINED project
+**MSc Student & Researcher** · [RIMed-Fauna](projects/remined.qmd) project
 
 Claudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.
 
-Co-supervised with María del Mar Sánchez-Montoya.
+Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.
 
 <!-- Foto: Añade images/people/claudia.jpg cuando la tengas -->
 
@@ -51,6 +55,8 @@ I work regularly with:
 
 - [Damaris Zurell](https://damariszurell.github.io/) (Potsdam University): Dispersal, dynamic SDMs
 - [Rob Robinson](https://www.bto.org/about-bto/our-staff/rob-robinson) (BTO, UK): Ring-recovery analysis
+- [Rafael Barrientos](https://scholar.google.es/citations?user=8xNSN5IAAAAJ) (UCM): Road ecology, conservation
+- [Álvaro Luna](https://scholar.google.es/citations?user=0Z6F1kgAAAAJ) (UCM): Urban ecology, invasion biology
 - [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM): Bioacoustics
 - [Marc Kéry](https://www.vogelwarte.ch/en/about-us/team/kery-marc) (Swiss Ornithological Institute): Occupancy modelling
 - [Tobias Kuemmerle](https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias) (Humboldt University): Land-use change

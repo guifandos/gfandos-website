@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 subtitle: "Current and past research projects"
+description: "Research projects on intraspecific dispersal variation (INTRADISP), Mediterranean river wildlife (RIMed-Fauna), and past projects on species distribution modelling and global change."
 toc: true
 ---
 
@@ -15,7 +16,7 @@ Why do individuals of the same species disperse so differently? This project syn
 
 ---
 
-### [REMINED](remined.qmd) (2024-2027)
+### [RIMed-Fauna](remined.qmd) (2024-2027)
 **Team member** · Red de Parques Nacionales
 
 Mediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?

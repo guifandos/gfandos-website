@@ -1,7 +1,9 @@
 ---
 title: "INTRADISP"
 subtitle: "Intraspecific dispersal variation in European birds"
-toc: true
+description: "INTRADISP project: quantifying intraspecific dispersal variation in European birds using EURING ring-recovery data and Bayesian models to improve biodiversity predictions."
+toc: false
+page-layout: article
 ---
 
 ## The Question
@@ -22,6 +24,7 @@ INTRADISP uses the EURING ring-recovery database to quantify intraspecific dispe
 
 - **Guillermo Fandos** (PI)
 - **David Notario Rincón** (MSc student & researcher)
+- **Rafael Barrientos** (co-supervisor)
 - Collaborators: Damaris Zurell (Potsdam), Rob Robinson (BTO)
 
 ## Funding

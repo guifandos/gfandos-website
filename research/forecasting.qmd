@@ -1,6 +1,7 @@
 ---
 title: "Biodiversity Forecasting"
 subtitle: "Better models for better predictions"
+description: "Improving species distribution models with ecological processes: dispersal limitations, population dynamics, and data integration from citizen science and monitoring surveys."
 toc: true
 ---
 

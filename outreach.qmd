@@ -1,5 +1,7 @@
 ---
-title: "Outreach"
+title: "Outreach & Field Technology"
+subtitle: "Science communication, editorial work, and field innovation"
+description: "Science outreach, field technology (camera trapping, bioacoustics, AudioMoth), editorial work for Ardeola, open science practices, and international field experience."
 toc: true
 ---
 
@@ -7,7 +9,7 @@ toc: true
 
 I'm fascinated by how new technology can transform ecological research. Currently I'm working with:
 
-**Camera trapping**: Deploying camera trap networks in Mediterranean ecosystems as part of the REMINED project. There's something exciting about checking SD cards and discovering what walked past while you weren't there.
+**Camera trapping**: Deploying camera trap networks in Mediterranean ecosystems as part of the [RIMed-Fauna](projects/remined.qmd) project. There's something exciting about checking SD cards and discovering what walked past while you weren't there.
 
 **Bioacoustics**: Collaborating with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on AudioMoth deployments for acoustic wildlife monitoring. Passive acoustic monitoring opens up possibilities for studying species that are hard to detect visually.
 

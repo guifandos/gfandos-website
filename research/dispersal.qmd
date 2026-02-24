@@ -1,22 +1,25 @@
 ---
-title: "Dispersal & Movement"
-subtitle: "From individual journeys to population connectivity"
+title: "Animal movement and dispersal"
+subtitle: "From seasonal migration to natal dispersal"
+description: "Research on animal movement ecology, dispersal, and migration using European bird ringing data, Bayesian methods, and dispersal kernel estimation for 200+ species."
 toc: true
 ---
 
-Dispersal (the movement of individuals from their birthplace to where they breed) drives almost everything in ecology. It determines gene flow, shapes range boundaries, allows colonisation of new areas, and rescues declining populations. Yet for most species, we simply don't know how far individuals disperse.
+Animal movement connects individuals to their environment across scales: from daily foraging decisions to seasonal migrations across continents. Understanding these movements is central to ecology and conservation, because they determine how populations are connected, how species track changing environments, and how individuals find resources and mates.
 
-## The Problem
+## Dispersal: the missing piece
+
+Dispersal (the movement of individuals from their birthplace to where they breed) drives almost everything in ecology. It determines gene flow, shapes range boundaries, allows colonisation of new areas, and rescues declining populations. Yet for most species, we simply don't know how far individuals disperse.
 
 Traditional approaches to studying dispersal face a fundamental challenge: you need to track individuals from birth to breeding, which is logistically impossible at large scales. Radio-tracking gives detailed data but for tiny sample sizes. Genetic methods tell you about long-term patterns but miss the ecological timescales we care about.
 
-## My Approach
+## Estimating dispersal from bird ringing data
 
-I've been working with **bird ringing data**: millions of records from decades of systematic marking across Europe. The challenge is that these data weren't designed to study dispersal; they're full of biases (ringers cluster near cities, recoveries depend on human density, etc.). 
+I've been working with **bird ringing data**: millions of records from decades of systematic marking across Europe. The challenge is that these data weren't designed to study dispersal; they're full of biases (ringers cluster near cities, recoveries depend on human density, etc.).
 
-My main contribution has been developing Bayesian methods that can account for these biases and extract reliable dispersal estimates. The result is the first standardised dispersal kernels for over 200 European bird species, a dataset that didn't exist before.
+Together with collaborators, I developed Bayesian methods that account for these biases and extract reliable dispersal estimates. This produced the first standardised dispersal kernels for over 200 European bird species ([Fandos et al. 2023, JAE](https://doi.org/10.1111/1365-2656.13838)).
 
-## Key Findings
+## What we have found
 
 The big surprise from this work? **Long-distance dispersal is far more common than we thought.** Even "sedentary" species occasionally move hundreds of kilometres. This matters because these rare long-distance events are exactly what drive range expansions and maintain connectivity between distant populations.
 
@@ -24,7 +27,7 @@ I'm now exploring why dispersal varies so much *within* species. The same specie
 
 ## Selected Publications
 
-**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [New!]
+**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [DOI](https://www.nature.com/articles/s42003-026-09676-x)
 
 **Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). **Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds.** *Journal of Animal Ecology*, 92(1), 158-170. [DOI](https://doi.org/10.1111/1365-2656.13838)
 
