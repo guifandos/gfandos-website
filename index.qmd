@@ -65,10 +65,8 @@ I am a spatial ecologist interested in why animals move, how we can monitor biod
 
 I work as **Assistant Professor** at [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786), where I combine research with teaching. Always happy to hear from potential collaborators and students.
 
-:::
+![](images/banner_bis.png){.hero-illustration fig-alt="Illustration of wildlife monitoring: satellite tracking, camera traps, and animal movement across a landscape"}
 
-::: {.hero-banner}
-![](images/banner_bis.png){fig-alt="Illustration of wildlife monitoring: satellite tracking, camera traps, and animal movement across a landscape"}
 :::
 
 ---
