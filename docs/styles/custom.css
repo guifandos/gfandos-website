@@ -152,6 +152,73 @@ a:hover {
   }
 }
 
+/* ===== Project Cards ===== */
+.project-card {
+  position: relative;
+  padding-top: 2.5rem !important;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  background-color: #e8eef7;
+  padding: 0.2rem 0.65rem;
+  border-radius: 12px;
+  margin-bottom: 0.25rem;
+}
+
+.project-funder {
+  font-size: 0.82rem;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* ===== Research Cards ===== */
+.research-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-link::after {
+  content: ' →';
+}
+
+/* ===== See All link ===== */
+.see-all {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.see-all::after {
+  content: ' →';
+}
+
+/* ===== Contact Block ===== */
+.contact-block {
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: none;
+}
+
+.contact-block h3 {
+  margin-top: 0;
+  color: #2c5aa0;
+}
+
 /* ===== Print styles ===== */
 @media print {
   .navbar, .nav-footer {
