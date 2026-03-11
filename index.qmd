@@ -67,7 +67,9 @@ I work as **Assistant Professor** at [Universidad Complutense de Madrid](https:/
 
 :::
 
-![](images/banner_bis.png){width=100% fig-alt="Illustration of wildlife monitoring: satellite tracking, camera traps, and animal movement across a landscape"}
+::: {.hero-banner}
+![](images/banner_bis.png){fig-alt="Illustration of wildlife monitoring: satellite tracking, camera traps, and animal movement across a landscape"}
+:::
 
 ---
 
@@ -125,6 +127,18 @@ How does wildlife cope with the extreme seasonality of Mediterranean rivers? Cam
 
 ::: {.project-funder}
 Red de Parques Nacionales
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4 .project-card}
+::: {.project-badge}
+PI · 2022--2023
+:::
+### [INCISE](projects/incise.qmd)
+Integrating citizen science and standardised survey data to improve estimates of species distributions and population trends.
+
+::: {.project-funder}
+H2020-MSCA-COFUND · UNA4CAREER
 :::
 :::
 
