@@ -1,0 +1,34 @@
+---
+title: "INCISE"
+subtitle: "Integration of citizen science and standardised survey data"
+description: "INCISE project: integrating citizen science and structured monitoring data to improve estimates of species distributions and population trends. H2020-MSCA-COFUND UNA4CAREER fellowship."
+toc: false
+page-layout: article
+---
+
+## The Challenge
+
+Reliable estimates of species' distributions and population trends are essential for conservation, but the data we use to build them come with important limitations. Standardised monitoring schemes provide high-quality data but are limited in spatial and temporal coverage. Citizen science platforms like [eBird](https://ebird.org) generate massive amounts of data, but with uneven effort and known biases.
+
+Can we combine the best of both worlds?
+
+## What We're Doing
+
+INCISE uses local structured field survey data to develop reliable baseline estimates of species' distribution and population dynamics, then explores the advantages of integrating these with citizen science data into a single analytical framework. The project aims to:
+
+- **Identify and quantify biases** in citizen science data relative to structured surveys
+- **Develop integrated models** that combine both data types to improve inference
+- **Provide practical guidelines** for producing more reliable species trend and range assessments
+
+A key methodological advance is the use of integrated species distribution models that explicitly account for the different observation processes behind each data source. Structured surveys provide unbiased but sparse data; citizen science provides dense but biased data. By modelling these observation processes jointly, we can leverage the spatial coverage of citizen science while anchoring estimates to the reliability of structured surveys.
+
+## Funding & Context
+
+- **Programme**: H2020-MSCA-COFUND-2018 · [UNA4CAREER](https://www.una4career.eu/) fellowship
+- **Period**: 2022--present
+- **Role**: Principal Investigator
+- **Host**: Universidad Complutense de Madrid
+
+## Related Work
+
+The data integration approach developed during INCISE feeds directly into my work on [biodiversity monitoring and modelling](../research/forecasting.qmd), where combining heterogeneous data sources remains a central challenge.
