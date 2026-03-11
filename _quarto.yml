@@ -64,6 +64,9 @@ website:
       - icon: person-badge
         href: https://orcid.org/0000-0003-1579-9444
         aria-label: ORCID
+      - icon: journal-text
+        href: https://www.researchgate.net/profile/Guillermo-Fandos
+        aria-label: ResearchGate
       - icon: envelope
         href: mailto:gfandos@ucm.es
         aria-label: Email
@@ -73,7 +76,7 @@ website:
     left: |
       © 2026 Guillermo Fandos
     center: |
-      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444)
+      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444) · [ResearchGate](https://www.researchgate.net/profile/Guillermo-Fandos)
     right: |
       Made with [Quarto](https://quarto.org/)
 

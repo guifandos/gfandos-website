@@ -39,6 +39,12 @@ I believe in learning by doing, whether that means getting your hands dirty in t
 
 ---
 
+## Student Supervision
+
+I've supervised 11 MSc and 5 BSc thesis students. See [current team members and past students](people.qmd).
+
+---
+
 ## Teaching Materials
 
 - [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course co-developed with [Damaris Zurell](https://damariszurell.github.io/) at Potsdam University

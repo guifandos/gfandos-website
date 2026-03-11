@@ -23,8 +23,41 @@ about:
     - icon: person-badge
       text: ORCID
       href: https://orcid.org/0000-0003-1579-9444
+    - icon: journal-text
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Guillermo-Fandos
 page-layout: full
 ---
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guillermo Fandos",
+  "jobTitle": "Assistant Professor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Universidad Complutense de Madrid"
+  },
+  "url": "https://www.gfandos.com",
+  "sameAs": [
+    "https://orcid.org/0000-0003-1579-9444",
+    "https://scholar.google.es/citations?user=8zRbuNgAAAAJ",
+    "https://github.com/guifandos",
+    "https://www.researchgate.net/profile/Guillermo-Fandos",
+    "https://twitter.com/g_fandos"
+  ],
+  "knowsAbout": ["spatial ecology", "dispersal ecology", "species distribution modelling", "conservation biology", "biodiversity forecasting"],
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Humboldt-Universität zu Berlin"
+  },
+  "email": "gfandos@ucm.es",
+  "image": "https://www.gfandos.com/images/avatar.jpg"
+}
+</script>
+```
 
 :::{#hero}
 
@@ -97,7 +130,7 @@ Red de Parques Nacionales
 ::: {.project-badge}
 Team member · 2025--2027
 :::
-### SHAREPOINT
+### [SHAREPOINT](projects/sharepoint.qmd)
 Social organisation and parasite sharing among rainforest understory birds in French Guiana.
 
 ::: {.project-funder}

@@ -10,7 +10,28 @@ toc: true
 ::: {.g-col-12 .g-col-md-6}
 [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ){.btn .btn-outline-primary} &nbsp;
 [ORCID](https://orcid.org/0000-0003-1579-9444){.btn .btn-outline-primary} &nbsp;
+[ResearchGate](https://www.researchgate.net/profile/Guillermo-Fandos){.btn .btn-outline-primary} &nbsp;
 [GitHub](https://github.com/guifandos){.btn .btn-outline-primary}
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.grid .text-center}
+::: {.g-col-4 .metric-box}
+**30+**
+
+publications
+:::
+::: {.g-col-4 .metric-box}
+**12**
+
+as first author
+:::
+::: {.g-col-4 .metric-box}
+**2014--2026**
+
+active years
+:::
+:::
 :::
 
 :::

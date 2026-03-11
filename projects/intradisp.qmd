@@ -20,6 +20,10 @@ INTRADISP uses the EURING ring-recovery database to quantify intraspecific dispe
 - What environmental and individual factors predict this variation?
 - Can we build dispersal models that account for context-dependence?
 
+We fit Bayesian hierarchical models to ring-recovery distances, partitioning variation into individual, population, and species-level components. This lets us estimate not just average dispersal kernels, but the full range of dispersal behaviour within a species and how it shifts with age, sex, population density, and landscape context.
+
+The EURING database includes millions of ring recoveries from hundreds of species across decades, giving us unparalleled statistical power to detect these patterns. However, the data come with biases (recovery probability varies with geography, habitat, and species detectability) that require careful statistical treatment.
+
 ## Team
 
 - **Guillermo Fandos** (PI)

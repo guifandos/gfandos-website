@@ -1,0 +1,37 @@
+---
+title: "SHAREPOINT"
+subtitle: "Social organisation and parasite sharing in rainforest birds"
+description: "SHAREPOINT project: investigating social organisation and parasite sharing among rainforest understory birds in French Guiana using network analysis and disease ecology."
+toc: false
+page-layout: article
+---
+
+## The Question
+
+In tropical rainforest bird communities, individuals of different species often form mixed-species flocks that forage together. These social associations create potential pathways for parasite transmission, but we still know very little about how social organisation shapes disease dynamics in wild bird communities.
+
+Do birds that associate more closely share more parasites? Does social network position predict infection risk? These questions have important implications for understanding disease ecology in biodiversity hotspots.
+
+## What We're Doing
+
+SHAREPOINT combines field-based behavioural observations with parasitological sampling and social network analysis in the understory bird community of French Guiana. We're working to:
+
+- Map the social network structure of mixed-species flocks
+- Characterise parasite communities across species and individuals
+- Test whether social associations predict parasite sharing patterns
+- Understand how flock participation affects individual infection risk
+
+This work involves intensive fieldwork in the rainforests of French Guiana, including mist-netting, behavioural observations, and blood sampling.
+
+## My Role
+
+I contribute quantitative modelling expertise, applying network analysis and spatial modelling approaches to understand how social structure and space use interact to shape parasite transmission dynamics.
+
+## Team
+
+- **PI**: Javier Pérez-Tris (Universidad Complutense de Madrid)
+- Multi-institutional team including researchers from CEBA and French Guiana research stations
+
+## Funding
+
+Centre for the Study of Biodiversity in Amazonia ([CEBA](https://www.labex-ceba.fr/)), 2025-2027.
