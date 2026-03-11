@@ -28,7 +28,7 @@ page-layout: full
 
 :::{#hero}
 
-I am a spatial ecologist interested in why animals move and what that means for conservation. My work sits at the crossroads of fieldwork, large-scale data synthesis, and quantitative modelling --- from ringing birds across Europe to building predictive tools for threatened species.
+I am a spatial ecologist interested in why animals move, how we can monitor biodiversity, and how species respond to global change. My work sits at the crossroads of fieldwork, large-scale data synthesis, and quantitative modelling --- from ringing birds across Europe to building predictive tools for threatened species.
 
 I work as **Assistant Professor** at [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786), where I combine research with teaching. Always happy to hear from potential collaborators and students.
 
