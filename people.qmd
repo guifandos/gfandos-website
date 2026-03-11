@@ -8,7 +8,7 @@ toc: true
 ## Current Members
 
 ### David Notario Rincón
-**MSc Student & Researcher** · INTRADISP project
+**MSc Student & Researcher** · [INTRADISP](projects/intradisp.qmd) project
 
 David is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
 

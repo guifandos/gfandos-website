@@ -36,10 +36,10 @@ Social organisation and parasite sharing among rainforest understory birds in Fr
 
 ## Past Projects
 
-### INCISE (2022-2023)
+### [INCISE](incise.qmd) (2022-2023)
 **Principal Investigator** · H2020-MSCA-COFUND UNA4CAREER
 
-Integration of citizen science and standardised survey data to study biodiversity dynamics. *Resigned after one year upon obtaining the UCM position.*
+Integration of citizen science and standardised survey data to assess biodiversity dynamics. *Resigned after one year upon obtaining the UCM position.*
 
 ### BIOPIC (2018-2023)
 **Work package leader** · German Research Foundation (DFG)
