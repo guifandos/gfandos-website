@@ -67,6 +67,8 @@ I work as **Assistant Professor** at [Universidad Complutense de Madrid](https:/
 
 :::
 
+![](images/banner_bis.png){width=100% fig-alt="Illustration of wildlife monitoring: satellite tracking, camera traps, and animal movement across a landscape"}
+
 ---
 
 ## Research Questions
