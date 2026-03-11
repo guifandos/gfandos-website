@@ -126,18 +126,6 @@ Red de Parques Nacionales
 :::
 :::
 
-::: {.g-col-12 .g-col-md-4 .project-card}
-::: {.project-badge}
-Team member · 2025--2027
-:::
-### [SHAREPOINT](projects/sharepoint.qmd)
-Social organisation and parasite sharing among rainforest understory birds in French Guiana.
-
-::: {.project-funder}
-CEBA
-:::
-:::
-
 :::
 
 [Past projects & applied contracts](projects/index.qmd){.see-all}

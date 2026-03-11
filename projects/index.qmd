@@ -25,15 +25,6 @@ Mediterranean rivers are extreme environments: flooding in winter, bone-dry in s
 
 ---
 
-### [SHAREPOINT](sharepoint.qmd) (2025-2027)
-**Team member** · CEBA
-
-Social organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.
-
-**PI**: Javier Pérez-Tris.
-
----
-
 ## Past Projects
 
 ### [INCISE](incise.qmd) (2022-2023)
