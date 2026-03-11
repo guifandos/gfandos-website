@@ -25,7 +25,7 @@ A key methodological advance is the use of integrated species distribution model
 ## Funding & Context
 
 - **Programme**: H2020-MSCA-COFUND-2018 · [UNA4CAREER](https://www.una4career.eu/) fellowship
-- **Period**: 2022--present
+- **Period**: 2022--2023
 - **Role**: Principal Investigator
 - **Host**: Universidad Complutense de Madrid
 

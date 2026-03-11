@@ -27,7 +27,7 @@ Mediterranean rivers are extreme environments: flooding in winter, bone-dry in s
 
 ## Past Projects
 
-### [INCISE](incise.qmd) (2022-present)
+### [INCISE](incise.qmd) (2022-2023)
 **Principal Investigator** · H2020-MSCA-COFUND UNA4CAREER
 
 Integration of citizen science and standardised survey data to assess biodiversity dynamics.
