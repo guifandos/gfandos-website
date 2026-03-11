@@ -25,7 +25,6 @@ website:
   # Navigation
   navbar:
     background: light
-    # logo: images/logo.png  # TODO: add a logo file or remove
     left:
       - text: "Home"
         href: index.qmd
@@ -42,14 +41,16 @@ website:
             href: research/conservation.qmd
       - text: "Projects"
         href: projects/index.qmd
-      - text: "People"
-        href: people.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Teaching"
-        href: teaching.qmd
-      - text: "Outreach"
-        href: outreach.qmd
+      - text: "People"
+        href: people.qmd
+      - text: "More"
+        menu:
+          - text: "Teaching"
+            href: teaching.qmd
+          - text: "Outreach"
+            href: outreach.qmd
     right:
       - icon: github
         href: https://github.com/guifandos
