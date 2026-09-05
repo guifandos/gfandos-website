@@ -21,4 +21,13 @@ $link-hover-color: darken($primary, 15%);
 
 /*-- scss:rules --*/
 
-// Additional SCSS rules can go here
+// Metric boxes for publication stats
+.metric-box {
+  padding: 1rem 0.5rem;
+
+  strong {
+    font-size: 1.5rem;
+    color: $primary;
+    display: block;
+  }
+}

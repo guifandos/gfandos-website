@@ -40,7 +40,9 @@ Effective conservation requires well-designed monitoring and the capacity to ant
 ::: {.g-col-12 .g-col-md-6}
 ### Field Technology
 
-Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raul Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
+Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
+
+Current deployments include camera trap networks in Mediterranean river ecosystems ([RIMed-Fauna](../projects/remined.qmd)) and passive acoustic monitoring for bat and bird communities.
 
 :::
 
@@ -57,10 +59,4 @@ My work typically combines big datasets and quantitative methods:
 - **Bayesian hierarchical models** implemented in R
 - **Camera trapping and bioacoustic monitoring** in the field
 
-I am committed to open science. Code and data for my papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos).
-
----
-
-## Collaborators
-
-I work regularly with researchers at Potsdam University (Germany), the British Trust for Ornithology (UK), the Swiss Ornithological Institute, and several other institutions. See the [People](../people.qmd) page for the full list.
+I am committed to open science: code and data for my papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos). See the [People](../people.qmd) page for the full list of collaborators.

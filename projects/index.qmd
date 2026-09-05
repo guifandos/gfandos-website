@@ -25,21 +25,12 @@ Mediterranean rivers are extreme environments: flooding in winter, bone-dry in s
 
 ---
 
-### SHAREPOINT (2025-2027)
-**Team member** · CEBA
-
-Social organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.
-
-**PI**: Javier Pérez-Tris.
-
----
-
 ## Past Projects
 
-### INCISE (2022-2023)
+### [INCISE](incise.qmd) (2022-2023)
 **Principal Investigator** · H2020-MSCA-COFUND UNA4CAREER
 
-Integration of citizen science and standardised survey data to study biodiversity dynamics. *Resigned after one year upon obtaining the UCM position.*
+Integration of citizen science and standardised survey data to assess biodiversity dynamics.
 
 ### BIOPIC (2018-2023)
 **Work package leader** · German Research Foundation (DFG)

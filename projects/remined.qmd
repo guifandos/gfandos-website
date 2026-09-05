@@ -22,7 +22,9 @@ Mediterranean rivers are defined by extremes. Winter floods reshape channels; su
 
 I contribute species distribution modelling expertise and supervise Claudia Mediavilla's MSc research within the project. We're building models that integrate hydrological variability with wildlife occurrence data, a methodological challenge because most SDM approaches assume static environments.
 
-We're also deploying camera traps to monitor wildlife use of riparian habitats across seasons.
+We're deploying camera traps across riparian transects to monitor wildlife use of river corridors throughout the annual hydrological cycle. This gives us detection histories that we can model using dynamic occupancy frameworks, capturing how species shift their habitat use as water availability changes from flood to drought.
+
+A key methodological challenge is incorporating temporal environmental variation (flow regime, pool permanence) as dynamic covariates in species distribution models that typically treat the environment as a snapshot. Our approach couples hydrological forecasts with ecological models to project how altered river flows under climate change might reshape wildlife communities.
 
 ## Team
 

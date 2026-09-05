@@ -21,6 +21,14 @@ A concrete example: standard models might predict that a species "should" occur 
 
 Good models need good data. I work on integrating different data sources (standardised monitoring surveys, citizen science observations, ringing recoveries) to improve both the spatial coverage and the temporal dynamics we can capture. Each data type has biases, but combining them thoughtfully can give us a more complete picture.
 
+For instance, citizen science platforms like eBird generate millions of observations but with uneven effort. Standardised breeding bird surveys give robust trends but limited spatial coverage. Ring recoveries provide unique information on individual movement. By developing hierarchical models that account for the strengths and limitations of each source, we can build a more reliable picture of how species distributions are changing.
+
+## Dynamic Occupancy Models
+
+One of the approaches I find most promising is dynamic occupancy modelling, which tracks colonisation and extinction at individual sites over time. Rather than just asking "where is the species now?", these models ask "where is it gaining ground, and where is it retreating?" This distinction is critical for conservation prioritisation.
+
+In our work on the Black Stork in Spain, we used dynamic multistate occupancy models to evaluate population trends from monitoring data collected under preferential sampling, where surveyors are drawn to occupied sites. Ignoring this bias leads to overly optimistic assessments, and our models provided a corrective framework.
+
 ## Selected Publications
 
 Zurell, D., König, C., Malchow, A. K., et al. & **Fandos, G.** (2022). **Spatially explicit models for decision‐making in animal conservation and restoration.** *Ecography*. [DOI](https://doi.org/10.1111/ecog.05787)
