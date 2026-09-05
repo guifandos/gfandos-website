@@ -8,6 +8,7 @@ project:
     - "**/*.qmd"
     - "!AUDIT-REPORT.md"
     - "!ACTION-PLAN.md"
+    - "!REDESIGN-PLAN.md"
 
 website:
   title: "Guillermo Fandos"
