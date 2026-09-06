@@ -1,0 +1,14 @@
+---
+title: "Simple traits beat complex syndromes at predicting bird dispersal: new paper in Communications Biology"
+date: 2026-02-01
+description: "Body mass and life history dominate median dispersal distance; flight efficiency shapes long-distance movements."
+categories: [paper]
+---
+
+Our paper with Rob Robinson (BTO) and Damaris Zurell (Potsdam) is out in *Communications Biology*.
+
+Dispersal syndromes, the idea that suites of correlated traits describe how species disperse, are popular but rarely tested against empirical dispersal data at scale. Using the most comprehensive dispersal dataset available for European birds, we asked how dispersal syndromes form and how well they predict dispersal across species.
+
+The answer is that single mechanistic traits do better than composite syndromes. Body mass and life history dominate median dispersal distances, whereas flight efficiency shapes the rare long-distance movements that matter most for range expansion and connectivity.
+
+**Fandos, G., Robinson, R. A., & Zurell, D. (2026).** Simple mechanistic traits outperform complex syndromes in predicting avian dispersal distances. *Communications Biology*, 9, 376. [doi:10.1038/s42003-026-09676-x](https://doi.org/10.1038/s42003-026-09676-x) · [Code and data on Zenodo](https://zenodo.org/records/10713958)

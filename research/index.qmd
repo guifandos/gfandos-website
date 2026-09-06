@@ -1,66 +1,61 @@
 ---
 title: "Research"
 subtitle: "Understanding animal movement to predict biodiversity futures"
-description: "Research overview: animal dispersal, species distribution modelling, biodiversity forecasting, and conservation applications using Bayesian methods and large-scale datasets."
-toc: true
+description: "Research overview: animal dispersal, species distribution modelling, biodiversity forecasting, field technology and conservation applications using Bayesian methods and large-scale datasets."
 ---
 
-My research focuses on the ecological processes that drive the distribution and abundance of animal populations. I combine fieldwork, large-scale data synthesis (bird ringing, citizen science), and quantitative modelling to tackle questions across spatial and temporal scales.
+Our research focuses on the ecological processes that drive the distribution and abundance of animal populations. We combine fieldwork, large-scale data synthesis (bird ringing, citizen science, camera traps) and quantitative modelling to tackle questions across spatial and temporal scales, and we try to make the results useful for conservation.
 
----
+## Research lines
 
-## Research Lines
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### [Biodiversity Conservation and Global Change](conservation.qmd)
-
-Habitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge.
-
-<!-- Imagen: images/research/conservation.jpg -->
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Animal Movement in Dynamic Landscapes](dispersal.qmd)
-
-Linking the process of animal movement to ecology and evolution. How do daily movements, seasonal migration, and lifetime dispersal events shape population connectivity, range boundaries, and species responses to environmental change?
-
-<!-- Imagen: images/research/dispersal.jpg -->
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Improving Biodiversity Monitoring and Modelling](forecasting.qmd)
-
-Effective conservation requires well-designed monitoring and the capacity to anticipate future changes. I develop species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate multiple data sources.
-
-<!-- Imagen: images/research/forecasting.jpg -->
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### Field Technology
-
-Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raul Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
-
-:::
-
-:::
-
----
+```{=html}
+<div class="card-grid card-grid-2">
+  <article class="card-x">
+    <figure><picture><source type="image/webp" srcset="../images/research/dispersal.webp"><img src="../images/research/dispersal.jpg" alt="" loading="lazy"></picture></figure>
+    <div class="card-body">
+      <h3><a href="dispersal.html">Animal movement in dynamic landscapes</a></h3>
+      <p>Linking movement to ecology and evolution: how daily movements, seasonal migration and lifetime dispersal shape connectivity, range boundaries and responses to environmental change.</p>
+      <a class="card-link" href="dispersal.html">Read more</a>
+    </div>
+  </article>
+  <article class="card-x">
+    <figure><picture><source type="image/webp" srcset="../images/research/monitoring.webp"><img src="../images/research/monitoring.jpg" alt="" loading="lazy"></picture></figure>
+    <div class="card-body">
+      <h3><a href="forecasting.html">Improving biodiversity monitoring and modelling</a></h3>
+      <p>Species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate multiple data sources.</p>
+      <a class="card-link" href="forecasting.html">Read more</a>
+    </div>
+  </article>
+  <article class="card-x">
+    <figure><picture><source type="image/webp" srcset="../images/research/conservation.webp"><img src="../images/research/conservation.jpg" alt="" loading="lazy"></picture></figure>
+    <div class="card-body">
+      <h3><a href="conservation.html">Biodiversity conservation and global change</a></h3>
+      <p>Anticipating which species face the greatest threats, why, and where and when problems will emerge under climate and land-use change.</p>
+      <a class="card-link" href="conservation.html">Read more</a>
+    </div>
+  </article>
+  <article class="card-x">
+    <figure><picture><source type="image/webp" srcset="../images/research/fieldtech.webp"><img src="../images/research/fieldtech.jpg" alt="" loading="lazy"></picture></figure>
+    <div class="card-body">
+      <h3><a href="fieldtech.html">Field technology</a></h3>
+      <p>Camera trapping, passive acoustic monitoring and sensor pipelines for wildlife assessment in Mediterranean ecosystems.</p>
+      <a class="card-link" href="fieldtech.html">Read more</a>
+    </div>
+  </article>
+</div>
+```
 
 ## Approach
 
-My work typically combines big datasets and quantitative methods:
+Our work typically combines big datasets and quantitative methods:
 
 - **Ring-recovery data** from EURING and national schemes, one of the largest individual-level animal movement datasets in the world
-- **Citizen science observations** (especially eBird)
+- **Citizen science observations**, especially eBird
 - **Bayesian hierarchical models** implemented in R
 - **Camera trapping and bioacoustic monitoring** in the field
 
-I am committed to open science. Code and data for my papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos).
-
----
+We are committed to open science. Code and data for our papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos).
 
 ## Collaborators
 
-I work regularly with researchers at Potsdam University (Germany), the British Trust for Ornithology (UK), the Swiss Ornithological Institute, and several other institutions. See the [People](../people.qmd) page for the full list.
+We work regularly with researchers at the University of Potsdam, the British Trust for Ornithology, the Swiss Ornithological Institute, Humboldt-Universität zu Berlin and several Spanish institutions. See the [People](../people.html) page for the full list.

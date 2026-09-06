@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - robots.txt
+    - "images/**"
   render:
     - "*.qmd"
     - "**/*.qmd"
@@ -12,24 +13,23 @@ project:
 
 website:
   title: "Guillermo Fandos"
-  description: "Spatial ecologist & conservation scientist | Assistant Professor at Universidad Complutense de Madrid"
+  description: "Spatial ecology, animal movement and conservation. Research group led by Guillermo Fandos at Universidad Complutense de Madrid."
   site-url: https://www.gfandos.com
   favicon: images/favicon.png
+  image: images/hero.jpg
 
   # SEO
   open-graph: true
   twitter-card:
     creator: "@g_fandos"
     site: "@g_fandos"
+    image: images/hero.jpg
   repo-url: https://github.com/guifandos/gfandos-website
 
   # Navigation
   navbar:
     background: light
-    # logo: images/logo.png  # TODO: add a logo file or remove
     left:
-      - text: "Home"
-        href: index.qmd
       - text: "Research"
         menu:
           - text: "Overview"
@@ -41,6 +41,8 @@ website:
             href: research/forecasting.qmd
           - text: "Conservation & Global Change"
             href: research/conservation.qmd
+          - text: "Field Technology"
+            href: research/fieldtech.qmd
       - text: "Projects"
         href: projects/index.qmd
       - text: "People"
@@ -49,15 +51,17 @@ website:
         href: publications.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "Outreach"
-        href: outreach.qmd
+      - text: "News"
+        href: news/index.qmd
+      - text: "CV"
+        href: cv.qmd
     right:
       - icon: github
         href: https://github.com/guifandos
         aria-label: GitHub
-      - icon: twitter
-        href: https://twitter.com/g_fandos
-        aria-label: Twitter / X
+      - icon: twitter-x
+        href: https://x.com/g_fandos
+        aria-label: X (Twitter)
       - icon: mortarboard-fill
         href: https://scholar.google.es/citations?user=8zRbuNgAAAAJ
         aria-label: Google Scholar
@@ -71,11 +75,11 @@ website:
   # Footer
   page-footer:
     left: |
-      © 2026 Guillermo Fandos
+      **Guillermo Fandos** · Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid
     center: |
-      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444)
+      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444) · [GitHub](https://github.com/guifandos)
     right: |
-      Made with [Quarto](https://quarto.org/)
+      © 2026 · Made with [Quarto](https://quarto.org/)
 
   sidebar: false
 
@@ -83,10 +87,16 @@ format:
   html:
     theme:
       light: [flatly, styles/custom.scss]
-    css: styles/custom.css
-    toc: true
+    toc: false
     toc-depth: 2
     smooth-scroll: true
     link-external-newwindow: true
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        <meta name="theme-color" content="#f7f3ea">
+    grid:
+      body-width: 860px
+      margin-width: 220px
 
 lang: en

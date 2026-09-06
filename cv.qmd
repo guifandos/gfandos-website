@@ -1,0 +1,83 @@
+---
+title: "Curriculum vitae"
+subtitle: "Guillermo Fandos"
+description: "Curriculum vitae of Guillermo Fandos: positions, education, funded projects, supervision, editorial work, science communication and field experience."
+aliases:
+  - outreach.html
+toc: true
+toc-title: "Sections"
+---
+
+Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on animal movement, biodiversity modelling and conservation.
+
+[Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID 0000-0003-1579-9444](https://orcid.org/0000-0003-1579-9444) · [UCM research profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Publications](publications.html)
+
+## Positions
+
+```{=html}
+<ul class="cv-list">
+  <li><span class="when">2023–present</span><span class="what"><strong>Assistant Professor</strong><span>Dept. Biodiversidad, Ecología y Evolución, Universidad Complutense de Madrid</span></span></li>
+  <li><span class="when">2022–2023</span><span class="what"><strong>UNA4CAREER Fellow (H2020-MSCA-COFUND)</strong><span>Universidad Complutense de Madrid · INCISE project</span></span></li>
+  <li><span class="when">2018–2022</span><span class="what"><strong>Postdoctoral researcher</strong><span>Macroecology group of Damaris Zurell, Humboldt-Universität zu Berlin and University of Potsdam · BIOPIC project (DFG)</span></span></li>
+</ul>
+```
+
+## Education
+
+```{=html}
+<ul class="cv-list">
+  <li><span class="when">2017</span><span class="what"><strong>PhD in Ecology</strong><span>Universidad Complutense de Madrid</span></span></li>
+  <li><span class="when">2012</span><span class="what"><strong>MSc in Conservation Biology</strong><span>Universidad Complutense de Madrid</span></span></li>
+  <li><span class="when">2011</span><span class="what"><strong>BSc in Biology</strong><span>Universidad Complutense de Madrid</span></span></li>
+</ul>
+```
+
+## Funded projects
+
+```{=html}
+<ul class="cv-list">
+  <li><span class="when">2024–2026</span><span class="what"><strong>INTRADISP <em>· Principal Investigator</em></strong><span>Intraspecific dispersal variation in European birds · UCM Doctores Emergentes (PR17/24)</span></span></li>
+  <li><span class="when">2025–2027</span><span class="what"><strong>SHAREPOINT <em>· Team member</em></strong><span>Social organisation and parasite sharing in rainforest birds, French Guiana · PI Javier Pérez-Tris</span></span></li>
+  <li><span class="when">2024–2027</span><span class="what"><strong>RIMed-Fauna <em>· Team member</em></strong><span>Wildlife in Mediterranean river ecosystems · Red de Parques Nacionales · PI María del Mar Sánchez-Montoya</span></span></li>
+  <li><span class="when">2022–2023</span><span class="what"><strong>INCISE <em>· Principal Investigator</em></strong><span>Integrating citizen science and standardised surveys · H2020-MSCA-COFUND UNA4CAREER</span></span></li>
+  <li><span class="when">2019–2021</span><span class="what"><strong>RangeDyn <em>· Core team</em></strong><span>From pattern to process in species range dynamics · DAAD · PI Damaris Zurell</span></span></li>
+  <li><span class="when">2018–2023</span><span class="what"><strong>BIOPIC <em>· Work package leader (dispersal)</em></strong><span>Demography, dispersal and biotic interactions under global change · DFG · PI Damaris Zurell</span></span></li>
+</ul>
+```
+
+**Applied contracts**: bat habitat modelling for the Spanish Bat Atlas (TRAGSA, 2024–2025); Black Stork population dynamics for the Spanish Red List assessment (Junta de Castilla y León, 2017–2018).
+
+## Supervision
+
+- 3 current researchers (see [People](people.html)): two MSc students and researchers at UCM and one PhD student co-supervised at CE3C (Portugal).
+- 11 MSc and 5 BSc theses supervised at UCM and Humboldt-Universität zu Berlin.
+
+## Teaching
+
+Undergraduate and graduate teaching at UCM in zoology, biodiversity analysis, threatened population monitoring and environmental assessment. Coordinator of the 150-hour expert course *Bioinformatics in Biodiversity, Ecology and Evolution*. Co-developer of the MSc course *Quantitative Conservation Biogeography* with Damaris Zurell. See [Teaching](teaching.html).
+
+## Editorial and service
+
+- **Editor**, *Ardeola*, the journal of the Spanish Ornithological Society (SEO/BirdLife).
+- Regular reviewer for journals in ecology and conservation.
+- Reviewer and contributor for [eBird](https://ebird.org/home), helping maintain data quality for one of the largest citizen science projects in the world.
+- Member of the [EUFLYNET](https://www.cost.eu/actions/CA22117/) COST Action on bird migration research.
+
+## Science communication
+
+Speaker at **Pint of Science** (Berlin) and co-coordinator of the Potsdam edition. Workshops on bat ecology and camera trapping at **La Noche de los Investigadores** (European Researchers' Night).
+
+![Birdwatching session during a field course](images/outreach-field.jpg){width=100% fig-alt="Students birdwatching in the field during an outreach session"}
+
+## Field experience
+
+Beyond current projects, fieldwork and expeditions in:
+
+- **French Guiana**: rainforest bird communities (CEBA projects)
+- **Honduras**: small mammal research with Operation Wallacea
+- **Costa Rica**: mammal ecology at La Selva Biological Station
+- **Spain and Morocco**: bird monitoring projects
+
+## Open science
+
+Code and data for our papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos).

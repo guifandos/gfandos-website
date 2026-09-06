@@ -2,7 +2,6 @@
 title: "Projects"
 subtitle: "Current and past research projects"
 description: "Research projects on intraspecific dispersal variation (INTRADISP), Mediterranean river wildlife (RIMed-Fauna), and past projects on species distribution modelling and global change."
-toc: true
 ---
 
 ## Active Projects
@@ -25,7 +24,7 @@ Mediterranean rivers are extreme environments: flooding in winter, bone-dry in s
 
 ---
 
-### SHAREPOINT (2025-2027)
+### [SHAREPOINT](sharepoint.qmd) (2025-2027)
 **Team member** · CEBA
 
 Social organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.
@@ -59,7 +58,7 @@ Moving from pattern towards process for improved forecasts of species range dyna
 
 ## Applied Contracts
 
-I also take on applied contracts that address real conservation problems:
+We also take on applied contracts that address real conservation problems:
 
 - **Bat habitat modelling** (2024-2025): Spatial distribution models for the Spanish Bat Atlas. Client: TRAGSA.
 

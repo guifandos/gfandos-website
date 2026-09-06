@@ -1,68 +1,92 @@
 ---
 title: "People"
-subtitle: "Team members and collaborators"
-description: "Current and past team members, PhD and MSc students, and key collaborators in spatial ecology and movement research."
-toc: true
+subtitle: "The group, our alumni and the people we work with"
+description: "Members of Guillermo Fandos's research group at Universidad Complutense de Madrid, past students, collaborators, and how to join."
 ---
 
-## Current Members
+```{=html}
+<div class="people-grid">
+  <div class="person person-pi">
+    <img class="avatar" src="images/avatar.jpg" alt="Guillermo Fandos">
+    <div class="person-text">
+      <span class="role">Principal Investigator</span>
+      <h3>Guillermo Fandos</h3>
+      <span class="affil">Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM</span>
+      <p>Spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to tackle questions in movement ecology, biogeography and conservation. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid.</p>
+      <div class="links">
+        <a href="cv.html" title="CV"><i class="bi bi-file-earmark-person"></i></a>
+        <a href="mailto:gfandos@ucm.es" title="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://scholar.google.es/citations?user=8zRbuNgAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+        <a href="https://orcid.org/0000-0003-1579-9444" title="ORCID"><i class="bi bi-person-badge"></i></a>
+        <a href="https://github.com/guifandos" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://x.com/g_fandos" title="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
-### David Notario Rincón
-**MSc Student & Researcher** · INTRADISP project
+## Current members
 
-David is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
+```{=html}
+<div class="people-grid">
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">DN</span>
+    <h3>David Notario Rincón</h3>
+    <span class="role">MSc student &amp; researcher</span>
+    <span class="affil"><a href="projects/intradisp.html">INTRADISP</a> · UCM</span>
+    <p>Bird range dynamics under climate change: using ring-recovery data to understand how dispersal varies across environmental gradients. Co-supervised with Rafael Barrientos.</p>
+  </div>
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">CM</span>
+    <h3>Claudia Mediavilla</h3>
+    <span class="role">MSc student &amp; researcher</span>
+    <span class="affil"><a href="projects/remined.html">RIMed-Fauna</a> · UCM</span>
+    <p>Wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling. Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.</p>
+  </div>
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">HD</span>
+    <h3>Hugo Díaz Santaolalla</h3>
+    <span class="role">PhD student</span>
+    <span class="affil">CE3C, Portugal</span>
+    <p>Carnivore dynamics and biotic interactions: how species interactions shape distribution patterns. Co-supervised with Alejandra Zarzo.</p>
+  </div>
+</div>
+```
 
-Co-supervised with Rafael Barrientos.
+## Alumni
 
-<!-- Foto: Añade images/people/david.jpg cuando la tengas -->
+Guillermo has supervised 11 MSc and 5 BSc theses. Some highlights:
 
----
-
-### Claudia Mediavilla
-**MSc Student & Researcher** · [RIMed-Fauna](projects/remined.qmd) project
-
-Claudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.
-
-Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.
-
-<!-- Foto: Añade images/people/claudia.jpg cuando la tengas -->
-
----
-
-### Hugo Díaz Santaolalla
-**PhD Student** · CE3C (Portugal)
-
-Hugo works on carnivore dynamics and biotic interactions, exploring how species interactions shape distribution patterns.
-
-Co-supervised with Alejandra Zarzo.
-
-<!-- Foto: Añade images/people/hugo.jpg cuando la tengas -->
-
----
-
-## Past Members
-
-I've supervised 11 MSc and 5 BSc thesis students. Some highlights:
-
-- **Maria Pratzer** (MSc, Humboldt University): Large carnivore range expansion. Published in *Diversity and Distributions* (2023).
-- **Leon Nill** (MSc, Humboldt University): Landscape permeability for carnivores. Published in *Diversity and Distributions* (2023).
-
----
+```{=html}
+<ul class="plain-list">
+  <li><span class="who">Maria Pratzer</span> · MSc, Humboldt-Universität zu Berlin · <span class="what">Large carnivore range expansion in Iberia. Published in <em>Diversity and Distributions</em> (2023).</span></li>
+  <li><span class="who">Leon Nill</span> · MSc, Humboldt-Universität zu Berlin · <span class="what">Landscape permeability for carnivores. Published in <em>Diversity and Distributions</em> (2023).</span></li>
+</ul>
+```
 
 ## Collaborators
 
-I work regularly with:
+We work regularly with:
 
-- [Damaris Zurell](https://damariszurell.github.io/) (Potsdam University): Dispersal, dynamic SDMs
-- [Rob Robinson](https://www.bto.org/about-bto/our-staff/rob-robinson) (BTO, UK): Ring-recovery analysis
-- [Rafael Barrientos](https://scholar.google.es/citations?user=8xNSN5IAAAAJ) (UCM): Road ecology, conservation
-- [Álvaro Luna](https://scholar.google.es/citations?user=0Z6F1kgAAAAJ) (UCM): Urban ecology, invasion biology
-- [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM): Bioacoustics
-- [Marc Kéry](https://www.vogelwarte.ch/en/about-us/team/kery-marc) (Swiss Ornithological Institute): Occupancy modelling
-- [Tobias Kuemmerle](https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias) (Humboldt University): Land-use change
+```{=html}
+<ul class="plain-list">
+  <li><span class="who"><a href="https://damariszurell.github.io/">Damaris Zurell</a></span> · University of Potsdam · <span class="what">Dispersal, dynamic species distribution models</span></li>
+  <li><span class="who"><a href="https://www.bto.org/about-bto/our-staff/rob-robinson">Rob Robinson</a></span> · British Trust for Ornithology · <span class="what">Ring-recovery analysis</span></li>
+  <li><span class="who"><a href="https://scholar.google.es/citations?user=8xNSN5IAAAAJ">Rafael Barrientos</a></span> · UCM · <span class="what">Road ecology, conservation</span></li>
+  <li><span class="who"><a href="https://scholar.google.es/citations?user=0Z6F1kgAAAAJ">Álvaro Luna</a></span> · UCM · <span class="what">Urban ecology, invasion biology</span></li>
+  <li><span class="who"><a href="https://scholar.google.es/citations?user=xKxS6YIAAAAJ">Raúl Bonal</a></span> · UCM · <span class="what">Bioacoustics</span></li>
+  <li><span class="who"><a href="https://www.vogelwarte.ch/en/about-us/team/kery-marc">Marc Kéry</a></span> · Swiss Ornithological Institute · <span class="what">Occupancy modelling</span></li>
+  <li><span class="who"><a href="https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias">Tobias Kuemmerle</a></span> · Humboldt-Universität zu Berlin · <span class="what">Land-use change</span></li>
+</ul>
+```
 
----
+## Join the group
 
-## Join Us
+We are always happy to hear from motivated students interested in spatial ecology, animal movement or quantitative methods.
 
-I'm always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you're considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es)
+- **TFM (MSc thesis)**: we offer projects every year within the UCM Master's programmes in Conservation Biology and Zoology, usually linked to our active projects. Write to us in spring for the following academic year.
+- **PhD**: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.
+- **Postdocs and visitors**: we host visiting researchers and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let's talk.
+
+Contact: [gfandos@ucm.es](mailto:gfandos@ucm.es)

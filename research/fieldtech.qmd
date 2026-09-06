@@ -1,0 +1,21 @@
+---
+title: "Field Technology"
+subtitle: "Sensors, sound and cameras for wildlife monitoring"
+description: "Camera trapping, passive acoustic monitoring with AudioMoth devices, and sensor-based pipelines for biodiversity assessment in Mediterranean ecosystems."
+---
+
+![](../images/research/fieldtech.jpg){.page-banner fig-alt="Watercolour of a camera trap fixed to a tree"}
+
+New technology is changing what we can observe in the field. Cheap cameras, acoustic recorders and satellite data let us monitor species that are hard to detect, at scales that were impossible a decade ago. We are building pipelines that turn these raw data streams into usable biodiversity information.
+
+## Camera trapping
+
+We deploy camera trap networks in Mediterranean ecosystems as part of the [RIMed-Fauna](../projects/remined.html) project, monitoring how terrestrial vertebrates use riparian habitats across seasons. There is something exciting about checking SD cards and discovering what walked past while you weren't there. The methodological challenge is to turn detection histories into robust occupancy and activity estimates in environments that change drastically between winter floods and summer drought.
+
+## Bioacoustics
+
+In collaboration with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM) we deploy AudioMoth recorders for passive acoustic monitoring. Acoustic data open up possibilities for species that are hard to detect visually, such as bats and nocturnal birds, and for continuous monitoring over long periods.
+
+## Why it matters for modelling
+
+Sensor data are not a substitute for good models; they are what makes better models possible. Camera traps and recorders produce standardised, repeatable detections that can be combined with citizen science and ringing data in the integrated models we develop in our [monitoring and modelling](forecasting.html) work.

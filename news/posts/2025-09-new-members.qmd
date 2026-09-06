@@ -1,0 +1,14 @@
+---
+title: "Welcome to David Notario and Claudia Mediavilla"
+date: 2025-09-01
+description: "Two new researchers join the group to work on INTRADISP and RIMed-Fauna."
+categories: [people]
+---
+
+We are happy to welcome two new members to the group.
+
+**David Notario Rincón** joins [INTRADISP](../../projects/intradisp.html) to work on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
+
+**Claudia Mediavilla** joins [RIMed-Fauna](../../projects/remined.html), where she studies wildlife in Mediterranean river ecosystems by combining camera trapping with species distribution modelling.
+
+Both are co-supervised with Rafael Barrientos. Meet the whole group on the [People](../../people.html) page.

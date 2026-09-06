@@ -1,6 +1,6 @@
 # Plan de rediseño: gfandos.com
 
-**Fecha**: septiembre 2026
+**Fecha**: septiembre 2026 · **Estado**: fases 0, 1 y 2 implementadas en esta rama (pendientes: fotos del equipo, figuras propias, publicaciones 2024-2025, fase 3)
 **Rama**: `claude/academic-website-redesign-315sf9`
 **Referencia visual**: Quantitative Biodiversity Lab (Laura Pollock, McGill), qbiodiversity.org
 

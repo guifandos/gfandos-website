@@ -2,7 +2,6 @@
 title: "INTRADISP"
 subtitle: "Intraspecific dispersal variation in European birds"
 description: "INTRADISP project: quantifying intraspecific dispersal variation in European birds using EURING ring-recovery data and Bayesian models to improve biodiversity predictions."
-toc: false
 page-layout: article
 ---
 

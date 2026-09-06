@@ -1,0 +1,14 @@
+---
+title: "Landscape structure shapes dispersal kernels within species: new paper in Oikos"
+date: 2026-06-01
+description: "Wolff et al. show that habitat fragmentation drives within-species variation in dispersal kernels and limits their transferability across landscapes."
+categories: [paper]
+---
+
+Together with Jette Wolff, Cécile Albert, Greta Bocedi, Justin Travis and Damaris Zurell, we have published a new study in *Oikos* on how landscape structure shapes dispersal within species.
+
+Using individual-based simulations of movement for four animal species across landscapes that differ in habitat amount and fragmentation, the study derives emergent dispersal kernels and compares five probability density functions. Fat-tailed (log-normal) kernels consistently describe dispersal best, and habitat fragmentation strongly reshapes the kernels by altering movement trajectories. Habitat amount has a weaker and less consistent effect.
+
+The practical message for modellers: a kernel estimated in one landscape does not transfer cleanly to another. This is exactly the kind of context-dependence that [INTRADISP](../../projects/intradisp.html) is trying to quantify with empirical ringing data.
+
+**Wolff, J., Fandos, G., Albert, C. H., Bocedi, G., Travis, J. M. J., & Zurell, D. (2026).** Habitat fragmentation and amount drive within-species variation in dispersal kernels and limit transferability across landscapes. *Oikos*. [doi:10.1002/oik.12209](https://doi.org/10.1002/oik.12209) · [Code on Zenodo](https://zenodo.org/records/19608665)

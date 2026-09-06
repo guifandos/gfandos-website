@@ -1,58 +1,40 @@
-# Guillermo Fandos - Personal Website
+# Guillermo Fandos · gfandos.com
 
-Academic website built with [Quarto](https://quarto.org/).
+Research-group website built with [Quarto](https://quarto.org/) and published from `docs/` on GitHub Pages.
 
-## Quick Start
+## Working on the site
 
 ```bash
-# 1. Add your photo
-cp /path/to/your/photo.jpg images/avatar.jpg
-
-# 2. Preview locally
-quarto preview
-
-# 3. Build
-quarto render
+quarto preview      # live preview at http://localhost:4200
+quarto render       # rebuild docs/ (commit the result)
 ```
 
-## Deploy to GitHub Pages
+Requires Quarto 1.7 or newer. The rendered `docs/` folder is committed: run `quarto render` before pushing.
 
-1. Create a new repository on GitHub
-2. Push this folder
-3. Go to Settings > Pages > Source: GitHub Actions
-4. The workflow will deploy automatically on each push
-
-## Images to Add Later
-
-When you have them, add these images:
+## Structure
 
 ```
-images/
-├── avatar.jpg              ✅ Required (your portrait)
-├── hero-field.jpg          Optional (fieldwork photo for homepage)
-├── logo.png                Optional (navbar logo)
-├── favicon.png             Optional (browser tab icon)
-├── people/
-│   ├── david.jpg           Optional (team photos)
-│   ├── claudia.jpg
-│   └── hugo.jpg
-└── research/
-    ├── dispersal.jpg       Optional (research line images)
-    ├── forecasting.jpg
-    └── conservation.jpg
+index.qmd            Homepage (full-bleed hero, research lines, projects, news, team)
+research/            Research lines: dispersal, forecasting, conservation, fieldtech
+projects/            INTRADISP, RIMed-Fauna, SHAREPOINT and the projects index
+people.qmd           PI, current members, alumni, collaborators, join us
+publications.qmd     Selected papers by year (hand-maintained)
+teaching.qmd         Courses and materials
+news/posts/          One .qmd per news item; listed automatically on News and Home
+cv.qmd               Summary CV (also answers /outreach.html for old links)
+styles/custom.scss   Design system: palette, typography, hero, cards, people, pubs
+_templates/          EJS template for the news listing
+images/              Optimised assets (hero, research crops, logos, favicon)
+_source-images/      Original illustrations (not published)
 ```
 
-After adding images, uncomment the relevant lines in:
-- `index.qmd` (hero image)
-- `people.qmd` (team photos)
-- `research/index.qmd` (research line images)
+## Adding content
 
-## Customize
-
-- Edit `_quarto.yml` for site settings
-- Edit `.qmd` files for content
-- Edit `styles/custom.scss` for colors/fonts
+- **News item**: create `news/posts/YYYY-MM-slug.qmd` with `title`, `date`, `description` and a short body.
+- **Paper**: add a `::: {.pub}` block under the right year in `publications.qmd`; wrap group members in `<span class="pub-me">`.
+- **Team member**: add a `.person` card in `people.qmd`. Replace the `avatar-initials` span with `<img class="avatar" src="images/people/name.jpg">` when a photo is available.
+- **Project**: add a `.card-project` card on the homepage and a page in `projects/`.
 
 ## Contact
 
-Guillermo Fandos - gfandos@ucm.es
+Guillermo Fandos · gfandos@ucm.es

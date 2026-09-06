@@ -2,8 +2,9 @@
 title: "Animal movement and dispersal"
 subtitle: "From seasonal migration to natal dispersal"
 description: "Research on animal movement ecology, dispersal, and migration using European bird ringing data, Bayesian methods, and dispersal kernel estimation for 200+ species."
-toc: true
 ---
+
+![](../images/research/dispersal.jpg){.page-banner fig-alt=""}
 
 Animal movement connects individuals to their environment across scales: from daily foraging decisions to seasonal migrations across continents. Understanding these movements is central to ecology and conservation, because they determine how populations are connected, how species track changing environments, and how individuals find resources and mates.
 
@@ -15,20 +16,24 @@ Traditional approaches to studying dispersal face a fundamental challenge: you n
 
 ## Estimating dispersal from bird ringing data
 
-I've been working with **bird ringing data**: millions of records from decades of systematic marking across Europe. The challenge is that these data weren't designed to study dispersal; they're full of biases (ringers cluster near cities, recoveries depend on human density, etc.).
+We work with **bird ringing data**: millions of records from decades of systematic marking across Europe. The challenge is that these data weren't designed to study dispersal; they're full of biases (ringers cluster near cities, recoveries depend on human density, etc.).
 
-Together with collaborators, I developed Bayesian methods that account for these biases and extract reliable dispersal estimates. This produced the first standardised dispersal kernels for over 200 European bird species ([Fandos et al. 2023, JAE](https://doi.org/10.1111/1365-2656.13838)).
+Together with collaborators, we developed Bayesian methods that account for these biases and extract reliable dispersal estimates. This produced the first standardised dispersal kernels for over 200 European bird species ([Fandos et al. 2023, JAE](https://doi.org/10.1111/1365-2656.13838)).
 
 ## What we have found
 
 The big surprise from this work? **Long-distance dispersal is far more common than we thought.** Even "sedentary" species occasionally move hundreds of kilometres. This matters because these rare long-distance events are exactly what drive range expansions and maintain connectivity between distant populations.
 
-I'm now exploring why dispersal varies so much *within* species. The same species can show very different dispersal patterns depending on population density, habitat quality, or individual condition. Understanding this context-dependence is crucial for predicting how species will respond to environmental change.
+We are now exploring why dispersal varies so much *within* species. The same species can show very different dispersal patterns depending on population density, habitat quality, or individual condition. Understanding this context-dependence is crucial for predicting how species will respond to environmental change.
 
-## Selected Publications
+## Selected publications
 
-**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [DOI](https://www.nature.com/articles/s42003-026-09676-x)
+See the full list on the [Publications](../publications.html) page.
+
+**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Simple mechanistic traits outperform complex syndromes in predicting avian dispersal distances.** *Communications Biology*, 9, 376. [DOI](https://doi.org/10.1038/s42003-026-09676-x)
+
+Wolff, J., **Fandos, G.**, Albert, C. H., Bocedi, G., Travis, J. M. J., & Zurell, D. (2026). **Habitat fragmentation and amount drive within-species variation in dispersal kernels and limit transferability across landscapes.** *Oikos*. [DOI](https://doi.org/10.1002/oik.12209)
 
 **Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). **Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds.** *Journal of Animal Ecology*, 92(1), 158-170. [DOI](https://doi.org/10.1111/1365-2656.13838)
 
-**Fandos, G.**, Rotics, S., Sapir, N., et al. (2020). **Seasonal niche tracking of climate emerges at the population level in a migratory bird.** *Proceedings of the Royal Society B*, 287(1935), 20201799.
+**Fandos, G.**, Rotics, S., Sapir, N., et al. (2020). **Seasonal niche tracking of climate emerges at the population level in a migratory bird.** *Proceedings of the Royal Society B*, 287(1935), 20201799. [DOI](https://doi.org/10.1098/rspb.2020.1799)

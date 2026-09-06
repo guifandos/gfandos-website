@@ -2,7 +2,6 @@
 title: "Teaching"
 subtitle: "Courses and open materials"
 description: "Teaching at Universidad Complutense de Madrid: courses in ecology, zoology, bioinformatics, and quantitative conservation biogeography."
-toc: true
 ---
 
 Teaching is one of the most rewarding parts of my job. There's something deeply satisfying about watching a student go from "I don't understand R" to confidently analysing their own data, or seeing a field course spark someone's passion for ecology.

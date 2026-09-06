@@ -1,0 +1,5 @@
+<div class="news-list">
+<% for (const item of items) { %>
+<div class="news-item"><div class="news-date"><%= item.date %></div><div><a class="news-title" href="<%= item.path %>"><%= item.title %></a><% if (item.description) { %><p class="news-desc"><%= item.description %></p><% } %></div></div>
+<% } %>
+</div>

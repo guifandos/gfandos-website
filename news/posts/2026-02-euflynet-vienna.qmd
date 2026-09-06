@@ -1,0 +1,10 @@
+---
+title: "EUFLYNET COST Action meeting in Vienna"
+date: 2026-02-10
+description: "Guillermo joined the EUFLYNET network meeting on bird migration research along the European flyways."
+categories: [meeting]
+---
+
+Guillermo travelled to Vienna for the meeting of the [EUFLYNET COST Action (CA22117)](https://www.cost.eu/actions/CA22117/), a European network on bird migration research across flyways.
+
+The meeting brought together ringing schemes, tracking specialists and modellers. For us it is a natural home: our dispersal work depends on the ringing data that these networks generate and curate, and the questions about connectivity and migratory change are shared.

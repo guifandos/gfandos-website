@@ -2,7 +2,6 @@
 title: "RIMed-Fauna"
 subtitle: "Wildlife in Mediterranean river ecosystems"
 description: "RIMed-Fauna project: investigating how terrestrial wildlife adapts to Mediterranean river dynamics using camera trapping and species distribution modelling in Spanish National Parks."
-toc: false
 page-layout: article
 ---
 
