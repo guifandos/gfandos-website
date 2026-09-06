@@ -104,20 +104,30 @@ ul.task-list li input[type="checkbox"] {
 <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 <meta name="theme-color" content="#f7f3ea">
 <script>
-// Language switch: point the ES/EN navbar link to the same page in the other language
-document.addEventListener("DOMContentLoaded", function () {
-  var links = document.querySelectorAll(".navbar a.nav-link");
+// Language: remember the visitor's choice; on the homepage only, first visit follows the browser language
+(function () {
   var path = location.pathname.replace(/index\.html$/, "");
   var isEs = /^\/es(\/|$)/.test(path);
-  links.forEach(function (a) {
-    var t = a.textContent.trim();
-    if (t !== "ES" && t !== "EN") return;
-    var target = isEs ? path.replace(/^\/es/, "") || "/" : "/es" + path;
-    a.href = target; a.classList.add("lang-switch");
-    var alt = document.createElement("link"); alt.rel = "alternate"; alt.hreflang = isEs ? "en" : "es"; alt.href = target;
-    document.head.appendChild(alt);
+  var isHome = path === "/" || path === "/es/";
+  var pref = null; try { pref = localStorage.getItem("gf-lang"); } catch (e) {}
+  if (isHome) {
+    var want = pref || (((navigator.language || "").toLowerCase().indexOf("es") === 0) ? "es" : "en");
+    if (want === "es" && !isEs) { location.replace("/es/"); return; }
+    if (want === "en" && isEs && pref) { location.replace("/"); return; }
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var links = document.querySelectorAll(".navbar a.nav-link");
+    links.forEach(function (a) {
+      var t = a.textContent.trim();
+      if (t !== "ES" && t !== "EN") return;
+      var target = isEs ? path.replace(/^\/es/, "") || "/" : "/es" + path;
+      a.href = target; a.classList.add("lang-switch");
+      a.addEventListener("click", function () { try { localStorage.setItem("gf-lang", isEs ? "en" : "es"); } catch (e) {} });
+      var alt = document.createElement("link"); alt.rel = "alternate"; alt.hreflang = isEs ? "en" : "es"; alt.href = target;
+      document.head.appendChild(alt);
+    });
   });
-});
+})();
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
