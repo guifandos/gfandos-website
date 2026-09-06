@@ -40,7 +40,8 @@ website:
       - text: "CV"
         href: es/cv.qmd
     right:
-      - text: "EN"
+      - icon: translate
+        text: "EN"
         href: index.qmd
         aria-label: "English version"
       - icon: github

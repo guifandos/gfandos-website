@@ -42,7 +42,8 @@ website:
       - text: "CV"
         href: cv.qmd
     right:
-      - text: "ES"
+      - icon: translate
+        text: "ES"
         href: es/index.qmd
         aria-label: "Versión en español"
       - icon: github
