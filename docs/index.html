@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-643553f32e140840dcb26de4bd81ee4d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b8e2c3a1ac58875342e524676a37583.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -153,6 +153,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/monogram.svg" alt="GF" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Guillermo Fandos</span>
     </a>
@@ -258,6 +261,7 @@ window.Quarto = {
 
 
 
+<style>.navbar-brand .navbar-title{display:none}</style>
 <section class="hero" aria-label="Introduction">
   <picture>
     <source type="image/webp" srcset="images/hero-sm.webp 900w, images/hero.webp 1536w" sizes="100vw">
@@ -288,12 +292,24 @@ window.Quarto = {
   </div>
 </section>
 
-<section class="stats" aria-label="Key figures">
-  <div class="wrap stats-grid">
-    <div class="stat"><span class="stat-n">234</span><span class="stat-l">European bird species with standardised dispersal kernels</span></div>
-    <div class="stat"><span class="stat-n">3</span><span class="stat-l">active funded projects, one as principal investigator</span></div>
-    <div class="stat"><span class="stat-n">16</span><span class="stat-l">MSc and BSc theses supervised since 2021</span></div>
-    <div class="stat"><span class="stat-n">5</span><span class="stat-l">countries of fieldwork, from the Strait of Gibraltar to French Guiana</span></div>
+<section class="databand" aria-label="Movement over a habitat suitability surface">
+  <div class="databand-media">
+    <picture>
+      <source type="image/webp" srcset="images/data/sdm.webp">
+      <img src="images/data/sdm.jpg" alt="Blurred habitat suitability surface with contour lines, in the style of a species distribution model" loading="lazy">
+    </picture>
+    <canvas id="tracks" aria-hidden="true"></canvas>
+  </div>
+  <div class="wrap databand-text">
+    <span class="eyebrow">Space and movement, quantified</span>
+    <h2>Where animals could live, and how they actually move</h2>
+    <p>Species distribution models tell us where habitat is suitable. Movement data tell us whether animals get there. Our work joins the two: continent-scale suitability surfaces, and the trajectories of individual birds and mammals that connect them.</p>
+    <p class="databand-note">Illustration: simulated dispersal trajectories over a synthetic suitability surface. Real figures from our papers are on the research pages.</p>
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-n">234</span><span class="stat-l">European bird species with standardised dispersal kernels</span></div>
+      <div class="stat"><span class="stat-n">3</span><span class="stat-l">active funded projects, one as principal investigator</span></div>
+      <div class="stat"><span class="stat-n">16</span><span class="stat-l">MSc and BSc theses supervised since 2021</span></div>
+    </div>
   </div>
 </section>
 
@@ -309,7 +325,7 @@ window.Quarto = {
     </div>
     <div class="card-grid">
       <article class="card-x">
-        <figure class="figure"><picture><source type="image/webp" srcset="images/research/dispersal.webp"><img src="images/research/dispersal.jpg" alt="" loading="lazy" class="figure-img"></picture></figure>
+        <figure class="figure"><picture><source type="image/webp" srcset="images/research/tracks-card.webp"><img src="images/research/tracks-card.jpg" alt="" loading="lazy" class="figure-img"></picture></figure>
         <div class="card-body">
           <h3><a href="research/dispersal.html">Movement &amp; Dispersal</a></h3>
           <p>From daily foraging to natal dispersal: how far animals move, why it varies, and what it means for connectivity and range dynamics.</p>
@@ -317,7 +333,7 @@ window.Quarto = {
         </div>
       </article>
       <article class="card-x">
-        <figure class="figure"><picture><source type="image/webp" srcset="images/research/monitoring.webp"><img src="images/research/monitoring.jpg" alt="" loading="lazy" class="figure-img"></picture></figure>
+        <figure class="figure"><picture><source type="image/webp" srcset="images/research/sdm-card.webp"><img src="images/research/sdm-card.jpg" alt="" loading="lazy" class="figure-img"></picture></figure>
         <div class="card-body">
           <h3><a href="research/forecasting.html">Monitoring &amp; Modelling</a></h3>
           <p>Species distribution models that include dispersal, demography and species interactions, and integrate surveys with citizen science.</p>
@@ -499,12 +515,12 @@ Two new researchers join the team to work on INTRADISP and RIMed-Fauna.
 
 <section class="section">
   <div class="wrap">
-    <div class="callout-join">
+    <div class="callout-join callout-join-light">
       <div>
         <h2>Interested in working with us?</h2>
         <p>We welcome motivated students for TFM, PhD and postdoctoral projects in quantitative biodiversity analysis, animal movement and conservation. <a href="people.html#work-with-us">Read how to get in touch</a>.</p>
       </div>
-      <a class="btn btn-outline-light" href="mailto:gfandos@ucm.es">Write to us</a>
+      <a class="btn btn-primary" href="mailto:gfandos@ucm.es">Write to us</a>
     </div>
   </div>
 </section>
@@ -527,6 +543,58 @@ Two new researchers join the team to work on INTRADISP and RIMed-Fauna.
     </div>
   </div>
 </section>
+<script>
+(function(){
+  var cv=document.getElementById('tracks'); if(!cv) return;
+  var ctx=cv.getContext('2d'), dpr=Math.min(window.devicePixelRatio||1,2);
+  var C=[[0.22,0.62],[0.47,0.36],[0.70,0.58],[0.86,0.28],[0.38,0.80]];
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W,H,walkers=[],t=0;
+  function seed(s){return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296;};}
+  var rnd=seed(7);
+  function gauss(){var u=rnd()||1e-6,v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+  function resize(){
+    var r=cv.parentElement.getBoundingClientRect(); W=r.width; H=r.height;
+    cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+'px'; cv.style.height=H+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+    walkers=[]; for(var i=0;i<9;i++){var c=C[Math.floor(rnd()*C.length)];
+      walkers.push({x:c[0]*W+(rnd()-0.5)*60,y:c[1]*H+(rnd()-0.5)*60,a:rnd()*6.28,tgt:C[Math.floor(rnd()*C.length)],trail:[]});}
+    t=0;
+    for(var k=0;k<160;k++){t++;walkers.forEach(step);} draw();
+  }
+  function step(w){
+    if(t%75===0) w.tgt=C[Math.floor(rnd()*C.length)];
+    var want=Math.atan2(w.tgt[1]*H-w.y,w.tgt[0]*W-w.x);
+    var diff=((want-w.a+Math.PI)%(2*Math.PI)+2*Math.PI)%(2*Math.PI)-Math.PI;
+    w.a+=0.12*diff+gauss()*0.3;
+    var sp=Math.max(2,W/300);
+    w.x+=Math.cos(w.a)*sp; w.y+=Math.sin(w.a)*sp;
+    if(w.x<20||w.x>W-20){w.a=Math.PI-w.a;w.x=Math.min(Math.max(w.x,20),W-20);}
+    if(w.y<20||w.y>H-20){w.a=-w.a;w.y=Math.min(Math.max(w.y,20),H-20);}
+    w.trail.push([w.x,w.y]); if(w.trail.length>220) w.trail.shift();
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    walkers.forEach(function(w){
+      for(var i=1;i<w.trail.length;i++){
+        var k=i/w.trail.length;
+        ctx.strokeStyle='rgba(194,145,58,'+(0.15+0.75*k)+')'; ctx.lineWidth=1.6;
+        ctx.beginPath(); ctx.moveTo(w.trail[i-1][0],w.trail[i-1][1]); ctx.lineTo(w.trail[i][0],w.trail[i][1]); ctx.stroke();
+      }
+      ctx.fillStyle='#c2913a'; ctx.strokeStyle='#f7f3ea'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.arc(w.x,w.y,4,0,6.28); ctx.fill(); ctx.stroke();
+    });
+  }
+  var running=true;
+  function loop(){ if(!running) return; t++; walkers.forEach(step); draw(); requestAnimationFrame(loop); }
+  resize(); window.addEventListener('resize',resize);
+  if(reduce){ for(var k=0;k<220;k++){t++;walkers.forEach(step);} draw(); return; }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){ var vis=e[0].isIntersecting; if(vis&&!running){running=true;loop();} if(!vis){running=false;} }).observe(cv);
+  }
+  loop();
+})();
+</script>
 
 
 

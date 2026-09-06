@@ -29,6 +29,8 @@ website:
   # Navigation
   navbar:
     background: light
+    logo: images/monogram.svg
+    logo-alt: "GF"
     left:
       - text: "Research"
         menu:

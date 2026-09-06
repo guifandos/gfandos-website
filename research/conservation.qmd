@@ -4,7 +4,9 @@ subtitle: "From models to management"
 description: "Applied conservation research: large carnivore range expansion in Iberia, threatened species assessment, Mediterranean river ecosystems, and landscape connectivity analysis."
 ---
 
+::: {.column-screen .banner-wrap}
 ![](../images/research/conservation.jpg){.page-banner fig-alt=""}
+:::
 
 We try to make our research useful beyond academia. This means working on questions that matter for conservation practice and collaborating with people who can actually implement the results.
 

@@ -4,7 +4,9 @@ subtitle: "Sensors, sound and cameras for wildlife monitoring"
 description: "Camera trapping, passive acoustic monitoring with AudioMoth devices, and sensor-based pipelines for biodiversity assessment in Mediterranean ecosystems."
 ---
 
+::: {.column-screen .banner-wrap}
 ![](../images/research/fieldtech.jpg){.page-banner fig-alt="Watercolour of a camera trap fixed to a tree"}
+:::
 
 New technology is changing what we can observe in the field. Cheap cameras, acoustic recorders and satellite data let us monitor species that are hard to detect, at scales that were impossible a decade ago. We are building pipelines that turn these raw data streams into usable biodiversity information.
 

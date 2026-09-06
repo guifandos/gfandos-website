@@ -4,7 +4,9 @@ subtitle: "Better models for better predictions"
 description: "Improving species distribution models with ecological processes: dispersal limitations, population dynamics, and data integration from citizen science and monitoring surveys."
 ---
 
-![](../images/research/monitoring.jpg){.page-banner fig-alt=""}
+::: {.column-screen .banner-wrap}
+![](../images/data/sdm.jpg){.page-banner fig-alt=""}
+:::
 
 Climate change is reshuffling species distributions worldwide. To respond effectively, we need to anticipate these changes, but our predictions are only as good as our models. We work on making species distribution models more reliable by building in ecological realism.
 
