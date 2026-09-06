@@ -1,7 +1,7 @@
 ---
 title: "People"
-subtitle: "The group, our students, alumni and the people we work with"
-description: "Members of Guillermo Fandos's research group at Universidad Complutense de Madrid: current researchers, visiting students, MSc students, alumni, collaborators, and how to join."
+subtitle: "The team, our students, alumni and the people we work with"
+description: "The team around Guillermo Fandos at Universidad Complutense de Madrid: current researchers, visiting students, MSc students, alumni, collaborators, and how to work with us."
 ---
 
 ```{=html}
@@ -11,7 +11,7 @@ description: "Members of Guillermo Fandos's research group at Universidad Complu
     <div class="person-text">
       <span class="role">Principal Investigator</span>
       <h3>Guillermo Fandos</h3>
-      <span class="affil">Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM</span>
+      <span class="affil">Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM · <a href="https://www.ucm.es/bcv/">Biología y Conservación Evolutiva</a> research group</span>
       <p>Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to understand where animals occur, how they move, and how populations respond to environmental change. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid.</p>
       <div class="links">
         <a href="cv.html" title="CV"><i class="bi bi-file-earmark-person"></i></a>
@@ -117,7 +117,7 @@ We work regularly with:
 </ul>
 ```
 
-## Join the group
+## Work with us
 
 We are always happy to hear from motivated students interested in quantitative biodiversity analysis, animal movement or conservation.
 

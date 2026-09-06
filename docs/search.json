@@ -25,7 +25,7 @@
     "href": "teaching.html#supervision",
     "title": "Teaching",
     "section": "Supervision",
-    "text": "Supervision\nI supervise MSc and BSc theses every year, usually linked to the group’s projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the People page, together with information on how to join the group."
+    "text": "Supervision\nI supervise MSc and BSc theses every year, usually linked to our projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the People page, together with information on how to work with us."
   },
   {
     "objectID": "research/forecasting.html",
@@ -102,7 +102,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "A selection of papers from the group and our collaborations. Group members are shown in bold. For the complete and up-to-date list see Google Scholar or ORCID.\nCode and data for our papers are shared on GitHub and archived on Zenodo whenever possible."
+    "text": "A selection of papers from the team and our collaborations. Team members are shown in bold. For the complete and up-to-date list see Google Scholar or ORCID.\nCode and data for our papers are shared on GitHub and archived on Zenodo whenever possible."
   },
   {
     "objectID": "publications.html#section",
@@ -235,14 +235,14 @@
     "href": "news/index.html",
     "title": "News",
     "section": "",
-    "text": "Jun 2026\n\n\nLandscape structure shapes dispersal kernels within species: new paper in Oikos\n\nWolff et al. show that habitat fragmentation drives within-species variation in dispersal kernels and limits their transferability across landscapes.\n\n\n\n\n\nFeb 2026\n\n\nEUFLYNET COST Action meeting in Vienna\n\nGuillermo joined the EUFLYNET network meeting on bird migration research along the European flyways.\n\n\n\n\n\nFeb 2026\n\n\nSimple traits beat complex syndromes at predicting bird dispersal: new paper in Communications Biology\n\nBody mass and life history dominate median dispersal distance; flight efficiency shapes long-distance movements.\n\n\n\n\n\nSep 2025\n\n\nWelcome to David Notario and Claudia Mediavilla\n\nTwo new researchers join the group to work on INTRADISP and RIMed-Fauna.\n\n\n\n\nNo matching items"
+    "text": "Jun 2026\n\n\nLandscape structure shapes dispersal kernels within species: new paper in Oikos\n\nWolff et al. show that habitat fragmentation drives within-species variation in dispersal kernels and limits their transferability across landscapes.\n\n\n\n\n\nFeb 2026\n\n\nEUFLYNET COST Action meeting in Vienna\n\nGuillermo joined the EUFLYNET network meeting on bird migration research along the European flyways.\n\n\n\n\n\nFeb 2026\n\n\nSimple traits beat complex syndromes at predicting bird dispersal: new paper in Communications Biology\n\nBody mass and life history dominate median dispersal distance; flight efficiency shapes long-distance movements.\n\n\n\n\n\nSep 2025\n\n\nWelcome to David Notario and Claudia Mediavilla\n\nTwo new researchers join the team to work on INTRADISP and RIMed-Fauna.\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation.\nGoogle Scholar · ORCID 0000-0003-1579-9444 · UCM research profile · Publications"
+    "text": "Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Member of the Biología y Conservación Evolutiva (BCV) research group.\nGoogle Scholar · ORCID 0000-0003-1579-9444 · UCM research profile · Publications"
   },
   {
     "objectID": "cv.html#positions",
@@ -312,7 +312,7 @@
     "href": "news/posts/2025-09-new-members.html",
     "title": "Welcome to David Notario and Claudia Mediavilla",
     "section": "",
-    "text": "We are happy to welcome two new members to the group.\nDavid Notario Rincón joins INTRADISP to work on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.\nClaudia Mediavilla joins RIMed-Fauna, where she studies wildlife in Mediterranean river ecosystems by combining camera trapping with species distribution modelling.\nBoth are co-supervised with Rafael Barrientos. Meet the whole group on the People page."
+    "text": "We are happy to welcome two new members to the team.\nDavid Notario Rincón joins INTRADISP to work on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.\nClaudia Mediavilla joins RIMed-Fauna, where she studies wildlife in Mediterranean river ecosystems by combining camera trapping with species distribution modelling.\nBoth are co-supervised with Rafael Barrientos. Meet the whole team on the People page."
   },
   {
     "objectID": "news/posts/2026-02-euflynet-vienna.html",
@@ -326,7 +326,7 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Principal Investigator\n      \n      Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM\n      Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to understand where animals occur, how they move, and how populations respond to environmental change. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid."
+    "text": "Principal Investigator\n      \n      Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM · Biología y Conservación Evolutiva research group\n      Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to understand where animals occur, how they move, and how populations respond to environmental change. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid."
   },
   {
     "objectID": "people.html#researchers",
@@ -364,11 +364,11 @@
     "text": "Collaborators\nWe work regularly with:\n\n  Damaris Zurell · University of Potsdam · Dispersal, dynamic species distribution models\n  Rob Robinson · British Trust for Ornithology · Ring-recovery analysis\n  Rafael Barrientos · UCM · Road ecology, conservation\n  María del Mar Sánchez-Montoya · UCM · Mediterranean river ecosystems\n  Álvaro Luna · UCM · Urban ecology, invasion biology\n  Raúl Bonal · UCM · Bioacoustics\n  Alejandra Zarzo-Arias · CE3C, University of Lisbon · Large carnivores\n  Vojtěch Brlík & Petr Procházka · Charles University and Czech Academy of Sciences · Bird migration and urbanisation\n  Marc Kéry · Swiss Ornithological Institute · Occupancy modelling\n  Tobias Kuemmerle · Humboldt-Universität zu Berlin · Land-use change"
   },
   {
-    "objectID": "people.html#join-the-group",
-    "href": "people.html#join-the-group",
+    "objectID": "people.html#work-with-us",
+    "href": "people.html#work-with-us",
     "title": "People",
-    "section": "Join the group",
-    "text": "Join the group\nWe are always happy to hear from motivated students interested in quantitative biodiversity analysis, animal movement or conservation.\n\nTFM (MSc thesis): we offer projects every year within the UCM Master’s programmes in Conservation Biology and Zoology, and co-supervise theses with colleagues at other universities. Projects are usually linked to our active projects and datasets (ringing, eBird, camera traps, acoustic recorders). Write to us in spring for the following academic year.\nPhD: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.\nPostdocs and visitors: we host visiting researchers and students and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let’s talk.\n\nContact: gfandos@ucm.es"
+    "section": "Work with us",
+    "text": "Work with us\nWe are always happy to hear from motivated students interested in quantitative biodiversity analysis, animal movement or conservation.\n\nTFM (MSc thesis): we offer projects every year within the UCM Master’s programmes in Conservation Biology and Zoology, and co-supervise theses with colleagues at other universities. Projects are usually linked to our active projects and datasets (ringing, eBird, camera traps, acoustic recorders). Write to us in spring for the following academic year.\nPhD: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.\nPostdocs and visitors: we host visiting researchers and students and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let’s talk.\n\nContact: gfandos@ucm.es"
   },
   {
     "objectID": "projects/intradisp.html",

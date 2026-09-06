@@ -41,4 +41,4 @@ I believe in learning by doing, whether that means getting your hands dirty in t
 
 ## Supervision
 
-I supervise MSc and BSc theses every year, usually linked to the group's projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the [People](people.html) page, together with information on how to [join the group](people.html#join-the-group).
+I supervise MSc and BSc theses every year, usually linked to our projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the [People](people.html) page, together with information on how to [work with us](people.html#work-with-us).

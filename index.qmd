@@ -1,6 +1,6 @@
 ---
 pagetitle: "Quantitative biodiversity analysis, animal movement and conservation"
-description: "Guillermo Fandos leads a research group in quantitative biodiversity analysis at Universidad Complutense de Madrid: animal movement and dispersal, biodiversity monitoring and modelling, and conservation under global change."
+description: "Guillermo Fandos, spatial ecologist at Universidad Complutense de Madrid. Quantitative biodiversity analysis, animal movement and dispersal, biodiversity monitoring and modelling, and conservation under global change."
 image: images/hero.jpg
 page-layout: custom
 title-block-style: none
@@ -33,7 +33,7 @@ listing:
     <p class="hero-affil">Quantitative biodiversity analysis, animal movement and conservation<br>Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="research/index.html">Our research</a>
-      <a class="btn btn-outline-dark" href="people.html#join-the-group">Join the group</a>
+      <a class="btn btn-outline-dark" href="people.html#work-with-us">Work with us</a>
     </div>
   </div>
 </section>
@@ -41,8 +41,8 @@ listing:
 <section class="section">
   <div class="wrap wrap-narrow">
     <span class="eyebrow">About</span>
-    <p class="lead-text">I'm Guillermo Fandos, a spatial ecologist and Assistant Professor at Universidad Complutense de Madrid. I lead a small group working on the quantitative analysis of biodiversity: where animals occur, how they move, and how populations respond to a changing world.</p>
-    <p class="lead-text">We combine fieldwork, large-scale data synthesis (bird ringing, citizen science, camera traps, acoustic sensors) and Bayesian modelling, with a particular focus on animal movement and dispersal. Much of our work is done with partners at the University of Potsdam, the British Trust for Ornithology and the Swiss Ornithological Institute.</p>
+    <p class="lead-text">I'm Guillermo Fandos, a spatial ecologist and Assistant Professor at Universidad Complutense de Madrid. My research is the quantitative analysis of biodiversity: where animals occur, how they move, and how populations respond to a changing world. I am a member of the <a href="https://www.ucm.es/bcv/">Biología y Conservación Evolutiva</a> research group at UCM.</p>
+    <p class="lead-text">Together with my students and collaborators, we combine fieldwork, large-scale data synthesis (bird ringing, citizen science, camera traps, acoustic sensors) and Bayesian modelling, with a particular focus on animal movement and dispersal. Much of this work is done with partners at the University of Potsdam, the British Trust for Ornithology and the Swiss Ornithological Institute.</p>
   </div>
 </section>
 
@@ -165,7 +165,7 @@ listing:
     <div class="section-head">
       <div>
         <span class="eyebrow">News</span>
-        <h2>Latest from the group</h2>
+        <h2>Latest news</h2>
       </div>
       <a class="more" href="news/index.html">All news &rarr;</a>
     </div>
@@ -183,7 +183,7 @@ listing:
     <div class="section-head">
       <div>
         <span class="eyebrow">People</span>
-        <h2>The group</h2>
+        <h2>The team</h2>
       </div>
       <a class="more" href="people.html">Meet everyone &rarr;</a>
     </div>
@@ -216,8 +216,8 @@ listing:
   <div class="wrap">
     <div class="callout-join">
       <div>
-        <h2>Interested in joining?</h2>
-        <p>We welcome motivated students for TFM, PhD and postdoctoral projects in quantitative biodiversity analysis, animal movement and conservation. <a href="people.html#join-the-group">Read how to get in touch</a>.</p>
+        <h2>Interested in working with us?</h2>
+        <p>We welcome motivated students for TFM, PhD and postdoctoral projects in quantitative biodiversity analysis, animal movement and conservation. <a href="people.html#work-with-us">Read how to get in touch</a>.</p>
       </div>
       <a class="btn btn-outline-light" href="mailto:gfandos@ucm.es">Write to us</a>
     </div>

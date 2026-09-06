@@ -1,7 +1,7 @@
 ---
 title: "News"
 subtitle: "Papers, meetings, people and fieldwork"
-description: "News from Guillermo Fandos's research group at Universidad Complutense de Madrid: new papers, conferences, new members and fieldwork."
+description: "News from Guillermo Fandos and team at Universidad Complutense de Madrid: new papers, conferences, new members and fieldwork."
 listing:
   id: news-all
   contents: posts

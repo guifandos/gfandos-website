@@ -8,7 +8,7 @@ toc: true
 toc-title: "Sections"
 ---
 
-Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation.
+Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Member of the <a href="https://www.ucm.es/bcv/">Biología y Conservación Evolutiva</a> (BCV) research group.
 
 [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID 0000-0003-1579-9444](https://orcid.org/0000-0003-1579-9444) · [UCM research profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Publications](publications.html)
 

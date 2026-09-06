@@ -6,7 +6,7 @@ toc: true
 toc-title: "Years"
 ---
 
-A selection of papers from the group and our collaborations. Group members are shown in bold. For the complete and up-to-date list see [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) or [ORCID](https://orcid.org/0000-0003-1579-9444).
+A selection of papers from the team and our collaborations. Team members are shown in bold. For the complete and up-to-date list see [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) or [ORCID](https://orcid.org/0000-0003-1579-9444).
 
 Code and data for our papers are shared on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos) whenever possible.
 
