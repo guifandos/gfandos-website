@@ -1,7 +1,7 @@
 ---
 title: "People"
-subtitle: "The group, our alumni and the people we work with"
-description: "Members of Guillermo Fandos's research group at Universidad Complutense de Madrid, past students, collaborators, and how to join."
+subtitle: "The group, our students, alumni and the people we work with"
+description: "Members of Guillermo Fandos's research group at Universidad Complutense de Madrid: current researchers, visiting students, MSc students, alumni, collaborators, and how to join."
 ---
 
 ```{=html}
@@ -12,7 +12,7 @@ description: "Members of Guillermo Fandos's research group at Universidad Complu
       <span class="role">Principal Investigator</span>
       <h3>Guillermo Fandos</h3>
       <span class="affil">Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM</span>
-      <p>Spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to tackle questions in movement ecology, biogeography and conservation. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid.</p>
+      <p>Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to understand where animals occur, how they move, and how populations respond to environmental change. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid.</p>
       <div class="links">
         <a href="cv.html" title="CV"><i class="bi bi-file-earmark-person"></i></a>
         <a href="mailto:gfandos@ucm.es" title="Email"><i class="bi bi-envelope"></i></a>
@@ -26,42 +26,75 @@ description: "Members of Guillermo Fandos's research group at Universidad Complu
 </div>
 ```
 
-## Current members
+## Researchers
 
 ```{=html}
 <div class="people-grid">
   <div class="person">
     <span class="avatar avatar-initials" aria-hidden="true">DN</span>
     <h3>David Notario Rincón</h3>
-    <span class="role">MSc student &amp; researcher</span>
+    <span class="role">Research assistant</span>
     <span class="affil"><a href="projects/intradisp.html">INTRADISP</a> · UCM</span>
-    <p>Bird range dynamics under climate change: using ring-recovery data to understand how dispersal varies across environmental gradients. Co-supervised with Rafael Barrientos.</p>
+    <p>Intraspecific variation in bird dispersal from EURING ring-recovery data, and validation of passive acoustic monitoring pipelines (AudioMoth, BirdNET). Co-supervised with Rafael Barrientos.</p>
   </div>
   <div class="person">
     <span class="avatar avatar-initials" aria-hidden="true">CM</span>
-    <h3>Claudia Mediavilla</h3>
-    <span class="role">MSc student &amp; researcher</span>
+    <h3>Claudia Mediavilla Bailo</h3>
+    <span class="role">Researcher · PhD candidate</span>
     <span class="affil"><a href="projects/remined.html">RIMed-Fauna</a> · UCM</span>
-    <p>Wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling. Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.</p>
+    <p>Terrestrial wildlife in Mediterranean river ecosystems, combining camera trapping with occupancy and species distribution models. MSc thesis defended in 2026. Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.</p>
   </div>
   <div class="person">
     <span class="avatar avatar-initials" aria-hidden="true">HD</span>
     <h3>Hugo Díaz Santaolalla</h3>
     <span class="role">PhD student</span>
-    <span class="affil">CE3C, Portugal</span>
-    <p>Carnivore dynamics and biotic interactions: how species interactions shape distribution patterns. Co-supervised with Alejandra Zarzo.</p>
+    <span class="affil">CE3C, University of Lisbon</span>
+    <p>Carnivore dynamics and biotic interactions: how species interactions shape distribution patterns. Co-supervised with Alejandra Zarzo-Arias and Luís Miguel Rosalino.</p>
   </div>
 </div>
 ```
 
-## Alumni
+## Visiting researchers
 
-Guillermo has supervised 11 MSc and 5 BSc theses. Some highlights:
+```{=html}
+<div class="people-grid">
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">JH</span>
+    <h3>Jakub Hrouda</h3>
+    <span class="role">Visiting student</span>
+    <span class="affil">Charles University, Prague</span>
+    <p>Seasonal changes in the use of urban environments by migratory birds across Europe, combining eBird Status and Trends with morphological, migratory and cognitive traits in Bayesian models. Joint project with Vojtěch Brlík and Petr Procházka (Czech Academy of Sciences).</p>
+  </div>
+</div>
+```
+
+## MSc students (2025–2026)
+
+Master's theses in progress or defended this academic year.
 
 ```{=html}
 <ul class="plain-list">
-  <li><span class="who">Maria Pratzer</span> · MSc, Humboldt-Universität zu Berlin · <span class="what">Large carnivore range expansion in Iberia. Published in <em>Diversity and Distributions</em> (2023).</span></li>
-  <li><span class="who">Leon Nill</span> · MSc, Humboldt-Universität zu Berlin · <span class="what">Landscape permeability for carnivores. Published in <em>Diversity and Distributions</em> (2023).</span></li>
+  <li><span class="who">Julio de la Parte Matos</span> · <span class="what">European turtle dove densities from five years of point counts: distance sampling with observer and noise covariates. Co-supervised with Marta Cruz Flores and Mario Fernández Tizón (UCLM).</span></li>
+  <li><span class="who">Guillermo Sánchez-Herrero Gallego</span> · <span class="what">Landscape-history legacies in bird taxonomic and functional diversity, using eBird data. Co-supervised with Verónica Cruz Alonso (Universidad de Alcalá).</span></li>
+  <li><span class="who">Paula Civantos</span> · <span class="what">Dynamic occupancy models with empirical dispersal kernels: do population-specific kernels improve predictions of colonisation and extinction? Co-supervised with Manuel B. Morales (Universidad Autónoma de Madrid).</span></li>
+  <li><span class="who">Susana Campanero Campos</span> · <span class="what">Species distribution models and niche overlap for the Cantabrian brown bear. Co-supervised with Alejandra Zarzo-Arias and Vincenzo Penteriani (CSIC).</span></li>
+</ul>
+```
+
+## Alumni
+
+Master's theses supervised at UCM and Humboldt-Universität zu Berlin.
+
+```{=html}
+<ul class="plain-list">
+  <li><span class="who">Elena Herrero Esteban</span> · 2025 · <span class="what">Drivers of sand martin (<em>Riparia riparia</em>) migration: a citizen-science approach. MSc Zoology, UCM.</span></li>
+  <li><span class="who">Juan Javier Ramón Crespo</span> · 2025 · <span class="what">Bat community assembly along elevational gradients in tropical and temperate regions. MSc Zoology, UCM.</span></li>
+  <li><span class="who">Alejandro Redondo</span> · 2025 · <span class="what">Circadian activity of the mesocarnivore community of Quintos de Mora (camera trapping). MSc Zoology, UCM.</span></li>
+  <li><span class="who">Luis Sánchez Valverde</span> · 2025 · <span class="what">Tree density and seasonality as drivers of insectivorous bird activity: a bioacoustic approach. MSc Zoology, UCM.</span></li>
+  <li><span class="who">Raúl Contreras</span> · 2024 · <span class="what">Distribution and conservation of steppe birds in Spain: a new approach. MSc Zoology, UCM.</span></li>
+  <li><span class="who">Raquel Iglesias</span> · 2023 · <span class="what">Ecological niche and range dynamics of two invasive bird species in Europe. MSc Zoology, UCM.</span></li>
+  <li><span class="who">Maria Pratzer</span> · <span class="what">Large carnivore range expansion in Iberia under scenarios of landscape permeability. MSc, Humboldt-Universität zu Berlin. Published in <em>Diversity and Distributions</em> (2023).</span></li>
+  <li><span class="who">Leon Nill</span> · <span class="what">Landscape permeability for large carnivores in human-dominated landscapes. MSc, Humboldt-Universität zu Berlin. Published in <em>Diversity and Distributions</em> (2023).</span></li>
 </ul>
 ```
 
@@ -73,9 +106,12 @@ We work regularly with:
 <ul class="plain-list">
   <li><span class="who"><a href="https://damariszurell.github.io/">Damaris Zurell</a></span> · University of Potsdam · <span class="what">Dispersal, dynamic species distribution models</span></li>
   <li><span class="who"><a href="https://www.bto.org/about-bto/our-staff/rob-robinson">Rob Robinson</a></span> · British Trust for Ornithology · <span class="what">Ring-recovery analysis</span></li>
-  <li><span class="who"><a href="https://scholar.google.es/citations?user=8xNSN5IAAAAJ">Rafael Barrientos</a></span> · UCM · <span class="what">Road ecology, conservation</span></li>
-  <li><span class="who"><a href="https://scholar.google.es/citations?user=0Z6F1kgAAAAJ">Álvaro Luna</a></span> · UCM · <span class="what">Urban ecology, invasion biology</span></li>
-  <li><span class="who"><a href="https://scholar.google.es/citations?user=xKxS6YIAAAAJ">Raúl Bonal</a></span> · UCM · <span class="what">Bioacoustics</span></li>
+  <li><span class="who">Rafael Barrientos</span> · UCM · <span class="what">Road ecology, conservation</span></li>
+  <li><span class="who">María del Mar Sánchez-Montoya</span> · UCM · <span class="what">Mediterranean river ecosystems</span></li>
+  <li><span class="who">Álvaro Luna</span> · UCM · <span class="what">Urban ecology, invasion biology</span></li>
+  <li><span class="who">Raúl Bonal</span> · UCM · <span class="what">Bioacoustics</span></li>
+  <li><span class="who">Alejandra Zarzo-Arias</span> · CE3C, University of Lisbon · <span class="what">Large carnivores</span></li>
+  <li><span class="who">Vojtěch Brlík &amp; Petr Procházka</span> · Charles University and Czech Academy of Sciences · <span class="what">Bird migration and urbanisation</span></li>
   <li><span class="who"><a href="https://www.vogelwarte.ch/en/about-us/team/kery-marc">Marc Kéry</a></span> · Swiss Ornithological Institute · <span class="what">Occupancy modelling</span></li>
   <li><span class="who"><a href="https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias">Tobias Kuemmerle</a></span> · Humboldt-Universität zu Berlin · <span class="what">Land-use change</span></li>
 </ul>
@@ -83,10 +119,10 @@ We work regularly with:
 
 ## Join the group
 
-We are always happy to hear from motivated students interested in spatial ecology, animal movement or quantitative methods.
+We are always happy to hear from motivated students interested in quantitative biodiversity analysis, animal movement or conservation.
 
-- **TFM (MSc thesis)**: we offer projects every year within the UCM Master's programmes in Conservation Biology and Zoology, usually linked to our active projects. Write to us in spring for the following academic year.
+- **TFM (MSc thesis)**: we offer projects every year within the UCM Master's programmes in Conservation Biology and Zoology, and co-supervise theses with colleagues at other universities. Projects are usually linked to our active projects and datasets (ringing, eBird, camera traps, acoustic recorders). Write to us in spring for the following academic year.
 - **PhD**: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.
-- **Postdocs and visitors**: we host visiting researchers and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let's talk.
+- **Postdocs and visitors**: we host visiting researchers and students and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let's talk.
 
 Contact: [gfandos@ucm.es](mailto:gfandos@ucm.es)

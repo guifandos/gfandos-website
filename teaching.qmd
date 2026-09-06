@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
-subtitle: "Courses and open materials"
-description: "Teaching at Universidad Complutense de Madrid: courses in ecology, zoology, bioinformatics, and quantitative conservation biogeography."
+subtitle: "Courses, open materials and supervision"
+description: "Teaching by Guillermo Fandos at Universidad Complutense de Madrid: zoology, biodiversity analysis, threatened population monitoring, R programming for doctoral students, and quantitative conservation biogeography."
 ---
 
 Teaching is one of the most rewarding parts of my job. There's something deeply satisfying about watching a student go from "I don't understand R" to confidently analysing their own data, or seeing a field course spark someone's passion for ecology.
@@ -10,34 +10,35 @@ I believe in learning by doing, whether that means getting your hands dirty in t
 
 ![Field course at the Strait of Gibraltar](images/teaching-group.jpg){width=100% fig-alt="Field course with students"}
 
----
+## Courses at UCM
 
-## Current Courses (UCM)
+### Undergraduate (BSc Biology)
 
-### Graduate
+- **Zoología**
+- **Análisis de la Biodiversidad Animal**
 
-**Master in Conservation Biology**
+### MSc in Conservation Biology
 
-- Caracterización y seguimiento de poblaciones animales amenazadas
-- Evaluación Ambiental Aplicada a la Fauna
+- **Caracterización y seguimiento de poblaciones animales amenazadas**: population monitoring and abundance estimation, including a hands-on module on distance sampling in R.
+- **Evaluación Ambiental Aplicada a la Fauna**
 
-**Master in Zoology**
+### MSc in Zoology
 
-- Zoología de Vertebrados
+- **Zoología de Vertebrados**
 
-### Undergraduate
+### Doctoral School
 
-**Biology Degree**
+- **Introducción a la programación en R**: short course for PhD students of the UCM Doctoral School, taught with Daniel Ayllón. R fundamentals, data wrangling, reproducible reports with Quarto.
 
-- Zoología
-- Análisis de la Biodiversidad Animal
+### Continuing education
 
-### Continuing Education
+- **[Aplicaciones Bioinformáticas en Biodiversidad, Ecología y Evolución](https://www.ucm.es/bioinformatica-biodiversidad)**: I coordinate this expert-level course (150 h, UCM título propio) that introduces biologists to computational tools for ecological and evolutionary analysis.
 
-**[Bioinformatics in Biodiversity, Ecology and Evolution](https://www.ucm.es/bioinformatica-biodiversidad)**: I coordinate this expert-level course (150h) that introduces biologists to computational tools for ecological and evolutionary analysis.
+## Open materials
 
----
+- [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course co-developed with [Damaris Zurell](https://damariszurell.github.io/) at the University of Potsdam. Species distribution models, connectivity and conservation planning in R.
+- Tutorials on distance sampling and camera-trap occupancy models used in our MSc courses are available on request, and will be published here as they are cleaned up.
 
-## Teaching Materials
+## Supervision
 
-- [Quantitative Conservation Biogeography](https://damariszurell.github.io/EEC-QCB/): MSc course co-developed with [Damaris Zurell](https://damariszurell.github.io/) at Potsdam University
+I supervise MSc and BSc theses every year, usually linked to the group's projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the [People](people.html) page, together with information on how to [join the group](people.html#join-the-group).

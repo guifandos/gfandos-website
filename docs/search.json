@@ -7,18 +7,25 @@
     "text": "Teaching is one of the most rewarding parts of my job. There’s something deeply satisfying about watching a student go from “I don’t understand R” to confidently analysing their own data, or seeing a field course spark someone’s passion for ecology.\nI believe in learning by doing, whether that means getting your hands dirty in the field or wrestling with real datasets in R. Theory matters, but it sticks better when you’ve experienced the messiness of actual ecological data."
   },
   {
-    "objectID": "teaching.html#current-courses-ucm",
-    "href": "teaching.html#current-courses-ucm",
+    "objectID": "teaching.html#courses-at-ucm",
+    "href": "teaching.html#courses-at-ucm",
     "title": "Teaching",
-    "section": "Current Courses (UCM)",
-    "text": "Current Courses (UCM)\n\nGraduate\nMaster in Conservation Biology\n\nCaracterización y seguimiento de poblaciones animales amenazadas\nEvaluación Ambiental Aplicada a la Fauna\n\nMaster in Zoology\n\nZoología de Vertebrados\n\n\n\nUndergraduate\nBiology Degree\n\nZoología\nAnálisis de la Biodiversidad Animal\n\n\n\nContinuing Education\nBioinformatics in Biodiversity, Ecology and Evolution: I coordinate this expert-level course (150h) that introduces biologists to computational tools for ecological and evolutionary analysis."
+    "section": "Courses at UCM",
+    "text": "Courses at UCM\n\nUndergraduate (BSc Biology)\n\nZoología\nAnálisis de la Biodiversidad Animal\n\n\n\nMSc in Conservation Biology\n\nCaracterización y seguimiento de poblaciones animales amenazadas: population monitoring and abundance estimation, including a hands-on module on distance sampling in R.\nEvaluación Ambiental Aplicada a la Fauna\n\n\n\nMSc in Zoology\n\nZoología de Vertebrados\n\n\n\nDoctoral School\n\nIntroducción a la programación en R: short course for PhD students of the UCM Doctoral School, taught with Daniel Ayllón. R fundamentals, data wrangling, reproducible reports with Quarto.\n\n\n\nContinuing education\n\nAplicaciones Bioinformáticas en Biodiversidad, Ecología y Evolución: I coordinate this expert-level course (150 h, UCM título propio) that introduces biologists to computational tools for ecological and evolutionary analysis."
   },
   {
-    "objectID": "teaching.html#teaching-materials",
-    "href": "teaching.html#teaching-materials",
+    "objectID": "teaching.html#open-materials",
+    "href": "teaching.html#open-materials",
     "title": "Teaching",
-    "section": "Teaching Materials",
-    "text": "Teaching Materials\n\nQuantitative Conservation Biogeography: MSc course co-developed with Damaris Zurell at Potsdam University"
+    "section": "Open materials",
+    "text": "Open materials\n\nQuantitative Conservation Biogeography: MSc course co-developed with Damaris Zurell at the University of Potsdam. Species distribution models, connectivity and conservation planning in R.\nTutorials on distance sampling and camera-trap occupancy models used in our MSc courses are available on request, and will be published here as they are cleaned up."
+  },
+  {
+    "objectID": "teaching.html#supervision",
+    "href": "teaching.html#supervision",
+    "title": "Teaching",
+    "section": "Supervision",
+    "text": "Supervision\nI supervise MSc and BSc theses every year, usually linked to the group’s projects and datasets, and co-supervise with colleagues at UCM, UAM, UAH, UCLM and abroad. Current students and alumni are listed on the People page, together with information on how to join the group."
   },
   {
     "objectID": "research/forecasting.html",
@@ -235,7 +242,7 @@
     "href": "cv.html",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on animal movement, biodiversity modelling and conservation.\nGoogle Scholar · ORCID 0000-0003-1579-9444 · UCM research profile · Publications"
+    "text": "Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation.\nGoogle Scholar · ORCID 0000-0003-1579-9444 · UCM research profile · Publications"
   },
   {
     "objectID": "cv.html#positions",
@@ -263,14 +270,14 @@
     "href": "cv.html#supervision",
     "title": "Curriculum vitae",
     "section": "Supervision",
-    "text": "Supervision\n\n3 current researchers (see People): two MSc students and researchers at UCM and one PhD student co-supervised at CE3C (Portugal).\n11 MSc and 5 BSc theses supervised at UCM and Humboldt-Universität zu Berlin."
+    "text": "Supervision\n\nCurrent: 3 researchers (research assistant, PhD candidate and co-supervised PhD student), 1 visiting student and 4 MSc theses in progress. See People.\nCompleted: 11 MSc theses (UCM Master’s in Zoology and Conservation Biology; Humboldt-Universität zu Berlin) and 5 BSc theses. Member of PhD examination committees at UCM."
   },
   {
     "objectID": "cv.html#teaching",
     "href": "cv.html#teaching",
     "title": "Curriculum vitae",
     "section": "Teaching",
-    "text": "Teaching\nUndergraduate and graduate teaching at UCM in zoology, biodiversity analysis, threatened population monitoring and environmental assessment. Coordinator of the 150-hour expert course Bioinformatics in Biodiversity, Ecology and Evolution. Co-developer of the MSc course Quantitative Conservation Biogeography with Damaris Zurell. See Teaching."
+    "text": "Teaching\nUndergraduate and graduate teaching at UCM in zoology, animal biodiversity analysis, threatened population monitoring and environmental assessment (BSc Biology; MSc Conservation Biology; MSc Zoology). Co-teacher of Introducción a la programación en R at the UCM Doctoral School. Coordinator of the 150-hour expert course Aplicaciones Bioinformáticas en Biodiversidad, Ecología y Evolución. Co-developer of the MSc course Quantitative Conservation Biogeography with Damaris Zurell. See Teaching."
   },
   {
     "objectID": "cv.html#editorial-and-service",
@@ -319,35 +326,49 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Principal Investigator\n      \n      Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM\n      Spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to tackle questions in movement ecology, biogeography and conservation. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid."
+    "text": "Principal Investigator\n      \n      Assistant Professor · Dept. Biodiversidad, Ecología y Evolución, UCM\n      Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation. Guillermo combines fieldwork, large-scale data synthesis and Bayesian modelling to understand where animals occur, how they move, and how populations respond to environmental change. PhD in Ecology (UCM, 2017); postdoctoral work with Damaris Zurell's group in Germany before returning to Madrid."
   },
   {
-    "objectID": "people.html#current-members",
-    "href": "people.html#current-members",
+    "objectID": "people.html#researchers",
+    "href": "people.html#researchers",
     "title": "People",
-    "section": "Current members",
-    "text": "Current members\n\n  \n    DN\n    David Notario Rincón\n    MSc student & researcher\n    INTRADISP · UCM\n    Bird range dynamics under climate change: using ring-recovery data to understand how dispersal varies across environmental gradients. Co-supervised with Rafael Barrientos.\n  \n  \n    CM\n    Claudia Mediavilla\n    MSc student & researcher\n    RIMed-Fauna · UCM\n    Wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling. Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.\n  \n  \n    HD\n    Hugo Díaz Santaolalla\n    PhD student\n    CE3C, Portugal\n    Carnivore dynamics and biotic interactions: how species interactions shape distribution patterns. Co-supervised with Alejandra Zarzo."
+    "section": "Researchers",
+    "text": "Researchers\n\n  \n    DN\n    David Notario Rincón\n    Research assistant\n    INTRADISP · UCM\n    Intraspecific variation in bird dispersal from EURING ring-recovery data, and validation of passive acoustic monitoring pipelines (AudioMoth, BirdNET). Co-supervised with Rafael Barrientos.\n  \n  \n    CM\n    Claudia Mediavilla Bailo\n    Researcher · PhD candidate\n    RIMed-Fauna · UCM\n    Terrestrial wildlife in Mediterranean river ecosystems, combining camera trapping with occupancy and species distribution models. MSc thesis defended in 2026. Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.\n  \n  \n    HD\n    Hugo Díaz Santaolalla\n    PhD student\n    CE3C, University of Lisbon\n    Carnivore dynamics and biotic interactions: how species interactions shape distribution patterns. Co-supervised with Alejandra Zarzo-Arias and Luís Miguel Rosalino."
+  },
+  {
+    "objectID": "people.html#visiting-researchers",
+    "href": "people.html#visiting-researchers",
+    "title": "People",
+    "section": "Visiting researchers",
+    "text": "Visiting researchers\n\n  \n    JH\n    Jakub Hrouda\n    Visiting student\n    Charles University, Prague\n    Seasonal changes in the use of urban environments by migratory birds across Europe, combining eBird Status and Trends with morphological, migratory and cognitive traits in Bayesian models. Joint project with Vojtěch Brlík and Petr Procházka (Czech Academy of Sciences)."
+  },
+  {
+    "objectID": "people.html#msc-students-20252026",
+    "href": "people.html#msc-students-20252026",
+    "title": "People",
+    "section": "MSc students (2025–2026)",
+    "text": "MSc students (2025–2026)\nMaster’s theses in progress or defended this academic year.\n\n  Julio de la Parte Matos · European turtle dove densities from five years of point counts: distance sampling with observer and noise covariates. Co-supervised with Marta Cruz Flores and Mario Fernández Tizón (UCLM).\n  Guillermo Sánchez-Herrero Gallego · Landscape-history legacies in bird taxonomic and functional diversity, using eBird data. Co-supervised with Verónica Cruz Alonso (Universidad de Alcalá).\n  Paula Civantos · Dynamic occupancy models with empirical dispersal kernels: do population-specific kernels improve predictions of colonisation and extinction? Co-supervised with Manuel B. Morales (Universidad Autónoma de Madrid).\n  Susana Campanero Campos · Species distribution models and niche overlap for the Cantabrian brown bear. Co-supervised with Alejandra Zarzo-Arias and Vincenzo Penteriani (CSIC)."
   },
   {
     "objectID": "people.html#alumni",
     "href": "people.html#alumni",
     "title": "People",
     "section": "Alumni",
-    "text": "Alumni\nGuillermo has supervised 11 MSc and 5 BSc theses. Some highlights:\n\n  Maria Pratzer · MSc, Humboldt-Universität zu Berlin · Large carnivore range expansion in Iberia. Published in Diversity and Distributions (2023).\n  Leon Nill · MSc, Humboldt-Universität zu Berlin · Landscape permeability for carnivores. Published in Diversity and Distributions (2023)."
+    "text": "Alumni\nMaster’s theses supervised at UCM and Humboldt-Universität zu Berlin.\n\n  Elena Herrero Esteban · 2025 · Drivers of sand martin (Riparia riparia) migration: a citizen-science approach. MSc Zoology, UCM.\n  Juan Javier Ramón Crespo · 2025 · Bat community assembly along elevational gradients in tropical and temperate regions. MSc Zoology, UCM.\n  Alejandro Redondo · 2025 · Circadian activity of the mesocarnivore community of Quintos de Mora (camera trapping). MSc Zoology, UCM.\n  Luis Sánchez Valverde · 2025 · Tree density and seasonality as drivers of insectivorous bird activity: a bioacoustic approach. MSc Zoology, UCM.\n  Raúl Contreras · 2024 · Distribution and conservation of steppe birds in Spain: a new approach. MSc Zoology, UCM.\n  Raquel Iglesias · 2023 · Ecological niche and range dynamics of two invasive bird species in Europe. MSc Zoology, UCM.\n  Maria Pratzer · Large carnivore range expansion in Iberia under scenarios of landscape permeability. MSc, Humboldt-Universität zu Berlin. Published in Diversity and Distributions (2023).\n  Leon Nill · Landscape permeability for large carnivores in human-dominated landscapes. MSc, Humboldt-Universität zu Berlin. Published in Diversity and Distributions (2023)."
   },
   {
     "objectID": "people.html#collaborators",
     "href": "people.html#collaborators",
     "title": "People",
     "section": "Collaborators",
-    "text": "Collaborators\nWe work regularly with:\n\n  Damaris Zurell · University of Potsdam · Dispersal, dynamic species distribution models\n  Rob Robinson · British Trust for Ornithology · Ring-recovery analysis\n  Rafael Barrientos · UCM · Road ecology, conservation\n  Álvaro Luna · UCM · Urban ecology, invasion biology\n  Raúl Bonal · UCM · Bioacoustics\n  Marc Kéry · Swiss Ornithological Institute · Occupancy modelling\n  Tobias Kuemmerle · Humboldt-Universität zu Berlin · Land-use change"
+    "text": "Collaborators\nWe work regularly with:\n\n  Damaris Zurell · University of Potsdam · Dispersal, dynamic species distribution models\n  Rob Robinson · British Trust for Ornithology · Ring-recovery analysis\n  Rafael Barrientos · UCM · Road ecology, conservation\n  María del Mar Sánchez-Montoya · UCM · Mediterranean river ecosystems\n  Álvaro Luna · UCM · Urban ecology, invasion biology\n  Raúl Bonal · UCM · Bioacoustics\n  Alejandra Zarzo-Arias · CE3C, University of Lisbon · Large carnivores\n  Vojtěch Brlík & Petr Procházka · Charles University and Czech Academy of Sciences · Bird migration and urbanisation\n  Marc Kéry · Swiss Ornithological Institute · Occupancy modelling\n  Tobias Kuemmerle · Humboldt-Universität zu Berlin · Land-use change"
   },
   {
     "objectID": "people.html#join-the-group",
     "href": "people.html#join-the-group",
     "title": "People",
     "section": "Join the group",
-    "text": "Join the group\nWe are always happy to hear from motivated students interested in spatial ecology, animal movement or quantitative methods.\n\nTFM (MSc thesis): we offer projects every year within the UCM Master’s programmes in Conservation Biology and Zoology, usually linked to our active projects. Write to us in spring for the following academic year.\nPhD: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.\nPostdocs and visitors: we host visiting researchers and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let’s talk.\n\nContact: gfandos@ucm.es"
+    "text": "Join the group\nWe are always happy to hear from motivated students interested in quantitative biodiversity analysis, animal movement or conservation.\n\nTFM (MSc thesis): we offer projects every year within the UCM Master’s programmes in Conservation Biology and Zoology, and co-supervise theses with colleagues at other universities. Projects are usually linked to our active projects and datasets (ringing, eBird, camera traps, acoustic recorders). Write to us in spring for the following academic year.\nPhD: we support applications to competitive fellowships (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Get in touch early with a short description of your interests and a CV.\nPostdocs and visitors: we host visiting researchers and students and support fellowship applications (Juan de la Cierva, Ramón y Cajal, MSCA). If our research aligns with yours, let’s talk.\n\nContact: gfandos@ucm.es"
   },
   {
     "objectID": "projects/intradisp.html",

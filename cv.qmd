@@ -8,7 +8,7 @@ toc: true
 toc-title: "Sections"
 ---
 
-Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on animal movement, biodiversity modelling and conservation.
+Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity, Ecology and Evolution at Universidad Complutense de Madrid. Spatial ecologist working on quantitative biodiversity analysis, animal movement and conservation.
 
 [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID 0000-0003-1579-9444](https://orcid.org/0000-0003-1579-9444) · [UCM research profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Publications](publications.html)
 
@@ -49,12 +49,12 @@ Assistant Professor (Profesor Ayudante Doctor) in the Department of Biodiversity
 
 ## Supervision
 
-- 3 current researchers (see [People](people.html)): two MSc students and researchers at UCM and one PhD student co-supervised at CE3C (Portugal).
-- 11 MSc and 5 BSc theses supervised at UCM and Humboldt-Universität zu Berlin.
+- Current: 3 researchers (research assistant, PhD candidate and co-supervised PhD student), 1 visiting student and 4 MSc theses in progress. See [People](people.html).
+- Completed: 11 MSc theses (UCM Master's in Zoology and Conservation Biology; Humboldt-Universität zu Berlin) and 5 BSc theses. Member of PhD examination committees at UCM.
 
 ## Teaching
 
-Undergraduate and graduate teaching at UCM in zoology, biodiversity analysis, threatened population monitoring and environmental assessment. Coordinator of the 150-hour expert course *Bioinformatics in Biodiversity, Ecology and Evolution*. Co-developer of the MSc course *Quantitative Conservation Biogeography* with Damaris Zurell. See [Teaching](teaching.html).
+Undergraduate and graduate teaching at UCM in zoology, animal biodiversity analysis, threatened population monitoring and environmental assessment (BSc Biology; MSc Conservation Biology; MSc Zoology). Co-teacher of *Introducción a la programación en R* at the UCM Doctoral School. Coordinator of the 150-hour expert course *Aplicaciones Bioinformáticas en Biodiversidad, Ecología y Evolución*. Co-developer of the MSc course *Quantitative Conservation Biogeography* with Damaris Zurell. See [Teaching](teaching.html).
 
 ## Editorial and service
 

@@ -13,7 +13,7 @@ project:
 
 website:
   title: "Guillermo Fandos"
-  description: "Spatial ecology, animal movement and conservation. Research group led by Guillermo Fandos at Universidad Complutense de Madrid."
+  description: "Quantitative biodiversity analysis, animal movement and conservation. Research group led by Guillermo Fandos at Universidad Complutense de Madrid."
   site-url: https://www.gfandos.com
   favicon: images/favicon.png
   image: images/hero.jpg
