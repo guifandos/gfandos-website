@@ -685,3 +685,19 @@ th { font-weight: 600; background: $paper-2; }
   border: 1.5px solid $line; border-radius: 999px; padding: 0.15rem 0.6rem !important; margin-right: 0.5rem;
 }
 .navbar a.nav-link.lang-switch:hover { border-color: $olive; color: $olive; }
+
+// ---------------------------------------------------------------------------
+// Conservation outcomes list (homepage)
+// ---------------------------------------------------------------------------
+.outcomes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 3rem; }
+.outcomes li {
+  display: grid; grid-template-columns: 4px 1fr; gap: 0 1.1rem;
+  padding: 1.1rem 0; border-top: 1px solid $line;
+}
+.outcomes li::before { content: ""; background: $ochre; border-radius: 2px; height: 100%; }
+.outcomes .outcome-what { display: block; font-family: $headings-font-family; font-weight: 600; font-size: 1.2rem; line-height: 1.25; color: $ink; margin-bottom: 0.3rem; }
+.outcomes .outcome-how { display: block; color: $ink-2; font-size: 1rem; line-height: 1.5; }
+.databand-text .databand-note { margin-bottom: 0; }
+.outcomes li { grid-template-rows: auto auto; }
+.outcomes li::before { grid-row: 1 / 3; grid-column: 1; }
+.outcomes .outcome-what, .outcomes .outcome-how { grid-column: 2; }

@@ -18,8 +18,8 @@ listing:
 <style>.navbar-brand .navbar-title{display:none}</style>
 <section class="hero" aria-label="Introduction">
   <picture>
-    <source type="image/webp" srcset="../images/hero-sm.webp 900w, images/hero.webp 1536w" sizes="100vw">
-    <img src="../images/hero.jpg" srcset="../images/hero-sm.jpg 900w, images/hero.jpg 1536w" sizes="100vw"
+    <source type="image/webp" srcset="../images/hero-sm.webp 900w, ../images/hero.webp 1536w" sizes="100vw">
+    <img src="../images/hero.jpg" srcset="../images/hero-sm.jpg 900w, ../images/hero.jpg 1536w" sizes="100vw"
          alt="Ilustración en acuarela de una cámara de fototrampeo, un satélite, un ave, un corzo y un lobo unidos por trayectorias de movimiento" fetchpriority="high">
   </picture>
   <svg class="hero-paths" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
@@ -28,10 +28,10 @@ listing:
     <path d="M 120 -20 C 300 160, 520 220, 760 180 S 1100 60, 1300 200 S 1500 420, 1700 380" />
   </svg>
   <div class="wrap hero-inner">
-    <span class="eyebrow">Análisis cuantitativo de la biodiversidad · Ecología del movimiento · UCM</span>
+    <span class="eyebrow">Análisis cuantitativo de la biodiversidad · Movimiento · Conservación</span>
     <h1>Guillermo Fandos</h1>
     <p class="hero-tagline">Estudiamos cómo se mueven los animales, dónde viven y cómo conservarlos.</p>
-    <p class="hero-affil">Análisis cuantitativo de la biodiversidad, movimiento animal y conservación<br>Dpto. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid</p>
+    <p class="hero-affil">Investigación para entender el movimiento animal y conservar la biodiversidad en un mundo que cambia<br>Dpto. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="research/index.html">Nuestra investigación</a>
       <a class="btn btn-outline-dark" href="people.html#trabaja-con-nosotros">Trabaja con nosotros</a>
@@ -43,7 +43,7 @@ listing:
   <div class="wrap wrap-narrow">
     <span class="eyebrow">Presentación</span>
     <p class="lead-text">Soy Guillermo Fandos, ecólogo espacial y Profesor Ayudante Doctor en la Universidad Complutense de Madrid. Mi investigación es el análisis cuantitativo de la biodiversidad: dónde están los animales, cómo se mueven y cómo responden las poblaciones a un mundo que cambia. Formo parte del grupo de investigación <a href="https://www.ucm.es/bcv/">Biología y Conservación Evolutiva</a> de la UCM.</p>
-    <p class="lead-text">Junto con mis estudiantes y colaboradores, combinamos trabajo de campo, síntesis de datos a gran escala (anillamiento, ciencia ciudadana, fototrampeo, sensores acústicos) y modelización bayesiana, con especial atención al movimiento y la dispersión animal. Buena parte de este trabajo se hace con colegas de la Universidad de Potsdam, el British Trust for Ornithology y la Estación Ornitológica Suiza.</p>
+    <p class="lead-text">Junto con mis estudiantes y colaboradores, combinamos trabajo de campo, síntesis de datos a gran escala (anillamiento, ciencia ciudadana, fototrampeo, sensores acústicos) y modelización bayesiana, con especial atención al movimiento y la dispersión animal. El objetivo es siempre el mismo: convertir un mejor conocimiento en una mejor conservación, desde los Libros Rojos hasta la gestión de los Parques Nacionales.</p>
   </div>
 </section>
 
@@ -58,13 +58,8 @@ listing:
   <div class="wrap databand-text">
     <span class="eyebrow">Espacio y movimiento, cuantificados</span>
     <h2>Dónde podrían vivir los animales, y cómo se mueven en realidad</h2>
-    <p>Los modelos de distribución de especies nos dicen dónde el hábitat es idóneo. Los datos de movimiento nos dicen si los animales llegan hasta allí. Nuestro trabajo une las dos cosas: superficies de idoneidad a escala continental y las trayectorias de aves y mamíferos individuales que las conectan.</p>
+    <p>Los modelos de distribución de especies nos dicen dónde el hábitat es idóneo. Los datos de movimiento nos dicen si los animales llegan hasta allí. Nuestro trabajo une las dos cosas y plantea la pregunta que importa para la conservación: qué poblaciones lo conseguirán, cuáles no, y dónde actuar marca la diferencia.</p>
     <p class="databand-note">Ilustración: trayectorias de dispersión simuladas sobre una superficie de idoneidad sintética. Las figuras reales de nuestros artículos están en las páginas de investigación.</p>
-    <div class="stats-grid">
-      <div class="stat"><span class="stat-n">234</span><span class="stat-l">especies de aves europeas con kernels de dispersión estandarizados</span></div>
-      <div class="stat"><span class="stat-n">3</span><span class="stat-l">proyectos financiados activos, uno como investigador principal</span></div>
-      <div class="stat"><span class="stat-n">16</span><span class="stat-l">TFM y TFG dirigidos desde 2021</span></div>
-    </div>
   </div>
 </section>
 
@@ -112,6 +107,41 @@ listing:
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Por qué importa</span>
+        <h2>Investigación que llega a la práctica de la conservación</h2>
+        <p>Un modelo solo es útil si alguien puede actuar a partir de él. Algunos lugares donde nuestro trabajo ha alimentado decisiones.</p>
+      </div>
+      <a class="more" href="research/conservation.html">Conservación y cambio global &rarr;</a>
+    </div>
+    <ul class="outcomes">
+      <li>
+        <span class="outcome-what">La cigüeña negra en el Libro Rojo</span>
+        <span class="outcome-how">Modelos de ocupación que corrigen el muestreo preferencial convirtieron 22 años de seguimiento irregular en tendencias poblacionales robustas, usadas en la evaluación de la especie.</span>
+      </li>
+      <li>
+        <span class="outcome-what">Hacia dónde irán lobos, osos y linces</span>
+        <span class="outcome-how">Modelos de expansión y conectividad para los grandes carnívoros ibéricos identifican áreas prioritarias para una gestión proactiva antes de que surjan los conflictos.</span>
+      </li>
+      <li>
+        <span class="outcome-what">Modelos de hábitat para el Atlas de murciélagos de España</span>
+        <span class="outcome-how">Modelos de distribución para el atlas nacional, por encargo de TRAGSA, para localizar dónde es más necesario el esfuerzo de conservación.</span>
+      </li>
+      <li>
+        <span class="outcome-what">Refugios de fauna en los ríos mediterráneos</span>
+        <span class="outcome-how">Redes de fototrampeo y modelos dinámicos en Parques Nacionales localizan los corredores y refugios de sequía que la gestión fluvial debe proteger.</span>
+      </li>
+      <li>
+        <span class="outcome-what">Una dispersión que los modelos por fin pueden usar</span>
+        <span class="outcome-how">Kernels de dispersión estandarizados para 234 especies de aves europeas permiten que las predicciones de conservación tengan en cuenta si las especies pueden llegar al nuevo hábitat idóneo.</span>
+      </li>
+    </ul>
   </div>
 </section>
 
