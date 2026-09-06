@@ -1,19 +1,16 @@
+profile:
+  default: en
+
 project:
   type: website
   output-dir: docs
   resources:
     - robots.txt
     - "images/**"
-  render:
-    - "*.qmd"
-    - "**/*.qmd"
-    - "!AUDIT-REPORT.md"
-    - "!ACTION-PLAN.md"
-    - "!REDESIGN-PLAN.md"
+    - "!es/**"
 
 website:
   title: "Guillermo Fandos"
-  description: "Guillermo Fandos, spatial ecologist at Universidad Complutense de Madrid. Quantitative biodiversity analysis, animal movement and conservation."
   site-url: https://www.gfandos.com
   favicon: images/favicon.png
   image: images/hero.jpg
@@ -25,63 +22,6 @@ website:
     site: "@g_fandos"
     image: images/hero.jpg
   repo-url: https://github.com/guifandos/gfandos-website
-
-  # Navigation
-  navbar:
-    background: light
-    logo: images/monogram.svg
-    logo-alt: "GF"
-    left:
-      - text: "Research"
-        menu:
-          - text: "Overview"
-            href: research/index.qmd
-          - text: "---"
-          - text: "Movement & Dispersal"
-            href: research/dispersal.qmd
-          - text: "Monitoring & Modelling"
-            href: research/forecasting.qmd
-          - text: "Conservation & Global Change"
-            href: research/conservation.qmd
-          - text: "Field Technology"
-            href: research/fieldtech.qmd
-      - text: "Projects"
-        href: projects/index.qmd
-      - text: "People"
-        href: people.qmd
-      - text: "Publications"
-        href: publications.qmd
-      - text: "Teaching"
-        href: teaching.qmd
-      - text: "News"
-        href: news/index.qmd
-      - text: "CV"
-        href: cv.qmd
-    right:
-      - icon: github
-        href: https://github.com/guifandos
-        aria-label: GitHub
-      - icon: twitter-x
-        href: https://x.com/g_fandos
-        aria-label: X (Twitter)
-      - icon: mortarboard-fill
-        href: https://scholar.google.es/citations?user=8zRbuNgAAAAJ
-        aria-label: Google Scholar
-      - icon: person-badge
-        href: https://orcid.org/0000-0003-1579-9444
-        aria-label: ORCID
-      - icon: envelope
-        href: mailto:gfandos@ucm.es
-        aria-label: Email
-
-  # Footer
-  page-footer:
-    left: |
-      **Guillermo Fandos** · Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid
-    center: |
-      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444) · [GitHub](https://github.com/guifandos)
-    right: |
-      © 2026 · Made with [Quarto](https://quarto.org/)
 
   sidebar: false
 
@@ -97,6 +37,22 @@ format:
       text: |
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
         <meta name="theme-color" content="#f7f3ea">
+        <script>
+        // Language switch: point the ES/EN navbar link to the same page in the other language
+        document.addEventListener("DOMContentLoaded", function () {
+          var links = document.querySelectorAll(".navbar a.nav-link");
+          var path = location.pathname.replace(/index\.html$/, "");
+          var isEs = /^\/es(\/|$)/.test(path);
+          links.forEach(function (a) {
+            var t = a.textContent.trim();
+            if (t !== "ES" && t !== "EN") return;
+            var target = isEs ? path.replace(/^\/es/, "") || "/" : "/es" + path;
+            a.href = target; a.classList.add("lang-switch");
+            var alt = document.createElement("link"); alt.rel = "alternate"; alt.hreflang = isEs ? "en" : "es"; alt.href = target;
+            document.head.appendChild(alt);
+          });
+        });
+        </script>
     grid:
       body-width: 860px
       margin-width: 220px

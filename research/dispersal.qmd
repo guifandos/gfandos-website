@@ -5,7 +5,7 @@ description: "Research on animal movement ecology, dispersal, and migration usin
 ---
 
 ::: {.column-screen .banner-wrap}
-![](../images/data/tracks.jpg){.page-banner fig-alt=""}
+![](../images/data/movement.jpg){.page-banner fig-alt=""}
 :::
 
 Animal movement connects individuals to their environment across scales: from daily foraging decisions to seasonal migrations across continents. Understanding these movements is central to ecology and conservation, because they determine how populations are connected, how species track changing environments, and how individuals find resources and mates.

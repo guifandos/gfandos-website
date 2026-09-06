@@ -1,0 +1,35 @@
+---
+title: "Aplicaciones a la conservación"
+subtitle: "De los modelos a la gestión"
+description: "Investigación aplicada a la conservación: expansión de los grandes carnívoros en Iberia, evaluación de especies amenazadas, ecosistemas fluviales mediterráneos y conectividad del paisaje."
+---
+
+::: {.column-screen .banner-wrap}
+![](../../images/research/conservation.jpg){.page-banner fig-alt=""}
+:::
+
+Intentamos que nuestra investigación sea útil más allá de la academia. Eso significa trabajar en preguntas que importan para la práctica de la conservación y colaborar con quienes pueden aplicar los resultados.
+
+## Expansión de los grandes carnívoros
+
+Una línea de la que estamos orgullosos se centra en los grandes carnívoros de Iberia. Lobos, osos y linces están ampliando su distribución por España y Portugal, una buena noticia para la conservación pero también un reto de gestión. ¿Hacia dónde irán? ¿Qué áreas son críticas para la conectividad? ¿Dónde son más probables los conflictos con las personas?
+
+Dirigimos trabajos de estudiantes que abordaron estas preguntas con modelos de distribución y análisis de conectividad. Los resultados identifican áreas prioritarias para una conservación proactiva: lugares donde actuar *ahora* facilitaría una recolonización con éxito en lugar de reaccionar cuando surjan los conflictos.
+
+## Evaluación de especies amenazadas
+
+También hemos trabajado en mejorar las evaluaciones poblacionales de especies con pocos datos. El seguimiento tradicional sufre a menudo un "muestreo preferencial": recogemos datos donde es cómodo, no necesariamente donde es representativo. Desarrollamos modelos de ocupación que corrigen ese sesgo, aplicados a 22 años de seguimiento de la cigüeña negra en España.
+
+Las estimaciones resultantes fueron más robustas que las anteriores y contribuyeron a la evaluación de la especie en el Libro Rojo español.
+
+## Trabajo aplicado actual
+
+Participamos en proyectos sobre ecosistemas fluviales mediterráneos ([RIMed-Fauna](../projects/remined.html)) y en la modelización del hábitat de los murciélagos. Estos contratos aplicados nos mantienen en contacto con problemas reales de conservación y nos recuerdan por qué importa el trabajo metodológico.
+
+## Publicaciones seleccionadas
+
+Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** (2023). **Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.** *Diversity and Distributions*, 29(1), 75-88.
+
+**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). **Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.** *Ecosphere*, 12(4), e03469.
+
+Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. (2021). **Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.** *Global Change Biology*, 27(4), 755-767.

@@ -1,0 +1,107 @@
+---
+title: "Publicaciones"
+subtitle: "Artículos seleccionados, con código y datos cuando están disponibles"
+description: "Publicaciones seleccionadas de Guillermo Fandos sobre ecología de la dispersión, modelos de distribución de especies, predicción de biodiversidad y conservación, con enlaces a código y datos abiertos."
+toc: true
+toc-title: "Años"
+---
+
+Una selección de artículos del equipo y de nuestras colaboraciones. Los miembros del equipo aparecen en negrita. La lista completa y actualizada está en [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) y [ORCID](https://orcid.org/0000-0003-1579-9444).
+
+El código y los datos de nuestros artículos se comparten en [GitHub](https://github.com/guifandos) y se archivan en [Zenodo](https://zenodo.org/search?q=fandos) siempre que es posible.
+
+## 2026
+
+::: {.pub}
+<span class="pub-title">Simple mechanistic traits outperform complex syndromes in predicting avian dispersal distances</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, Robinson, R. A., & Zurell, D.</span><br>
+<span class="pub-venue">Communications Biology, 9, 376</span>
+<div class="pub-links">[DOI](https://doi.org/10.1038/s42003-026-09676-x) [Código y datos](https://zenodo.org/records/10713958)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">Habitat fragmentation and amount drive within-species variation in dispersal kernels and limit transferability across landscapes</span>
+<span class="pub-authors">Wolff, J., <span class="pub-me">Fandos, G.</span>, Albert, C. H., Bocedi, G., Travis, J. M. J., & Zurell, D.</span><br>
+<span class="pub-venue">Oikos</span>
+<div class="pub-links">[DOI](https://doi.org/10.1002/oik.12209) [Código](https://zenodo.org/records/19608665)</div>
+:::
+
+## 2023
+
+::: {.pub}
+<span class="pub-title">Standardised empirical dispersal kernels emphasise the pervasiveness of long-distance dispersal in European birds</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D.</span><br>
+<span class="pub-venue">Journal of Animal Ecology, 92(1), 158–170</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/1365-2656.13838)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human-dominated landscapes</span>
+<span class="pub-authors">Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & <span class="pub-me">Fandos, G.</span></span><br>
+<span class="pub-venue">Diversity and Distributions, 29(1), 75–88</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/ddi.13644)</div>
+:::
+
+## 2022
+
+::: {.pub}
+<span class="pub-title">Spatially explicit models for decision-making in animal conservation and restoration</span>
+<span class="pub-authors">Zurell, D., König, C., Malchow, A. K., Kapitza, S., Bocedi, G., Travis, J., & <span class="pub-me">Fandos, G.</span></span><br>
+<span class="pub-venue">Ecography, 2022(4)</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/ecog.05787)</div>
+:::
+
+## 2021
+
+::: {.pub}
+<span class="pub-title">Can dynamic occupancy models improve predictions of species' range dynamics? A test using Swiss birds</span>
+<span class="pub-authors">Briscoe, N. J., Zurell, D., Elith, J., König, C., <span class="pub-me">Fandos, G.</span>, Malchow, A. K., Kéry, M., Schmid, H., & Guillera-Arroita, G.</span><br>
+<span class="pub-venue">Global Change Biology, 27(18), 4269–4282</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/gcb.15723)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, Kéry, M., Cano-Alonso, L. S., Carbonell, I., & Tellería, J. L.</span><br>
+<span class="pub-venue">Ecosphere, 12(4), e03469</span>
+<div class="pub-links">[DOI](https://doi.org/10.1002/ecs2.3469)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco</span>
+<span class="pub-authors">Romero-Muñoz, A., <span class="pub-me">Fandos, G.</span>, Benítez-López, A., & Kuemmerle, T.</span><br>
+<span class="pub-venue">Global Change Biology, 27(4), 755–767</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/gcb.15424)</div>
+:::
+
+## 2020
+
+::: {.pub}
+<span class="pub-title">Seasonal niche tracking of climate emerges at the population level in a migratory bird</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, Rotics, S., Sapir, N., Fiedler, W., Kaatz, M., Wikelski, M., Nathan, R., & Zurell, D.</span><br>
+<span class="pub-venue">Proceedings of the Royal Society B, 287(1935), 20201799</span>
+<div class="pub-links">[DOI](https://doi.org/10.1098/rspb.2020.1799)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">A standard protocol for reporting species distribution models</span>
+<span class="pub-authors">Zurell, D., Franklin, J., König, C., Bouchet, P. J., Dormann, C. F., Elith, J., <span class="pub-me">Fandos, G.</span>, et al., & Merow, C.</span><br>
+<span class="pub-venue">Ecography, 43(9), 1261–1277</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/ecog.04960)</div>
+:::
+
+::: {.pub}
+<span class="pub-title">Seasonal niche-tracking behaviour of two partially migratory passerines</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, & Tellería, J. L.</span><br>
+<span class="pub-venue">Ibis, 162(2), 307–317</span>
+<div class="pub-links">[DOI](https://doi.org/10.1111/ibi.12721)</div>
+:::
+
+## 2018
+
+::: {.pub}
+<span class="pub-title">Range compression of migratory passerines in wintering grounds of the Western Mediterranean: conservation prospects</span>
+<span class="pub-authors"><span class="pub-me">Fandos, G.</span>, & Tellería, J. L.</span><br>
+<span class="pub-venue">Bird Conservation International, 28(3), 462–474</span>
+<div class="pub-links">[DOI](https://doi.org/10.1017/S0959270917000491)</div>
+:::

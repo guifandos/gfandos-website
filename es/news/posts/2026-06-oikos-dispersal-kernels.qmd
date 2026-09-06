@@ -1,0 +1,14 @@
+---
+title: "La estructura del paisaje moldea los kernels de dispersión dentro de cada especie: nuevo artículo en Oikos"
+date: 2026-06-01
+description: "Wolff et al. muestran que la fragmentación del hábitat genera variación intraespecífica en los kernels de dispersión y limita su transferibilidad entre paisajes."
+categories: [artículo]
+---
+
+Junto con Jette Wolff, Cécile Albert, Greta Bocedi, Justin Travis y Damaris Zurell hemos publicado en *Oikos* un estudio sobre cómo la estructura del paisaje moldea la dispersión dentro de cada especie.
+
+Mediante simulaciones de movimiento basadas en individuos para cuatro especies animales, en paisajes que difieren en cantidad y fragmentación de hábitat, el estudio deriva kernels de dispersión emergentes y compara cinco funciones de densidad. Los kernels de cola pesada (log-normales) describen mejor la dispersión de forma consistente, y la fragmentación del hábitat los transforma con fuerza al alterar las trayectorias de movimiento. La cantidad de hábitat tiene un efecto más débil y menos consistente.
+
+El mensaje práctico para quien modeliza: un kernel estimado en un paisaje no se transfiere limpiamente a otro. Es exactamente el tipo de dependencia del contexto que [INTRADISP](../../projects/intradisp.html) intenta cuantificar con datos empíricos de anillamiento.
+
+**Wolff, J., Fandos, G., Albert, C. H., Bocedi, G., Travis, J. M. J., & Zurell, D. (2026).** Habitat fragmentation and amount drive within-species variation in dispersal kernels and limit transferability across landscapes. *Oikos*. [doi:10.1002/oik.12209](https://doi.org/10.1002/oik.12209) · [Código en Zenodo](https://zenodo.org/records/19608665)

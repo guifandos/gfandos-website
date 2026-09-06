@@ -678,3 +678,10 @@ th { font-weight: 600; background: $paper-2; }
 // canvas above the dark overlay in the data band
 .databand-media::after { z-index: 0; }
 .databand-media canvas { z-index: 1; }
+
+// language switch in the navbar
+.navbar .lang-switch, .navbar a.nav-link.lang-switch {
+  font-size: 0.8rem; letter-spacing: 0.08em; font-weight: 700;
+  border: 1.5px solid $line; border-radius: 999px; padding: 0.15rem 0.6rem !important; margin-right: 0.5rem;
+}
+.navbar a.nav-link.lang-switch:hover { border-color: $olive; color: $olive; }

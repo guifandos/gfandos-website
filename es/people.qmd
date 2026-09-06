@@ -1,0 +1,128 @@
+---
+title: "Personas"
+subtitle: "El equipo, nuestros estudiantes, antiguos alumnos y colaboradores"
+description: "El equipo de Guillermo Fandos en la Universidad Complutense de Madrid: investigadores, estudiantes visitantes, estudiantes de máster, antiguos alumnos, colaboradores y cómo trabajar con nosotros."
+---
+
+```{=html}
+<div class="people-grid">
+  <div class="person person-pi">
+    <img class="avatar" src="../images/avatar.jpg" alt="Guillermo Fandos">
+    <div class="person-text">
+      <span class="role">Investigador principal</span>
+      <h3>Guillermo Fandos</h3>
+      <span class="affil">Profesor Ayudante Doctor · Dpto. Biodiversidad, Ecología y Evolución, UCM · Grupo de investigación <a href="https://www.ucm.es/bcv/">Biología y Conservación Evolutiva</a></span>
+      <p>Ecólogo espacial dedicado al análisis cuantitativo de la biodiversidad, el movimiento animal y la conservación. Guillermo combina trabajo de campo, síntesis de datos a gran escala y modelización bayesiana para entender dónde están los animales, cómo se mueven y cómo responden las poblaciones al cambio ambiental. Doctor en Ecología (UCM, 2017); etapa postdoctoral en el grupo de Damaris Zurell en Alemania antes de volver a Madrid.</p>
+      <div class="links">
+        <a href="cv.html" title="CV"><i class="bi bi-file-earmark-person"></i></a>
+        <a href="mailto:gfandos@ucm.es" title="Correo"><i class="bi bi-envelope"></i></a>
+        <a href="https://scholar.google.es/citations?user=8zRbuNgAAAAJ" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+        <a href="https://orcid.org/0000-0003-1579-9444" title="ORCID"><i class="bi bi-person-badge"></i></a>
+        <a href="https://github.com/guifandos" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://x.com/g_fandos" title="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Investigadores
+
+```{=html}
+<div class="people-grid">
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">DN</span>
+    <h3>David Notario Rincón</h3>
+    <span class="role">Técnico de investigación</span>
+    <span class="affil"><a href="projects/intradisp.html">INTRADISP</a> · UCM</span>
+    <p>Variación intraespecífica de la dispersión en aves a partir de recuperaciones de anillas de EURING, y validación de flujos de seguimiento acústico pasivo (AudioMoth, BirdNET). Codirigido con Rafael Barrientos.</p>
+  </div>
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">CM</span>
+    <h3>Claudia Mediavilla Bailo</h3>
+    <span class="role">Investigadora · Doctoranda</span>
+    <span class="affil"><a href="projects/remined.html">RIMed-Fauna</a> · UCM</span>
+    <p>Fauna terrestre en ecosistemas fluviales mediterráneos, combinando fototrampeo con modelos de ocupación y de distribución de especies. TFM defendido en 2026. Codirigida con María del Mar Sánchez-Montoya y Rafael Barrientos.</p>
+  </div>
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">HD</span>
+    <h3>Hugo Díaz Santaolalla</h3>
+    <span class="role">Doctorando</span>
+    <span class="affil">CE3C, Universidad de Lisboa</span>
+    <p>Dinámica de carnívoros e interacciones bióticas: cómo las interacciones entre especies moldean los patrones de distribución. Codirigido con Alejandra Zarzo-Arias y Luís Miguel Rosalino.</p>
+  </div>
+</div>
+```
+
+## Investigadores visitantes
+
+```{=html}
+<div class="people-grid">
+  <div class="person">
+    <span class="avatar avatar-initials" aria-hidden="true">JH</span>
+    <h3>Jakub Hrouda</h3>
+    <span class="role">Estudiante visitante</span>
+    <span class="affil">Universidad Carolina, Praga</span>
+    <p>Cambios estacionales en el uso de ambientes urbanos por las aves migratorias europeas, combinando eBird Status and Trends con rasgos morfológicos, migratorios y cognitivos en modelos bayesianos. Proyecto conjunto con Vojtěch Brlík y Petr Procházka (Academia Checa de Ciencias).</p>
+  </div>
+</div>
+```
+
+## Estudiantes de máster (2025–2026)
+
+Trabajos Fin de Máster en curso o defendidos este curso académico.
+
+```{=html}
+<ul class="plain-list">
+  <li><span class="who">Julio de la Parte Matos</span> · <span class="what">Densidades de tórtola europea a partir de cinco años de estaciones de escucha: muestreo de distancias con covariables de observador y ruido. Codirigido con Marta Cruz Flores y Mario Fernández Tizón (UCLM).</span></li>
+  <li><span class="who">Guillermo Sánchez-Herrero Gallego</span> · <span class="what">Legados de la historia del paisaje en la diversidad taxonómica y funcional de las aves, con datos de eBird. Codirigido con Verónica Cruz Alonso (Universidad de Alcalá).</span></li>
+  <li><span class="who">Paula Civantos</span> · <span class="what">Modelos de ocupación dinámicos con kernels de dispersión empíricos: ¿mejoran los kernels específicos de cada población las predicciones de colonización y extinción? Codirigido con Manuel B. Morales (Universidad Autónoma de Madrid).</span></li>
+  <li><span class="who">Susana Campanero Campos</span> · <span class="what">Modelos de distribución y solapamiento de nicho del oso pardo cantábrico. Codirigido con Alejandra Zarzo-Arias y Vincenzo Penteriani (CSIC).</span></li>
+</ul>
+```
+
+## Antiguos alumnos
+
+Trabajos Fin de Máster dirigidos en la UCM y en la Humboldt-Universität zu Berlin.
+
+```{=html}
+<ul class="plain-list">
+  <li><span class="who">Elena Herrero Esteban</span> · 2025 · <span class="what">Factores de la migración del avión zapador (<em>Riparia riparia</em>): un enfoque de ciencia ciudadana. Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Juan Javier Ramón Crespo</span> · 2025 · <span class="what">Ensamblaje de comunidades de murciélagos en gradientes altitudinales de regiones tropicales y templadas. Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Alejandro Redondo</span> · 2025 · <span class="what">Actividad circadiana de la comunidad de mesocarnívoros de Quintos de Mora (fototrampeo). Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Luis Sánchez Valverde</span> · 2025 · <span class="what">Densidad arbórea y estacionalidad como determinantes de la actividad de aves insectívoras: un enfoque bioacústico. Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Raúl Contreras</span> · 2024 · <span class="what">Distribución y conservación de las aves esteparias en España: un nuevo enfoque. Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Raquel Iglesias</span> · 2023 · <span class="what">Nicho ecológico y dinámica de distribución de dos aves invasoras en Europa. Máster en Zoología, UCM.</span></li>
+  <li><span class="who">Maria Pratzer</span> · <span class="what">Expansión de los grandes carnívoros en Iberia bajo escenarios de permeabilidad del paisaje. Máster, Humboldt-Universität zu Berlin. Publicado en <em>Diversity and Distributions</em> (2023).</span></li>
+  <li><span class="who">Leon Nill</span> · <span class="what">Permeabilidad del paisaje para grandes carnívoros en paisajes humanizados. Máster, Humboldt-Universität zu Berlin. Publicado en <em>Diversity and Distributions</em> (2023).</span></li>
+</ul>
+```
+
+## Colaboradores
+
+Trabajamos habitualmente con:
+
+```{=html}
+<ul class="plain-list">
+  <li><span class="who"><a href="https://damariszurell.github.io/">Damaris Zurell</a></span> · University of Potsdam · <span class="what">Dispersión, modelos dinámicos de distribución</span></li>
+  <li><span class="who"><a href="https://www.bto.org/about-bto/our-staff/rob-robinson">Rob Robinson</a></span> · British Trust for Ornithology · <span class="what">Análisis de recuperaciones de anillas</span></li>
+  <li><span class="who">Rafael Barrientos</span> · UCM · <span class="what">Ecología de carreteras, conservación</span></li>
+  <li><span class="who">María del Mar Sánchez-Montoya</span> · UCM · <span class="what">Ecosistemas fluviales mediterráneos</span></li>
+  <li><span class="who">Álvaro Luna</span> · UCM · <span class="what">Ecología urbana, biología de invasiones</span></li>
+  <li><span class="who">Raúl Bonal</span> · UCM · <span class="what">Bioacústica</span></li>
+  <li><span class="who">Alejandra Zarzo-Arias</span> · CE3C, Universidad de Lisboa · <span class="what">Grandes carnívoros</span></li>
+  <li><span class="who">Vojtěch Brlík &amp; Petr Procházka</span> · Universidad Carolina y Academia Checa de Ciencias · <span class="what">Migración de aves y urbanización</span></li>
+  <li><span class="who"><a href="https://www.vogelwarte.ch/en/about-us/team/kery-marc">Marc Kéry</a></span> · Estación Ornitológica Suiza · <span class="what">Modelos de ocupación</span></li>
+  <li><span class="who"><a href="https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias">Tobias Kuemmerle</a></span> · Humboldt-Universität zu Berlin · <span class="what">Cambio de usos del suelo</span></li>
+</ul>
+```
+
+## Trabaja con nosotros
+
+Siempre nos alegra saber de estudiantes motivados con interés en el análisis cuantitativo de la biodiversidad, el movimiento animal o la conservación.
+
+- **TFM**: ofrecemos trabajos cada curso en los másteres de Biología de la Conservación y Zoología de la UCM, y codirigimos con colegas de otras universidades. Suelen estar vinculados a nuestros proyectos y datos (anillamiento, eBird, fototrampeo, grabadores acústicos). Escríbenos en primavera para el curso siguiente.
+- **Doctorado**: apoyamos solicitudes a convocatorias competitivas (FPU, FPI, Comunidad de Madrid, Marie Skłodowska-Curie). Contacta con tiempo con una breve descripción de tus intereses y un CV.
+- **Postdoctorales y visitantes**: acogemos investigadores y estudiantes visitantes y apoyamos solicitudes (Juan de la Cierva, Ramón y Cajal, MSCA). Si nuestra investigación encaja con la tuya, hablemos.
+
+Contacto: [gfandos@ucm.es](mailto:gfandos@ucm.es)

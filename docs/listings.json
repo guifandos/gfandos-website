@@ -1,20 +1,20 @@
 [
   {
-    "listing": "/news/index.html",
+    "listing": "/es/news/index.html",
     "items": [
-      "/news/posts/2026-06-oikos-dispersal-kernels.html",
-      "/news/posts/2026-02-euflynet-vienna.html",
-      "/news/posts/2026-02-communications-biology-dispersal-traits.html",
-      "/news/posts/2025-09-new-members.html"
+      "/es/news/posts/2026-06-oikos-dispersal-kernels.html",
+      "/es/news/posts/2026-02-euflynet-vienna.html",
+      "/es/news/posts/2026-02-communications-biology-dispersal-traits.html",
+      "/es/news/posts/2025-09-new-members.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/es/index.html",
     "items": [
-      "/news/posts/2026-06-oikos-dispersal-kernels.html",
-      "/news/posts/2026-02-euflynet-vienna.html",
-      "/news/posts/2026-02-communications-biology-dispersal-traits.html",
-      "/news/posts/2025-09-new-members.html"
+      "/es/news/posts/2026-06-oikos-dispersal-kernels.html",
+      "/es/news/posts/2026-02-euflynet-vienna.html",
+      "/es/news/posts/2026-02-communications-biology-dispersal-traits.html",
+      "/es/news/posts/2025-09-new-members.html"
     ]
   }
 ]

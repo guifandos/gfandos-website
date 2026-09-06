@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-638dab2167c1c894fc6ce0a0afd39296.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-afb554fb8be9a9839db4854d8bc1dccc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,11 +72,27 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 <meta name="theme-color" content="#f7f3ea">
+<script>
+// Language switch: point the ES/EN navbar link to the same page in the other language
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".navbar a.nav-link");
+  var path = location.pathname.replace(/index\.html$/, "");
+  var isEs = /^\/es(\/|$)/.test(path);
+  links.forEach(function (a) {
+    var t = a.textContent.trim();
+    if (t !== "ES" && t !== "EN") return;
+    var target = isEs ? path.replace(/^\/es/, "") || "/" : "/es" + path;
+    a.href = target; a.classList.add("lang-switch");
+    var alt = document.createElement("link"); alt.rel = "alternate"; alt.hreflang = isEs ? "en" : "es"; alt.href = target;
+    document.head.appendChild(alt);
+  });
+});
+</script>
 
 
 <meta property="og:title" content="Animal movement and dispersal – Guillermo Fandos">
 <meta property="og:description" content="Research on animal movement ecology, dispersal, and migration using European bird ringing data, Bayesian methods, and dispersal kernel estimation for 200+ species.">
-<meta property="og:image" content="https://www.gfandos.com/images/data/tracks.jpg">
+<meta property="og:image" content="https://www.gfandos.com/images/data/movement.jpg">
 <meta property="og:site_name" content="Guillermo Fandos">
 <meta property="og:image:alt" content="">
 <meta name="twitter:title" content="Animal movement and dispersal – Guillermo Fandos">
@@ -161,6 +177,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../es/index.qmd"> 
+<span class="menu-text">ES</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/guifandos"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -227,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="column-screen banner-wrap">
-<p><img src="../images/data/tracks.jpg" class="page-banner img-fluid" alt=""></p>
+<p><img src="../images/data/movement.jpg" class="page-banner img-fluid" alt=""></p>
 </div>
 <p>Animal movement connects individuals to their environment across scales: from daily foraging decisions to seasonal migrations across continents. Understanding these movements is central to ecology and conservation, because they determine how populations are connected, how species track changing environments, and how individuals find resources and mates.</p>
 <section id="dispersal-the-missing-piece" class="level2">

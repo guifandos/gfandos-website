@@ -1,0 +1,14 @@
+---
+title: "Bienvenida a David Notario y Claudia Mediavilla"
+date: 2025-09-01
+description: "Dos nuevos investigadores se incorporan al equipo para trabajar en INTRADISP y RIMed-Fauna."
+categories: [personas]
+---
+
+Damos la bienvenida a dos nuevos miembros del equipo.
+
+**David Notario Rincón** se incorpora a [INTRADISP](../../projects/intradisp.html) para trabajar en la dinámica de las áreas de distribución de las aves ante el cambio climático, usando datos de recuperación de anillas para entender cómo varía la dispersión a lo largo de gradientes ambientales.
+
+**Claudia Mediavilla** se incorpora a [RIMed-Fauna](../../projects/remined.html), donde estudia la fauna de los ecosistemas fluviales mediterráneos combinando fototrampeo con modelos de distribución de especies.
+
+Ambos están codirigidos con Rafael Barrientos. Conoce a todo el equipo en la página de [Personas](../../people.html).

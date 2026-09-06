@@ -1,0 +1,15 @@
+---
+title: "Noticias"
+subtitle: "Artículos, reuniones, personas y trabajo de campo"
+description: "Noticias de Guillermo Fandos y su equipo en la Universidad Complutense de Madrid: nuevos artículos, congresos, incorporaciones y trabajo de campo."
+listing:
+  id: news-all
+  contents: posts
+  sort: "date desc"
+  date-format: "MMM YYYY"
+  template: ../../_templates/news-list.ejs
+page-layout: article
+---
+
+::: {#news-all}
+:::

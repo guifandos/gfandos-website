@@ -1,0 +1,67 @@
+# Spanish profile: QUARTO_PROFILE=es quarto render
+project:
+  render:
+    - "es/**/*.qmd"
+    - "!AUDIT-REPORT.md"
+    - "!ACTION-PLAN.md"
+    - "!REDESIGN-PLAN.md"
+
+
+website:
+  description: "Guillermo Fandos, ecólogo espacial en la Universidad Complutense de Madrid. Análisis cuantitativo de la biodiversidad, movimiento animal y conservación."
+  navbar:
+    background: light
+    logo: images/monogram.svg
+    logo-alt: "GF"
+    left:
+      - text: "Investigación"
+        menu:
+          - text: "Visión general"
+            href: es/research/index.qmd
+          - text: "---"
+          - text: "Movimiento y dispersión"
+            href: es/research/dispersal.qmd
+          - text: "Seguimiento y modelización"
+            href: es/research/forecasting.qmd
+          - text: "Conservación y cambio global"
+            href: es/research/conservation.qmd
+          - text: "Tecnología de campo"
+            href: es/research/fieldtech.qmd
+      - text: "Proyectos"
+        href: es/projects/index.qmd
+      - text: "Personas"
+        href: es/people.qmd
+      - text: "Publicaciones"
+        href: es/publications.qmd
+      - text: "Docencia"
+        href: es/teaching.qmd
+      - text: "Noticias"
+        href: es/news/index.qmd
+      - text: "CV"
+        href: es/cv.qmd
+    right:
+      - text: "EN"
+        href: index.qmd
+        aria-label: "English version"
+      - icon: github
+        href: https://github.com/guifandos
+        aria-label: GitHub
+      - icon: twitter-x
+        href: https://x.com/g_fandos
+        aria-label: X (Twitter)
+      - icon: mortarboard-fill
+        href: https://scholar.google.es/citations?user=8zRbuNgAAAAJ
+        aria-label: Google Scholar
+      - icon: person-badge
+        href: https://orcid.org/0000-0003-1579-9444
+        aria-label: ORCID
+      - icon: envelope
+        href: mailto:gfandos@ucm.es
+        aria-label: Correo
+  page-footer:
+    left: |
+      **Guillermo Fandos** · Dpto. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid
+    center: |
+      [Perfil UCM](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444) · [GitHub](https://github.com/guifandos)
+    right: |
+      © 2026 · Hecho con [Quarto](https://quarto.org/)

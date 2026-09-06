@@ -1,0 +1,23 @@
+---
+title: "Tecnología de campo"
+subtitle: "Sensores, sonido y cámaras para el seguimiento de la fauna"
+description: "Fototrampeo, seguimiento acústico pasivo con grabadores AudioMoth y flujos de datos de sensores para la evaluación de la biodiversidad en ecosistemas mediterráneos."
+---
+
+::: {.column-screen .banner-wrap}
+![](../../images/research/fieldtech.jpg){.page-banner fig-alt="Acuarela de una cámara de fototrampeo fijada a un árbol"}
+:::
+
+La tecnología está cambiando lo que podemos observar en el campo. Cámaras baratas, grabadores acústicos y datos de satélite permiten seguir especies difíciles de detectar a escalas impensables hace una década. Construimos flujos de trabajo que convierten esos datos brutos en información útil sobre biodiversidad.
+
+## Fototrampeo
+
+Desplegamos redes de cámaras de fototrampeo en ecosistemas mediterráneos dentro del proyecto [RIMed-Fauna](../projects/remined.html), para seguir cómo usan los vertebrados terrestres los hábitats de ribera a lo largo de las estaciones. Hay algo emocionante en revisar las tarjetas SD y descubrir qué pasó por allí cuando no estabas. El reto metodológico es convertir las historias de detección en estimaciones robustas de ocupación y actividad en ambientes que cambian por completo entre las crecidas de invierno y la sequía de verano.
+
+## Bioacústica
+
+En colaboración con [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM) desplegamos grabadores AudioMoth para seguimiento acústico pasivo. Los datos acústicos abren posibilidades para especies difíciles de detectar visualmente, como murciélagos y aves nocturnas, y para el seguimiento continuo durante periodos largos.
+
+## Por qué importa para la modelización
+
+Los datos de sensores no sustituyen a los buenos modelos; son lo que hace posibles mejores modelos. Cámaras y grabadores producen detecciones estandarizadas y repetibles que pueden combinarse con la ciencia ciudadana y el anillamiento en los modelos integrados que desarrollamos en nuestra línea de [seguimiento y modelización](forecasting.html).

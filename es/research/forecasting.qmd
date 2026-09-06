@@ -1,0 +1,33 @@
+---
+title: "Predicción de la biodiversidad"
+subtitle: "Mejores modelos para mejores predicciones"
+description: "Mejorar los modelos de distribución de especies con procesos ecológicos: limitaciones de dispersión, dinámica poblacional e integración de datos de ciencia ciudadana y censos."
+---
+
+::: {.column-screen .banner-wrap}
+![](../../images/data/sdm.jpg){.page-banner fig-alt=""}
+:::
+
+El cambio climático está reorganizando las distribuciones de las especies en todo el mundo. Para responder con eficacia necesitamos anticipar esos cambios, pero nuestras predicciones son tan buenas como nuestros modelos. Trabajamos para que los modelos de distribución de especies sean más fiables incorporándoles realismo ecológico.
+
+## La limitación de los modelos correlativos
+
+La mayoría de los modelos de distribución correlacionan dónde está una especie con las condiciones ambientales y proyectan al clima futuro. Funciona razonablemente para algunos fines, pero pasa por alto dinámicas cruciales: ¿puede la especie dispersarse hasta las nuevas áreas idóneas? ¿Persistirán las poblaciones en los años malos? ¿Cómo limitan las interacciones con otras especies la distribución?
+
+## Enfoques basados en procesos
+
+Nos interesan los modelos que incorporan esos procesos de forma explícita: combinar modelos de distribución con dinámica poblacional, kernels de dispersión y restricciones mecanísticas. Los modelos se vuelven más complejos, pero también más honestos sobre lo que determina la distribución de las especies.
+
+Un ejemplo concreto: un modelo estándar puede predecir que una especie "debería" estar en el norte de Europa en 2050. Pero si se dispersa 10 km por generación y hay 500 km de hábitat inadecuado por medio, no va a llegar. Los modelos basados en procesos capturan esto.
+
+## Integración de datos
+
+Los buenos modelos necesitan buenos datos. Trabajamos en integrar distintas fuentes (censos estandarizados, observaciones de ciencia ciudadana, recuperaciones de anillas) para mejorar tanto la cobertura espacial como la dinámica temporal que podemos capturar. Cada tipo de dato tiene sesgos, pero combinarlos con criterio ofrece una imagen más completa.
+
+## Publicaciones seleccionadas
+
+Zurell, D., König, C., Malchow, A. K., et al. & **Fandos, G.** (2022). **Spatially explicit models for decision‐making in animal conservation and restoration.** *Ecography*. [DOI](https://doi.org/10.1111/ecog.05787)
+
+Briscoe, N., Zurell, D., Elith, J., König, C., **Fandos, G.**, et al. (2021). **Can dynamic occupancy models improve predictions of species' range dynamics?** *Global Change Biology*, 27, 4269–4282.
+
+Zurell, D., Franklin, J., König, C., ..., **Fandos, G.**, ..., & Merow, C. (2020). **A standard protocol for reporting species distribution models.** *Ecography*, 43(9), 1261-1277.

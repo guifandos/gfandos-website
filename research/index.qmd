@@ -11,7 +11,7 @@ Our research focuses on the ecological processes that drive the distribution and
 ```{=html}
 <div class="card-grid card-grid-2">
   <article class="card-x">
-    <figure><picture><source type="image/webp" srcset="../images/research/dispersal.webp"><img src="../images/research/dispersal.jpg" alt="" loading="lazy"></picture></figure>
+    <figure><picture><source type="image/webp" srcset="../images/research/movement-card.webp"><img src="../images/research/movement-card.jpg" alt="" loading="lazy"></picture></figure>
     <div class="card-body">
       <h3><a href="dispersal.html">Animal movement in dynamic landscapes</a></h3>
       <p>Linking movement to ecology and evolution: how daily movements, seasonal migration and lifetime dispersal shape connectivity, range boundaries and responses to environmental change.</p>

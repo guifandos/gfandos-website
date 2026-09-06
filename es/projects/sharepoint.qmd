@@ -1,0 +1,28 @@
+---
+title: "SHAREPOINT"
+subtitle: "Organización social y transmisión de parásitos en aves de la selva"
+description: "Proyecto SHAREPOINT: organización social y transmisión de parásitos en comunidades de aves del sotobosque de la Guayana Francesa, combinando análisis de redes y ecología de enfermedades."
+page-layout: article
+---
+
+## La pregunta
+
+Las aves del sotobosque de las selvas tropicales forrajean a menudo en bandos mixtos, con relaciones sociales estables durante años. ¿Determina esa organización social cómo circulan los parásitos por la comunidad? SHAREPOINT combina datos de campo sobre redes sociales de aves con el cribado de parásitos para comprobar si con quién te asocias predice qué parásitos llevas.
+
+## Qué hacemos
+
+Investigación de campo en la Guayana Francesa, combinando captura con redes, marcaje individual y observación de la pertenencia a bandos con el cribado molecular de parásitos sanguíneos. El análisis relaciona la estructura de la red social con la transmisión de parásitos.
+
+## Nuestro papel
+
+Contribuimos al trabajo de campo y al análisis espacial y de redes, aprovechando la experiencia previa con comunidades de aves de la Guayana Francesa (proyectos CEBA).
+
+## Equipo
+
+- **IP**: Javier Pérez-Tris (UCM)
+- Guillermo Fandos (miembro del equipo)
+- Equipo multiinstitucional, con la plataforma de investigación CEBA en la Guayana Francesa
+
+## Financiación
+
+2025–2027.

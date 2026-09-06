@@ -1,0 +1,35 @@
+---
+title: "INTRADISP"
+subtitle: "Variación intraespecífica de la dispersión en las aves europeas"
+description: "Proyecto INTRADISP: cuantificar la variación intraespecífica de la dispersión en aves europeas con datos de recuperación de anillas de EURING y modelos bayesianos."
+page-layout: article
+---
+
+## La pregunta
+
+Cuando decimos "la especie X se dispersa tantos kilómetros" estamos ocultando una variación enorme. Dentro de cualquier especie, algunos individuos se quedan cerca de casa y otros recorren cientos de kilómetros. No es ruido aleatorio: refleja la condición individual, la densidad local, la calidad del hábitat y otros factores que apenas empezamos a entender.
+
+Esa variación importa. Si queremos predecir cómo responderán las especies al cambio climático, no basta con distancias medias. Una población puede expandirse deprisa o apenas moverse, según qué individuos se dispersen y en qué condiciones.
+
+## Qué hacemos
+
+INTRADISP utiliza la base de datos de recuperaciones de EURING para cuantificar la variación intraespecífica de la dispersión en las aves europeas. Nos preguntamos:
+
+- ¿Cuánto varía la dispersión dentro de cada especie en comparación con la variación entre especies?
+- ¿Qué factores ambientales e individuales predicen esa variación?
+- ¿Podemos construir modelos de dispersión que incorporen la dependencia del contexto?
+
+## Equipo
+
+- **Guillermo Fandos** (IP)
+- **David Notario Rincón** (técnico de investigación)
+- **Rafael Barrientos** (codirector)
+- Colaboradores: Damaris Zurell (Potsdam), Rob Robinson (BTO)
+
+## Financiación
+
+UCM Doctores Emergentes (PR17/24), 2024-2026.
+
+## Trabajo relacionado
+
+El proyecto parte de nuestro [artículo de 2023 en Journal of Animal Ecology](../research/dispersal.qmd), que estableció kernels de dispersión estandarizados para 234 especies de aves europeas.

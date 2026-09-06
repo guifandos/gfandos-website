@@ -1,0 +1,35 @@
+---
+title: "RIMed-Fauna"
+subtitle: "Fauna en los ecosistemas fluviales mediterráneos"
+description: "Proyecto RIMed-Fauna: cómo se adapta la fauna terrestre a la dinámica de los ríos mediterráneos, con fototrampeo y modelos de distribución en Parques Nacionales."
+page-layout: article
+---
+
+## El contexto
+
+Los ríos mediterráneos se definen por los extremos. Las crecidas de invierno remodelan los cauces; las sequías de verano dejan solo pozas desconectadas, o nada. Esa variabilidad hidrológica plantea retos únicos a la fauna, y el cambio climático está haciendo los extremos más intensos.
+
+## El proyecto
+
+[RIMed-Fauna](https://www.um.es/web/rimed-fauna/) investiga cómo se adaptan los vertebrados terrestres (mamíferos, aves, reptiles, anfibios) a la dinámica temporal de los sistemas fluviales mediterráneos. Trabajamos en Parques Nacionales para entender:
+
+- ¿Qué especies dependen de los corredores fluviales y cómo?
+- ¿Dónde están los refugios críticos durante la sequía?
+- ¿Cómo afectarán los cambios previstos en el caudal a las comunidades de fauna?
+
+## Nuestro papel
+
+Aportamos la modelización de distribución de especies y dirigimos la investigación de Claudia Mediavilla dentro del proyecto. Construimos modelos que integran la variabilidad hidrológica con los datos de presencia de fauna, un reto metodológico porque la mayoría de los enfoques asumen ambientes estáticos.
+
+También desplegamos cámaras de fototrampeo para seguir el uso de los hábitats de ribera a lo largo de las estaciones.
+
+## Equipo
+
+- **IP**: María del Mar Sánchez-Montoya (Universidad de Murcia)
+- **Claudia Mediavilla** (investigadora)
+- **Rafael Barrientos** (codirector)
+- Equipo multiinstitucional de universidades españolas
+
+## Financiación
+
+Red de Parques Nacionales, 2024-2027.

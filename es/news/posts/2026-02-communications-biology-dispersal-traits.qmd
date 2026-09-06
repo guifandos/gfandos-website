@@ -1,0 +1,14 @@
+---
+title: "Rasgos simples predicen mejor la dispersión de las aves que los síndromes complejos: nuevo artículo en Communications Biology"
+date: 2026-02-01
+description: "La masa corporal y la historia de vida dominan la distancia mediana de dispersión; la eficiencia de vuelo determina los movimientos a larga distancia."
+categories: [artículo]
+---
+
+Ya está publicado en *Communications Biology* nuestro artículo con Rob Robinson (BTO) y Damaris Zurell (Potsdam).
+
+Los síndromes de dispersión, la idea de que conjuntos de rasgos correlacionados describen cómo se dispersa una especie, son populares pero rara vez se han contrastado con datos empíricos a gran escala. Con el conjunto de datos de dispersión más completo disponible para las aves europeas, preguntamos cómo se forman esos síndromes y hasta qué punto predicen la dispersión entre especies.
+
+La respuesta es que los rasgos mecanísticos aislados funcionan mejor que los síndromes compuestos. La masa corporal y la historia de vida dominan las distancias medianas, mientras que la eficiencia de vuelo determina los movimientos raros a larga distancia, que son los que más importan para la expansión de las áreas de distribución y la conectividad.
+
+**Fandos, G., Robinson, R. A., & Zurell, D. (2026).** Simple mechanistic traits outperform complex syndromes in predicting avian dispersal distances. *Communications Biology*, 9, 376. [doi:10.1038/s42003-026-09676-x](https://doi.org/10.1038/s42003-026-09676-x) · [Código y datos en Zenodo](https://zenodo.org/records/10713958)

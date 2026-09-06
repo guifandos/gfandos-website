@@ -1,0 +1,65 @@
+---
+title: "Proyectos"
+subtitle: "Proyectos de investigación actuales y pasados"
+description: "Proyectos sobre variación intraespecífica de la dispersión (INTRADISP), fauna de ríos mediterráneos (RIMed-Fauna), aves de la selva de la Guayana Francesa (SHAREPOINT) y proyectos anteriores sobre modelización y cambio global."
+---
+
+## Proyectos activos
+
+### [INTRADISP](intradisp.qmd) (2024-2026)
+**Investigador principal** · UCM
+
+¿Por qué individuos de la misma especie se dispersan de forma tan distinta? Este proyecto sintetiza la variación intraespecífica de la dispersión con datos de anillamiento europeos para mejorar las predicciones de la respuesta de la biodiversidad al cambio global.
+
+**Equipo**: David Notario (técnico de investigación), colaboradores en la Universidad de Potsdam y el BTO.
+
+---
+
+### [RIMed-Fauna](remined.qmd) (2024-2027)
+**Miembro del equipo** · Red de Parques Nacionales
+
+Los ríos mediterráneos son ambientes extremos: crecidas en invierno, sequía total en verano. ¿Cómo afronta la fauna terrestre esa variabilidad, y cómo afectará el cambio climático a estas dinámicas?
+
+**IP**: María del Mar Sánchez-Montoya. **Equipo**: Claudia Mediavilla (investigadora) y otros.
+
+---
+
+### [SHAREPOINT](sharepoint.qmd) (2025-2027)
+**Miembro del equipo** · CEBA
+
+Organización social y transmisión de parásitos entre aves del sotobosque de la selva de la Guayana Francesa. Investigación de campo que combina análisis de redes con ecología de enfermedades.
+
+**IP**: Javier Pérez-Tris.
+
+---
+
+## Proyectos anteriores
+
+### INCISE (2022-2023)
+**Investigador principal** · H2020-MSCA-COFUND UNA4CAREER
+
+Integración de ciencia ciudadana y censos estandarizados para estudiar la dinámica de la biodiversidad. *Renuncia tras un año al obtener la plaza en la UCM.*
+
+### BIOPIC (2018-2023)
+**Responsable de paquete de trabajo** · Deutsche Forschungsgemeinschaft (DFG)
+
+Desentrañar los efectos de la demografía, la dispersión y las interacciones bióticas en la respuesta de poblaciones y comunidades al cambio global. Responsable del paquete de trabajo sobre dispersión.
+
+**IP**: Damaris Zurell.
+
+### RangeDyn (2019-2021)
+**Equipo principal** · DAAD
+
+Del patrón al proceso para mejorar las predicciones de la dinámica de las áreas de distribución.
+
+**IP**: Damaris Zurell.
+
+---
+
+## Contratos aplicados
+
+También abordamos contratos aplicados que responden a problemas reales de conservación:
+
+- **Modelización del hábitat de murciélagos** (2024-2025): modelos de distribución para el Atlas de murciélagos de España. Cliente: TRAGSA.
+
+- **Demografía de la cigüeña negra** (2017-2018): modelos de dinámica poblacional para la evaluación del Libro Rojo. Cliente: Junta de Castilla y León.
