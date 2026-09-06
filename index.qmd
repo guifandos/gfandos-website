@@ -37,6 +37,7 @@ listing:
       <a class="btn btn-outline-dark" href="people.html#work-with-us">Work with us</a>
     </div>
   </div>
+  <div class="hero-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <section class="section">
@@ -47,19 +48,34 @@ listing:
   </div>
 </section>
 
-<section class="databand" aria-label="Movement over a habitat suitability surface">
-  <div class="databand-media">
-    <picture>
-      <source type="image/webp" srcset="images/data/sdm.webp">
-      <img src="images/data/sdm.jpg" alt="Blurred habitat suitability surface with contour lines, in the style of a species distribution model" loading="lazy">
-    </picture>
-    <canvas id="tracks" aria-hidden="true"></canvas>
-  </div>
-  <div class="wrap databand-text">
-    <span class="eyebrow">Space and movement, quantified</span>
-    <h2>Where animals could live, and how they actually move</h2>
-    <p>Species distribution models tell us where habitat is suitable. Movement data tell us whether animals get there. Our work joins the two, and asks the question that matters for conservation: which populations will make it, which will not, and where action makes the difference.</p>
-    <p class="databand-note">Illustration: simulated dispersal trajectories over a synthetic suitability surface. Real figures from our papers are on the research pages.</p>
+<section class="story" data-step="1" aria-label="Space and movement, quantified">
+  <div class="wrap story-grid">
+    <div class="story-steps">
+      <span class="eyebrow">Space and movement, quantified</span>
+      <h2>From suitable habitat to conservation action</h2>
+      <div class="story-step active" data-step="1"><span class="story-n">01</span><h3>Where could they live?</h3><p>Species distribution models turn surveys, citizen science and climate into a map of suitable habitat. They say where a species could persist, not whether it will get there.</p></div>
+      <div class="story-step" data-step="2"><span class="story-n">02</span><h3>Where do they actually go?</h3><p>Ring recoveries and tracking show how far individuals move, and how much that varies between them. Dispersal is the missing link between suitability and occupancy.</p></div>
+      <div class="story-step" data-step="3"><span class="story-n">03</span><h3>Where does action make the difference?</h3><p>Joining the two identifies the corridors, refugia and priority areas where acting now avoids losses later. That is the question our models are built to answer.</p></div>
+      <p class="story-note">Illustration: simulated trajectories over a synthetic suitability surface.</p>
+    </div>
+    <div class="story-media">
+      <div class="story-frame">
+        <picture class="layer layer-sdm">
+          <source type="image/webp" srcset="images/data/sdm.webp">
+          <img src="images/data/sdm.jpg" alt="" loading="lazy">
+        </picture>
+        <canvas id="tracks" class="layer layer-tracks" aria-hidden="true"></canvas>
+        <svg class="layer layer-priority" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+          <defs><pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#c2913a" stroke-width="3"/></pattern></defs>
+          <ellipse cx="352" cy="558" rx="150" ry="120" fill="url(#hatch)" opacity="0.55"/>
+          <ellipse cx="1120" cy="522" rx="170" ry="130" fill="url(#hatch)" opacity="0.55"/>
+          <path d="M 500 560 C 640 430, 780 420, 960 500" fill="none" stroke="#f7f3ea" stroke-width="5" stroke-dasharray="14 12"/>
+          <ellipse cx="352" cy="558" rx="150" ry="120" fill="none" stroke="#f7f3ea" stroke-width="3"/>
+          <ellipse cx="1120" cy="522" rx="170" ry="130" fill="none" stroke="#f7f3ea" stroke-width="3"/>
+        </svg>
+        <div class="story-legend"><span class="lg lg-1">Suitability</span><span class="lg lg-2">Movement</span><span class="lg lg-3">Priority areas</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -288,56 +304,5 @@ listing:
 ```
 
 ```{=html}
-<script>
-(function(){
-  var cv=document.getElementById('tracks'); if(!cv) return;
-  var ctx=cv.getContext('2d'), dpr=Math.min(window.devicePixelRatio||1,2);
-  var C=[[0.22,0.62],[0.47,0.36],[0.70,0.58],[0.86,0.28],[0.38,0.80]];
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var W,H,walkers=[],t=0;
-  function seed(s){return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296;};}
-  var rnd=seed(7);
-  function gauss(){var u=rnd()||1e-6,v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
-  function resize(){
-    var r=cv.parentElement.getBoundingClientRect(); W=r.width; H=r.height;
-    cv.width=W*dpr; cv.height=H*dpr; cv.style.width=W+'px'; cv.style.height=H+'px';
-    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
-    walkers=[]; for(var i=0;i<9;i++){var c=C[Math.floor(rnd()*C.length)];
-      walkers.push({x:c[0]*W+(rnd()-0.5)*60,y:c[1]*H+(rnd()-0.5)*60,a:rnd()*6.28,tgt:C[Math.floor(rnd()*C.length)],trail:[]});}
-    t=0;
-    for(var k=0;k<160;k++){t++;walkers.forEach(step);} draw();
-  }
-  function step(w){
-    if(t%75===0) w.tgt=C[Math.floor(rnd()*C.length)];
-    var want=Math.atan2(w.tgt[1]*H-w.y,w.tgt[0]*W-w.x);
-    var diff=((want-w.a+Math.PI)%(2*Math.PI)+2*Math.PI)%(2*Math.PI)-Math.PI;
-    w.a+=0.12*diff+gauss()*0.3;
-    var sp=Math.max(2,W/300);
-    w.x+=Math.cos(w.a)*sp; w.y+=Math.sin(w.a)*sp;
-    if(w.x<20||w.x>W-20){w.a=Math.PI-w.a;w.x=Math.min(Math.max(w.x,20),W-20);}
-    if(w.y<20||w.y>H-20){w.a=-w.a;w.y=Math.min(Math.max(w.y,20),H-20);}
-    w.trail.push([w.x,w.y]); if(w.trail.length>220) w.trail.shift();
-  }
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    walkers.forEach(function(w){
-      for(var i=1;i<w.trail.length;i++){
-        var k=i/w.trail.length;
-        ctx.strokeStyle='rgba(194,145,58,'+(0.15+0.75*k)+')'; ctx.lineWidth=1.6;
-        ctx.beginPath(); ctx.moveTo(w.trail[i-1][0],w.trail[i-1][1]); ctx.lineTo(w.trail[i][0],w.trail[i][1]); ctx.stroke();
-      }
-      ctx.fillStyle='#c2913a'; ctx.strokeStyle='#f7f3ea'; ctx.lineWidth=1.5;
-      ctx.beginPath(); ctx.arc(w.x,w.y,4,0,6.28); ctx.fill(); ctx.stroke();
-    });
-  }
-  var running=true;
-  function loop(){ if(!running) return; t++; walkers.forEach(step); draw(); requestAnimationFrame(loop); }
-  resize(); window.addEventListener('resize',resize);
-  if(reduce){ for(var k=0;k<220;k++){t++;walkers.forEach(step);} draw(); return; }
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(e){ var vis=e[0].isIntersecting; if(vis&&!running){running=true;loop();} if(!vis){running=false;} }).observe(cv);
-  }
-  loop();
-})();
-</script>
+<script src="assets/home.js" defer></script>
 ```
