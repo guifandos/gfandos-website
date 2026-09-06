@@ -794,3 +794,101 @@ html.home .hero { padding-top: 4.5rem; }
   .story-legend .lg { font-size: 0.6rem; padding: 0.22rem 0.5rem; }
   .story-step { min-height: 50vh; }
 }
+
+// ---------------------------------------------------------------------------
+// v4: editorial pass — kickers instead of uppercase labels, squared buttons,
+// filmstrip research lines, project ledger, figure plate, roster, join band
+// ---------------------------------------------------------------------------
+
+// Kicker: italic serif, sentence case (replaces the uppercase ochre label)
+.eyebrow {
+  font-family: $headings-font-family; font-style: italic; font-weight: 400;
+  font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: $ochre; margin-bottom: 0.35rem;
+}
+.eyebrow::before { content: ""; display: inline-block; width: 1.6rem; height: 1px; background: $ochre; vertical-align: middle; margin-right: 0.6rem; }
+.hero .eyebrow { font-size: 1.1rem; color: $olive-2; }
+.hero .eyebrow::before { background: $olive-2; }
+.section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.5rem); font-weight: 600; }
+.section-head .more { font-family: $headings-font-family; font-style: italic; font-weight: 400; font-size: 1.05rem; border-bottom: 1px solid rgba($olive, 0.35); }
+.section-head .more:hover { border-bottom-color: $olive-2; }
+
+// Buttons: squared, quieter
+.btn { border-radius: 4px; padding: 0.65rem 1.3rem; letter-spacing: 0.02em; }
+.btn-outline-dark { border-width: 1.5px; }
+
+// Research lines as a filmstrip of tall panels with overlaid titles
+.lines { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+.line { display: block; color: $ink; border-bottom: none !important; }
+.line picture { display: block; position: relative; aspect-ratio: 3 / 4; border-radius: 6px; overflow: hidden; background: $paper-2; box-shadow: 0 14px 34px rgba($ink, 0.14); }
+.line picture::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba($ink, 0.78) 0%, rgba($ink, 0.25) 42%, rgba($ink, 0) 70%); }
+.line img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(.2,.7,.2,1); }
+.line:hover img { transform: scale(1.05); }
+.line { position: relative; }
+.line { display: grid; grid-template-rows: auto auto; }
+.line picture { grid-row: 1; }
+.line-title {
+  grid-row: 1; align-self: end; position: relative; z-index: 1; margin: 0 1rem 1rem;
+  font-family: $headings-font-family; font-weight: 600; font-size: 1.35rem; line-height: 1.15; color: $paper;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+.line-text { grid-row: 2; padding: 0.9rem 0.2rem 0; font-size: 0.98rem; color: $ink-2; line-height: 1.5; }
+@media (max-width: 900px) { .lines { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .lines { grid-template-columns: 1fr; } .line picture { aspect-ratio: 16 / 10; } }
+
+// Project ledger
+.ledger { border-top: 2px solid $ink; }
+.ledger-head, .ledger-row { display: grid; grid-template-columns: 1.1fr 2.6fr 1.1fr auto; gap: 1.5rem; align-items: baseline; }
+.ledger-head { padding: 0.6rem 0; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: $slate; border-bottom: 1px solid $line; }
+.ledger-row { padding: 1.3rem 0; border-bottom: 1px solid $line; color: $ink; border-bottom-width: 1px !important; text-decoration: none; }
+.ledger-row:hover .ledger-name { color: $olive; }
+.ledger-name { font-family: $headings-font-family; font-weight: 600; font-size: 1.35rem; line-height: 1.1; }
+.ledger-row.is-pi .ledger-name::after { content: "PI"; font-family: $font-family-sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; color: $paper; background: $ochre; border-radius: 3px; padding: 0.15rem 0.35rem; margin-left: 0.5rem; vertical-align: middle; }
+html[lang^="es"] .ledger-row.is-pi .ledger-name::after { content: "IP"; }
+.ledger-desc { color: $ink-2; font-size: 1rem; line-height: 1.5; }
+.ledger-role { font-size: 0.95rem; color: $ink-2; }
+.ledger-years { font-family: $headings-font-family; font-size: 1rem; color: $slate; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 800px) {
+  .ledger-head { display: none; }
+  .ledger-row { grid-template-columns: 1fr auto; grid-template-areas: "name years" "desc desc" "role role"; gap: 0.35rem 1rem; }
+  .ledger-name { grid-area: name; } .ledger-years { grid-area: years; } .ledger-desc { grid-area: desc; } .ledger-role { grid-area: role; }
+}
+
+// Featured paper as a figure plate
+.feature figure.plate { box-shadow: none; border: 1px solid $line; padding: 0.75rem; background: $card; border-radius: 4px; }
+.feature figure.plate img { border-radius: 2px; }
+.feature figure.plate figcaption { padding: 0.7rem 0.2rem 0; font-size: 0.85rem; color: $slate; line-height: 1.4; }
+.feature h3 { font-weight: 600; }
+.feature .cite { font-family: $headings-font-family; font-style: italic; }
+
+// Roster (team as a two-column list)
+.roster { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3rem; border-top: 2px solid $ink; }
+.roster li { border-bottom: 1px solid $line; }
+.roster a { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.9rem 0; color: $ink; border-bottom: none !important; }
+.roster .name { font-family: $headings-font-family; font-weight: 600; font-size: 1.2rem; }
+.roster .role { font-size: 0.9rem; color: $slate; text-align: right; }
+.roster a:hover .name { color: $olive; }
+.roster-more .name { font-style: italic; font-weight: 400; color: $olive; }
+@media (max-width: 640px) { .roster { grid-template-columns: 1fr; } .roster a { flex-direction: column; align-items: flex-start; gap: 0.1rem; } .roster .role { text-align: left; } }
+
+// Join band with the blue illustration
+.joinband { position: relative; overflow: hidden; isolation: isolate; min-height: 62vh; display: flex; align-items: center; background: #d9e3e8; }
+.joinband picture, .joinband img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 65%; z-index: -2; }
+.joinband::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 60% 75% at 20% 35%, rgba(#eef3f5, 0.94) 0%, rgba(#eef3f5, 0.7) 45%, rgba(#eef3f5, 0) 75%); }
+.joinband-inner { padding: 5rem 1.25rem; max-width: 1140px; }
+.joinband .eyebrow { color: $slate; } .joinband .eyebrow::before { background: $slate; }
+.joinband h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); font-weight: 600; max-width: 14ch; margin-bottom: 1rem; line-height: 1.05; }
+.joinband p { max-width: 46ch; font-size: 1.15rem; color: $ink-2; margin-bottom: 1.6rem; }
+@media (max-width: 768px) { .joinband { min-height: 0; } .joinband::after { background: linear-gradient(to bottom, rgba(#eef3f5, 0.95) 0%, rgba(#eef3f5, 0.85) 60%, rgba(#eef3f5, 0.4) 100%); } }
+
+// Outcomes without the accent rail
+.outcomes li { grid-template-columns: 1fr; padding: 1.2rem 0; }
+.outcomes li::before { display: none; }
+.outcomes .outcome-what, .outcomes .outcome-how { grid-column: 1; }
+.outcomes .outcome-what { font-size: 1.25rem; }
+.outcomes .outcome-what::before { content: "\25C6"; color: $ochre; font-size: 0.6rem; vertical-align: middle; margin-right: 0.6rem; }
+
+// Footer: wordmark
+.nav-footer .nav-footer-left strong { font-family: $headings-font-family; font-size: 1.15rem; }
+.line { grid-template-columns: minmax(0, 1fr); }
+.line picture, .line-title, .line-text { grid-column: 1; min-width: 0; }
+.joinband-inner { width: 100%; }
