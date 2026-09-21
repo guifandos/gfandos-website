@@ -92,7 +92,7 @@ section.band > .wrap{padding-block:clamp(48px,7vw,86px)}
 
 /* ---- research: a data-source rail, not numbered cards ---- */
 .lines{display:flex;flex-direction:column}
-.line{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:8px 40px;padding-block:26px;border-top:1px solid var(--rule)}
+.line{display:grid;grid-template-columns:minmax(0,160px) minmax(0,1fr) minmax(0,300px);gap:10px 36px;padding-block:30px;border-top:1px solid var(--rule);align-items:start}
 .line:last-child{border-bottom:1px solid var(--rule)}
 .line .src{font-family:"DM Mono",monospace;font-size:.74rem;line-height:1.7;color:var(--ink-soft);letter-spacing:.01em}
 .line .src b{display:block;color:var(--mark);font-weight:500;letter-spacing:.09em;text-transform:uppercase;font-size:.68rem;margin-bottom:6px}
@@ -100,6 +100,17 @@ section.band > .wrap{padding-block:clamp(48px,7vw,86px)}
 .line h3 a{color:var(--ink);text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));background-size:0 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .28s ease}
 .line:hover h3 a{background-size:100% 1.5px;color:var(--accent)}
 .line p{margin:0;color:var(--ink-soft);max-width:62ch;font-size:.95rem}
+
+.fig{margin:0}
+.fig canvas{width:100%;max-width:100%;aspect-ratio:4/3;display:block;border:1px solid var(--rule);background:#101d24}
+.fig figcaption{font-family:"DM Mono",monospace;font-size:.67rem;line-height:1.5;color:var(--ink-faint);margin-top:7px;letter-spacing:.01em}
+.fig figcaption b{color:var(--mark);font-weight:500}
+
+/* full-bleed divider: a landscape permeability surface */
+.strip{position:relative;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);line-height:0}
+.strip canvas{width:100%;height:clamp(80px,10vw,128px);display:block}
+.strip .cap{position:absolute;right:0;bottom:0;font-family:"DM Mono",monospace;font-size:.65rem;line-height:1.5;
+  letter-spacing:.03em;color:#dbe7e5;background:rgba(16,29,36,.74);padding:5px 10px;max-width:min(100%,62ch)}
 
 /* ---- projects ---- */
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
@@ -144,11 +155,17 @@ footer a{color:#7fd3c6}
 footer .fine{font-family:"DM Mono",monospace;font-size:.72rem;color:#6d838c;line-height:1.7}
 footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
 
+@media (max-width:1060px) and (min-width:821px){
+  .line{grid-template-columns:minmax(0,1fr) minmax(0,250px)}
+  .line .src{grid-column:1/-1;order:-1}
+}
 @media (max-width:820px){
   .hero .wrap{grid-template-columns:1fr;align-items:start}
   .portrait{max-width:230px;order:-1}
-  .head,.line,.pub,.item,.legend .wrap{grid-template-columns:1fr}
+  .head,.pub,.item,.legend .wrap{grid-template-columns:1fr}
+  .line{grid-template-columns:1fr}
   .line .src{order:-1}
+  .fig{max-width:380px}
 }
 </style>
 
@@ -210,13 +227,21 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
           <h3><a href="#">Animal movement in dynamic landscapes</a></h3>
           <p>Daily foraging, seasonal migration and once-in-a-lifetime dispersal events all leave a signature in ring-recovery data. I use that signature to estimate dispersal kernels and ask what they mean for connectivity and range boundaries.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="kernel" role="img" aria-label="Schematic dispersal kernel showing a heavy right tail"></canvas>
+          <figcaption><b>Schematic.</b> Dispersal kernel on a log distance axis. The ochre area is the long-distance tail — rare, and the part that governs range expansion.</figcaption>
+        </figure>
       </article>
       <article class="line">
-        <p class="src"><b>Data</b>eBird citizen science<br>Camera traps · AudioMoth</p>
+        <p class="src"><b>Data</b>eBird citizen science<br>Ring recoveries · Atlas surveys</p>
         <div>
           <h3><a href="#">Improving biodiversity monitoring and modelling</a></h3>
           <p>Distribution models that ignore dispersal, population dynamics and imperfect detection give confident answers to the wrong question. I build models that carry those processes explicitly and integrate data sources that were never designed to be combined.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="sdm" role="img" aria-label="Schematic habitat suitability surface with occurrence records"></canvas>
+          <figcaption><b>Schematic.</b> Habitat suitability surface with occurrence records. Records cluster where people look, not only where the species is.</figcaption>
+        </figure>
       </article>
       <article class="line">
         <p class="src"><b>Data</b>Range and threat databases<br>Landscape permeability layers</p>
@@ -224,9 +249,29 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
           <h3><a href="#">Conservation under global change</a></h3>
           <p>Which species are most exposed, why, and where the problems will surface first — from Iberian large carnivore recolonisation to mammal declines in the Gran Chaco.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="range" role="img" aria-label="Schematic range shift: occupied area against a projected contour"></canvas>
+          <figcaption><b>Schematic.</b> Occupied area today against a projected contour. The gap between them is where management decisions actually sit.</figcaption>
+        </figure>
+      </article>
+      <article class="line">
+        <p class="src"><b>Data</b>AudioMoth recorders<br>Camera-trap arrays</p>
+        <div>
+          <h3><a href="#">Field technology for monitoring</a></h3>
+          <p>Passive acoustic monitoring and camera trapping generate more data than anyone can screen by hand. I work on the pipelines that turn raw recordings into detections that a model can use — with Raúl Bonal on the bioacoustic side.</p>
+        </div>
+        <figure class="fig">
+          <canvas data-fig="acoustic" role="img" aria-label="Schematic spectrogram of a dawn chorus"></canvas>
+          <figcaption><b>Schematic.</b> Spectrogram of a dawn chorus, the raw output of an autonomous recorder before any detection step.</figcaption>
+        </figure>
       </article>
     </div>
   </div>
+</section>
+
+<section class="strip">
+  <canvas data-fig="strip" role="img" aria-label="Schematic landscape permeability surface"></canvas>
+  <p class="cap">Schematic landscape permeability surface — the layer that decides whether two populations are connected.</p>
 </section>
 
 <section class="band paper" id="projects">
@@ -370,3 +415,7 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
     </div>
   </div>
 </footer>
+
+<script>
+{{FIGURES}}
+</script>

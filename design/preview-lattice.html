@@ -92,7 +92,7 @@ section.band > .wrap{padding-block:clamp(48px,7vw,86px)}
 
 /* ---- research: a data-source rail, not numbered cards ---- */
 .lines{display:flex;flex-direction:column}
-.line{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:8px 40px;padding-block:26px;border-top:1px solid var(--rule)}
+.line{display:grid;grid-template-columns:minmax(0,160px) minmax(0,1fr) minmax(0,300px);gap:10px 36px;padding-block:30px;border-top:1px solid var(--rule);align-items:start}
 .line:last-child{border-bottom:1px solid var(--rule)}
 .line .src{font-family:"DM Mono",monospace;font-size:.74rem;line-height:1.7;color:var(--ink-soft);letter-spacing:.01em}
 .line .src b{display:block;color:var(--mark);font-weight:500;letter-spacing:.09em;text-transform:uppercase;font-size:.68rem;margin-bottom:6px}
@@ -100,6 +100,17 @@ section.band > .wrap{padding-block:clamp(48px,7vw,86px)}
 .line h3 a{color:var(--ink);text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));background-size:0 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .28s ease}
 .line:hover h3 a{background-size:100% 1.5px;color:var(--accent)}
 .line p{margin:0;color:var(--ink-soft);max-width:62ch;font-size:.95rem}
+
+.fig{margin:0}
+.fig canvas{width:100%;max-width:100%;aspect-ratio:4/3;display:block;border:1px solid var(--rule);background:#101d24}
+.fig figcaption{font-family:"DM Mono",monospace;font-size:.67rem;line-height:1.5;color:var(--ink-faint);margin-top:7px;letter-spacing:.01em}
+.fig figcaption b{color:var(--mark);font-weight:500}
+
+/* full-bleed divider: a landscape permeability surface */
+.strip{position:relative;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);line-height:0}
+.strip canvas{width:100%;height:clamp(80px,10vw,128px);display:block}
+.strip .cap{position:absolute;right:0;bottom:0;font-family:"DM Mono",monospace;font-size:.65rem;line-height:1.5;
+  letter-spacing:.03em;color:#dbe7e5;background:rgba(16,29,36,.74);padding:5px 10px;max-width:min(100%,62ch)}
 
 /* ---- projects ---- */
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
@@ -144,11 +155,17 @@ footer a{color:#7fd3c6}
 footer .fine{font-family:"DM Mono",monospace;font-size:.72rem;color:#6d838c;line-height:1.7}
 footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
 
+@media (max-width:1060px) and (min-width:821px){
+  .line{grid-template-columns:minmax(0,1fr) minmax(0,250px)}
+  .line .src{grid-column:1/-1;order:-1}
+}
 @media (max-width:820px){
   .hero .wrap{grid-template-columns:1fr;align-items:start}
   .portrait{max-width:230px;order:-1}
-  .head,.line,.pub,.item,.legend .wrap{grid-template-columns:1fr}
+  .head,.pub,.item,.legend .wrap{grid-template-columns:1fr}
+  .line{grid-template-columns:1fr}
   .line .src{order:-1}
+  .fig{max-width:380px}
 }
 </style>
 
@@ -169,97 +186,97 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
 <main>
 <section class="hero">
   <svg class="kernel" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-<path class="trace" d="M150,560 Q162.4,566.0 175.3,561.3" stroke-width="0.53" style="opacity:0.150;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.00s"/>
-<path class="trace" d="M150,560 Q161.8,553.8 172.5,545.9" stroke-width="0.53" style="opacity:0.151;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.03s"/>
-<path class="trace" d="M150,560 Q162.4,550.9 165.8,535.8" stroke-width="0.53" style="opacity:0.152;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.06s"/>
-<path class="trace" d="M150,560 Q161.0,548.6 172.9,538.1" stroke-width="0.54" style="opacity:0.153;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.08s"/>
-<path class="trace" d="M150,560 Q162.9,547.6 164.1,529.8" stroke-width="0.54" style="opacity:0.153;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.11s"/>
-<path class="trace" d="M150,560 Q166.5,570.7 184.6,563.2" stroke-width="0.54" style="opacity:0.154;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.14s"/>
-<path class="trace" d="M150,560 Q167.7,563.8 185.2,568.5" stroke-width="0.54" style="opacity:0.154;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.17s"/>
-<path class="trace" d="M150,560 Q169.0,543.4 172.7,518.5" stroke-width="0.56" style="opacity:0.159;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.20s"/>
-<path class="trace" d="M150,560 Q155.4,532.7 180.0,519.7" stroke-width="0.56" style="opacity:0.160;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.22s"/>
-<path class="trace" d="M150,560 Q163.1,537.4 174.8,514.1" stroke-width="0.56" style="opacity:0.161;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.25s"/>
-<path class="trace" d="M150,560 Q170.8,537.4 193.9,517.1" stroke-width="0.57" style="opacity:0.164;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.28s"/>
-<path class="trace" d="M150,560 Q165.0,531.5 179.4,502.6" stroke-width="0.58" style="opacity:0.166;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.31s"/>
-<path class="trace" d="M150,560 Q181.0,543.7 214.5,554.2" stroke-width="0.58" style="opacity:0.166;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.34s"/>
-<path class="trace" d="M150,560 Q185.2,576.5 219.0,557.2" stroke-width="0.58" style="opacity:0.167;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.36s"/>
-<path class="trace" d="M150,560 Q157.9,524.9 178.7,495.5" stroke-width="0.58" style="opacity:0.168;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.39s"/>
-<path class="trace" d="M150,560 Q165.1,522.1 205.4,515.0" stroke-width="0.59" style="opacity:0.168;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.42s"/>
-<path class="trace" d="M150,560 Q183.3,533.7 223.9,546.1" stroke-width="0.59" style="opacity:0.170;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.45s"/>
-<path class="trace" d="M150,560 Q192.6,569.9 228.1,544.5" stroke-width="0.60" style="opacity:0.172;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.48s"/>
-<path class="trace" d="M150,560 Q189.9,545.6 231.2,555.3" stroke-width="0.60" style="opacity:0.172;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.50s"/>
-<path class="trace" d="M150,560 Q194.3,563.9 229.4,536.5" stroke-width="0.60" style="opacity:0.173;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.53s"/>
-<path class="trace" d="M150,560 Q195.3,565.4 238.4,580.6" stroke-width="0.61" style="opacity:0.176;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.56s"/>
-<path class="trace" d="M150,560 Q161.3,513.0 196.5,480.0" stroke-width="0.61" style="opacity:0.177;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.59s"/>
-<path class="trace" d="M150,560 Q150.2,509.7 182.0,470.8" stroke-width="0.61" style="opacity:0.178;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.62s"/>
-<path class="trace" d="M150,560 Q192.4,526.0 188.4,471.9" stroke-width="0.61" style="opacity:0.178;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.64s"/>
-<path class="trace" d="M150,560 Q201.0,559.6 243.9,531.9" stroke-width="0.62" style="opacity:0.179;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.67s"/>
-<path class="trace" d="M150,560 Q186.0,520.8 238.8,514.6" stroke-width="0.62" style="opacity:0.180;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.70s"/>
-<path class="trace" d="M150,560 Q200.1,544.3 235.0,505.1" stroke-width="0.62" style="opacity:0.180;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.73s"/>
-<path class="trace" d="M150,560 Q203.5,535.3 214.4,477.5" stroke-width="0.63" style="opacity:0.182;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.76s"/>
-<path class="trace" d="M150,560 Q198.9,583.4 253.0,580.7" stroke-width="0.63" style="opacity:0.182;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.78s"/>
-<path class="trace" d="M150,560 Q199.4,534.1 222.1,483.2" stroke-width="0.63" style="opacity:0.182;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.81s"/>
-<path class="trace" d="M150,560 Q183.7,514.1 235.5,490.8" stroke-width="0.63" style="opacity:0.184;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.84s"/>
-<path class="trace" d="M150,560 Q201.4,537.6 255.0,521.0" stroke-width="0.63" style="opacity:0.185;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.87s"/>
-<path class="trace" d="M150,560 Q201.2,526.8 214.1,467.1" stroke-width="0.63" style="opacity:0.185;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.90s"/>
-<path class="trace" d="M150,560 Q190.0,518.5 212.2,465.3" stroke-width="0.64" style="opacity:0.185;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.92s"/>
-<path class="trace" d="M150,560 Q206.5,575.1 265.0,572.9" stroke-width="0.64" style="opacity:0.186;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.95s"/>
-<path class="trace" d="M150,560 Q207.8,539.2 254.2,499.0" stroke-width="0.64" style="opacity:0.188;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.98s"/>
-<path class="trace" d="M150,560 Q181.2,501.0 244.3,479.3" stroke-width="0.65" style="opacity:0.189;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.01s"/>
-<path class="trace" d="M150,560 Q207.6,529.3 259.2,489.3" stroke-width="0.66" style="opacity:0.192;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.04s"/>
-<path class="trace" d="M150,560 Q206.6,526.5 255.4,482.4" stroke-width="0.66" style="opacity:0.192;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.06s"/>
-<path class="trace" d="M150,560 Q209.0,523.3 278.5,521.8" stroke-width="0.66" style="opacity:0.193;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.09s"/>
-<path class="trace" d="M150,560 Q223.9,552.1 271.5,495.0" stroke-width="0.66" style="opacity:0.195;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.12s"/>
-<path class="trace" d="M150,560 Q200.6,501.8 272.1,472.9" stroke-width="0.68" style="opacity:0.200;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.15s"/>
-<path class="trace" d="M150,560 Q230.4,536.3 294.7,482.5" stroke-width="0.70" style="opacity:0.205;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.18s"/>
-<path class="trace" d="M150,560 Q154.0,474.3 202.2,403.3" stroke-width="0.70" style="opacity:0.206;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.20s"/>
-<path class="trace" d="M150,560 Q242.0,551.8 296.5,477.1" stroke-width="0.70" style="opacity:0.207;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.23s"/>
-<path class="trace" d="M150,560 Q221.4,508.9 308.7,499.3" stroke-width="0.70" style="opacity:0.208;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.26s"/>
-<path class="trace" d="M150,560 Q238.5,558.9 317.0,517.9" stroke-width="0.71" style="opacity:0.209;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.29s"/>
-<path class="trace" d="M150,560 Q205.9,492.3 248.2,415.4" stroke-width="0.71" style="opacity:0.210;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.32s"/>
-<path class="trace" d="M150,560 Q247.1,555.6 336.5,517.3" stroke-width="0.73" style="opacity:0.216;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.34s"/>
-<path class="trace" d="M150,560 Q258.4,549.3 309.0,452.8" stroke-width="0.73" style="opacity:0.216;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.37s"/>
-<path class="trace" d="M150,560 Q235.4,512.6 328.9,484.4" stroke-width="0.73" style="opacity:0.217;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.40s"/>
-<path class="trace" d="M150,560 Q229.8,496.9 314.5,440.5" stroke-width="0.74" style="opacity:0.221;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.43s"/>
-<path class="trace" d="M150,560 Q266.6,563.3 330.5,465.7" stroke-width="0.74" style="opacity:0.221;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.46s"/>
-<path class="trace" d="M150,560 Q257.9,536.8 353.6,591.7" stroke-width="0.75" style="opacity:0.222;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.48s"/>
-<path class="trace" d="M150,560 Q252.9,607.8 362.5,578.7" stroke-width="0.75" style="opacity:0.225;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.51s"/>
-<path class="trace" d="M150,560 Q262.6,541.8 349.5,468.0" stroke-width="0.76" style="opacity:0.227;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.54s"/>
-<path class="trace" d="M150,560 Q209.5,459.3 307.1,394.9" stroke-width="0.77" style="opacity:0.231;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.57s"/>
-<path class="trace" d="M150,560 Q273.6,535.9 376.7,608.2" stroke-width="0.78" style="opacity:0.232;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.60s"/>
-<path class="trace" d="M150,560 Q173.9,434.6 242.3,326.8" stroke-width="0.80" style="opacity:0.240;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.62s"/>
-<path class="trace" d="M150,560 Q228.6,457.5 320.2,366.4" stroke-width="0.81" style="opacity:0.243;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.65s"/>
-<path class="trace" d="M150,560 Q289.6,557.6 386.9,457.6" stroke-width="0.81" style="opacity:0.243;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.68s"/>
-<path class="trace" d="M150,560 Q221.5,448.4 332.7,376.3" stroke-width="0.81" style="opacity:0.243;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.71s"/>
-<path class="trace" d="M150,560 Q204.5,433.9 325.7,369.1" stroke-width="0.81" style="opacity:0.243;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.74s"/>
-<path class="trace" d="M150,560 Q203.2,437.3 297.6,342.6" stroke-width="0.81" style="opacity:0.245;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.76s"/>
-<path class="trace" d="M150,560 Q214.1,441.3 263.3,315.7" stroke-width="0.82" style="opacity:0.247;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.79s"/>
-<path class="trace" d="M150,560 Q263.0,486.2 371.9,406.4" stroke-width="0.82" style="opacity:0.247;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.82s"/>
-<path class="trace" d="M150,560 Q295.4,585.2 425.5,515.5" stroke-width="0.83" style="opacity:0.251;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.85s"/>
-<path class="trace" d="M150,560 Q289.8,541.6 425.1,502.0" stroke-width="0.84" style="opacity:0.252;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.88s"/>
-<path class="trace" d="M150,560 Q290.9,607.5 438.3,587.8" stroke-width="0.85" style="opacity:0.255;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.90s"/>
-<path class="trace" d="M150,560 Q183.6,400.5 303.0,289.7" stroke-width="0.87" style="opacity:0.264;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.93s"/>
-<path class="trace" d="M150,560 Q159.1,381.1 311.1,286.4" stroke-width="0.88" style="opacity:0.266;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.96s"/>
-<path class="trace" d="M150,560 Q233.9,412.4 365.6,305.3" stroke-width="0.90" style="opacity:0.273;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.99s"/>
-<path class="trace" d="M150,560 Q309.5,509.6 465.2,448.7" stroke-width="0.90" style="opacity:0.273;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.02s"/>
-<path class="trace" d="M150,560 Q279.4,410.7 474.0,376.5" stroke-width="0.94" style="opacity:0.288;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.04s"/>
-<path class="trace" d="M150,560 Q369.5,525.3 476.2,330.4" stroke-width="0.98" style="opacity:0.299;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.07s"/>
-<path class="trace" d="M150,560 Q359.3,618.1 575.8,634.4" stroke-width="1.02" style="opacity:0.312;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.10s"/>
-<path class="trace" d="M150,560 Q366.2,593.1 573.4,663.2" stroke-width="1.02" style="opacity:0.313;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.13s"/>
-<path class="trace" d="M150,560 Q398.6,571.8 595.7,419.9" stroke-width="1.06" style="opacity:0.326;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.16s"/>
-<path class="trace" d="M150,560 Q374.7,672.3 622.9,633.3" stroke-width="1.07" style="opacity:0.330;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.18s"/>
-<path class="trace" d="M150,560 Q202.6,319.5 319.1,102.7" stroke-width="1.08" style="opacity:0.334;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.21s"/>
-<path class="trace" d="M150,560 Q422.2,601.8 697.4,588.7" stroke-width="1.15" style="opacity:0.358;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.24s"/>
-<path class="trace" d="M150,560 Q422.8,500.9 691.0,423.4" stroke-width="1.17" style="opacity:0.362;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.27s"/>
-<path class="trace" d="M150,560 Q387.0,380.1 476.4,96.3" stroke-width="1.18" style="opacity:0.366;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.30s"/>
-<path class="trace" d="M150,560 Q427.0,443.3 669.1,264.9" stroke-width="1.21" style="opacity:0.378;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.32s"/>
-<path class="trace" d="M150,560 Q464.4,519.3 698.5,305.5" stroke-width="1.22" style="opacity:0.381;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.35s"/>
-<path class="trace" d="M150,560 Q449.5,432.2 585.6,136.4" stroke-width="1.23" style="opacity:0.382;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.38s"/>
-<path class="trace" d="M150,560 Q452.5,718.0 771.5,596.8" stroke-width="1.24" style="opacity:0.388;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.41s"/>
-<path class="trace long" d="M150,560 Q510.7,416.5 868.3,265.4" stroke-width="1.43" style="opacity:0.449;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.44s"/>
-<path class="trace long" d="M150,560 Q682.5,435.6 1151.9,154.8" stroke-width="1.79" style="opacity:0.570;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.46s"/>
+<path class="trace" d="M150,560 Q162.4,566.0 175.3,561.3" stroke-width="0.64" style="opacity:0.191;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.00s"/>
+<path class="trace" d="M150,560 Q161.8,553.8 172.5,545.9" stroke-width="0.64" style="opacity:0.192;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.03s"/>
+<path class="trace" d="M150,560 Q162.4,550.9 165.8,535.8" stroke-width="0.65" style="opacity:0.193;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.06s"/>
+<path class="trace" d="M150,560 Q161.0,548.6 172.9,538.1" stroke-width="0.65" style="opacity:0.194;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.08s"/>
+<path class="trace" d="M150,560 Q162.9,547.6 164.1,529.8" stroke-width="0.66" style="opacity:0.195;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.11s"/>
+<path class="trace" d="M150,560 Q166.5,570.7 184.6,563.2" stroke-width="0.66" style="opacity:0.196;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.14s"/>
+<path class="trace" d="M150,560 Q167.7,563.8 185.2,568.5" stroke-width="0.66" style="opacity:0.196;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.17s"/>
+<path class="trace" d="M150,560 Q169.0,543.4 172.7,518.5" stroke-width="0.68" style="opacity:0.201;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.20s"/>
+<path class="trace" d="M150,560 Q155.4,532.7 180.0,519.7" stroke-width="0.68" style="opacity:0.202;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.22s"/>
+<path class="trace" d="M150,560 Q163.1,537.4 174.8,514.1" stroke-width="0.69" style="opacity:0.203;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.25s"/>
+<path class="trace" d="M150,560 Q170.8,537.4 193.9,517.1" stroke-width="0.70" style="opacity:0.207;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.28s"/>
+<path class="trace" d="M150,560 Q165.0,531.5 179.4,502.6" stroke-width="0.71" style="opacity:0.209;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.31s"/>
+<path class="trace" d="M150,560 Q181.0,543.7 214.5,554.2" stroke-width="0.71" style="opacity:0.209;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.34s"/>
+<path class="trace" d="M150,560 Q185.2,576.5 219.0,557.2" stroke-width="0.72" style="opacity:0.211;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.36s"/>
+<path class="trace" d="M150,560 Q157.9,524.9 178.7,495.5" stroke-width="0.72" style="opacity:0.211;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.39s"/>
+<path class="trace" d="M150,560 Q165.1,522.1 205.4,515.0" stroke-width="0.72" style="opacity:0.212;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.42s"/>
+<path class="trace" d="M150,560 Q183.3,533.7 223.9,546.1" stroke-width="0.73" style="opacity:0.214;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.45s"/>
+<path class="trace" d="M150,560 Q192.6,569.9 228.1,544.5" stroke-width="0.73" style="opacity:0.216;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.48s"/>
+<path class="trace" d="M150,560 Q189.9,545.6 231.2,555.3" stroke-width="0.74" style="opacity:0.216;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.50s"/>
+<path class="trace" d="M150,560 Q194.3,563.9 229.4,536.5" stroke-width="0.74" style="opacity:0.217;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.53s"/>
+<path class="trace" d="M150,560 Q195.3,565.4 238.4,580.6" stroke-width="0.75" style="opacity:0.220;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.56s"/>
+<path class="trace" d="M150,560 Q161.3,513.0 196.5,480.0" stroke-width="0.75" style="opacity:0.221;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.59s"/>
+<path class="trace" d="M150,560 Q150.2,509.7 182.0,470.8" stroke-width="0.76" style="opacity:0.222;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.62s"/>
+<path class="trace" d="M150,560 Q192.4,526.0 188.4,471.9" stroke-width="0.76" style="opacity:0.223;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.64s"/>
+<path class="trace" d="M150,560 Q201.0,559.6 243.9,531.9" stroke-width="0.76" style="opacity:0.224;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.67s"/>
+<path class="trace" d="M150,560 Q186.0,520.8 238.8,514.6" stroke-width="0.77" style="opacity:0.224;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.70s"/>
+<path class="trace" d="M150,560 Q200.1,544.3 235.0,505.1" stroke-width="0.77" style="opacity:0.225;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.73s"/>
+<path class="trace" d="M150,560 Q203.5,535.3 214.4,477.5" stroke-width="0.78" style="opacity:0.227;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.76s"/>
+<path class="trace" d="M150,560 Q198.9,583.4 253.0,580.7" stroke-width="0.78" style="opacity:0.227;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.78s"/>
+<path class="trace" d="M150,560 Q199.4,534.1 222.1,483.2" stroke-width="0.78" style="opacity:0.227;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.81s"/>
+<path class="trace" d="M150,560 Q183.7,514.1 235.5,490.8" stroke-width="0.78" style="opacity:0.229;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.84s"/>
+<path class="trace" d="M150,560 Q201.4,537.6 255.0,521.0" stroke-width="0.79" style="opacity:0.230;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.87s"/>
+<path class="trace" d="M150,560 Q201.2,526.8 214.1,467.1" stroke-width="0.79" style="opacity:0.230;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.90s"/>
+<path class="trace" d="M150,560 Q190.0,518.5 212.2,465.3" stroke-width="0.79" style="opacity:0.231;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.92s"/>
+<path class="trace" d="M150,560 Q206.5,575.1 265.0,572.9" stroke-width="0.79" style="opacity:0.232;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.95s"/>
+<path class="trace" d="M150,560 Q207.8,539.2 254.2,499.0" stroke-width="0.80" style="opacity:0.234;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:0.98s"/>
+<path class="trace" d="M150,560 Q181.2,501.0 244.3,479.3" stroke-width="0.81" style="opacity:0.235;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.01s"/>
+<path class="trace" d="M150,560 Q207.6,529.3 259.2,489.3" stroke-width="0.82" style="opacity:0.238;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.04s"/>
+<path class="trace" d="M150,560 Q206.6,526.5 255.4,482.4" stroke-width="0.82" style="opacity:0.238;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.06s"/>
+<path class="trace" d="M150,560 Q209.0,523.3 278.5,521.8" stroke-width="0.82" style="opacity:0.240;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.09s"/>
+<path class="trace" d="M150,560 Q223.9,552.1 271.5,495.0" stroke-width="0.83" style="opacity:0.241;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.12s"/>
+<path class="trace" d="M150,560 Q200.6,501.8 272.1,472.9" stroke-width="0.85" style="opacity:0.247;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.15s"/>
+<path class="trace" d="M150,560 Q230.4,536.3 294.7,482.5" stroke-width="0.87" style="opacity:0.253;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.18s"/>
+<path class="trace" d="M150,560 Q154.0,474.3 202.2,403.3" stroke-width="0.88" style="opacity:0.254;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.20s"/>
+<path class="trace" d="M150,560 Q242.0,551.8 296.5,477.1" stroke-width="0.88" style="opacity:0.255;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.23s"/>
+<path class="trace" d="M150,560 Q221.4,508.9 308.7,499.3" stroke-width="0.88" style="opacity:0.256;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.26s"/>
+<path class="trace" d="M150,560 Q238.5,558.9 317.0,517.9" stroke-width="0.89" style="opacity:0.257;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.29s"/>
+<path class="trace" d="M150,560 Q205.9,492.3 248.2,415.4" stroke-width="0.89" style="opacity:0.258;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.32s"/>
+<path class="trace" d="M150,560 Q247.1,555.6 336.5,517.3" stroke-width="0.92" style="opacity:0.265;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.34s"/>
+<path class="trace" d="M150,560 Q258.4,549.3 309.0,452.8" stroke-width="0.92" style="opacity:0.265;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.37s"/>
+<path class="trace" d="M150,560 Q235.4,512.6 328.9,484.4" stroke-width="0.92" style="opacity:0.267;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.40s"/>
+<path class="trace" d="M150,560 Q229.8,496.9 314.5,440.5" stroke-width="0.94" style="opacity:0.271;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.43s"/>
+<path class="trace" d="M150,560 Q266.6,563.3 330.5,465.7" stroke-width="0.94" style="opacity:0.271;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.46s"/>
+<path class="trace" d="M150,560 Q257.9,536.8 353.6,591.7" stroke-width="0.94" style="opacity:0.272;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.48s"/>
+<path class="trace" d="M150,560 Q252.9,607.8 362.5,578.7" stroke-width="0.96" style="opacity:0.275;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.51s"/>
+<path class="trace" d="M150,560 Q262.6,541.8 349.5,468.0" stroke-width="0.97" style="opacity:0.278;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.54s"/>
+<path class="trace" d="M150,560 Q209.5,459.3 307.1,394.9" stroke-width="0.98" style="opacity:0.282;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.57s"/>
+<path class="trace" d="M150,560 Q273.6,535.9 376.7,608.2" stroke-width="0.99" style="opacity:0.283;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.60s"/>
+<path class="trace" d="M150,560 Q173.9,434.6 242.3,326.8" stroke-width="1.02" style="opacity:0.292;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.62s"/>
+<path class="trace" d="M150,560 Q228.6,457.5 320.2,366.4" stroke-width="1.03" style="opacity:0.295;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.65s"/>
+<path class="trace" d="M150,560 Q289.6,557.6 386.9,457.6" stroke-width="1.03" style="opacity:0.295;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.68s"/>
+<path class="trace" d="M150,560 Q221.5,448.4 332.7,376.3" stroke-width="1.03" style="opacity:0.296;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.71s"/>
+<path class="trace" d="M150,560 Q204.5,433.9 325.7,369.1" stroke-width="1.03" style="opacity:0.296;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.74s"/>
+<path class="trace" d="M150,560 Q203.2,437.3 297.6,342.6" stroke-width="1.04" style="opacity:0.297;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.76s"/>
+<path class="trace" d="M150,560 Q214.1,441.3 263.3,315.7" stroke-width="1.05" style="opacity:0.300;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.79s"/>
+<path class="trace" d="M150,560 Q263.0,486.2 371.9,406.4" stroke-width="1.05" style="opacity:0.300;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.82s"/>
+<path class="trace" d="M150,560 Q295.4,585.2 425.5,515.5" stroke-width="1.07" style="opacity:0.304;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.85s"/>
+<path class="trace" d="M150,560 Q289.8,541.6 425.1,502.0" stroke-width="1.07" style="opacity:0.305;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.88s"/>
+<path class="trace" d="M150,560 Q290.9,607.5 438.3,587.8" stroke-width="1.08" style="opacity:0.309;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.90s"/>
+<path class="trace" d="M150,560 Q183.6,400.5 303.0,289.7" stroke-width="1.12" style="opacity:0.318;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.93s"/>
+<path class="trace" d="M150,560 Q159.1,381.1 311.1,286.4" stroke-width="1.13" style="opacity:0.322;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.96s"/>
+<path class="trace" d="M150,560 Q233.9,412.4 365.6,305.3" stroke-width="1.16" style="opacity:0.329;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:1.99s"/>
+<path class="trace" d="M150,560 Q309.5,509.6 465.2,448.7" stroke-width="1.16" style="opacity:0.329;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.02s"/>
+<path class="trace" d="M150,560 Q279.4,410.7 474.0,376.5" stroke-width="1.22" style="opacity:0.346;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.04s"/>
+<path class="trace" d="M150,560 Q369.5,525.3 476.2,330.4" stroke-width="1.27" style="opacity:0.358;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.07s"/>
+<path class="trace" d="M150,560 Q359.3,618.1 575.8,634.4" stroke-width="1.32" style="opacity:0.373;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.10s"/>
+<path class="trace" d="M150,560 Q366.2,593.1 573.4,663.2" stroke-width="1.33" style="opacity:0.374;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.13s"/>
+<path class="trace" d="M150,560 Q398.6,571.8 595.7,419.9" stroke-width="1.38" style="opacity:0.388;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.16s"/>
+<path class="trace" d="M150,560 Q374.7,672.3 622.9,633.3" stroke-width="1.40" style="opacity:0.393;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.18s"/>
+<path class="trace" d="M150,560 Q202.6,319.5 319.1,102.7" stroke-width="1.42" style="opacity:0.397;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.21s"/>
+<path class="trace" d="M150,560 Q422.2,601.8 697.4,588.7" stroke-width="1.52" style="opacity:0.424;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.24s"/>
+<path class="trace" d="M150,560 Q422.8,500.9 691.0,423.4" stroke-width="1.53" style="opacity:0.429;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.27s"/>
+<path class="trace" d="M150,560 Q387.0,380.1 476.4,96.3" stroke-width="1.55" style="opacity:0.433;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.30s"/>
+<path class="trace" d="M150,560 Q427.0,443.3 669.1,264.9" stroke-width="1.60" style="opacity:0.446;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.32s"/>
+<path class="trace" d="M150,560 Q464.4,519.3 698.5,305.5" stroke-width="1.61" style="opacity:0.450;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.35s"/>
+<path class="trace" d="M150,560 Q449.5,432.2 585.6,136.4" stroke-width="1.62" style="opacity:0.451;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.38s"/>
+<path class="trace" d="M150,560 Q452.5,718.0 771.5,596.8" stroke-width="1.64" style="opacity:0.458;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.41s"/>
+<path class="trace long" d="M150,560 Q510.7,416.5 868.3,265.4" stroke-width="1.90" style="opacity:0.526;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.44s"/>
+<path class="trace long" d="M150,560 Q682.5,435.6 1151.9,154.8" stroke-width="2.41" style="opacity:0.662;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.46s"/>
 <circle class="node" cx="1151.9" cy="154.8" r="3.9"/>
-<path class="trace long" d="M150,560 Q734.1,187.5 825.2,-499.2" stroke-width="2.00" style="opacity:0.640;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.49s"/>
+<path class="trace long" d="M150,560 Q734.1,187.5 825.2,-499.2" stroke-width="2.70" style="opacity:0.740;stroke-dasharray:2200;stroke-dashoffset:2200;animation-delay:2.49s"/>
 <circle class="node" cx="825.2" cy="-499.2" r="4.2"/>
 <circle class="origin" cx="150" cy="560" r="5"/>
 </svg>
@@ -304,13 +321,21 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
           <h3><a href="#">Animal movement in dynamic landscapes</a></h3>
           <p>Daily foraging, seasonal migration and once-in-a-lifetime dispersal events all leave a signature in ring-recovery data. I use that signature to estimate dispersal kernels and ask what they mean for connectivity and range boundaries.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="kernel" role="img" aria-label="Schematic dispersal kernel showing a heavy right tail"></canvas>
+          <figcaption><b>Schematic.</b> Dispersal kernel on a log distance axis. The ochre area is the long-distance tail — rare, and the part that governs range expansion.</figcaption>
+        </figure>
       </article>
       <article class="line">
-        <p class="src"><b>Data</b>eBird citizen science<br>Camera traps · AudioMoth</p>
+        <p class="src"><b>Data</b>eBird citizen science<br>Ring recoveries · Atlas surveys</p>
         <div>
           <h3><a href="#">Improving biodiversity monitoring and modelling</a></h3>
           <p>Distribution models that ignore dispersal, population dynamics and imperfect detection give confident answers to the wrong question. I build models that carry those processes explicitly and integrate data sources that were never designed to be combined.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="sdm" role="img" aria-label="Schematic habitat suitability surface with occurrence records"></canvas>
+          <figcaption><b>Schematic.</b> Habitat suitability surface with occurrence records. Records cluster where people look, not only where the species is.</figcaption>
+        </figure>
       </article>
       <article class="line">
         <p class="src"><b>Data</b>Range and threat databases<br>Landscape permeability layers</p>
@@ -318,9 +343,29 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
           <h3><a href="#">Conservation under global change</a></h3>
           <p>Which species are most exposed, why, and where the problems will surface first — from Iberian large carnivore recolonisation to mammal declines in the Gran Chaco.</p>
         </div>
+        <figure class="fig">
+          <canvas data-fig="range" role="img" aria-label="Schematic range shift: occupied area against a projected contour"></canvas>
+          <figcaption><b>Schematic.</b> Occupied area today against a projected contour. The gap between them is where management decisions actually sit.</figcaption>
+        </figure>
+      </article>
+      <article class="line">
+        <p class="src"><b>Data</b>AudioMoth recorders<br>Camera-trap arrays</p>
+        <div>
+          <h3><a href="#">Field technology for monitoring</a></h3>
+          <p>Passive acoustic monitoring and camera trapping generate more data than anyone can screen by hand. I work on the pipelines that turn raw recordings into detections that a model can use — with Raúl Bonal on the bioacoustic side.</p>
+        </div>
+        <figure class="fig">
+          <canvas data-fig="acoustic" role="img" aria-label="Schematic spectrogram of a dawn chorus"></canvas>
+          <figcaption><b>Schematic.</b> Spectrogram of a dawn chorus, the raw output of an autonomous recorder before any detection step.</figcaption>
+        </figure>
       </article>
     </div>
   </div>
+</section>
+
+<section class="strip">
+  <canvas data-fig="strip" role="img" aria-label="Schematic landscape permeability surface"></canvas>
+  <p class="cap">Schematic landscape permeability surface — the layer that decides whether two populations are connected.</p>
 </section>
 
 <section class="band paper" id="projects">
@@ -464,3 +509,294 @@ footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
     </div>
   </div>
 </footer>
+
+<script>
+/* Schematic figures for the research section.
+ *
+ * Each figure is drawn from a fixed seed, so the page is identical on every
+ * load, and each is labelled in the page as schematic. None is fitted to
+ * data: they show the shape of a result, not a result. To use a real figure
+ * from a paper instead, replace the <canvas> with an <img> — the surrounding
+ * markup does not change.
+ */
+(function () {
+  "use strict";
+
+  /* ---------- deterministic noise ---------- */
+  function hash2(x, y, seed) {
+    var h = Math.imul(x | 0, 374761393) ^ Math.imul(y | 0, 668265263) ^ Math.imul(seed, 1274126177);
+    h = Math.imul(h ^ (h >>> 13), 1274126177);
+    return ((h ^ (h >>> 16)) >>> 0) / 4294967296;
+  }
+  function smooth(t) { return t * t * (3 - 2 * t); }
+  function noise(x, y, seed) {
+    var x0 = Math.floor(x), y0 = Math.floor(y);
+    var fx = smooth(x - x0), fy = smooth(y - y0);
+    var a = hash2(x0, y0, seed), b = hash2(x0 + 1, y0, seed);
+    var c = hash2(x0, y0 + 1, seed), d = hash2(x0 + 1, y0 + 1, seed);
+    return (a + (b - a) * fx) * (1 - fy) + (c + (d - c) * fx) * fy;
+  }
+  function fbm(x, y, seed) {
+    var v = 0, amp = 0.5, f = 1;
+    for (var i = 0; i < 4; i++) {
+      v += amp * noise(x * f, y * f, seed + i * 17);
+      f *= 2; amp *= 0.5;
+    }
+    return (v - 0.32) / 0.42;          // stretched to roughly span 0..1
+  }
+  function prng(seed) {
+    return function () {
+      seed = (seed * 1664525 + 1013904223) % 4294967296;
+      return seed / 4294967296;
+    };
+  }
+  function clamp01(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
+
+  /* ---------- ramp: slate -> teal -> olive -> ochre -> pale ---------- */
+  var STOPS = [
+    [0.00, [16, 29, 36]], [0.28, [18, 63, 71]], [0.52, [15, 95, 88]],
+    [0.70, [79, 122, 60]], [0.86, [192, 138, 46]], [1.00, [242, 227, 192]]
+  ];
+  function ramp(v) {
+    v = clamp01(v);
+    for (var i = 1; i < STOPS.length; i++) {
+      if (v <= STOPS[i][0]) {
+        var a = STOPS[i - 1], b = STOPS[i], t = (v - a[0]) / (b[0] - a[0]);
+        return [
+          a[1][0] + (b[1][0] - a[1][0]) * t,
+          a[1][1] + (b[1][1] - a[1][1]) * t,
+          a[1][2] + (b[1][2] - a[1][2]) * t
+        ];
+      }
+    }
+    return STOPS[STOPS.length - 1][1];
+  }
+
+  var AXIS = "#7d979d", FRAME = "#2b4048";
+  function mono(px) { return px + 'px "DM Mono", ui-monospace, Menlo, monospace'; }
+
+  /* Paint a scalar field across the whole canvas at device resolution.
+     value(u, v) takes normalised coordinates and returns an RGB triple. */
+  function paint(ctx, w, h, dpr, value) {
+    var W = Math.round(w * dpr), H = Math.round(h * dpr);
+    var img = ctx.createImageData(W, H), d = img.data;
+    for (var y = 0; y < H; y++) {
+      for (var x = 0; x < W; x++) {
+        var c = value((x + 0.5) / W, (y + 0.5) / H);
+        var o = (y * W + x) * 4;
+        d[o] = c[0]; d[o + 1] = c[1]; d[o + 2] = c[2]; d[o + 3] = 255;
+      }
+    }
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.putImageData(img, 0, 0);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);   // annotations back in CSS pixels
+  }
+
+  function colourbar(ctx, w, h, label) {
+    var bw = Math.min(88, w * 0.36), bh = 5, x0 = w - bw - 10, y0 = h - 17;
+    for (var i = 0; i < bw; i++) {
+      var c = ramp(i / bw);
+      ctx.fillStyle = "rgb(" + (c[0] | 0) + "," + (c[1] | 0) + "," + (c[2] | 0) + ")";
+      ctx.fillRect(x0 + i, y0, 1.2, bh);
+    }
+    ctx.strokeStyle = FRAME; ctx.lineWidth = 1;
+    ctx.strokeRect(x0 + 0.5, y0 + 0.5, bw - 1, bh - 1);
+    ctx.fillStyle = AXIS; ctx.font = mono(9); ctx.textBaseline = "top";
+    ctx.textAlign = "left"; ctx.fillText(label, 10, y0 + bh + 3);
+    ctx.fillText("low", x0, y0 + bh + 3);
+    ctx.textAlign = "right"; ctx.fillText("high", x0 + bw, y0 + bh + 3);
+    ctx.textAlign = "left";
+  }
+
+  /* ---------- figures ---------- */
+  var FIGS = {
+
+    /* Habitat suitability surface with occurrence records. */
+    sdm: function (ctx, w, h, dpr) {
+      var ar = h / w;
+      function suit(u, v) {
+        return clamp01(fbm(u * 3.4, v * 3.4 * ar, 41)
+          + 0.30 * (1 - v) - 0.18 * Math.abs(u - 0.42));
+      }
+      paint(ctx, w, h, dpr, function (u, v) { return ramp(0.02 + 0.97 * suit(u, v)); });
+
+      var r = prng(907), placed = 0, tries = 0;
+      ctx.lineWidth = 1.1;
+      while (placed < 24 && tries < 4000) {
+        tries++;
+        var u = 0.04 + r() * 0.92, v = 0.05 + r() * 0.72;
+        if (suit(u, v) < 0.62 || r() > 0.5) continue;
+        var x = u * w, y = v * h;
+        ctx.strokeStyle = "rgba(8,16,20,.9)";
+        ctx.beginPath(); ctx.arc(x, y, 2.9, 0, 6.2832); ctx.stroke();
+        ctx.strokeStyle = "rgba(255,255,255,.92)";
+        ctx.beginPath(); ctx.arc(x, y, 2.1, 0, 6.2832); ctx.stroke();
+        placed++;
+      }
+      colourbar(ctx, w, h, "suitability");
+    },
+
+    /* Dispersal kernel: log-normal distances, drawn on a linear distance
+       axis so the right skew and the long tail are actually visible. On a
+       log axis a log-normal is symmetric, which hides the point. */
+    kernel: function (ctx, w, h, dpr) {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = "#101d24"; ctx.fillRect(0, 0, w, h);
+      var padL = 28, padR = 10, padB = 28, padT = 16;
+      var pw = Math.max(10, w - padL - padR), ph = Math.max(10, h - padT - padB);
+      var XMAX = 300, TAIL = 100;                    // km
+      var mu = Math.log(30), sg = 0.95;
+      function dens(km) {
+        if (km <= 0.05) return 0;
+        var l = Math.log(km);
+        return Math.exp(-((l - mu) * (l - mu)) / (2 * sg * sg)) / (km * sg * 2.5066);
+      }
+      var n = Math.round(pw), pts = [], maxp = 0, i, p;
+      for (i = 0; i <= n; i++) {
+        p = dens((i / n) * XMAX);
+        pts.push(p); if (p > maxp) maxp = p;
+      }
+      function X(i) { return padL + (i / n) * pw; }
+      function Y(v) { return padT + ph - (v / maxp) * ph; }
+      var cut = Math.round(n * TAIL / XMAX);
+      function band(i0, i1, fill) {
+        ctx.beginPath(); ctx.moveTo(X(i0), padT + ph);
+        for (var j = i0; j <= i1; j++) ctx.lineTo(X(j), Y(pts[j]));
+        ctx.lineTo(X(i1), padT + ph); ctx.closePath();
+        ctx.fillStyle = fill; ctx.fill();
+      }
+      band(0, cut, "rgba(15,95,88,.9)");
+      band(cut, n, "rgba(192,138,46,.95)");
+      ctx.beginPath();
+      for (i = 0; i <= n; i++) { i ? ctx.lineTo(X(i), Y(pts[i])) : ctx.moveTo(X(i), Y(pts[i])); }
+      ctx.strokeStyle = "#f2e3c0"; ctx.lineWidth = 1.4; ctx.stroke();
+
+      ctx.strokeStyle = "#d9b45a"; ctx.lineWidth = 1;
+      ctx.setLineDash([3, 3]);
+      ctx.beginPath(); ctx.moveTo(X(cut), padT + 8); ctx.lineTo(X(cut), padT + ph); ctx.stroke();
+      ctx.setLineDash([]);
+
+      ctx.strokeStyle = FRAME; ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, padT + ph + 0.5); ctx.lineTo(padL + pw, padT + ph + 0.5);
+      ctx.moveTo(padL - 0.5, padT); ctx.lineTo(padL - 0.5, padT + ph);
+      ctx.stroke();
+
+      ctx.fillStyle = AXIS; ctx.font = mono(9);
+      ctx.textAlign = "center"; ctx.textBaseline = "top";
+      [0, 100, 200, 300].forEach(function (tk) {
+        var xx = padL + pw * tk / XMAX;
+        ctx.strokeStyle = FRAME;
+        ctx.beginPath(); ctx.moveTo(xx, padT + ph); ctx.lineTo(xx, padT + ph + 4); ctx.stroke();
+        ctx.fillText(String(tk), xx, padT + ph + 6);
+      });
+      ctx.textAlign = "left";
+      ctx.fillText("dispersal distance (km)", padL, h - 12);
+      ctx.save();
+      ctx.translate(11, padT + ph); ctx.rotate(-Math.PI / 2);
+      ctx.fillText("density", 0, 0);
+      ctx.restore();
+      ctx.fillStyle = "#d9b45a"; ctx.textAlign = "left";
+      ctx.fillText("long-distance tail", X(cut) + 5, padT + 1);
+      ctx.textAlign = "left";
+    },
+
+    /* Range shift: occupied area now, against a projected contour. */
+    range: function (ctx, w, h, dpr) {
+      var ar = h / w, THR = 0.56;
+      function occ(u, v) {
+        return clamp01(fbm(u * 3.0, v * 3.0 * ar, 73)
+          + 0.26 * (1 - v) - 0.22 * Math.abs(u - 0.5));
+      }
+      paint(ctx, w, h, dpr, function (u, v) {
+        var a = occ(u, v), b = occ(u - 0.085, v + 0.07);
+        if (Math.abs(b - THR) < 0.012) return [217, 180, 90];
+        if (a > THR) return ramp(0.30 + 0.45 * (a - THR) / (1 - THR));
+        return ramp(0.04 + 0.10 * a);
+      });
+      ctx.font = mono(9); ctx.textBaseline = "top";
+      ctx.fillStyle = "rgba(10,18,23,.82)";
+      ctx.fillRect(7, h - 21, 164, 17);
+      ctx.fillStyle = "rgb(21,120,110)"; ctx.fillRect(13, h - 16, 9, 9);
+      ctx.fillStyle = "#c2d4d6"; ctx.fillText("occupied", 27, h - 16);
+      ctx.fillStyle = "#d9b45a"; ctx.fillRect(89, h - 12, 11, 2);
+      ctx.fillStyle = "#c2d4d6"; ctx.fillText("projected", 106, h - 16);
+    },
+
+    /* Bioacoustic spectrogram: frequency against time. */
+    acoustic: function (ctx, w, h, dpr) {
+      var padL = 26, padB = 22;
+      var r = prng(5150), songs = [], s;
+      for (s = 0; s < 11; s++) {
+        songs.push({
+          t0: r(), dur: 0.05 + r() * 0.12, f0: 0.15 + r() * 0.58,
+          sweep: (r() - 0.5) * 0.3, band: 0.016 + r() * 0.03,
+          amp: 0.5 + r() * 0.5, wob: 6 + r() * 14
+        });
+      }
+      var uL = padL / w, vB = 1 - padB / h;
+      paint(ctx, w, h, dpr, function (u, v) {
+        if (u < uL || v > vB) return [12, 22, 27];
+        var t = (u - uL) / (1 - uL), f = 1 - v / vB;
+        var val = 0.04 + 0.14 * Math.pow(1 - f, 2.2)
+          + hash2(Math.round(u * 9000), Math.round(v * 9000), 3) * 0.05;
+        for (var k = 0; k < songs.length; k++) {
+          var sg = songs[k];
+          if (t < sg.t0 || t > sg.t0 + sg.dur) continue;
+          var p = (t - sg.t0) / sg.dur;
+          var centre = sg.f0 + sg.sweep * p + 0.012 * Math.sin(p * sg.wob);
+          var dd = Math.abs(f - centre) / sg.band;
+          if (dd < 3.2) val += sg.amp * Math.sin(Math.PI * p) * Math.exp(-dd * dd * 0.6);
+        }
+        return ramp(val);
+      });
+      var ph = h - padB;
+      ctx.fillStyle = AXIS; ctx.font = mono(9);
+      ctx.textAlign = "right"; ctx.textBaseline = "middle";
+      [2, 6, 10].forEach(function (khz) {
+        ctx.fillText(String(khz), padL - 5, ph - (khz / 12) * ph);
+      });
+      ctx.textAlign = "left"; ctx.textBaseline = "top";
+      ctx.fillText("kHz", 3, 5);
+      ctx.fillText("time →", padL, ph + 6);
+    },
+
+    /* Wide divider: a landscape permeability surface. */
+    strip: function (ctx, w, h, dpr) {
+      var ar = h / w;
+      paint(ctx, w, h, dpr, function (u, v) {
+        var f = clamp01(fbm(u * 14.0, v * 14.0 * ar, 311)
+          + 0.08 * Math.sin(u * 7.1) - 0.06 * v);
+        return ramp(clamp01(0.04 + 0.78 * (f - 0.5) * 1.35 + 0.34));
+      });
+    }
+  };
+
+  /* ---------- mount ---------- */
+  function render(cv) {
+    var fn = FIGS[cv.getAttribute("data-fig")];
+    if (!fn) return;
+    var w = cv.clientWidth, h = cv.clientHeight;
+    if (!w || !h) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = Math.round(w * dpr);
+    cv.height = Math.round(h * dpr);
+    var ctx = cv.getContext("2d");
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    fn(ctx, w, h, dpr);
+  }
+
+  function all() {
+    var list = document.querySelectorAll("canvas[data-fig]");
+    for (var i = 0; i < list.length; i++) render(list[i]);
+  }
+
+  all();
+  var to;
+  window.addEventListener("resize", function () {
+    clearTimeout(to);
+    to = setTimeout(all, 200);
+  });
+})();
+
+</script>

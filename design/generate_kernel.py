@@ -48,8 +48,8 @@ def svg(theme):
     ]
     for i, (dist, d) in enumerate(paths):
         t = dist / longest              # 0 = short hop, 1 = longest movement
-        width = 0.5 + 1.5 * t
-        op = (0.12 + 0.58 * t) if theme == "dark" else (0.14 + 0.50 * t)
+        width = 0.6 + 2.1 * t
+        op = (0.12 + 0.58 * t) if theme == "dark" else (0.18 + 0.56 * t)
         cls = "trace long" if t > 0.55 else "trace"
         dash = 2200
         delay = i * 0.028

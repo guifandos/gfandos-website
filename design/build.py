@@ -23,5 +23,6 @@ avatar = "data:image/jpeg;base64," + base64.b64encode(
 html = (here / "_tpl_lattice.html").read_text()
 html = html.replace("{{KERNEL}}", (here / "kernel-light.svg.part").read_text())
 html = html.replace("{{AVATAR}}", avatar)
+html = html.replace("{{FIGURES}}", (here / "_figures.js").read_text())
 (here / "preview-lattice.html").write_text(html)
 print("wrote design/preview-lattice.html")
