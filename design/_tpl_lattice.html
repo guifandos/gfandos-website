@@ -1,0 +1,372 @@
+<meta charset="utf-8">
+<title>Fandos Lattice</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Direction "Lattice" — deliberately single-theme: this is a light website
+   design, so it paints its own ground rather than following the viewer. */
+:root{
+  --ground:#eceff1;        /* pale blue-grey, lifted from the site banner sky */
+  --paper:#f7f8f8;
+  --ink:#16252d;           /* slate, not black */
+  --ink-soft:#4a616c;
+  --ink-faint:#8298a3;
+  --rule:#ccd6da;
+  --grid:#dde5e8;
+  --accent:#0f5f58;        /* deep teal */
+  --accent-soft:#d5e5e2;
+  --mark:#b87309;          /* ochre, used only for long-distance events */
+  --deep:#0f1e26;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Literata",Georgia,"Times New Roman",serif;
+  font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+h1,h2,h3,.grotesk{font-family:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;font-weight:600;line-height:1.08;letter-spacing:-0.018em;text-wrap:balance}
+.mono{font-family:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---- shell: one gutter, one measure ---- */
+.wrap{max-width:1140px;margin:0 auto;padding-inline:clamp(18px,4vw,44px)}
+
+/* ---- header ---- */
+.top{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20;
+  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);
+}
+.top .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-block:13px;flex-wrap:wrap}
+.brand{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1rem;letter-spacing:-0.01em;color:var(--ink);text-decoration:none}
+.brand span{color:var(--ink-faint);font-weight:400}
+.nav{display:flex;gap:clamp(10px,1.8vw,22px);flex-wrap:wrap;font-family:"DM Mono",monospace;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase}
+.nav a{color:var(--ink-soft);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent}
+.nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ---- hero ---- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero::before{ /* the lattice: an SDM grid, 1 cell = 1 modelling unit */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:56px 56px;background-position:-1px -1px;
+  mask-image:linear-gradient(190deg,#000 0%,#000 55%,transparent 92%);
+}
+.kernel{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.kernel .trace{fill:none;stroke:var(--accent);stroke-linecap:round;animation:draw 2.6s cubic-bezier(.2,.7,.25,1) both}
+.kernel .trace.long{stroke:var(--mark)}
+.kernel .node{fill:var(--mark);opacity:.72}
+.kernel .origin{fill:var(--deep)}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.kernel .trace{animation:none;stroke-dashoffset:0!important}}
+
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:end;padding-block:clamp(52px,9vw,104px) clamp(28px,4vw,44px)}
+.eyebrow{font-family:"DM Mono",monospace;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 20px;max-width:46ch;line-height:1.5}
+h1{font-size:clamp(2.9rem,8.2vw,5.4rem);font-weight:700;margin:0;letter-spacing:-0.035em}
+.thesis{font-size:clamp(1.12rem,2.1vw,1.42rem);font-style:italic;color:var(--ink);margin:22px 0 0;max-width:30ch;line-height:1.38;border-left:2px solid var(--accent);padding-left:18px}
+.lede{margin:24px 0 0;max-width:56ch;color:var(--ink-soft)}
+.lede strong{color:var(--ink);font-weight:500}
+.links{display:flex;flex-wrap:wrap;gap:8px 20px;margin:28px 0 0;font-family:"DM Mono",monospace;font-size:.8rem}
+.links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.portrait{margin:0}
+.portrait img{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:50% 30%;filter:grayscale(.28) contrast(1.04);border:1px solid var(--rule)}
+.portrait figcaption{font-family:"DM Mono",monospace;font-size:.7rem;line-height:1.5;color:var(--ink-faint);margin-top:9px;letter-spacing:.02em}
+
+/* the figure legend — the detail a modelling site earns and a template never has */
+.legend{border-top:1px dashed var(--rule);}
+.legend .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px 22px;padding-block:14px;align-items:start}
+.legend .tag{font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mark);padding-top:3px}
+.legend p{margin:0;font-size:.86rem;line-height:1.55;color:var(--ink-soft);max-width:82ch}
+
+/* ---- generic section ---- */
+section.band{border-top:1px solid var(--rule)}
+section.band.paper{background:var(--paper)}
+section.band > .wrap{padding-block:clamp(48px,7vw,86px)}
+.head{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:10px 40px;align-items:baseline;margin-bottom:clamp(26px,4vw,44px)}
+.head .kicker{font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.head h2{font-size:clamp(1.5rem,3.4vw,2.15rem);margin:0;max-width:22ch}
+
+/* ---- research: a data-source rail, not numbered cards ---- */
+.lines{display:flex;flex-direction:column}
+.line{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:8px 40px;padding-block:26px;border-top:1px solid var(--rule)}
+.line:last-child{border-bottom:1px solid var(--rule)}
+.line .src{font-family:"DM Mono",monospace;font-size:.74rem;line-height:1.7;color:var(--ink-soft);letter-spacing:.01em}
+.line .src b{display:block;color:var(--mark);font-weight:500;letter-spacing:.09em;text-transform:uppercase;font-size:.68rem;margin-bottom:6px}
+.line h3{font-size:1.28rem;margin:0 0 8px;font-weight:600;letter-spacing:-0.015em}
+.line h3 a{color:var(--ink);text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));background-size:0 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .28s ease}
+.line:hover h3 a{background-size:100% 1.5px;color:var(--accent)}
+.line p{margin:0;color:var(--ink-soft);max-width:62ch;font-size:.95rem}
+
+/* ---- projects ---- */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.project{background:var(--ground);padding:clamp(20px,2.6vw,30px)}
+section.band.paper .project{background:var(--paper)}
+.project .code{font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.project h3{font-size:1.18rem;margin:10px 0 12px}
+.project h3 a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--accent-soft)}
+.project h3 a:hover{border-bottom-color:var(--accent)}
+.project p{margin:0 0 16px;font-size:.93rem;color:var(--ink-soft)}
+.meta{margin:0;font-family:"DM Mono",monospace;font-size:.74rem;line-height:1.75;color:var(--ink-faint);display:grid;grid-template-columns:auto 1fr;gap:2px 14px}
+.meta dt{color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;font-size:.66rem;padding-top:2px}
+.meta dd{margin:0;color:var(--ink-soft)}
+
+/* ---- publications: a year rail, tabular ---- */
+.pubs{display:flex;flex-direction:column}
+.pub{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:4px 40px;padding-block:20px;border-top:1px solid var(--rule)}
+.pub:last-of-type{border-bottom:1px solid var(--rule)}
+.pub .yr{font-family:"DM Mono",monospace;font-variant-numeric:tabular-nums;font-size:.9rem;color:var(--ink-faint)}
+.pub .yr em{display:block;font-style:normal;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mark);margin-top:3px}
+.pub .t{margin:0 0 4px;font-size:1.02rem;line-height:1.38;max-width:60ch}
+.pub .t a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.pub .t a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.pub .auth{margin:0;font-size:.86rem;color:var(--ink-soft)}
+.pub .auth b{font-weight:500;color:var(--ink)}
+.pub .auth i{color:var(--ink-faint)}
+.more{margin-top:26px;font-family:"DM Mono",monospace;font-size:.82rem}
+
+/* ---- news ---- */
+.news{display:flex;flex-direction:column;gap:0}
+.item{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:4px 40px;padding-block:18px;border-top:1px solid var(--rule)}
+.item:last-child{border-bottom:1px solid var(--rule)}
+.item time{font-family:"DM Mono",monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint)}
+.item p{margin:0;max-width:64ch;font-size:.96rem}
+
+/* ---- footer ---- */
+footer{background:var(--deep);color:#c3d2d8}
+footer .wrap{padding-block:clamp(40px,6vw,66px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:30px 44px}
+footer h2{color:#fff;font-size:1.3rem;margin:0 0 14px}
+footer p{margin:0 0 6px;font-size:.92rem;line-height:1.65}
+footer a{color:#7fd3c6}
+footer .fine{font-family:"DM Mono",monospace;font-size:.72rem;color:#6d838c;line-height:1.7}
+footer .ucm{margin-top:18px;filter:invert(1) opacity(.62);max-width:120px}
+
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr;align-items:start}
+  .portrait{max-width:230px;order:-1}
+  .head,.line,.pub,.item,.legend .wrap{grid-template-columns:1fr}
+  .line .src{order:-1}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Guillermo Fandos <span>· UCM</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#people">People</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#outreach">Outreach</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  {{KERNEL}}
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Spatial ecology · Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid</p>
+      <h1>Guillermo Fandos</h1>
+      <p class="thesis">How far animals move, and why individuals of the same species move so differently.</p>
+      <p class="lede">I study the processes that set where animal populations are and how many there are, combining fieldwork, continental-scale data synthesis and <strong>Bayesian hierarchical modelling</strong>. Assistant Professor at the Universidad Complutense de Madrid.</p>
+      <p class="links">
+        <a href="mailto:gfandos@ucm.es">gfandos@ucm.es</a>
+        <a href="https://scholar.google.es/citations?user=8zRbuNgAAAAJ">Scholar</a>
+        <a href="https://orcid.org/0000-0003-1579-9444">ORCID</a>
+        <a href="https://github.com/guifandos">GitHub</a>
+        <a href="https://twitter.com/g_fandos">@g_fandos</a>
+      </p>
+    </div>
+    <figure class="portrait">
+      <img src="{{AVATAR}}" alt="Guillermo Fandos">
+      <figcaption>PhD 2017, Universidad Complutense de Madrid.<br>Previously Potsdam University.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="legend">
+  <div class="wrap">
+    <span class="tag">Fig. 1</span>
+    <p>Simulated natal dispersal from a single ringing site: 90 trajectories with log-normally distributed distances. Most individuals settle within a few kilometres; a handful, marked in ochre, travel an order of magnitude farther. That heavy tail is the point — it is what makes dispersal hard to estimate and easy to underestimate. Schematic, not fitted to data.</p>
+  </div>
+</section>
+
+<section class="band" id="research">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Research</p>
+      <h2>Three questions, one problem: linking individual movement to where species end up</h2>
+    </div>
+    <div class="lines">
+      <article class="line">
+        <p class="src"><b>Data</b>EURING ring recoveries<br>National ringing schemes</p>
+        <div>
+          <h3><a href="#">Animal movement in dynamic landscapes</a></h3>
+          <p>Daily foraging, seasonal migration and once-in-a-lifetime dispersal events all leave a signature in ring-recovery data. I use that signature to estimate dispersal kernels and ask what they mean for connectivity and range boundaries.</p>
+        </div>
+      </article>
+      <article class="line">
+        <p class="src"><b>Data</b>eBird citizen science<br>Camera traps · AudioMoth</p>
+        <div>
+          <h3><a href="#">Improving biodiversity monitoring and modelling</a></h3>
+          <p>Distribution models that ignore dispersal, population dynamics and imperfect detection give confident answers to the wrong question. I build models that carry those processes explicitly and integrate data sources that were never designed to be combined.</p>
+        </div>
+      </article>
+      <article class="line">
+        <p class="src"><b>Data</b>Range and threat databases<br>Landscape permeability layers</p>
+        <div>
+          <h3><a href="#">Conservation under global change</a></h3>
+          <p>Which species are most exposed, why, and where the problems will surface first — from Iberian large carnivore recolonisation to mammal declines in the Gran Chaco.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band paper" id="projects">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Projects</p>
+      <h2>Funded work in progress</h2>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <p class="code">INTRADISP</p>
+        <h3><a href="#">Why individuals of one species disperse differently</a></h3>
+        <p>Synthesising intraspecific variation in dispersal across European birds, to see how much of the variation we usually average away actually matters for range forecasts.</p>
+        <dl class="meta">
+          <dt>Role</dt><dd>Principal investigator</dd>
+          <dt>Years</dt><dd>2024–2026</dd>
+          <dt>Host</dt><dd>UCM</dd>
+          <dt>With</dt><dd>Potsdam University, BTO</dd>
+        </dl>
+      </article>
+      <article class="project">
+        <p class="code">RIMed-Fauna</p>
+        <h3><a href="#">Wildlife in rivers that run dry</a></h3>
+        <p>Mediterranean rivers flood in winter and disappear in summer. Camera trapping and distribution modelling in the National Parks network to see how terrestrial vertebrates track that swing.</p>
+        <dl class="meta">
+          <dt>Role</dt><dd>Team member</dd>
+          <dt>Years</dt><dd>2024–2027</dd>
+          <dt>PI</dt><dd>M. M. Sánchez-Montoya</dd>
+          <dt>Funder</dt><dd>Red de Parques Nacionales</dd>
+        </dl>
+      </article>
+      <article class="project">
+        <p class="code">SHAREPOINT</p>
+        <h3><a href="#">Social structure and parasite sharing</a></h3>
+        <p>Understory birds in French Guiana: how social organisation shapes who shares parasites with whom, combining network analysis with disease ecology.</p>
+        <dl class="meta">
+          <dt>Role</dt><dd>Team member</dd>
+          <dt>Years</dt><dd>2025–2027</dd>
+          <dt>PI</dt><dd>J. Pérez-Tris</dd>
+          <dt>Funder</dt><dd>CEBA</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="publications">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Selected publications</p>
+      <h2>Recent work</h2>
+    </div>
+    <div class="pubs">
+      <article class="pub">
+        <p class="yr">2026<em>Dispersal</em></p>
+        <div>
+          <p class="t"><a href="https://www.nature.com/articles/s42003-026-09676-x">Dispersal syndromes across the tree of life</a></p>
+          <p class="auth"><b>Fandos G</b>, Robinson RA, Zurell D · <i>Communications Biology</i></p>
+        </div>
+      </article>
+      <article class="pub">
+        <p class="yr">2023<em>Dispersal</em></p>
+        <div>
+          <p class="t"><a href="https://doi.org/10.1111/1365-2656.13838">Standardised empirical dispersal kernels emphasise the pervasiveness of long-distance dispersal in European birds</a></p>
+          <p class="auth"><b>Fandos G</b>, Talluto M, Fiedler W, Robinson RA, Thorup K, Zurell D · <i>Journal of Animal Ecology</i> 92:158–170</p>
+        </div>
+      </article>
+      <article class="pub">
+        <p class="yr">2023<em>Conservation</em></p>
+        <div>
+          <p class="t"><a href="https://doi.org/10.1111/ddi.13644">Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human-dominated landscapes</a></p>
+          <p class="auth">Pratzer M, Nill L, Kuemmerle T, Zurell D, <b>Fandos G</b> · <i>Diversity and Distributions</i> 29:75–88</p>
+        </div>
+      </article>
+      <article class="pub">
+        <p class="yr">2021<em>Conservation</em></p>
+        <div>
+          <p class="t"><a href="https://doi.org/10.1111/gcb.15424">Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco</a></p>
+          <p class="auth">Romero-Muñoz A, <b>Fandos G</b>, Benítez-López A, Kuemmerle T · <i>Global Change Biology</i> 27:755–767</p>
+        </div>
+      </article>
+      <article class="pub">
+        <p class="yr">2020<em>Movement</em></p>
+        <div>
+          <p class="t"><a href="https://doi.org/10.1098/rspb.2020.1799">Seasonal niche tracking of climate emerges at the population level in a migratory bird</a></p>
+          <p class="auth"><b>Fandos G</b>, Rotics S, Sapir N, Fiedler W, Kaatz M, Wikelski M, Nathan R, Zurell D · <i>Proceedings of the Royal Society B</i> 287:20201799</p>
+        </div>
+      </article>
+      <article class="pub">
+        <p class="yr">2020<em>Methods</em></p>
+        <div>
+          <p class="t"><a href="https://doi.org/10.1111/ecog.04960">A standard protocol for reporting species distribution models</a></p>
+          <p class="auth">Zurell D, Franklin J, König C, …, <b>Fandos G</b>, …, Merow C · <i>Ecography</i> 43:1261–1277</p>
+        </div>
+      </article>
+    </div>
+    <p class="more"><a href="https://scholar.google.es/citations?user=8zRbuNgAAAAJ">Full list on Google Scholar →</a> &nbsp; <a href="https://github.com/guifandos">Code on GitHub →</a></p>
+  </div>
+</section>
+
+<section class="band paper" id="news">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">News</p>
+      <h2>Lately</h2>
+    </div>
+    <div class="news">
+      <article class="item">
+        <time datetime="2026-02">Feb 2026</time>
+        <p>New paper in <i>Communications Biology</i>: <a href="https://www.nature.com/articles/s42003-026-09676-x">Dispersal syndromes across the tree of life</a>.</p>
+      </article>
+      <article class="item">
+        <time datetime="2026-02">Feb 2026</time>
+        <p>In Vienna for the <a href="https://www.cost.eu/actions/CA22117/">EUFLYNET</a> COST Action meeting on bird migration research.</p>
+      </article>
+      <article class="item">
+        <time datetime="2025">2025</time>
+        <p>David Notario and Claudia Mediavilla join the group as researchers on INTRADISP and RIMed-Fauna.</p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>Get in touch</h2>
+      <p>Dept. Biodiversidad, Ecología y Evolución<br>Facultad de Ciencias Biológicas<br>C/ José Antonio Novais 12<br>28040 Madrid, Spain</p>
+      <p><a href="mailto:gfandos@ucm.es">gfandos@ucm.es</a></p>
+    </div>
+    <div>
+      <h2>Elsewhere</h2>
+      <p><a href="https://scholar.google.es/citations?user=8zRbuNgAAAAJ">Google Scholar</a><br>
+      <a href="https://orcid.org/0000-0003-1579-9444">ORCID 0000-0003-1579-9444</a><br>
+      <a href="https://github.com/guifandos">GitHub</a><br>
+      <a href="https://produccioncientifica.ucm.es/investigadores/446092/detalle">UCM profile</a></p>
+    </div>
+    <div>
+      <p class="fine">Open science: code and data for papers on GitHub, archived on Zenodo.<br><br>Design preview — “Lattice”. Not the live site.</p>
+    </div>
+  </div>
+</footer>
