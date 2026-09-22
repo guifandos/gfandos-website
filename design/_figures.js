@@ -61,6 +61,11 @@
 
   var AXIS = "#7d979d", FRAME = "#2b4048";
   function mono(px) { return px + 'px "DM Mono", ui-monospace, Menlo, monospace'; }
+  /* Label size scales with the canvas: the figures are exported at 640 CSS px
+     and shown at about 300 px, so a label has to be ~3.7% of the width to
+     read at 11-12 px on the page. Paddings are multiples of it. No numeric
+     ticks anywhere: an axis number could be read as a result (brief, s.4). */
+  function labelSize(w) { return Math.max(9, Math.round(w * 0.037)); }
 
   /* Paint a scalar field across the whole canvas at device resolution.
      value(u, v) takes normalised coordinates and returns an RGB triple. */
@@ -80,7 +85,9 @@
   }
 
   function colourbar(ctx, w, h, label) {
-    var bw = Math.min(88, w * 0.36), bh = 5, x0 = w - bw - 10, y0 = h - 17;
+    var fs = labelSize(w);
+    var bw = Math.min(fs * 9, w * 0.36), bh = Math.max(4, Math.round(fs * 0.45));
+    var pad = Math.round(fs * 0.7), x0 = w - bw - pad, y0 = h - pad - bh - fs - 3;
     for (var i = 0; i < bw; i++) {
       var c = ramp(i / bw);
       ctx.fillStyle = "rgb(" + (c[0] | 0) + "," + (c[1] | 0) + "," + (c[2] | 0) + ")";
@@ -88,8 +95,8 @@
     }
     ctx.strokeStyle = FRAME; ctx.lineWidth = 1;
     ctx.strokeRect(x0 + 0.5, y0 + 0.5, bw - 1, bh - 1);
-    ctx.fillStyle = AXIS; ctx.font = mono(9); ctx.textBaseline = "top";
-    ctx.textAlign = "left"; ctx.fillText(label, 10, y0 + bh + 3);
+    ctx.fillStyle = AXIS; ctx.font = mono(fs); ctx.textBaseline = "top";
+    ctx.textAlign = "left"; ctx.fillText(label, pad, y0 + bh + 3);
     ctx.fillText("low", x0, y0 + bh + 3);
     ctx.textAlign = "right"; ctx.fillText("high", x0 + bw, y0 + bh + 3);
     ctx.textAlign = "left";
@@ -129,9 +136,11 @@
     kernel: function (ctx, w, h, dpr) {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.fillStyle = "#101d24"; ctx.fillRect(0, 0, w, h);
-      var padL = 28, padR = 10, padB = 28, padT = 16;
+      var fs = labelSize(w);
+      var padL = Math.round(fs * 1.5), padR = Math.round(fs * 0.6),
+          padB = Math.round(fs * 1.7), padT = Math.round(fs * 1.6);
       var pw = Math.max(10, w - padL - padR), ph = Math.max(10, h - padT - padB);
-      var XMAX = 300, TAIL = 100;                    // km
+      var XMAX = 300, TAIL = 100;                    // unitless: shape only
       var mu = Math.log(30), sg = 0.95;
       function dens(km) {
         if (km <= 0.05) return 0;
@@ -160,7 +169,7 @@
 
       ctx.strokeStyle = "#d9b45a"; ctx.lineWidth = 1;
       ctx.setLineDash([3, 3]);
-      ctx.beginPath(); ctx.moveTo(X(cut), padT + 8); ctx.lineTo(X(cut), padT + ph); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(X(cut), padT - fs * 0.3); ctx.lineTo(X(cut), padT + ph); ctx.stroke();
       ctx.setLineDash([]);
 
       ctx.strokeStyle = FRAME; ctx.lineWidth = 1;
@@ -169,23 +178,16 @@
       ctx.moveTo(padL - 0.5, padT); ctx.lineTo(padL - 0.5, padT + ph);
       ctx.stroke();
 
-      ctx.fillStyle = AXIS; ctx.font = mono(9);
-      ctx.textAlign = "center"; ctx.textBaseline = "top";
-      [0, 100, 200, 300].forEach(function (tk) {
-        var xx = padL + pw * tk / XMAX;
-        ctx.strokeStyle = FRAME;
-        ctx.beginPath(); ctx.moveTo(xx, padT + ph); ctx.lineTo(xx, padT + ph + 4); ctx.stroke();
-        ctx.fillText(String(tk), xx, padT + ph + 6);
-      });
-      ctx.textAlign = "left";
-      ctx.fillText("dispersal distance (km)", padL, h - 12);
+      ctx.fillStyle = AXIS; ctx.font = mono(fs);
+      ctx.textAlign = "left"; ctx.textBaseline = "top";
+      ctx.fillText("dispersal distance \u2192", padL, padT + ph + Math.round(fs * 0.45));
       ctx.save();
-      ctx.translate(11, padT + ph); ctx.rotate(-Math.PI / 2);
-      ctx.fillText("density", 0, 0);
+      ctx.translate(Math.round(fs * 0.25), padT + ph); ctx.rotate(-Math.PI / 2);
+      ctx.fillText("density \u2192", 0, 0);
       ctx.restore();
-      ctx.fillStyle = "#d9b45a"; ctx.textAlign = "left";
-      ctx.fillText("long-distance tail", X(cut) + 5, padT + 1);
-      ctx.textAlign = "left";
+      ctx.fillStyle = "#d9b45a"; ctx.textBaseline = "bottom";
+      ctx.fillText("long-distance tail", X(cut) + Math.round(fs * 0.4), padT - Math.round(fs * 0.15));
+      ctx.textBaseline = "top";
     },
 
     /* Range shift: occupied area now, against a projected contour. */
@@ -201,18 +203,20 @@
         if (a > THR) return ramp(0.30 + 0.45 * (a - THR) / (1 - THR));
         return ramp(0.04 + 0.10 * a);
       });
-      ctx.font = mono(9); ctx.textBaseline = "top";
+      var fs = labelSize(w), u = fs / 9;   // legend laid out in label units
+      ctx.font = mono(fs); ctx.textBaseline = "top";
       ctx.fillStyle = "rgba(10,18,23,.82)";
-      ctx.fillRect(7, h - 21, 164, 17);
-      ctx.fillStyle = "rgb(21,120,110)"; ctx.fillRect(13, h - 16, 9, 9);
-      ctx.fillStyle = "#c2d4d6"; ctx.fillText("occupied", 27, h - 16);
-      ctx.fillStyle = "#d9b45a"; ctx.fillRect(89, h - 12, 11, 2);
-      ctx.fillStyle = "#c2d4d6"; ctx.fillText("projected", 106, h - 16);
+      ctx.fillRect(7 * u, h - 21 * u, 172 * u, 17 * u);
+      ctx.fillStyle = "rgb(21,120,110)"; ctx.fillRect(13 * u, h - 16 * u, 9 * u, 9 * u);
+      ctx.fillStyle = "#c2d4d6"; ctx.fillText("occupied", 27 * u, h - 16 * u);
+      ctx.fillStyle = "#d9b45a"; ctx.fillRect(93 * u, h - 12 * u, 11 * u, Math.max(2, 2 * u));
+      ctx.fillStyle = "#c2d4d6"; ctx.fillText("projected", 110 * u, h - 16 * u);
     },
 
     /* Bioacoustic spectrogram: frequency against time. */
     acoustic: function (ctx, w, h, dpr) {
-      var padL = 26, padB = 22;
+      var fs = labelSize(w);
+      var padL = Math.round(fs * 1.3), padB = Math.round(fs * 1.7);
       var r = prng(5150), songs = [], s;
       for (s = 0; s < 11; s++) {
         songs.push({
@@ -239,14 +243,13 @@
         return ramp(val);
       });
       var ph = h - padB;
-      ctx.fillStyle = AXIS; ctx.font = mono(9);
-      ctx.textAlign = "right"; ctx.textBaseline = "middle";
-      [2, 6, 10].forEach(function (khz) {
-        ctx.fillText(String(khz), padL - 5, ph - (khz / 12) * ph);
-      });
+      ctx.fillStyle = AXIS; ctx.font = mono(fs);
       ctx.textAlign = "left"; ctx.textBaseline = "top";
-      ctx.fillText("kHz", 3, 5);
-      ctx.fillText("time →", padL, ph + 6);
+      ctx.save();
+      ctx.translate(Math.round(fs * 0.25), ph); ctx.rotate(-Math.PI / 2);
+      ctx.fillText("frequency \u2192", 0, 0);
+      ctx.restore();
+      ctx.fillText("time \u2192", padL, ph + Math.round(fs * 0.45));
     },
 
     /* Wide divider: a landscape permeability surface. */

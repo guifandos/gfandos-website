@@ -19,7 +19,10 @@ I'm fascinated by how new technology can transform ecological research. Currentl
 I enjoy sharing science beyond academic circles. I've participated in public engagement events like **Pint of Science** (as speaker in Berlin and co-coordinator in Potsdam) and **La Noche de los Investigadores**, where I've run workshops on bat ecology and camera trapping.
 
 ::: {.banner}
-![Birdwatching session during a field course.](images/outreach-field.jpg){fig-alt="Science outreach in the field"}
+<!-- images/derived/outreach-field-1400.webp is a downscaled copy of
+     images/outreach-field.jpg made by design/tools/derive-images.sh;
+     the original is untouched. -->
+![Birdwatching session during a field course.](images/derived/outreach-field-1400.webp){fig-alt="Science outreach in the field"}
 :::
 
 I'm also an active contributor and reviewer for [eBird](https://ebird.org/home), helping maintain data quality for one of the largest citizen science projects in the world.

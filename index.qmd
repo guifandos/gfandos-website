@@ -9,9 +9,12 @@ page-layout: custom
 
 <!--
   Home page. Every section is a fenced div (::: {.class}) styled in
-  styles/lattice.scss. To add a publication or a news item, copy one
-  ::: {.pub} / ::: {.item} block: the first paragraph is the rail (year or
-  date), the rest sits to its right.
+  styles/lattice.scss. A section head is ::: {.head} with an optional mono
+  kicker in the rail column and the h2 as the title; add a kicker only when
+  it says something the h2 does not (as on Research and Projects).
+  To add a publication or a news item, copy one ::: {.pub} / ::: {.item}
+  block: the first paragraph is the rail (year or date), the rest sits to
+  its right.
 -->
 
 ::: {.hero}
@@ -70,7 +73,7 @@ I am a spatial ecologist interested in the processes that drive the distribution
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 EURING ring recoveries\
 National ringing schemes
 :::
@@ -93,9 +96,10 @@ How do daily movements, seasonal migration and lifetime dispersal events shape p
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 Citizen science (eBird)\
-Monitoring surveys · Ring recoveries
+Monitoring surveys\
+Ring recoveries
 :::
 ::: {.text}
 ### [Improving biodiversity monitoring and modelling](research/forecasting.qmd)
@@ -109,7 +113,7 @@ Effective conservation requires well-designed monitoring and the capacity to ant
 
 ::: {.line}
 ::: {.rail}
-[Data and methods]{.kicker}\
+[Data and methods]{.kicker}
 Black Stork monitoring (22 yr)\
 Distribution models\
 Landscape connectivity
@@ -126,7 +130,7 @@ Habitat degradation and climate change are altering species distributions worldw
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 AudioMoth recorders\
 Camera-trap networks
 :::
@@ -163,7 +167,7 @@ Camera trapping, bioacoustic monitoring with AudioMoth devices, and other sensor
 ## Funded work in progress
 :::
 
-::: {.projects}
+::: {.project-list}
 
 ::: {.project}
 [INTRADISP]{.code}
@@ -244,9 +248,7 @@ Funder
 ::: {.wrap}
 
 ::: {.head}
-[Selected publications]{.kicker}
-
-## Recent work
+## Selected publications
 :::
 
 ::: {.pubs}
@@ -314,9 +316,7 @@ Zurell D, Franklin J, König C, …, **Fandos G**, …, Merow C · *Ecography* 4
 ::: {.wrap}
 
 ::: {.head}
-[News]{.kicker}
-
-## Lately
+## News
 :::
 
 ::: {.news}

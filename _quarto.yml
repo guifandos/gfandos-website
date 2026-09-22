@@ -103,7 +103,7 @@ format:
     toc: true
     toc-depth: 2
     toc-title: "On this page"
-    smooth-scroll: true
+    smooth-scroll: false   # native CSS scroll-behavior in styles/lattice.scss instead (respects prefers-reduced-motion)
     link-external-newwindow: true
     fig-responsive: true
     lang: en

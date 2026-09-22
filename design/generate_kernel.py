@@ -1,4 +1,4 @@
-"""Generate the SVG hero graphics used in the design previews.
+"""Generate the SVG hero graphic for the home page (and the design previews).
 
 The figure is a heavy-tailed dispersal kernel: many short displacements and a
 few very long ones, drawn as trajectories radiating from a ringing site. This
@@ -6,6 +6,11 @@ is the empirical pattern reported in Fandos et al. (2023, J. Anim. Ecol.), so
 the site's main visual element encodes the research rather than decorating it.
 
 Seeded for reproducibility. Run: python3 design/generate_kernel.py
+
+Outputs: design/kernel-{light,dark}.svg.part (git-ignored, used by design/build.py)
+and _includes/hero-kernel.qmd, the copy the site renders. The SVG is inlined
+rather than linked so the theme tokens colour the strokes and the CSS
+stroke-dashoffset animation can run; no standalone .svg is written.
 """
 
 import math
@@ -13,26 +18,37 @@ import random
 
 SEED = 20261052
 W, H = 1200, 700
-# The ringing site sits low in the gap between the hero text and the portrait
-# (viewBox coordinates; the SVG is sliced to the hero at xMidYMid). The fan
-# leans up and to the right, over the top of the portrait and into the right
-# margin, so the traces stay off the running text (design/BRIEF.md section 3).
-# The seed was chosen so that the ochre arrival nodes land in the open areas of
-# the hero at desktop widths: check with design/tools/snap.sh after changing it.
-ORIGIN = (680, 575)
+# The ringing site sits at the bottom of the open gap between the hero text
+# column and the portrait. The SVG is sliced to the hero at xMidYMid: at 1440 px
+# the viewBox is scaled 1.2x and cropped vertically, so viewBox y 65-635 is what
+# shows. The fan leans up and to the right, through the gap and into the empty
+# area above the bottom-aligned portrait, so the traces stay off the lede, the
+# identity links and the portrait caption (design/BRIEF.md section 3). The
+# horizontal mask in styles/lattice.scss (.hero .kernel) only guards the text
+# column; the fan itself starts right of where the mask is fully opaque.
+# Check with design/tools/snap.sh after changing any of these numbers.
+ORIGIN = (735, 612)
 # Geometry: heavy-tailed log-normal distances, with the tail compressed above
 # TAIL_KNEE so the longest events still terminate inside the viewBox. The
 # class/opacity of each trace is taken from the raw distance, so what counts
 # as "long distance" does not depend on the compression.
 TAIL_KNEE, TAIL_K = 280, 90
-ANGLES = (-112, -15)   # degrees; upward, leaning right
+TAIL_K_LONG = 400          # long-distance events are compressed less, so they leave
+                           # the frame at the top or right edge instead of ending in a dot
+ANGLES = (-165, -15)       # degrees; a radial fan, open to the left and right,
+                           # so it reads as a kernel over a landscape. Traces
+                           # that run behind the portrait are occluded by it.
+LONG_ANGLES = (-110, -25)  # long-distance events: exit the frame at the top or
+                           # the right edge rather than ending above the portrait
+LONG_DIST = 520            # raw distance above which a trace is "long"
+BOW = 0.16                 # max perpendicular bow as a fraction of chord length
 
 
-def compress(dist):
+def compress(dist, k=TAIL_K):
     """Log-compress distances above TAIL_KNEE (identity below it)."""
     if dist <= TAIL_KNEE:
         return dist
-    return TAIL_KNEE + TAIL_K * math.log1p((dist - TAIL_KNEE) / TAIL_K)
+    return TAIL_KNEE + k * math.log1p((dist - TAIL_KNEE) / k)
 
 
 def kernel_paths(n=90, seed=SEED):
@@ -43,9 +59,9 @@ def kernel_paths(n=90, seed=SEED):
         # log-normal distance: median ~modest, occasional long-distance events
         dist = rng.lognormvariate(mu=5.0, sigma=0.95)
         dist = min(dist, 1500)
-        angle = math.radians(rng.uniform(*ANGLES))
-        bow_frac = rng.uniform(-0.28, 0.28)
-        drawn = compress(dist)
+        angle = math.radians(rng.uniform(*(LONG_ANGLES if dist > LONG_DIST else ANGLES)))
+        bow_frac = rng.uniform(-BOW, BOW)
+        drawn = compress(dist, TAIL_K_LONG if dist > LONG_DIST else TAIL_K)
         x2 = ORIGIN[0] + drawn * math.cos(angle)
         y2 = ORIGIN[1] + drawn * math.sin(angle)
         # control point offset perpendicular to the chord -> gentle arcs
@@ -59,13 +75,29 @@ def kernel_paths(n=90, seed=SEED):
     return paths
 
 
+def bbox(paths, pad=28):
+    """Bounding box of the fan (control points bound a quadratic curve),
+    padded, for the cropped phone view."""
+    xs, ys = [ORIGIN[0]], [ORIGIN[1]]
+    for _, d in paths:
+        for tok in d.replace("M", "").replace("Q", "").split():
+            x, y = tok.split(",")
+            xs.append(float(x)); ys.append(float(y))
+    x0, y0 = max(0, min(xs) - pad), max(0, min(ys) - pad)
+    x1, y1 = min(W, max(xs) + pad), min(H, max(ys) + pad)
+    return x0, y0, x1 - x0, y1 - y0
+
+
 def svg(theme):
-    """theme: 'dark' or 'light'."""
+    """theme: 'dark' or 'light'. Returns the full-bleed hero SVG followed by a
+    second, phone-only SVG that reuses the same paths through <use> with a
+    viewBox cropped to the fan (styles/lattice.scss shows one or the other)."""
     paths = kernel_paths()
     longest = max(d for d, _ in paths)
     out = [
         f'<svg class="kernel" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid slice" '
-        f'aria-hidden="true" focusable="false">'
+        f'aria-hidden="true" focusable="false">',
+        '<g id="kernel-paths">',
     ]
     for i, (dist, d) in enumerate(paths):
         t = dist / longest              # 0 = short hop, 1 = longest movement
@@ -79,25 +111,23 @@ def svg(theme):
             f'style="opacity:{op:.3f};stroke-dasharray:{dash};stroke-dashoffset:{dash};'
             f'animation-delay:{delay:.2f}s"/>'
         )
-        if t > 0.62:  # mark the arrival point of long-distance events
+        if t > 0.62:  # mark the arrival point of a long-distance event, but only
+            # when it ends inside the visible frame (viewBox y 65-635 at 1440 px);
+            # events that leave the frame get no dot, so nothing reads as a seed head
             end = d.split()[-1]
-            ex, ey = end.split(",")
-            out.append(f'<circle class="node" cx="{ex}" cy="{ey}" r="{2.2 + 2 * t:.1f}"/>')
+            ex, ey = (float(v) for v in end.split(","))
+            if 40 < ex < 1160 and 100 < ey < 640:
+                out.append(f'<circle class="node" cx="{ex:.1f}" cy="{ey:.1f}" r="{2.2 + 2 * t:.1f}"/>')
     out.append(f'<circle class="origin" cx="{ORIGIN[0]}" cy="{ORIGIN[1]}" r="5"/>')
+    out.append("</g>")
     out.append("</svg>")
+    bx, by, bw, bh = bbox(paths)
+    out.append(
+        f'<svg class="kernel kernel-m" viewBox="{bx:.0f} {by:.0f} {bw:.0f} {bh:.0f}" '
+        f'preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">'
+        f'<use href="#kernel-paths"/></svg>'
+    )
     return "\n".join(out)
-
-
-# CSS for the standalone file. In the site the same rules live in
-# styles/lattice.scss (under .hero .kernel), driven by the theme tokens.
-STANDALONE_CSS = """
-.trace{fill:none;stroke:#0f5f58;stroke-linecap:round;animation:draw 2.6s cubic-bezier(.2,.7,.25,1) both}
-.trace.long{stroke:#b87309}
-.node{fill:#b87309;opacity:.72}
-.origin{fill:#0f1e26}
-@keyframes draw{to{stroke-dashoffset:0}}
-@media (prefers-reduced-motion:reduce){.trace{animation:none;stroke-dashoffset:0!important}}
-"""
 
 
 if __name__ == "__main__":
@@ -116,16 +146,9 @@ if __name__ == "__main__":
         "<!-- Generated by design/generate_kernel.py. Do not edit by hand:\n"
         "     run `python3 design/generate_kernel.py` to regenerate.\n"
         "     90 simulated trajectories from one ringing site, log-normal\n"
-        "     distances (tail compressed to fit the frame), seeded. -->\n"
+        "     distances (tail compressed to fit the frame), seeded. The second,\n"
+        "     phone-only <svg> reuses the same paths through <use> with a\n"
+        "     viewBox cropped to the fan. -->\n"
         "```{=html}\n" + light + "\n```\n"
     )
     print(f"wrote {inc.relative_to(root)}")
-
-    # Standalone SVG (own CSS, xmlns) for reuse outside the site.
-    out = root / "images" / "hero" / "kernel-light.svg"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    standalone = light.replace(
-        '<svg class="kernel"', '<svg xmlns="http://www.w3.org/2000/svg" class="kernel"', 1
-    ).replace(">", f"><style>{STANDALONE_CSS}</style>", 1)
-    out.write_text(standalone)
-    print(f"wrote {out.relative_to(root)}")

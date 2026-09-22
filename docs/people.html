@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-faca5375d6d6b539e0b4349a2ad7c1bd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1709fe7cb3f59a84b290b150cada41d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-17f1fb42d6e3bd4a851f36e5eca34815.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="fonts/fonts.css">
@@ -225,7 +224,8 @@ ul.task-list li input[type="checkbox"] {
   Each person is a ::: {.person} block: a photo slot, a name, a mono role
   line and one paragraph. When a photograph exists, put
   ![](images/people/name.jpg){fig-alt="..."} inside the .photo-slot div; the
-  empty div renders as a hairline placeholder box until then.
+  empty div renders as a small hairline box (4:5) until then, and the same
+  box frames the photograph.
   A section is a ::: {.head} block (kicker + heading) followed by its content;
   the spacing between sections comes from styles/lattice.scss.
 -->
@@ -278,8 +278,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="line no-fig">
 <div class="rail">
-<p><span class="kicker">Supervision</span><br>
-11 MSc theses<br>
+<p><span class="kicker">Supervision</span> 11 MSc theses<br>
 5 BSc theses</p>
 </div>
 <div class="text">
@@ -298,9 +297,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="line no-fig">
 <div class="rail">
-<p><span class="kicker">Institutions</span><br>
-Potsdam University<br>
-BTO · UCM<br>
+<p><span class="kicker">Institutions</span> Potsdam University<br>
+BTO<br>
+UCM<br>
 Swiss Ornithological Institute<br>
 Humboldt University</p>
 </div>
@@ -324,8 +323,7 @@ Humboldt University</p>
 </div>
 <div class="line no-fig">
 <div class="rail">
-<p><span class="kicker">Contact</span><br>
-<a href="mailto:gfandos@ucm.es">gfandos@ucm.es</a></p>
+<p><span class="kicker">Contact</span> <a href="mailto:gfandos@ucm.es">gfandos@ucm.es</a></p>
 </div>
 <div class="text">
 <p>I am always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you are considering a TFM or PhD and our research aligns with your interests, get in touch: <a href="mailto:gfandos@ucm.es">gfandos@ucm.es</a>.</p>
@@ -767,5 +765,4 @@ C/ José Antonio Novais 12, 28040 Madrid, Spain<br>
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

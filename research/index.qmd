@@ -18,7 +18,7 @@ My research focuses on the ecological processes that drive the distribution and 
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 EURING ring recoveries\
 National ringing schemes
 :::
@@ -40,7 +40,7 @@ Dispersal drives almost everything in ecology, yet for most species we simply do
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 Citizen science (eBird)\
 Standardised monitoring surveys\
 Ring recoveries
@@ -63,7 +63,7 @@ Each data type has biases, but combining them thoughtfully can give a more compl
 
 ::: {.line}
 ::: {.rail}
-[Data and methods]{.kicker}\
+[Data and methods]{.kicker}
 Black Stork monitoring (22 yr)\
 Distribution models\
 Landscape connectivity
@@ -86,7 +86,7 @@ This includes large carnivore range expansion in Iberia, occupancy models that c
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}\
+[Data]{.kicker}
 AudioMoth recorders\
 Camera-trap networks
 :::

@@ -10,7 +10,8 @@ page-layout: full
   Each person is a ::: {.person} block: a photo slot, a name, a mono role
   line and one paragraph. When a photograph exists, put
   ![](images/people/name.jpg){fig-alt="..."} inside the .photo-slot div; the
-  empty div renders as a hairline placeholder box until then.
+  empty div renders as a small hairline box (4:5) until then, and the same
+  box frames the photograph.
   A section is a ::: {.head} block (kicker + heading) followed by its content;
   the spacing between sections comes from styles/lattice.scss.
 -->
@@ -69,7 +70,7 @@ Co-supervised with Alejandra Zarzo.
 
 ::: {.line .no-fig}
 ::: {.rail}
-[Supervision]{.kicker}\
+[Supervision]{.kicker}
 11 MSc theses\
 5 BSc theses
 :::
@@ -89,9 +90,10 @@ I have supervised 11 MSc and 5 BSc thesis students. Some highlights:
 
 ::: {.line .no-fig}
 ::: {.rail}
-[Institutions]{.kicker}\
+[Institutions]{.kicker}
 Potsdam University\
-BTO · UCM\
+BTO\
+UCM\
 Swiss Ornithological Institute\
 Humboldt University
 :::
@@ -114,7 +116,7 @@ Humboldt University
 
 ::: {.line .no-fig}
 ::: {.rail}
-[Contact]{.kicker}\
+[Contact]{.kicker}
 [gfandos@ucm.es](mailto:gfandos@ucm.es)
 :::
 ::: {.text}
