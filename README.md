@@ -51,7 +51,7 @@ After adding images, uncomment the relevant lines in:
 
 - Edit `_quarto.yml` for site settings
 - Edit `.qmd` files for content
-- Edit `styles/custom.scss` for colors/fonts
+- Edit `styles/lattice.scss` for colours, type and the fenced-div layout classes (design brief: `design/BRIEF.md`)
 
 ## Contact
 

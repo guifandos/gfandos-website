@@ -2,57 +2,100 @@
 title: "People"
 subtitle: "Team members and collaborators"
 description: "Current and past team members, PhD and MSc students, and key collaborators in spatial ecology and movement research."
-toc: true
+toc: false
+page-layout: full
 ---
 
-## Current Members
+<!--
+  Each person is a ::: {.person} block: a photo slot, a name, a mono role
+  line and one paragraph. When a photograph exists, put
+  ![](images/people/name.jpg){fig-alt="..."} inside the .photo-slot div; the
+  empty div renders as a hairline placeholder box until then.
+  A section is a ::: {.head} block (kicker + heading) followed by its content;
+  the spacing between sections comes from styles/lattice.scss.
+-->
 
+::: {.head}
+[Current members]{.kicker}
+
+## The group
+:::
+
+::: {.people}
+
+::: {.person}
+::: {.photo-slot}
+<!-- TODO: photo — add images/people/david.jpg when available -->
+:::
 ### David Notario Rincón
-**MSc Student & Researcher** · INTRADISP project
+[MSc student & researcher · INTRADISP]{.role}
 
 David is working on bird range dynamics under climate change, using ring-recovery data to understand how dispersal varies across environmental gradients.
 
 Co-supervised with Rafael Barrientos.
+:::
 
-<!-- Foto: Añade images/people/david.jpg cuando la tengas -->
-
----
-
+::: {.person}
+::: {.photo-slot}
+<!-- TODO: photo — add images/people/claudia.jpg when available -->
+:::
 ### Claudia Mediavilla
-**MSc Student & Researcher** · [RIMed-Fauna](projects/remined.qmd) project
+[MSc student & researcher · [RIMed-Fauna](projects/remined.qmd)]{.role}
 
 Claudia is studying wildlife in Mediterranean river ecosystems, combining camera trapping with species distribution modelling to understand how vertebrates cope with hydrological variability.
 
 Co-supervised with María del Mar Sánchez-Montoya and Rafael Barrientos.
+:::
 
-<!-- Foto: Añade images/people/claudia.jpg cuando la tengas -->
-
----
-
+::: {.person}
+::: {.photo-slot}
+<!-- TODO: photo — add images/people/hugo.jpg when available -->
+:::
 ### Hugo Díaz Santaolalla
-**PhD Student** · CE3C (Portugal)
+[PhD student · CE3C (Portugal)]{.role}
 
 Hugo works on carnivore dynamics and biotic interactions, exploring how species interactions shape distribution patterns.
 
 Co-supervised with Alejandra Zarzo.
+:::
 
-<!-- Foto: Añade images/people/hugo.jpg cuando la tengas -->
+:::
 
----
+::: {.head}
+[Past members]{.kicker}
 
-## Past Members
+## Former students
+:::
 
-I've supervised 11 MSc and 5 BSc thesis students. Some highlights:
+::: {.line .no-fig}
+::: {.rail}
+[Supervision]{.kicker}\
+11 MSc theses\
+5 BSc theses
+:::
+::: {.text}
+I have supervised 11 MSc and 5 BSc thesis students. Some highlights:
 
 - **Maria Pratzer** (MSc, Humboldt University): Large carnivore range expansion. Published in *Diversity and Distributions* (2023).
 - **Leon Nill** (MSc, Humboldt University): Landscape permeability for carnivores. Published in *Diversity and Distributions* (2023).
+:::
+:::
 
----
+::: {.head}
+[Collaborators]{.kicker}
 
-## Collaborators
+## People I work with regularly
+:::
 
-I work regularly with:
-
+::: {.line .no-fig}
+::: {.rail}
+[Institutions]{.kicker}\
+Potsdam University\
+BTO · UCM\
+Swiss Ornithological Institute\
+Humboldt University
+:::
+::: {.text}
 - [Damaris Zurell](https://damariszurell.github.io/) (Potsdam University): Dispersal, dynamic SDMs
 - [Rob Robinson](https://www.bto.org/about-bto/our-staff/rob-robinson) (BTO, UK): Ring-recovery analysis
 - [Rafael Barrientos](https://scholar.google.es/citations?user=8xNSN5IAAAAJ) (UCM): Road ecology, conservation
@@ -60,9 +103,21 @@ I work regularly with:
 - [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) (UCM): Bioacoustics
 - [Marc Kéry](https://www.vogelwarte.ch/en/about-us/team/kery-marc) (Swiss Ornithological Institute): Occupancy modelling
 - [Tobias Kuemmerle](https://www.geographie.hu-berlin.de/de/Members/kuemmerle_tobias) (Humboldt University): Land-use change
+:::
+:::
 
----
+::: {.head}
+[Join us]{.kicker}
 
-## Join Us
+## Prospective students
+:::
 
-I'm always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you're considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es)
+::: {.line .no-fig}
+::: {.rail}
+[Contact]{.kicker}\
+[gfandos@ucm.es](mailto:gfandos@ucm.es)
+:::
+::: {.text}
+I am always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you are considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es).
+:::
+:::

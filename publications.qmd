@@ -5,47 +5,136 @@ description: "Selected publications on dispersal ecology, species distribution m
 toc: true
 ---
 
+<!--
+  Ordering: chronological (newest first), not by theme. The year rail is the
+  organising device of the list, and a reviewer looking for a specific paper
+  scans years faster than topics; the thematic grouping is kept on the
+  research pages, which list the papers of each line. The italic word under
+  the year carries the theme.
+
+  To add a paper, copy one ::: {.pub} block. Paragraphs, in order: year (and
+  an italic theme), linked title, authors · *journal* volume: pages, DOI.
+-->
+
 For a complete and updated list, see my [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) or [ORCID](https://orcid.org/0000-0003-1579-9444).
 
----
+## Selected papers
 
-## Selected Papers
+::: {.pubs}
 
-### Dispersal & Movement
+::: {.pub}
+2026 *Dispersal*
 
-**Fandos, G.**, Robinson, R. A., & Zurell, D. (2026). **Dispersal syndromes across the tree of life.** *Communications Biology*. [DOI](https://www.nature.com/articles/s42003-026-09676-x)
+[Dispersal syndromes across the tree of life](https://www.nature.com/articles/s42003-026-09676-x)
 
-**Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. (2023). **Standardised empirical dispersal kernels emphasise the pervasiveness of long‐distance dispersal in European birds.** *Journal of Animal Ecology*, 92(1), 158-170. [DOI](https://doi.org/10.1111/1365-2656.13838)
+**Fandos, G.**, Robinson, R. A., & Zurell, D. · *Communications Biology*
 
-**Fandos, G.**, Rotics, S., Sapir, N., Fiedler, W., Kaatz, M., Wikelski, M., Nathan, R., & Zurell, D. (2020). **Seasonal niche tracking of climate emerges at the population level in a migratory bird.** *Proceedings of the Royal Society B*, 287(1935), 20201799. [DOI](https://doi.org/10.1098/rspb.2020.1799)
+[nature.com/articles/s42003-026-09676-x](https://www.nature.com/articles/s42003-026-09676-x)
+:::
 
-**Fandos, G.**, & Tellería, J. L. (2020). **Seasonal niche‐tracking behaviour of two partially migratory passerines.** *Ibis*, 162(2), 307-317. [DOI](https://doi.org/10.1111/ibi.12721)
+::: {.pub}
+2023 *Dispersal*
 
----
+[Standardised empirical dispersal kernels emphasise the pervasiveness of long-distance dispersal in European birds](https://doi.org/10.1111/1365-2656.13838)
 
-### Biodiversity Modelling & Methods
+**Fandos, G.**, Talluto, M., Fiedler, W., Robinson, R. A., Thorup, K., & Zurell, D. · *Journal of Animal Ecology* 92(1): 158–170
 
-Zurell, D., König, C., Malchow, A. K., Kapitza, S., Bocedi, G., Travis, J., & **Fandos, G.** (2022). **Spatially explicit models for decision‐making in animal conservation and restoration.** *Ecography*. [DOI](https://doi.org/10.1111/ecog.05787)
+[doi.org/10.1111/1365-2656.13838](https://doi.org/10.1111/1365-2656.13838)
+:::
 
-Briscoe, N., Zurell, D., Elith, J., König, C., **Fandos, G.**, et al. (2021). **Can dynamic occupancy models improve predictions of species' range dynamics?** *Global Change Biology*, 27, 4269–4282. [DOI](https://doi.org/10.1111/gcb.15723)
+::: {.pub}
+2023 *Conservation*
 
-**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). **Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.** *Ecosphere*, 12(4), e03469. [DOI](https://doi.org/10.1002/ecs2.3469)
+[Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human-dominated landscapes](https://doi.org/10.1111/ddi.13644)
 
-Zurell, D., Franklin, J., König, C., ..., **Fandos, G.**, ..., & Merow, C. (2020). **A standard protocol for reporting species distribution models.** *Ecography*, 43(9), 1261-1277. [DOI](https://doi.org/10.1111/ecog.04960)
+Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** · *Diversity and Distributions* 29(1): 75–88
 
----
+[doi.org/10.1111/ddi.13644](https://doi.org/10.1111/ddi.13644)
+:::
 
-### Conservation & Global Change
+::: {.pub}
+2022 *Methods*
 
-Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** (2023). **Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.** *Diversity and Distributions*, 29(1), 75-88. [DOI](https://doi.org/10.1111/ddi.13644)
+[Spatially explicit models for decision-making in animal conservation and restoration](https://doi.org/10.1111/ecog.05787)
 
-Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. (2021). **Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.** *Global Change Biology*, 27(4), 755-767. [DOI](https://doi.org/10.1111/gcb.15424)
+Zurell, D., König, C., Malchow, A. K., Kapitza, S., Bocedi, G., Travis, J., & **Fandos, G.** · *Ecography*
 
-**Fandos, G.**, & Tellería, J. L. (2018). **Range compression of migratory passerines in wintering grounds of the Western Mediterranean: conservation prospects.** *Bird Conservation International*, 28(3), 462-474. [DOI](https://doi.org/10.1017/S0959270917000491)
+[doi.org/10.1111/ecog.05787](https://doi.org/10.1111/ecog.05787)
+:::
 
----
+::: {.pub}
+2021 *Methods*
 
-## Code & Data
+[Can dynamic occupancy models improve predictions of species' range dynamics?](https://doi.org/10.1111/gcb.15723)
+
+Briscoe, N., Zurell, D., Elith, J., König, C., **Fandos, G.**, et al. · *Global Change Biology* 27: 4269–4282
+
+[doi.org/10.1111/gcb.15723](https://doi.org/10.1111/gcb.15723)
+:::
+
+::: {.pub}
+2021 *Methods*
+
+[Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling](https://doi.org/10.1002/ecs2.3469)
+
+**Fandos, G.**, Kéry, M., Cano-Alonso, L. S., Carbonell, I., & Tellería, J. L. · *Ecosphere* 12(4): e03469
+
+[doi.org/10.1002/ecs2.3469](https://doi.org/10.1002/ecs2.3469)
+:::
+
+::: {.pub}
+2021 *Conservation*
+
+[Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco](https://doi.org/10.1111/gcb.15424)
+
+Romero-Muñoz, A., **Fandos, G.**, Benítez-López, A., & Kuemmerle, T. · *Global Change Biology* 27(4): 755–767
+
+[doi.org/10.1111/gcb.15424](https://doi.org/10.1111/gcb.15424)
+:::
+
+::: {.pub}
+2020 *Movement*
+
+[Seasonal niche tracking of climate emerges at the population level in a migratory bird](https://doi.org/10.1098/rspb.2020.1799)
+
+**Fandos, G.**, Rotics, S., Sapir, N., Fiedler, W., Kaatz, M., Wikelski, M., Nathan, R., & Zurell, D. · *Proceedings of the Royal Society B* 287(1935): 20201799
+
+[doi.org/10.1098/rspb.2020.1799](https://doi.org/10.1098/rspb.2020.1799)
+:::
+
+::: {.pub}
+2020 *Movement*
+
+[Seasonal niche-tracking behaviour of two partially migratory passerines](https://doi.org/10.1111/ibi.12721)
+
+**Fandos, G.**, & Tellería, J. L. · *Ibis* 162(2): 307–317
+
+[doi.org/10.1111/ibi.12721](https://doi.org/10.1111/ibi.12721)
+:::
+
+::: {.pub}
+2020 *Methods*
+
+[A standard protocol for reporting species distribution models](https://doi.org/10.1111/ecog.04960)
+
+Zurell, D., Franklin, J., König, C., …, **Fandos, G.**, …, & Merow, C. · *Ecography* 43(9): 1261–1277
+
+[doi.org/10.1111/ecog.04960](https://doi.org/10.1111/ecog.04960)
+:::
+
+::: {.pub}
+2018 *Conservation*
+
+[Range compression of migratory passerines in wintering grounds of the Western Mediterranean: conservation prospects](https://doi.org/10.1017/S0959270917000491)
+
+**Fandos, G.**, & Tellería, J. L. · *Bird Conservation International* 28(3): 462–474
+
+[doi.org/10.1017/S0959270917000491](https://doi.org/10.1017/S0959270917000491)
+:::
+
+:::
+
+## Code and data
 
 I share code and data for my papers whenever possible:
 

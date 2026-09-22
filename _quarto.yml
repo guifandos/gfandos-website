@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - robots.txt
+    - fonts/          # self-hosted web fonts (fonts/fonts.css declares them)
   render:
     - "*.qmd"
     - "**/*.qmd"
@@ -24,8 +25,8 @@ website:
 
   # Navigation
   navbar:
-    background: light
-    # logo: images/logo.png  # TODO: add a logo file or remove
+    # colours come from styles/lattice.scss ($navbar-bg / $navbar-fg)
+    # TODO: add a logo file (navbar: logo:) or leave the wordmark as is
     left:
       - text: "Home"
         href: index.qmd
@@ -68,24 +69,43 @@ website:
         aria-label: Email
 
   # Footer
+  # Footer: three columns — address · elsewhere · fine print (brief §5).
+  # The UCM logo file (images/logos/ucm.svg) is a PNG with an .svg extension
+  # and did not render; it is left out rather than re-encoded.
   page-footer:
     left: |
-      © 2026 Guillermo Fandos
+      **Guillermo Fandos**\
+      Dept. Biodiversidad, Ecología y Evolución\
+      Facultad de Ciencias Biológicas, Universidad Complutense de Madrid\
+      C/ José Antonio Novais 12, 28040 Madrid, Spain\
+      [gfandos@ucm.es](mailto:gfandos@ucm.es)
     center: |
-      [UCM Profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle) · [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ) · [ORCID](https://orcid.org/0000-0003-1579-9444)
+      **Elsewhere**\
+      [Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ)\
+      [ORCID 0000-0003-1579-9444](https://orcid.org/0000-0003-1579-9444)\
+      [GitHub](https://github.com/guifandos) · [Zenodo](https://zenodo.org/search?q=fandos)\
+      [UCM profile](https://produccioncientifica.ucm.es/investigadores/446092/detalle)
     right: |
-      Made with [Quarto](https://quarto.org/)
+      Open science: code and data for papers on GitHub, archived on Zenodo.
+
+      © 2026 Guillermo Fandos · Made with [Quarto](https://quarto.org/)
 
   sidebar: false
 
 format:
   html:
-    theme:
-      light: [flatly, styles/custom.scss]
-    css: styles/custom.css
+    # One base theme plus one SCSS file (brief §2). Fonts are self-hosted in
+    # fonts/ and declared in fonts/fonts.css; listing it under `css` lets Quarto
+    # resolve the path from every page depth (an include-in-header snippet
+    # cannot, because its paths are inserted verbatim).
+    theme: [default, styles/lattice.scss]
+    css: fonts/fonts.css
     toc: true
     toc-depth: 2
+    toc-title: "On this page"
     smooth-scroll: true
     link-external-newwindow: true
+    fig-responsive: true
+    lang: en
 
 lang: en

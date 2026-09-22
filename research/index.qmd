@@ -2,65 +2,135 @@
 title: "Research"
 subtitle: "Understanding animal movement to predict biodiversity futures"
 description: "Research overview: animal dispersal, species distribution modelling, biodiversity forecasting, and conservation applications using Bayesian methods and large-scale datasets."
-toc: true
+toc: false
+page-layout: full
 ---
 
 My research focuses on the ecological processes that drive the distribution and abundance of animal populations. I combine fieldwork, large-scale data synthesis (bird ringing, citizen science), and quantitative modelling to tackle questions across spatial and temporal scales.
 
----
+::: {.head}
+[Research lines]{.kicker}
 
-## Research Lines
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### [Biodiversity Conservation and Global Change](conservation.qmd)
-
-Habitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge.
-
-<!-- Imagen: images/research/conservation.jpg -->
+## Four lines, one problem: linking individual movement to where species end up
 :::
 
-::: {.g-col-12 .g-col-md-6}
-### [Animal Movement in Dynamic Landscapes](dispersal.qmd)
+::: {.lines}
+
+::: {.line}
+::: {.rail}
+[Data]{.kicker}\
+EURING ring recoveries\
+National ringing schemes
+:::
+::: {.text}
+### [Animal movement in dynamic landscapes](dispersal.qmd)
 
 Linking the process of animal movement to ecology and evolution. How do daily movements, seasonal migration, and lifetime dispersal events shape population connectivity, range boundaries, and species responses to environmental change?
 
-<!-- Imagen: images/research/dispersal.jpg -->
+Dispersal drives almost everything in ecology, yet for most species we simply do not know how far individuals disperse. With collaborators I developed Bayesian methods that account for the biases in bird ringing data and produced standardised dispersal kernels for over 200 European bird species. I am now exploring why dispersal varies so much *within* species.
+
+::: {.more}
+[Movement and dispersal →](dispersal.qmd)
+:::
+:::
+::: {.fig}
+![**Schematic.** Dispersal kernel on a linear distance axis; the ochre area is the long-distance tail.](../images/figures/kernel.webp){fig-alt="Schematic dispersal kernel with a heavy right tail shaded in ochre"}
+:::
 :::
 
-::: {.g-col-12 .g-col-md-6}
-### [Improving Biodiversity Monitoring and Modelling](forecasting.qmd)
+::: {.line}
+::: {.rail}
+[Data]{.kicker}\
+Citizen science (eBird)\
+Standardised monitoring surveys\
+Ring recoveries
+:::
+::: {.text}
+### [Improving biodiversity monitoring and modelling](forecasting.qmd)
 
 Effective conservation requires well-designed monitoring and the capacity to anticipate future changes. I develop species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate multiple data sources.
 
-<!-- Imagen: images/research/forecasting.jpg -->
+Each data type has biases, but combining them thoughtfully can give a more complete picture of both spatial coverage and temporal dynamics.
+
+::: {.more}
+[Monitoring and modelling →](forecasting.qmd)
+:::
+:::
+::: {.fig}
+![**Schematic.** Habitat suitability surface with occurrence records, which cluster where people look.](../images/figures/sdm.webp){fig-alt="Schematic habitat suitability surface with occurrence records and a colour bar"}
+:::
 :::
 
-::: {.g-col-12 .g-col-md-6}
-### Field Technology
+::: {.line}
+::: {.rail}
+[Data and methods]{.kicker}\
+Black Stork monitoring (22 yr)\
+Distribution models\
+Landscape connectivity
+:::
+::: {.text}
+### [Biodiversity conservation and global change](conservation.qmd)
 
-Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raul Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
+Habitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge.
 
+This includes large carnivore range expansion in Iberia, occupancy models that correct for preferential sampling in threatened species assessments, and applied work on Mediterranean river ecosystems and bat habitat modelling.
+
+::: {.more}
+[Conservation and global change →](conservation.qmd)
+:::
+:::
+::: {.fig}
+![**Schematic.** Occupied area today against a projected contour.](../images/figures/range.webp){fig-alt="Schematic range map: occupied area against a projected contour"}
+:::
+:::
+
+::: {.line}
+::: {.rail}
+[Data]{.kicker}\
+AudioMoth recorders\
+Camera-trap networks
+:::
+::: {.text}
+### [Field technology](../outreach.qmd#field-technology)
+
+Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
+
+::: {.more}
+[Field technology →](../outreach.qmd#field-technology)
+:::
+:::
+::: {.fig}
+![**Schematic.** Spectrogram of a dawn chorus, the raw output of an autonomous recorder.](../images/figures/acoustic.webp){fig-alt="Schematic spectrogram of a dawn chorus, frequency against time"}
+:::
 :::
 
 :::
 
----
+::: {.head}
+[Approach]{.kicker}
 
-## Approach
+## Big datasets and quantitative methods
+:::
 
-My work typically combines big datasets and quantitative methods:
-
+::: {.line .no-fig}
+::: {.rail}
+[Data and methods]{.kicker}
+:::
+::: {.text}
 - **Ring-recovery data** from EURING and national schemes, one of the largest individual-level animal movement datasets in the world
 - **Citizen science observations** (especially eBird)
 - **Bayesian hierarchical models** implemented in R
 - **Camera trapping and bioacoustic monitoring** in the field
 
 I am committed to open science. Code and data for my papers are available on [GitHub](https://github.com/guifandos) and archived on [Zenodo](https://zenodo.org/search?q=fandos).
+:::
+:::
 
----
-
-## Collaborators
-
+::: {.line .no-fig}
+::: {.rail}
+[Collaborators]{.kicker}
+:::
+::: {.text}
 I work regularly with researchers at Potsdam University (Germany), the British Trust for Ornithology (UK), the Swiss Ornithological Institute, and several other institutions. See the [People](../people.qmd) page for the full list.
+:::
+:::

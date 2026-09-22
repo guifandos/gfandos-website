@@ -5,6 +5,10 @@ description: "Applied conservation research: large carnivore range expansion in 
 toc: true
 ---
 
+::: {.fig .fig-wide}
+![**Schematic.** Occupied area today against a projected contour. The gap between them is where management decisions sit. Not fitted to data.](../images/figures/range.webp){fig-alt="Schematic range map: occupied area against a projected contour"}
+:::
+
 I try to make my research useful beyond academia. This means working on questions that matter for conservation practice and collaborating with people who can actually implement the results.
 
 ## Large Carnivore Expansion
@@ -23,10 +27,32 @@ The resulting population estimates were more robust than previous assessments an
 
 Currently, I'm involved in projects on Mediterranean river ecosystems ([RIMed-Fauna](../projects/remined.qmd)) and bat habitat modelling. These applied contracts keep me grounded in real conservation problems and remind me why the methodological work matters.
 
-## Selected Publications
+## Selected publications
 
-Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** (2023). **Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.** *Diversity and Distributions*, 29(1), 75-88.
+::: {.pubs}
 
-**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. (2021). **Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.** *Ecosphere*, 12(4), e03469.
+::: {.pub}
+2023
 
-Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. (2021). **Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.** *Global Change Biology*, 27(4), 755-767.
+Large carnivore range expansion in Iberia in relation to different scenarios of permeability of human‐dominated landscapes.
+
+Pratzer, M., Nill, L., Kuemmerle, T., Zurell, D., & **Fandos, G.** · *Diversity and Distributions* 29(1), 75-88
+:::
+
+::: {.pub}
+2021
+
+Dynamic multistate occupancy modeling to evaluate population dynamics under a scenario of preferential sampling.
+
+**Fandos, G.**, Kéry, M., Cano‐Alonso, L. S., Carbonell, I., & Tellería, J. L. · *Ecosphere* 12(4), e03469
+:::
+
+::: {.pub}
+2021
+
+Habitat destruction and overexploitation drive widespread declines in all facets of mammalian diversity in the Gran Chaco.
+
+Romero‐Muñoz, A., **Fandos, G.**, Benítez‐López, A., & Kuemmerle, T. · *Global Change Biology* 27(4), 755-767
+:::
+
+:::

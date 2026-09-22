@@ -225,8 +225,9 @@
       paint(ctx, w, h, dpr, function (u, v) {
         if (u < uL || v > vB) return [12, 22, 27];
         var t = (u - uL) / (1 - uL), f = 1 - v / vB;
-        var val = 0.04 + 0.14 * Math.pow(1 - f, 2.2)
-          + hash2(Math.round(u * 9000), Math.round(v * 9000), 3) * 0.05;
+        /* No per-pixel noise term here: it read as sensor grain but cost
+           ~1 MB in the exported image (see design/BRIEF.md, section 4). */
+        var val = 0.04 + 0.14 * Math.pow(1 - f, 2.2);
         for (var k = 0; k < songs.length; k++) {
           var sg = songs[k];
           if (t < sg.t0 || t > sg.t0 + sg.dur) continue;

@@ -2,65 +2,207 @@
 title: "Projects"
 subtitle: "Current and past research projects"
 description: "Research projects on intraspecific dispersal variation (INTRADISP), Mediterranean river wildlife (RIMed-Fauna), and past projects on species distribution modelling and global change."
-toc: true
+toc: false
+page-layout: full
 ---
 
-## Active Projects
+<!--
+  Each project is a ::: {.project} block: a mono code line, a title, one
+  paragraph and a definition list of metadata (term, then ":   value").
+  Copy a block to add a project. A section is a ::: {.head} block (kicker +
+  heading) followed by its content; section spacing comes from the stylesheet.
+-->
 
-### [INTRADISP](intradisp.qmd) (2024-2026)
-**Principal Investigator** · UCM
+::: {.head}
+[Active]{.kicker}
+
+## Funded work in progress
+:::
+
+::: {.project-list}
+
+::: {.project #intradisp}
+[INTRADISP]{.code}
+
+### [Intraspecific dispersal variation in European birds](intradisp.qmd)
 
 Why do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.
 
-**Team**: David Notario (MSc student & researcher), collaborators at Potsdam University and BTO.
+::: {.meta}
+Role
+:   Principal investigator
 
----
+Years
+:   2024–2026
 
-### [RIMed-Fauna](remined.qmd) (2024-2027)
-**Team member** · Red de Parques Nacionales
+Host
+:   UCM
+
+Team
+:   David Notario (MSc student & researcher); collaborators at Potsdam University and BTO
+:::
+:::
+
+::: {.project #rimed-fauna}
+[RIMed-Fauna]{.code}
+
+### [Wildlife in Mediterranean river ecosystems](remined.qmd)
 
 Mediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?
 
-**PI**: María del Mar Sánchez-Montoya. **Team**: Claudia Mediavilla (MSc student & researcher) and others.
+::: {.meta}
+Role
+:   Team member
 
----
+Years
+:   2024–2027
 
-### SHAREPOINT (2025-2027)
-**Team member** · CEBA
+PI
+:   María del Mar Sánchez-Montoya
 
-Social organisation and parasite sharing among rainforest understory birds in French Guiana. Field-based research combining network analysis with disease ecology.
+Funder
+:   Red de Parques Nacionales
 
-**PI**: Javier Pérez-Tris.
+Team
+:   Claudia Mediavilla (MSc student & researcher) and others
+:::
+:::
 
----
+::: {.project #sharepoint}
+[SHAREPOINT]{.code}
 
-## Past Projects
+### Social organisation and parasite sharing among rainforest understory birds
 
-### INCISE (2022-2023)
-**Principal Investigator** · H2020-MSCA-COFUND UNA4CAREER
+Field-based research in French Guiana combining network analysis with disease ecology.
+
+::: {.meta}
+Role
+:   Team member
+
+Years
+:   2025–2027
+
+PI
+:   Javier Pérez-Tris
+
+Funder
+:   CEBA
+:::
+:::
+
+:::
+
+::: {.head}
+[Past]{.kicker}
+
+## Completed projects
+:::
+
+::: {.project-list}
+
+::: {.project #incise}
+[INCISE]{.code}
+
+### Integration of citizen science and standardised survey data
 
 Integration of citizen science and standardised survey data to study biodiversity dynamics. *Resigned after one year upon obtaining the UCM position.*
 
-### BIOPIC (2018-2023)
-**Work package leader** · German Research Foundation (DFG)
+::: {.meta}
+Role
+:   Principal investigator
 
-Disentangling the effects of demography, dispersal and biotic interactions on population and community response to global change. Led the dispersal work package within this large project.
+Years
+:   2022–2023
 
-**PI**: Damaris Zurell.
+Funder
+:   H2020-MSCA-COFUND UNA4CAREER
+:::
+:::
 
-### RangeDyn (2019-2021)
-**Core team** · DAAD
+::: {.project #biopic}
+[BIOPIC]{.code}
+
+### Demography, dispersal and biotic interactions under global change
+
+Disentangling the effects of demography, dispersal and biotic interactions on population and community response to global change. I led the dispersal work package within this large project.
+
+::: {.meta}
+Role
+:   Work package leader
+
+Years
+:   2018–2023
+
+PI
+:   Damaris Zurell
+
+Funder
+:   German Research Foundation (DFG)
+:::
+:::
+
+::: {.project #rangedyn}
+[RangeDyn]{.code}
+
+### From pattern towards process in forecasts of species range dynamics
 
 Moving from pattern towards process for improved forecasts of species range dynamics.
 
-**PI**: Damaris Zurell.
+::: {.meta}
+Role
+:   Core team
 
----
+Years
+:   2019–2021
 
-## Applied Contracts
+PI
+:   Damaris Zurell
 
-I also take on applied contracts that address real conservation problems:
+Funder
+:   DAAD
+:::
+:::
 
-- **Bat habitat modelling** (2024-2025): Spatial distribution models for the Spanish Bat Atlas. Client: TRAGSA.
+:::
 
-- **Black Stork demography** (2017-2018): Population dynamics modelling that informed the Spanish Red List assessment. Client: Junta de Castilla y León.
+::: {.head}
+[Applied contracts]{.kicker}
+
+## Applied work on real conservation problems
+:::
+
+::: {.project-list}
+
+::: {.project}
+[Bat atlas]{.code}
+
+### Bat habitat modelling
+
+Spatial distribution models for the Spanish Bat Atlas.
+
+::: {.meta}
+Years
+:   2024–2025
+
+Client
+:   TRAGSA
+:::
+:::
+
+::: {.project}
+[Black Stork]{.code}
+
+### Black Stork demography
+
+Population dynamics modelling that informed the Spanish Red List assessment.
+
+::: {.meta}
+Years
+:   2017–2018
+
+Client
+:   Junta de Castilla y León
+:::
+:::
+
+:::
