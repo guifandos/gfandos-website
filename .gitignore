@@ -1,3 +1,7 @@
 /.quarto/
 design/*.part
 design/avatar.b64
+_preview/
+design/snaps/
+
+**/*.quarto_ipynb
