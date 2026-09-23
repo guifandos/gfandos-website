@@ -241,3 +241,100 @@ if the screenshots leave a question open.
 - Headless Chromium is at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
 - No R, no PIL, no ImageMagick. Image processing goes through Chromium or
   pure Python.
+
+---
+
+## 10. Home page revision (decided 23 September 2026)
+
+This section supersedes §3 "Hero", §4's use of the `strip` figure and the
+home-page rows of §5. The visual reference is
+`design/preview-home-A-cabaneros.html`; match it, do not paste its markup.
+
+**Hero — person first, nothing animated.** No lattice grid, no kernel SVG,
+no Fig. 1 legend. Two columns at ≥ 821 px, `minmax(0,1fr) 272px`, gap
+`clamp(28px,5vw,72px)`, aligned to the end, padding-block
+`clamp(48px,7vw,84px) clamp(32px,4vw,48px)`.
+
+Left column, in order:
+- eyebrow, DM Mono .74rem uppercase: `Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid`
+- h1 `Guillermo Fandos`, `clamp(2.7rem,7vw,4.6rem)`, weight 700, tracking −0.035em
+- role line, Familjen Grotesk 500 `clamp(1rem,1.6vw,1.2rem)` ink-soft: `Quantitative ecologist · Assistant Professor`
+- motto, Literata italic `clamp(1.15rem,2.1vw,1.45rem)`, 2 px teal left rule, max 30ch: `Understanding where species live, how they move, and how that is changing.`
+- lede, ink-soft, max 58ch: `I study the processes that shape the distribution and abundance of animal populations, combining fieldwork, large-scale data synthesis and statistical modelling to address questions in biogeography, movement ecology and conservation.`
+- identity links, DM Mono .8rem, hairline underline: gfandos@ucm.es · Google Scholar · ORCID · GitHub
+
+Right column: `images/avatar.jpg`, rectangular, `aspect-ratio: 4/4.6`,
+`object-position: 50% 28%`, `filter: grayscale(.25) contrast(1.03)`, hairline
+border, **no caption**. At ≤ 820 px one column, portrait first at max 220 px.
+
+**Landscape band — quiet, directly under the hero.** `images/derived/
+cabaneros-band-1800.webp` as a full-width figure, `height: clamp(170px,
+24vw, 260px)`, `object-fit: cover`, `object-position: 50% 42%`,
+`filter: saturate(.8)`. No hairline, no caption. Top and bottom edges
+feather into the page over 38 px:
+`mask-image: linear-gradient(180deg, transparent 0, #000 38px, #000 calc(100% - 38px), transparent 100%)`
+(with the `-webkit-` prefix). The generated permeability `strip` is removed.
+
+**Research section.** Head: kicker `Research`, h2 `Understanding and
+forecasting where species live, and how that is changing`. Four `.line`
+rows, rail · text · figure. The rail no longer lists data sources; it reads
+`Themes` (kicker) and two sub-disciplines. Exact copy:
+
+1. Rail: Movement ecology / Biogeography. Title: **Movement and the geography
+   of species** → research/dispersal.qmd. Text: *Animals move at every scale,
+   from a morning's foraging to a lifetime's dispersal, and those movements
+   set where populations persist, how connected they are and how fast ranges
+   can shift. I study how individual movement scales up to population and
+   range dynamics, and why individuals of the same species differ so much in
+   how far they go.* Figure: `images/figures/kernel.webp`, caption
+   **Schematic.** Dispersal kernel: most individuals settle nearby, a few
+   travel an order of magnitude farther.
+2. Rail: Statistical ecology / Species distribution modelling. Title:
+   **Biodiversity modelling and forecasting** → research/forecasting.qmd.
+   Text: *Most models of species distributions describe where a species is
+   found, not the processes that put it there. I develop models that carry
+   ecological process explicitly — dispersal, population dynamics, species
+   interactions, imperfect detection — and that integrate heterogeneous data,
+   so that forecasts of biodiversity change rest on mechanism rather than
+   correlation.* Figure: `images/figures/sdm.webp`, caption **Schematic.**
+   Habitat suitability surface with occurrence records.
+3. Rail: Conservation biology / Global change. Title: **Conservation under
+   global change** → research/conservation.qmd. Text: *Habitat loss and
+   climate change are redrawing species distributions. I work on anticipating
+   which species are most exposed and why, and on turning that understanding
+   into spatial priorities: where and when problems will emerge, and where
+   intervention is most likely to matter.* Figure: `images/figures/range.webp`,
+   caption **Schematic.** Occupied area today against a projected contour.
+4. Rail: Ecological monitoring / Emerging technologies. Title: **Monitoring
+   biodiversity at scale** → outreach.qmd#field-technology. Text: *Good
+   inference needs good observation. I work on how autonomous sensors,
+   citizen science and long-term surveys can be designed and combined to
+   monitor wildlife at the scales that conservation decisions require, and on
+   the analytical pipelines that turn raw observations into evidence.*
+   Figure: `images/derived/audiomoth-fig-1200.webp` — a real photograph, so
+   the caption is factual, not "Schematic": *Deploying an AudioMoth acoustic
+   recorder on an almond tree. Photo: Guillermo Fandos.*
+
+Projects, selected publications and news continue as built.
+
+**Photo credits block at the end of the page**, before the footer: kicker
+`Photographs`, one paragraph in DM Mono .72rem ink-faint on the paper ground:
+`Portrait: Guillermo Fandos, PhD in Ecology 2017, Universidad Complutense de Madrid. · Landscape: Sierras de Cabañeros, Parque Nacional de Cabañeros — photo FrDr, CC BY-SA 4.0, via Wikimedia Commons. · Field: deploying an AudioMoth acoustic recorder on an almond tree, photo Guillermo Fandos. · Research figures marked Schematic are generated illustrations, not fitted to data.`
+"FrDr" links to https://commons.wikimedia.org/wiki/File:Parque_nacional_de_Caba%C3%B1eros_40.jpg.
+The CC BY-SA attribution is a licence obligation, not decoration.
+
+**Wording site-wide.** Replace "spatial ecologist" / "spatial ecology" with
+"quantitative ecologist" / "quantitative ecology" wherever it appears
+(`index.qmd` description and image-alt, `_quarto.yml` description,
+`people.qmd` twice).
+
+**research/index.qmd.** Same four lines and rails as the home page, with the
+longer existing text where it exists; the head reads `Research lines` /
+`Understanding and forecasting where species live, and how that is changing`.
+Approach and collaborators sections stay.
+
+**Remove.** `_includes/hero-kernel.qmd`, the hero-kernel output of
+`design/generate_kernel.py` (delete the script and its `.part` outputs;
+update `design/README.md`), the `.strip` markup and CSS, the `.legend`
+markup and CSS, and any hero-lattice CSS. Keep `design/_figures.js` and the
+export tools; `strip` in `_figures.js` may stay but is no longer exported.
