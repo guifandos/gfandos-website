@@ -61,25 +61,25 @@ section.band>.wrap{padding-block:clamp(64px,9vw,112px)}
 .head{margin-bottom:clamp(34px,5vw,56px)}
 .head h2{font-size:clamp(1.7rem,3.8vw,2.5rem)}
 /* --- projects: a deep band with tiles --- */
-.projects-band{background:var(--deep);color:#dbe7e5;border-top:1px solid var(--rule)}
-.projects-band .head .kicker{color:#7fa39e}
+.projects-band{background:#2b3f49;color:#dfe8ea;border-top:1px solid var(--rule)}
+.projects-band .head .kicker{color:#a6c2c0}
 .projects-band .head h2{color:#fff}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:22px}
-.tile{display:flex;flex-direction:column;background:#17262e;border:1px solid rgba(255,255,255,.09);border-radius:2px;overflow:hidden;text-decoration:none;color:inherit}
-.tile:hover{border-color:rgba(255,255,255,.28)}
-.tile .img{aspect-ratio:3/2;background:#101d24;position:relative}
+.tile{display:flex;flex-direction:column;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:2px;overflow:hidden;text-decoration:none;color:inherit}
+.tile:hover{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.09)}
+.tile .img{aspect-ratio:3/2;background:#1f3038;position:relative}
 .tile .img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75)}
-.tile .img.blank{display:grid;place-items:center;background:linear-gradient(135deg,#132229,#0f1e26)}
-.tile .img.blank span{font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#4f6a71}
+.tile .img.blank{display:grid;place-items:center;background:linear-gradient(135deg,#243a44,#1f3038)}
+.tile .img.blank span{font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#7f9aa1}
 .tile .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.tile .code{font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#7fd3c6;margin:0}
+.tile .code{font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#9fdccf;margin:0}
 .tile h3{font-size:1.15rem;margin:0;color:#fff;font-weight:600;line-height:1.25}
-.tile p{margin:0;font-size:.92rem;line-height:1.55;color:#b5c6c8;flex:1}
-.tile dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-family:"DM Mono",monospace;font-size:.7rem;line-height:1.6;border-top:1px solid rgba(255,255,255,.09);padding-top:10px}
-.tile dt{color:#6d8a90;text-transform:uppercase;letter-spacing:.06em;font-size:.64rem;padding-top:2px}
-.tile dd{margin:0;color:#dbe7e5}
+.tile p{margin:0;font-size:.92rem;line-height:1.55;color:#c9d6d8;flex:1}
+.tile dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-family:"DM Mono",monospace;font-size:.7rem;line-height:1.6;border-top:1px solid rgba(255,255,255,.14);padding-top:10px}
+.tile dt{color:#93acb2;text-transform:uppercase;letter-spacing:.06em;font-size:.64rem;padding-top:2px}
+.tile dd{margin:0;color:#eaf0f1}
 .projects-band .more{margin-top:28px;font-family:"DM Mono",monospace;font-size:.82rem}
-.projects-band .more a{color:#7fd3c6}
+.projects-band .more a{color:#9fdccf}
 /* --- publications on paper so the sequence alternates hard --- */
 section.band.paper{background:var(--paper)}
 </style>
