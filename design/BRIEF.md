@@ -338,3 +338,65 @@ Approach and collaborators sections stay.
 update `design/README.md`), the `.strip` markup and CSS, the `.legend`
 markup and CSS, and any hero-lattice CSS. Keep `design/_figures.js` and the
 export tools; `strip` in `_figures.js` may stay but is no longer exported.
+
+## 11. Projects as tiles, stronger section rhythm (decided 24 September 2026)
+
+Visual reference: `design/preview-home-E-projects.html` (version 2, the
+lighter band). Supersedes the home-page projects block of §5/§10 and
+`projects/index.qmd`'s active-projects list.
+
+**Section rhythm.** `section.band > .wrap` padding-block becomes
+`clamp(64px, 9vw, 112px)`; `.head` margin-bottom `clamp(34px, 5vw, 56px)`;
+`.head h2` `clamp(1.7rem, 3.8vw, 2.5rem)`. The home-page sequence of grounds
+is: hero ground → band photo → research ground → **projects mid-slate** →
+publications paper → news ground → credits ground → footer deep.
+
+**Projects band.** New token `$slate-mid: #2b3f49` (CSS `--slate-mid`).
+`.projects-band { background: var(--slate-mid); color: #dfe8ea }`; kicker
+`#a6c2c0`, h2 white. Tiles in `.tiles { grid; repeat(auto-fit,
+minmax(min(100%,280px),1fr)); gap: 22px }`.
+
+Each `.tile` is one link (the whole tile clickable) to the project page:
+- `background: rgba(255,255,255,.06)`, `border: 1px solid rgba(255,255,255,.14)`,
+  `border-radius: 2px`, `overflow: hidden`; hover: border `.4`, background
+  `.09`. **No shadow, no transform.**
+- `.img` top, `aspect-ratio: 3/2`, background `#1f3038`, image `object-fit:
+  cover`, `filter: saturate(.75)`. A tile without a photo uses `.img.blank`:
+  a quiet gradient `linear-gradient(135deg, #243a44, #1f3038)` and **nothing
+  written in it** — no "photo pending" text on the live site. Swapping a
+  photo in later means replacing the `.blank` div with an `<img>`.
+- `.body` padding `20px 22px 22px`, gap 10px: `.code` (DM Mono .7rem
+  uppercase, `#9fdccf`, e.g. `INTRADISP · 2024–2026`), `h3` white 1.15rem,
+  one paragraph `#c9d6d8` .92rem, then `dl` (DM Mono .7rem, hairline top
+  `rgba(255,255,255,.14)`, dt `#93acb2` uppercase .64rem, dd `#eaf0f1`).
+- Contrast: all tile text must meet AA against `#2b3f49` blended with the
+  tile background; verify.
+
+**Content of the three tiles** (from the existing site, no additions):
+1. INTRADISP · 2024–2026 — *Why individuals of one species disperse
+   differently* — Synthesising intraspecific dispersal variation using
+   European bird ringing data to improve predictions of biodiversity
+   responses to global change. Role Principal investigator · Host UCM ·
+   With Potsdam University, BTO. Image: **blank** for now (a ringing
+   photograph will replace it; the kernel figure is not reused here).
+2. RIMed-Fauna · 2024–2027 — *Wildlife in Mediterranean rivers* —
+   Mediterranean rivers flood in winter and run dry in summer. Camera
+   trapping and distribution modelling in National Parks to see how
+   terrestrial wildlife copes with that variability. Role Team member ·
+   PI M. M. Sánchez-Montoya · Funder Red de Parques Nacionales. Image:
+   `images/derived/monfrague-card-900.webp` (author's photo, Monfragüe).
+3. SHAREPOINT · 2025–2027 — *Social organisation and parasite sharing* —
+   Rainforest understory birds in French Guiana: field-based research
+   combining network analysis with disease ecology. Role Team member ·
+   PI J. Pérez-Tris · Funder CEBA. Image: **blank** for now.
+
+Below the tiles: `.more` link `All projects, including past ones →` to
+projects/index.qmd, colour `#9fdccf`.
+
+**projects/index.qmd.** Active projects use the same `.tiles` on the page
+ground (tile background `var(--paper)`, border `var(--rule)`, text tokens as
+elsewhere; the `.blank` gradient becomes `var(--ground)` → `var(--paper)`).
+Past and applied projects keep the existing rail rows.
+
+**Credits block** gains: `Project tile: Salto del Gitano and the Tajo,
+Parque Nacional de Monfragüe, photo Guillermo Fandos.`
