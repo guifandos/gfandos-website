@@ -1,8 +1,8 @@
 ---
 title: "Guillermo Fandos"
-description: "Guillermo Fandos - spatial ecologist and Assistant Professor at Universidad Complutense de Madrid. Research on animal dispersal, species distribution modelling, and biodiversity forecasting."
+description: "Guillermo Fandos - quantitative ecologist and Assistant Professor at Universidad Complutense de Madrid. Research on animal dispersal, species distribution modelling, and biodiversity forecasting."
 image: images/avatar.jpg
-image-alt: "Guillermo Fandos, spatial ecologist"
+image-alt: "Guillermo Fandos, quantitative ecologist"
 toc: false
 page-layout: custom
 ---
@@ -15,49 +15,50 @@ page-layout: custom
   To add a publication or a news item, copy one ::: {.pub} / ::: {.item}
   block: the first paragraph is the rail (year or date), the rest sits to
   its right.
+  Photographs: the portrait, the landscape band and the field photo are
+  credited in the ::: {.credits} block at the end of the page. The landscape
+  is CC BY-SA 4.0 (Wikimedia Commons); keep its credit if you keep the image.
 -->
 
 ::: {.hero}
-
-{{< include _includes/hero-kernel.qmd >}}
-
 ::: {.wrap .hero-grid}
 
 ::: {.hero-text}
-[[Dept. Biodiversidad, Ecología y Evolución]{.dept} [Universidad Complutense de Madrid]{.uni}]{.eyebrow}
+::: {.eyebrow}
+Dept. Biodiversidad, Ecología y Evolución · Universidad Complutense de Madrid
+:::
 
 # Guillermo Fandos
 
-::: {.thesis}
-How far animals move, and why individuals of the same species move so differently.
+::: {.role}
+Quantitative ecologist · Assistant Professor
+:::
+
+::: {.motto}
+Understanding where species live, how they move, and how that is changing.
 :::
 
 ::: {.lede}
-I am a spatial ecologist interested in the processes that drive the distribution and abundance of animal populations. My work combines fieldwork, large-scale data synthesis and **quantitative modelling** to tackle questions in conservation biology, biogeography and movement ecology. **Assistant Professor** at the [Universidad Complutense de Madrid](https://www.ucm.es/bee/directorio/?id=29786).
+I study the processes that shape the distribution and abundance of animal populations, combining fieldwork, large-scale data synthesis and statistical modelling to address questions in biogeography, movement ecology and conservation.
 :::
 
 ::: {.idlinks}
 [gfandos@ucm.es](mailto:gfandos@ucm.es)
-[Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ)
+[Google Scholar](https://scholar.google.es/citations?user=8zRbuNgAAAAJ)
 [ORCID](https://orcid.org/0000-0003-1579-9444)
 [GitHub](https://github.com/guifandos)
-[\@g_fandos](https://twitter.com/g_fandos)
 :::
 :::
 
 ::: {.portrait}
-![PhD in Ecology, 2017 · Universidad Complutense de Madrid](images/avatar.jpg){fig-alt="Portrait of Guillermo Fandos"}
+![](images/avatar.jpg){fig-alt="Portrait of Guillermo Fandos"}
 :::
 
 :::
 :::
 
-::: {.legend}
-::: {.wrap}
-[Fig. 1]{.tag}
-
-**Schematic.** Simulated natal dispersal from one ringing site. Most trajectories end close to the origin; a few, in ochre, travel an order of magnitude farther. That heavy tail is what makes dispersal hard to estimate and easy to underestimate. Not fitted to data.
-:::
+::: {.place}
+![](images/derived/cabaneros-band-1800.webp){fig-alt="Sierras de Cabañeros, Parque Nacional de Cabañeros: layered hills in evening haze"}
 :::
 
 ::: {.band #research}
@@ -66,21 +67,21 @@ I am a spatial ecologist interested in the processes that drive the distribution
 ::: {.head}
 [Research]{.kicker}
 
-## Linking individual movement to where species end up
+## Understanding and forecasting where species live, and how that is changing
 :::
 
 ::: {.lines}
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-EURING ring recoveries\
-National ringing schemes
+[Themes]{.kicker}
+Movement ecology\
+Biogeography
 :::
 ::: {.text}
-### [Animal movement in dynamic landscapes](research/dispersal.qmd)
+### [Movement and the geography of species](research/dispersal.qmd)
 
-How do daily movements, seasonal migration and lifetime dispersal events shape population connectivity, range boundaries and species responses to environmental change? I use bird ringing data and Bayesian methods to estimate dispersal kernels and ask what they mean.
+Animals move at every scale, from a morning's foraging to a lifetime's dispersal, and those movements set where populations persist, how connected they are and how fast ranges can shift. I study how individual movement scales up to population and range dynamics, and why individuals of the same species differ so much in how far they go.
 :::
 ::: {.fig}
 <!--
@@ -90,57 +91,56 @@ How do daily movements, seasonal migration and lifetime dispersal events shape p
   leading **Schematic.** only if the new figure is also schematic. The layout
   and caption styling do not change.
 -->
-![**Schematic.** Dispersal kernel on a linear distance axis. The ochre area is the long-distance tail: rare, and the part that governs range expansion.](images/figures/kernel.webp){fig-alt="Schematic dispersal kernel with a heavy right tail shaded in ochre"}
+![**Schematic.** Dispersal kernel: most individuals settle nearby, a few travel an order of magnitude farther.](images/figures/kernel.webp){fig-alt="Schematic dispersal kernel with a heavy right tail shaded in ochre"}
 :::
 :::
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-Citizen science (eBird)\
-Monitoring surveys\
-Ring recoveries
+[Themes]{.kicker}
+Statistical ecology\
+Species distribution modelling
 :::
 ::: {.text}
-### [Improving biodiversity monitoring and modelling](research/forecasting.qmd)
+### [Biodiversity modelling and forecasting](research/forecasting.qmd)
 
-Effective conservation requires well-designed monitoring and the capacity to anticipate future changes. I develop species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate data sources that were never designed to be combined.
+Most models of species distributions describe where a species is found, not the processes that put it there. I develop models that carry ecological process explicitly — dispersal, population dynamics, species interactions, imperfect detection — and that integrate heterogeneous data, so that forecasts of biodiversity change rest on mechanism rather than correlation.
 :::
 ::: {.fig}
-![**Schematic.** Habitat suitability surface with occurrence records. Records cluster where people look, not only where the species is.](images/figures/sdm.webp){fig-alt="Schematic habitat suitability surface with occurrence records and a colour bar"}
+![**Schematic.** Habitat suitability surface with occurrence records.](images/figures/sdm.webp){fig-alt="Schematic habitat suitability surface with occurrence records and a colour bar"}
 :::
 :::
 
 ::: {.line}
 ::: {.rail}
-[Data and methods]{.kicker}
-Black Stork monitoring (22 yr)\
-Distribution models\
-Landscape connectivity
+[Themes]{.kicker}
+Conservation biology\
+Global change
 :::
 ::: {.text}
 ### [Conservation under global change](research/conservation.qmd)
 
-Habitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge: from large carnivore recolonisation in Iberia to mammal declines in the Gran Chaco.
+Habitat loss and climate change are redrawing species distributions. I work on anticipating which species are most exposed and why, and on turning that understanding into spatial priorities: where and when problems will emerge, and where intervention is most likely to matter.
 :::
 ::: {.fig}
-![**Schematic.** Occupied area today against a projected contour. The gap between them is where management decisions sit.](images/figures/range.webp){fig-alt="Schematic range map: occupied area against a projected contour"}
+![**Schematic.** Occupied area today against a projected contour.](images/figures/range.webp){fig-alt="Schematic range map: occupied area against a projected contour"}
 :::
 :::
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-AudioMoth recorders\
-Camera-trap networks
+[Themes]{.kicker}
+Ecological monitoring\
+Emerging technologies
 :::
 ::: {.text}
-### [Field technology for monitoring](outreach.qmd#field-technology)
+### [Monitoring biodiversity at scale](outreach.qmd#field-technology)
 
-Camera trapping, bioacoustic monitoring with AudioMoth devices, and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment, in collaboration with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
+Good inference needs good observation. I work on how autonomous sensors, citizen science and long-term surveys can be designed and combined to monitor wildlife at the scales that conservation decisions require, and on the analytical pipelines that turn raw observations into evidence.
 :::
 ::: {.fig}
-![**Schematic.** Spectrogram of a dawn chorus, the raw output of an autonomous recorder before any detection step.](images/figures/acoustic.webp){fig-alt="Schematic spectrogram of a dawn chorus, frequency against time"}
+<!-- A photograph, not a schematic, so the caption is factual and carries no "Schematic." label. -->
+![Deploying an AudioMoth acoustic recorder on an almond tree. Photo: Guillermo Fandos.](images/derived/audiomoth-fig-1200.webp){fig-alt="Guillermo Fandos fastening an AudioMoth acoustic recorder to an almond tree"}
 :::
 :::
 
@@ -152,10 +152,6 @@ Camera trapping, bioacoustic monitoring with AudioMoth devices, and other sensor
 :::
 
 :::
-:::
-
-::: {.strip}
-![**Schematic.** Landscape permeability surface: the layer that decides whether two populations are connected.](images/figures/strip.webp){fig-alt="Schematic landscape permeability surface used as a divider"}
 :::
 
 ::: {.band .paper #projects}
@@ -341,5 +337,13 @@ Welcome to **David Notario** and **Claudia Mediavilla**, joining as researchers 
 
 :::
 
+:::
+:::
+
+::: {.credits}
+::: {.wrap}
+[Photographs]{.kicker}
+
+Portrait: Guillermo Fandos, PhD in Ecology 2017, Universidad Complutense de Madrid. · Landscape: Sierras de Cabañeros, Parque Nacional de Cabañeros — photo [FrDr](https://commons.wikimedia.org/wiki/File:Parque_nacional_de_Caba%C3%B1eros_40.jpg), CC BY-SA 4.0, via Wikimedia Commons. · Field: deploying an AudioMoth acoustic recorder on an almond tree, photo Guillermo Fandos. · Research figures marked Schematic are generated illustrations, not fitted to data.
 :::
 :::

@@ -1,7 +1,7 @@
 ---
 title: "People"
 subtitle: "Team members and collaborators"
-description: "Current and past team members, PhD and MSc students, and key collaborators in spatial ecology and movement research."
+description: "Current and past team members, PhD and MSc students, and key collaborators in quantitative ecology and movement research."
 toc: false
 page-layout: full
 ---
@@ -120,6 +120,6 @@ Humboldt University
 [gfandos@ucm.es](mailto:gfandos@ucm.es)
 :::
 ::: {.text}
-I am always happy to hear from motivated students interested in spatial ecology, movement, or quantitative methods. If you are considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es).
+I am always happy to hear from motivated students interested in ecology, movement, or quantitative methods. If you are considering a TFM or PhD and our research aligns with your interests, get in touch: [gfandos@ucm.es](mailto:gfandos@ucm.es).
 :::
 :::

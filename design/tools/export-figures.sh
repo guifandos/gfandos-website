@@ -7,7 +7,8 @@
 # loaded (labels are drawn in it), converts the canvases to data URLs in-page, dumps the DOM and writes one image per figure. Seeded, so
 # re-running gives byte-identical images. Format is "png" (lossless) or
 # "webp" (lossy, quality 0.9) — the site uses webp to keep the figure set
-# under ~1.5 MB; the noise fields (sdm, range, strip) compress poorly as PNG.
+# under ~1.5 MB; the noise fields (sdm, range) compress poorly as PNG.
+# The `strip` figure in _figures.js is no longer exported (BRIEF.md section 10).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 OUT="${1:-$ROOT/images/figures}"
@@ -23,13 +24,11 @@ cat > "$TMP/h.html" <<HTML
 <link rel="stylesheet" href="file://$ROOT/fonts/fonts.css">
 <style>body{margin:0;background:#fff}canvas{display:block}
 #kernel,#sdm,#range,#acoustic{width:640px;height:480px}
-#strip{width:1600px;height:160px}
 #hero{width:1400px;height:800px}</style>
 <canvas id="kernel" data-fig="kernel"></canvas>
 <canvas id="sdm" data-fig="sdm"></canvas>
 <canvas id="range" data-fig="range"></canvas>
 <canvas id="acoustic" data-fig="acoustic"></canvas>
-<canvas id="strip" data-fig="strip"></canvas>
 <script>window.devicePixelRatio = 2;</script>
 <script>
 // The labels are set in DM Mono (fonts/fonts.css). Canvas text uses whatever

@@ -12,7 +12,7 @@ project:
 
 website:
   title: "Guillermo Fandos"
-  description: "Spatial ecologist & conservation scientist | Assistant Professor at Universidad Complutense de Madrid"
+  description: "Quantitative ecologist & conservation scientist | Assistant Professor at Universidad Complutense de Madrid"
   site-url: https://www.gfandos.com
   favicon: images/favicon.png
 
@@ -37,7 +37,7 @@ website:
           - text: "---"
           - text: "Movement & Dispersal"
             href: research/dispersal.qmd
-          - text: "Monitoring & Modelling"
+          - text: "Modelling & Forecasting"
             href: research/forecasting.qmd
           - text: "Conservation & Global Change"
             href: research/conservation.qmd

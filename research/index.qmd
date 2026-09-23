@@ -1,6 +1,5 @@
 ---
 title: "Research"
-subtitle: "Understanding animal movement to predict biodiversity futures"
 description: "Research overview: animal dispersal, species distribution modelling, biodiversity forecasting, and conservation applications using Bayesian methods and large-scale datasets."
 toc: false
 page-layout: full
@@ -11,21 +10,21 @@ My research focuses on the ecological processes that drive the distribution and 
 ::: {.head}
 [Research lines]{.kicker}
 
-## Four lines, one problem: linking individual movement to where species end up
+## Understanding and forecasting where species live, and how that is changing
 :::
 
 ::: {.lines}
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-EURING ring recoveries\
-National ringing schemes
+[Themes]{.kicker}
+Movement ecology\
+Biogeography
 :::
 ::: {.text}
-### [Animal movement in dynamic landscapes](dispersal.qmd)
+### [Movement and the geography of species](dispersal.qmd)
 
-Linking the process of animal movement to ecology and evolution. How do daily movements, seasonal migration, and lifetime dispersal events shape population connectivity, range boundaries, and species responses to environmental change?
+Animals move at every scale, from a morning's foraging to a lifetime's dispersal, and those movements set where populations persist, how connected they are and how fast ranges can shift. I study how individual movement scales up to population and range dynamics, and why individuals of the same species differ so much in how far they go.
 
 Dispersal drives almost everything in ecology, yet for most species we simply do not know how far individuals disperse. With collaborators I developed Bayesian methods that account for the biases in bird ringing data and produced standardised dispersal kernels for over 200 European bird species. I am now exploring why dispersal varies so much *within* species.
 
@@ -34,44 +33,42 @@ Dispersal drives almost everything in ecology, yet for most species we simply do
 :::
 :::
 ::: {.fig}
-![**Schematic.** Dispersal kernel on a linear distance axis; the ochre area is the long-distance tail.](../images/figures/kernel.webp){fig-alt="Schematic dispersal kernel with a heavy right tail shaded in ochre"}
+![**Schematic.** Dispersal kernel: most individuals settle nearby, a few travel an order of magnitude farther.](../images/figures/kernel.webp){fig-alt="Schematic dispersal kernel with a heavy right tail shaded in ochre"}
 :::
 :::
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-Citizen science (eBird)\
-Standardised monitoring surveys\
-Ring recoveries
+[Themes]{.kicker}
+Statistical ecology\
+Species distribution modelling
 :::
 ::: {.text}
-### [Improving biodiversity monitoring and modelling](forecasting.qmd)
+### [Biodiversity modelling and forecasting](forecasting.qmd)
 
-Effective conservation requires well-designed monitoring and the capacity to anticipate future changes. I develop species distribution models that incorporate ecological processes (dispersal, population dynamics, species interactions) and integrate multiple data sources.
+Most models of species distributions describe where a species is found, not the processes that put it there. I develop models that carry ecological process explicitly — dispersal, population dynamics, species interactions, imperfect detection — and that integrate heterogeneous data, so that forecasts of biodiversity change rest on mechanism rather than correlation.
 
 Each data type has biases, but combining them thoughtfully can give a more complete picture of both spatial coverage and temporal dynamics.
 
 ::: {.more}
-[Monitoring and modelling →](forecasting.qmd)
+[Biodiversity modelling and forecasting →](forecasting.qmd)
 :::
 :::
 ::: {.fig}
-![**Schematic.** Habitat suitability surface with occurrence records, which cluster where people look.](../images/figures/sdm.webp){fig-alt="Schematic habitat suitability surface with occurrence records and a colour bar"}
+![**Schematic.** Habitat suitability surface with occurrence records.](../images/figures/sdm.webp){fig-alt="Schematic habitat suitability surface with occurrence records and a colour bar"}
 :::
 :::
 
 ::: {.line}
 ::: {.rail}
-[Data and methods]{.kicker}
-Black Stork monitoring (22 yr)\
-Distribution models\
-Landscape connectivity
+[Themes]{.kicker}
+Conservation biology\
+Global change
 :::
 ::: {.text}
-### [Biodiversity conservation and global change](conservation.qmd)
+### [Conservation under global change](conservation.qmd)
 
-Habitat degradation and climate change are altering species distributions worldwide. I work on anticipating which species face the greatest threats, understanding why, and identifying where and when problems will emerge.
+Habitat loss and climate change are redrawing species distributions. I work on anticipating which species are most exposed and why, and on turning that understanding into spatial priorities: where and when problems will emerge, and where intervention is most likely to matter.
 
 This includes large carnivore range expansion in Iberia, occupancy models that correct for preferential sampling in threatened species assessments, and applied work on Mediterranean river ecosystems and bat habitat modelling.
 
@@ -86,12 +83,14 @@ This includes large carnivore range expansion in Iberia, occupancy models that c
 
 ::: {.line}
 ::: {.rail}
-[Data]{.kicker}
-AudioMoth recorders\
-Camera-trap networks
+[Themes]{.kicker}
+Ecological monitoring\
+Emerging technologies
 :::
 ::: {.text}
-### [Field technology](../outreach.qmd#field-technology)
+### [Monitoring biodiversity at scale](../outreach.qmd#field-technology)
+
+Good inference needs good observation. I work on how autonomous sensors, citizen science and long-term surveys can be designed and combined to monitor wildlife at the scales that conservation decisions require, and on the analytical pipelines that turn raw observations into evidence.
 
 Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sensor-based approaches for wildlife monitoring. I am developing field technology pipelines for biodiversity assessment in collaboration with [Raúl Bonal](https://scholar.google.es/citations?user=xKxS6YIAAAAJ) on bioacoustics.
 
@@ -100,7 +99,8 @@ Camera trapping, bioacoustic monitoring (using AudioMoth devices), and other sen
 :::
 :::
 ::: {.fig}
-![**Schematic.** Spectrogram of a dawn chorus, the raw output of an autonomous recorder.](../images/figures/acoustic.webp){fig-alt="Schematic spectrogram of a dawn chorus, frequency against time"}
+<!-- A photograph, not a schematic, so the caption is factual and carries no "Schematic." label. -->
+![Deploying an AudioMoth acoustic recorder on an almond tree. Photo: Guillermo Fandos.](../images/derived/audiomoth-fig-1200.webp){fig-alt="Guillermo Fandos fastening an AudioMoth acoustic recorder to an almond tree"}
 :::
 :::
 
