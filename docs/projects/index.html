@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-faca5375d6d6b539e0b4349a2ad7c1bd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4918090a5f6ee0c1926f0158231a78da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8ee215a0a422e615277e23d232b0fd75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,12 +80,16 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../fonts/fonts.css">
 <meta property="og:title" content="Projects – Guillermo Fandos">
 <meta property="og:description" content="Research projects on intraspecific dispersal variation (INTRADISP), Mediterranean river wildlife (RIMed-Fauna), and past projects on species distribution modelling and global change.">
+<meta property="og:image" content="https://www.gfandos.com/images/derived/monfrague-card-900.webp">
 <meta property="og:site_name" content="Guillermo Fandos">
+<meta property="og:image:alt" content="Salto del Gitano and the Tajo at dusk, Parque Nacional de Monfragüe">
 <meta name="twitter:title" content="Projects – Guillermo Fandos">
 <meta name="twitter:description" content="Research projects on intraspecific dispersal variation (INTRADISP), Mediterranean river wildlife (RIMed-Fauna), and past projects on species distribution modelling and global change.">
+<meta name="twitter:image" content="https://www.gfandos.com/images/derived/monfrague-card-900.webp">
 <meta name="twitter:creator" content="@g_fandos">
 <meta name="twitter:site" content="@g_fandos">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image:alt" content="Salto del Gitano and the Tajo at dusk, Parque Nacional de Monfragüe">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -221,10 +225,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!--
-  Each project is a ::: {.project} block: a mono code line, a title, one
-  paragraph and a definition list of metadata (term, then ":   value").
-  Copy a block to add a project. A section is a ::: {.head} block (kicker +
-  heading) followed by its content; section spacing comes from the stylesheet.
+  Active projects are ::: {.tile} blocks inside ::: {.tiles} (BRIEF.md
+  section 11): an ::: {.img} block (a photograph, or ::: {.img .blank} with
+  nothing inside until one exists), then ::: {.body} with a mono code line
+  (acronym · years), a title, one paragraph and a definition list of metadata
+  (term, then ":   value"). When the title is a link the whole tile is
+  clickable. Past and applied projects are ::: {.project} rows: code line,
+  title, paragraph and definition list. Copy a block to add a project. A
+  section is a ::: {.head} block (kicker + heading) followed by its content;
+  section spacing comes from the stylesheet.
 -->
 <div class="head">
 <p><span class="kicker">Active</span></p>
@@ -232,21 +241,20 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="funded-work-in-progress">Funded work in progress</h2>
 </section>
 </div>
-<div class="project-list">
-<div id="intradisp" class="project">
-<p><span class="code">INTRADISP</span></p>
+<div class="tiles">
+<div id="intradisp" class="tile">
+<div class="img blank">
+
+</div>
+<div class="body">
+<p><span class="code">INTRADISP · 2024–2026</span></p>
 <section id="intraspecific-dispersal-variation-in-european-birds" class="level3">
 <h3 class="anchored" data-anchor-id="intraspecific-dispersal-variation-in-european-birds"><a href="../projects/intradisp.html">Intraspecific dispersal variation in European birds</a></h3>
 <p>Why do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.</p>
-<div class="meta">
 <dl>
 <dt>Role</dt>
 <dd>
 Principal investigator
-</dd>
-<dt>Years</dt>
-<dd>
-2024–2026
 </dd>
 <dt>Host</dt>
 <dd>
@@ -257,23 +265,22 @@ UCM
 David Notario (MSc student &amp; researcher); collaborators at Potsdam University and BTO
 </dd>
 </dl>
-</div>
 </section>
 </div>
-<div id="rimed-fauna" class="project">
-<p><span class="code">RIMed-Fauna</span></p>
+</div>
+<div id="rimed-fauna" class="tile">
+<div class="img">
+<p><img src="../images/derived/monfrague-card-900.webp" class="img-fluid" alt="Salto del Gitano and the Tajo at dusk, Parque Nacional de Monfragüe"></p>
+</div>
+<div class="body">
+<p><span class="code">RIMed-Fauna · 2024–2027</span></p>
 <section id="wildlife-in-mediterranean-river-ecosystems" class="level3">
 <h3 class="anchored" data-anchor-id="wildlife-in-mediterranean-river-ecosystems"><a href="../projects/remined.html">Wildlife in Mediterranean river ecosystems</a></h3>
 <p>Mediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?</p>
-<div class="meta">
 <dl>
 <dt>Role</dt>
 <dd>
 Team member
-</dd>
-<dt>Years</dt>
-<dd>
-2024–2027
 </dd>
 <dt>PI</dt>
 <dd>
@@ -288,23 +295,22 @@ Red de Parques Nacionales
 Claudia Mediavilla (MSc student &amp; researcher) and others
 </dd>
 </dl>
-</div>
 </section>
 </div>
-<div id="sharepoint" class="project">
-<p><span class="code">SHAREPOINT</span></p>
+</div>
+<div id="sharepoint" class="tile">
+<div class="img blank">
+
+</div>
+<div class="body">
+<p><span class="code">SHAREPOINT · 2025–2027</span></p>
 <section id="social-organisation-and-parasite-sharing-among-rainforest-understory-birds" class="level3">
 <h3 class="anchored" data-anchor-id="social-organisation-and-parasite-sharing-among-rainforest-understory-birds">Social organisation and parasite sharing among rainforest understory birds</h3>
 <p>Field-based research in French Guiana combining network analysis with disease ecology.</p>
-<div class="meta">
 <dl>
 <dt>Role</dt>
 <dd>
 Team member
-</dd>
-<dt>Years</dt>
-<dd>
-2025–2027
 </dd>
 <dt>PI</dt>
 <dd>
@@ -315,8 +321,8 @@ Javier Pérez-Tris
 CEBA
 </dd>
 </dl>
-</div>
 </section>
+</div>
 </div>
 </div>
 <div class="head">

@@ -17,6 +17,7 @@ $accent-soft:#d5e5e2;
 $mark:       #b87309;   // ochre: SVG strokes, figure fills (3.3:1 — not for text)
 $mark-text:  #8f5906;   // ochre for text labels (5.1:1 on ground): "Schematic.", Fig. 1 tag
 $deep:       #0f1e26;   // footer, figure grounds
+$slate-mid:  #2b3f49;   // projects band on the home page (BRIEF.md section 11)
 
 // Type
 $font-family-sans-serif: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
@@ -93,6 +94,7 @@ $grid-column-gutter-width: 2rem;
   --mark: #{$mark};
   --mark-text: #{$mark-text};
   --deep: #{$deep};
+  --slate-mid: #{$slate-mid};
   --mono: #{$font-family-monospace};
   --grotesk: #{$font-family-sans-serif};
   --serif: #{$font-family-serif};
@@ -109,7 +111,7 @@ $grid-column-gutter-width: 2rem;
 // Base
 // ---------------------------------------------------------------------------
 html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }   // native; disabled under prefers-reduced-motion below
-section[id], h2[id], h3[id], [id].band { scroll-margin-top: 4.5rem; }   // in-page anchors land below the fixed navbar
+section[id], h2[id], h3[id], [id].band, [id].tile { scroll-margin-top: 4.5rem; }   // in-page anchors land below the fixed navbar
 body { background: var(--ground); color: var(--ink); }   // no overflow-x: hidden, so any real overflow shows up in design/snaps
 
 h1, h2, h3, h4, .grotesk {
@@ -394,7 +396,7 @@ main.content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; 
 .band {
   border-top: 1px solid var(--rule);
   &.paper { background: var(--paper); }
-  > .wrap { padding-block: clamp(48px, 7vw, 86px); }
+  > .wrap { padding-block: clamp(64px, 9vw, 112px); }   // section rhythm, BRIEF.md section 11
   h2 { max-width: 26ch; }
 }
 .head {
@@ -402,8 +404,8 @@ main.content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; 
   grid-template-columns: minmax(0, var(--rail)) minmax(0, 1fr);
   gap: 10px var(--rail-gap);
   align-items: baseline;
-  margin-bottom: clamp(26px, 4vw, 44px);
-  h2 { margin: 0; }
+  margin-bottom: clamp(34px, 5vw, 56px);
+  h2 { margin: 0; font-size: clamp(1.7rem, 3.8vw, 2.5rem); }
   > section, > h2 { grid-column: 2; }   // a head without a kicker keeps the title on the text column
 }
 .more {
@@ -474,9 +476,10 @@ main.content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; 
 }
 
 // ---------------------------------------------------------------------------
-// Projects: stacked rows separated by hairlines, the mono code in the rail and
-// title, paragraph and <dl> to its right. Same list on the home page and the
-// projects page (::: {.project-list} > ::: {.project}).
+// Project rows (past and applied projects on the projects page): stacked rows
+// separated by hairlines, the mono code in the rail and title, paragraph and
+// <dl> to its right (::: {.project-list} > ::: {.project}). Active projects
+// use the tiles below instead.
 // ---------------------------------------------------------------------------
 .project-list { display: flex; flex-direction: column; }
 .project {
@@ -505,6 +508,101 @@ main.content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; 
   display: grid; grid-template-columns: auto 1fr; gap: 2px 14px;
   dt { color: var(--ink-soft); text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; padding-top: 1px; font-weight: 400; }
   dd { margin: 0; color: var(--ink-soft); }
+}
+
+// ---------------------------------------------------------------------------
+// Project tiles (BRIEF.md section 11): ::: {.tiles} > ::: {.tile}, each tile
+// an ::: {.img} (photo, or .img.blank with nothing in it) over a ::: {.body}
+// (code line, h3, paragraph, dl). The whole tile is clickable: the h3 link's
+// ::after is stretched over the tile, so the markup stays a fenced div. No
+// shadow, no transform, radius 2px. The base rules are the page-ground variant
+// (projects page); .projects-band recolours them for the mid-slate band.
+// ---------------------------------------------------------------------------
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 22px;
+}
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  color: var(--ink);
+  &:has(h3 > a:not(.anchorjs-link)):hover, &:focus-within { border-color: var(--ink-faint); }
+  &:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .anchorjs-link { display: none; }   // Quarto's heading anchor would otherwise sit inside the h3 (and be stretched below)
+  .img {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    background: var(--ground);
+    p, figure, .quarto-figure { margin: 0; }
+    img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: saturate(.75);
+      display: block;
+    }
+    &.blank {   // quiet, and nothing written in it; the hairline gives the slot an edge on the paper tile
+      background: linear-gradient(135deg, var(--ground), var(--paper));
+      border-bottom: 1px solid var(--rule);
+    }
+  }
+  .body, .body > section {
+    display: flex; flex-direction: column; gap: 10px; flex: 1;   // Quarto wraps the h3 and what follows in a <section>
+  }
+  .body { padding: 20px 22px 22px; }
+  .body > p, .body > section > p { margin: 0; }
+  .body > p { flex: none; }   // the code line keeps its height; the paragraph below takes the slack
+  .code { @extend %rail-label; font-size: .7rem; letter-spacing: .14em; color: var(--accent); line-height: 1.5; }
+  h3 { font-size: 1.15rem; margin: 0; line-height: 1.25; color: var(--ink); }
+  h3 > a:not(.anchorjs-link) {
+    color: inherit; text-decoration: none; font-weight: inherit;
+    &::after { content: ""; position: absolute; inset: 0; }   // the stretched link
+    &:focus-visible { outline: 0; }   // the tile carries the focus ring (focus-within)
+  }
+  p { font-size: .92rem; line-height: 1.55; color: var(--ink-soft); max-width: none; flex: 1; }
+  dl {
+    margin: 8px 0 0; padding-top: 10px;
+    display: grid; grid-template-columns: auto 1fr; gap: 3px 12px;
+    font-family: var(--mono); font-size: .7rem; line-height: 1.6;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+  }
+  dt { color: var(--ink-soft); text-transform: uppercase; letter-spacing: .06em; font-size: .64rem; padding-top: 2px; font-weight: 400; }
+  dd { margin: 0; color: var(--ink); }
+}
+// The mid-slate band on the home page. Text colours were checked against the
+// tile background blended over $slate-mid (#384b54; hover #3e5059): code 5.9:1,
+// h3 9.1, paragraph 6.1, dd 7.9, dt 5.0 (4.6 on hover; the brief's #93acb2 was
+// 3.8 and was lightened to #acc3c8), kicker 5.8 and .more 7.1 on the band.
+.projects-band {
+  background: var(--slate-mid);
+  color: #dfe8ea;
+  .head .kicker { color: #a6c2c0; }
+  .head h2 { color: #fff; }
+  .tile {
+    background: rgba(255, 255, 255, .06);
+    border-color: rgba(255, 255, 255, .14);
+    color: #dfe8ea;
+    &:has(h3 > a:not(.anchorjs-link)):hover, &:focus-within { border-color: rgba(255, 255, 255, .4); background: rgba(255, 255, 255, .09); }
+    &:focus-within { outline-color: #9fdccf; }
+    .img { background: #1f3038; }
+    .img.blank { background: linear-gradient(135deg, #243a44, #1f3038); border-bottom: 0; }   // the dark slot already has an edge against the tile body
+    .code { color: #9fdccf; }
+    h3, h3 a { color: #fff; }
+    p { color: #c9d6d8; }
+    dl { border-top-color: rgba(255, 255, 255, .14); color: #eaf0f1; }
+    dt { color: #acc3c8; }
+    dd { color: #eaf0f1; }
+  }
+  .more { margin-top: 28px; }
+  .more a { color: #9fdccf; }
+  .more a:hover { color: #fff; }
 }
 
 // ---------------------------------------------------------------------------

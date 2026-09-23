@@ -7,10 +7,15 @@ page-layout: full
 ---
 
 <!--
-  Each project is a ::: {.project} block: a mono code line, a title, one
-  paragraph and a definition list of metadata (term, then ":   value").
-  Copy a block to add a project. A section is a ::: {.head} block (kicker +
-  heading) followed by its content; section spacing comes from the stylesheet.
+  Active projects are ::: {.tile} blocks inside ::: {.tiles} (BRIEF.md
+  section 11): an ::: {.img} block (a photograph, or ::: {.img .blank} with
+  nothing inside until one exists), then ::: {.body} with a mono code line
+  (acronym · years), a title, one paragraph and a definition list of metadata
+  (term, then ":   value"). When the title is a link the whole tile is
+  clickable. Past and applied projects are ::: {.project} rows: code line,
+  title, paragraph and definition list. Copy a block to add a project. A
+  section is a ::: {.head} block (kicker + heading) followed by its content;
+  section spacing comes from the stylesheet.
 -->
 
 ::: {.head}
@@ -19,21 +24,20 @@ page-layout: full
 ## Funded work in progress
 :::
 
-::: {.project-list}
+::: {.tiles}
 
-::: {.project #intradisp}
-[INTRADISP]{.code}
+::: {.tile #intradisp}
+::: {.img .blank}
+:::
+::: {.body}
+[INTRADISP · 2024–2026]{.code}
 
 ### [Intraspecific dispersal variation in European birds](intradisp.qmd)
 
 Why do individuals of the same species disperse so differently? This project synthesises intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.
 
-::: {.meta}
 Role
 :   Principal investigator
-
-Years
-:   2024–2026
 
 Host
 :   UCM
@@ -43,19 +47,19 @@ Team
 :::
 :::
 
-::: {.project #rimed-fauna}
-[RIMed-Fauna]{.code}
+::: {.tile #rimed-fauna}
+::: {.img}
+![](../images/derived/monfrague-card-900.webp){fig-alt="Salto del Gitano and the Tajo at dusk, Parque Nacional de Monfragüe"}
+:::
+::: {.body}
+[RIMed-Fauna · 2024–2027]{.code}
 
 ### [Wildlife in Mediterranean river ecosystems](remined.qmd)
 
 Mediterranean rivers are extreme environments: flooding in winter, bone-dry in summer. How does terrestrial wildlife cope with this variability, and how will climate change affect these dynamics?
 
-::: {.meta}
 Role
 :   Team member
-
-Years
-:   2024–2027
 
 PI
 :   María del Mar Sánchez-Montoya
@@ -68,19 +72,18 @@ Team
 :::
 :::
 
-::: {.project #sharepoint}
-[SHAREPOINT]{.code}
+::: {.tile #sharepoint}
+::: {.img .blank}
+:::
+::: {.body}
+[SHAREPOINT · 2025–2027]{.code}
 
 ### Social organisation and parasite sharing among rainforest understory birds
 
 Field-based research in French Guiana combining network analysis with disease ecology.
 
-::: {.meta}
 Role
 :   Team member
-
-Years
-:   2025–2027
 
 PI
 :   Javier Pérez-Tris

@@ -15,9 +15,12 @@ page-layout: custom
   To add a publication or a news item, copy one ::: {.pub} / ::: {.item}
   block: the first paragraph is the rail (year or date), the rest sits to
   its right.
-  Photographs: the portrait, the landscape band and the field photo are
-  credited in the ::: {.credits} block at the end of the page. The landscape
-  is CC BY-SA 4.0 (Wikimedia Commons); keep its credit if you keep the image.
+  Projects are ::: {.tile} blocks inside ::: {.tiles}; see the comment above
+  them for how to add one or swap a photograph in.
+  Photographs: the portrait, the landscape band, the field photo and the
+  project tile are credited in the ::: {.credits} block at the end of the
+  page. The landscape is CC BY-SA 4.0 (Wikimedia Commons); keep its credit if
+  you keep the image.
 -->
 
 ::: {.hero}
@@ -154,7 +157,7 @@ Good inference needs good observation. I work on how autonomous sensors, citizen
 :::
 :::
 
-::: {.band .paper #projects}
+::: {.band .projects-band #projects}
 ::: {.wrap}
 
 ::: {.head}
@@ -163,21 +166,29 @@ Good inference needs good observation. I work on how autonomous sensors, citizen
 ## Funded work in progress
 :::
 
-::: {.project-list}
+<!--
+  Project tiles (BRIEF.md section 11). Each ::: {.tile} holds an ::: {.img}
+  block and a ::: {.body} block: mono code line (acronym · years), a title
+  whose link makes the whole tile clickable, one paragraph, then a definition
+  list (term, then ":   value"). A tile without a photograph uses
+  ::: {.img .blank} with nothing inside; to add the photo later, replace that
+  empty block with ::: {.img} and an image line (see the RIMed-Fauna tile).
+  Photographs are credited in the ::: {.credits} block at the end of the page.
+-->
+::: {.tiles}
 
-::: {.project}
-[INTRADISP]{.code}
+::: {.tile}
+::: {.img .blank}
+:::
+::: {.body}
+[INTRADISP · 2024–2026]{.code}
 
 ### [Why individuals of one species disperse differently](projects/intradisp.qmd)
 
 Synthesising intraspecific dispersal variation using European bird ringing data to improve predictions of biodiversity responses to global change.
 
-::: {.meta}
 Role
 :   Principal investigator
-
-Years
-:   2024–2026
 
 Host
 :   UCM
@@ -187,19 +198,19 @@ With
 :::
 :::
 
-::: {.project}
-[RIMed-Fauna]{.code}
+::: {.tile}
+::: {.img}
+![](images/derived/monfrague-card-900.webp){fig-alt="Salto del Gitano and the Tajo at dusk, Parque Nacional de Monfragüe"}
+:::
+::: {.body}
+[RIMed-Fauna · 2024–2027]{.code}
 
 ### [Wildlife in Mediterranean rivers](projects/remined.qmd)
 
 Mediterranean rivers flood in winter and run dry in summer. Camera trapping and distribution modelling in National Parks to see how terrestrial wildlife copes with that variability.
 
-::: {.meta}
 Role
 :   Team member
-
-Years
-:   2024–2027
 
 PI
 :   M. M. Sánchez-Montoya
@@ -209,19 +220,18 @@ Funder
 :::
 :::
 
-::: {.project}
-[SHAREPOINT]{.code}
+::: {.tile}
+::: {.img .blank}
+:::
+::: {.body}
+[SHAREPOINT · 2025–2027]{.code}
 
 ### [Social organisation and parasite sharing](projects/index.qmd#sharepoint)
 
 Rainforest understory birds in French Guiana: field-based research combining network analysis with disease ecology.
 
-::: {.meta}
 Role
 :   Team member
-
-Years
-:   2025–2027
 
 PI
 :   J. Pérez-Tris
@@ -344,6 +354,6 @@ Welcome to **David Notario** and **Claudia Mediavilla**, joining as researchers 
 ::: {.wrap}
 [Photographs]{.kicker}
 
-Portrait: Guillermo Fandos, PhD in Ecology 2017, Universidad Complutense de Madrid. · Landscape: Sierras de Cabañeros, Parque Nacional de Cabañeros — photo [FrDr](https://commons.wikimedia.org/wiki/File:Parque_nacional_de_Caba%C3%B1eros_40.jpg), CC BY-SA 4.0, via Wikimedia Commons. · Field: deploying an AudioMoth acoustic recorder on an almond tree, photo Guillermo Fandos. · Research figures marked Schematic are generated illustrations, not fitted to data.
+Portrait: Guillermo Fandos, PhD in Ecology 2017, Universidad Complutense de Madrid. · Landscape: Sierras de Cabañeros, Parque Nacional de Cabañeros — photo [FrDr](https://commons.wikimedia.org/wiki/File:Parque_nacional_de_Caba%C3%B1eros_40.jpg), CC BY-SA 4.0, via Wikimedia Commons. · Field: deploying an AudioMoth acoustic recorder on an almond tree, photo Guillermo Fandos. · Project tile: Salto del Gitano and the Tajo, Parque Nacional de Monfragüe, photo Guillermo Fandos. · Research figures marked Schematic are generated illustrations, not fitted to data.
 :::
 :::
